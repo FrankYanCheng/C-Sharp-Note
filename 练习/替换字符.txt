@@ -1,0 +1,4 @@
+ string fyc = Console.ReadLine();
+           string result=fyc.Replace("no","yes");
+            Console.Write("{0}",result);
+替换字符用Replace,注意开头需要大写，另外在结束时别弄错定义的字符串

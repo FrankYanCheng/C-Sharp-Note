@@ -1,0 +1,21 @@
+1.如果只定义了string text,则循环内的赋值无效，开始的时候简单声明一个变量并不会影响其他东西
+只有对他进行定义了以后才可有意义，循环内赋值才有意义。
+
+
+2.注意其中的显示转换,text="   "+什么的“”并不显示
+3.当i在循环外不怎么用时，也可以在for中定义
+
+
+
+
+ static void Main(string[] args)
+        {
+           
+            string text = "";
+            for (int i = 0; i < 10;i++)
+            {
+                text = "Line" + Convert.ToString(i);
+                Console.WriteLine("{0}", text);
+            }
+            Console.WriteLine("Last text output in loop:{0}", text);
+        }

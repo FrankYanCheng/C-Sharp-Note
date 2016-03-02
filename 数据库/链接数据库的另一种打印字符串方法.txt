@@ -1,0 +1,31 @@
+
+            SqlConnection con = null;
+            SqlCommand com = null;
+            SqlDataReader sdr = null;
+            SqlConnectionStringBuilder B = new SqlConnectionStringBuilder();
+            B.DataSource=".";
+            B.InitialCatalog="123";
+            B.IntegratedSecurity = true;
+            string c = B.ConnectionString;
+            Console.WriteLine();
+            try
+            {
+                con = new SqlConnection(c);
+                com = con.CreateCommand();
+                com.CommandText = "select * from Student";
+                con.Open();
+                sdr = com.ExecuteReader();
+                while (sdr.Read())
+                {
+                    Console.WriteLine(sdr[3]);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.Write(ex.Message);
+            }
+            sdr.Close();
+            com.Clone();
+            con.Close();
+
+        }

@@ -1,0 +1,8 @@
+   string[] arr = item.Split(new char[]{' '}, StringSplitOptions.RemoveEmptyEntries);
+用split去掉只能是一个，如果多个的话会返回空字符串，用这种方法可以避免
+
+        string test = "程$晓$";
+        //数组长度为2 temp[0]="程" temp[1]="晓";
+        string[] temp = test.Split(new string[] { "$" }, StringSplitOptions.RemoveEmptyEntries);
+        //数组长度为3 temp[0]="程" temp[1]="晓" temp[2]="";
+        string[] temp = test.Split(new string[] { "$" }, StringSplitOptions.None);

@@ -1,0 +1,22 @@
+也是一个静态类
+不用实例化
+是对文件夹的访问处理
+通常的第一个是目录，后一个是对文件名称的部分要求，最后是是否对子文件处理同样的操作，返回的是字符串数组
+
+   //Console.Write(Path.GetTempFileName());
+          // Directory.CreateDirectory("C:\\123\\1\\2\\3\\4\\5\\6\\7\\8\\9\\20");
+          // string[] w = Directory.GetDirectories("C:\\123", "*", SearchOption.AllDirectories);
+          //foreach (string s in w)
+          //{
+          //    Console.WriteLine(s);
+          //}
+          //string[] k = Directory.GetFiles("C:\\视频教学","*.txt",SearchOption.AllDirectories);
+          //foreach (string s in k)
+          //{
+          //    Console.WriteLine(s);
+          //}
+            DirectoryInfo a = new DirectoryInfo("C:\\windows");
+           string h= a.Exists.ToString();
+          string q= a.LastWriteTime.ToString();
+           string w=a.CreationTime.ToString()+h+" "+q+" "+g;
+           Console.WriteLine(w);

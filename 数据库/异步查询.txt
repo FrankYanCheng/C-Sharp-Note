@@ -1,0 +1,29 @@
+Asynchronous Processing
+IasyncResult
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data.SqlClient;
+namespace ConsoleApplication164
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string inss = "data source=.;initial catalog=123;integrated security=true;Asynchronous Processing=true";
+            SqlConnection con = new SqlConnection(inss);
+            con.Open();
+            SqlCommand com = con.CreateCommand();
+            com.CommandText = "waitfor delay '00:00:05';select * from student";
+           IAsyncResult s=com.BeginExecuteReader();
+         SqlDataReader sdr=com.EndExecuteReader(s);
+         while (sdr.Read())
+         {
+             Console.WriteLine(sdr[0]+" "+sdr[4]);
+         }
+        }
+    }
+}

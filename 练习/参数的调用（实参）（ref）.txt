@@ -1,0 +1,22 @@
+1.ref的应用，会改变放入括号里的值
+2.ref使用时应注意：
+  （1）不能用const定义要改变的值
+  （2）必须使用初始化过的变量 
+
+
+
+
+
+
+static void Main(string[] args)
+        {
+            int myNumber = 5;
+            Console.WriteLine("myNumber={0}", myNumber);
+            showdouble(ref myNumber);
+            Console.WriteLine("myNumber={0}", myNumber);
+        }
+        static void showdouble(ref int val)
+        {
+            val *= 2;
+            Console.WriteLine("val double={0}", val);
+        }

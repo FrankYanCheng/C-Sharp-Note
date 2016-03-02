@@ -1,0 +1,21 @@
+1.int类型注意转换
+2.Console类返回的是void类型，所以return后边不能跟这东西       
+
+
+
+
+ static void Main(string[] args)
+        {
+            fyc1 fa;
+            fa.j = Convert.ToInt32(Console.ReadLine());
+            fa.i = Console.ReadLine();
+            fa.fyc2();
+        }
+        struct fyc1
+        {
+            public int j;
+            public string i;
+            public void fyc2()
+            {
+                Console.WriteLine("数值型：{0}，字符型：{1}", j, i);
+            }

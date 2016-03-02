@@ -1,0 +1,117 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
+
+namespace _09_Hashtable
+{
+    class Student
+    {
+        public Student(string name, int age)
+        {
+            this.name = name;
+            this.age = age;
+        }
+
+        private string name;
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+        private int age;
+        public int Age
+        {
+            get { return age; }
+            set { age = value; }
+        }
+    }
+
+    class Teacher
+    {
+        public Teacher(string name, int age)
+        {
+            this.name = name;
+            this.age = age;
+        }
+
+        private string name;
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+        private int age;
+        public int Age
+        {
+            get { return age; }
+            set { age = value; }
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Student xyy = new Student("小月月", 18);
+            Student fj = new Student("凤姐", 20);
+            Student fr = new Student("芙蓉姐姐", 21);
+            Student xl = new Student("犀利哥", 19);
+
+
+            Hashtable students = new Hashtable();
+            students.Add("小月月",xyy);
+            students.Add("凤姐",fj);
+            students.Add("芙蓉姐姐", fr);
+            students.Add("犀利哥", xl);
+            //错误，key不能重复
+            //students.Add("犀利哥", xl);
+
+            //Student s = students["小月月"] as Student;
+            //if (s != null)
+            //{
+            //    Console.WriteLine(s.Name);
+            //}
+            //遍历
+            //foreach (object key in students.Keys)
+            //{
+            //    Student s = students[key] as Student;
+
+            //    Console.WriteLine(key);
+            //    Console.WriteLine(s.Age);
+            //}
+
+            //foreach (object value in students.Values)
+            //{
+            //    Student s = value as Student;
+            //    if (s != null)
+            //    {
+            //        Console.WriteLine(s.Name);
+            //    }
+            //}
+
+            //foreach (DictionaryEntry de in students)
+            //{
+            //    Console.WriteLine(de.Key);
+
+            //    Student s = de.Value as Student;
+            //    Console.WriteLine(s.Age);
+            //}
+
+            //移除
+            //students.Remove("小月月");
+            //students.Clear();
+
+            Console.WriteLine(students.ContainsKey("凤姐"));
+            foreach (object key in students.Keys)
+            {
+                Student s = students[key] as Student;
+
+                Console.WriteLine(key);
+                Console.WriteLine(s.Name);
+            }
+
+            Console.Read();
+        }
+    }
+}

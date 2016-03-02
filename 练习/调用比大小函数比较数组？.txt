@@ -1,0 +1,50 @@
+注意排版
+return返回的是函数值
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication20
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] myArray={1,3,2,4,5,7,8,4,1};
+            int maxVal=MAX（myArray);
+            Console.WriteLine("最大值是：");
+         }
+        static int MAX(int[] intArray);
+      {
+        int maxVal=intArray[0];
+        for(int i=1;i<intArray.Length;i++)
+        {
+          if (intArray[i]>maxVal)
+                 maxVal=intArray[i];
+    }
+             return maxVal;
+          
+     }
+}
+}
+
+
+
+           

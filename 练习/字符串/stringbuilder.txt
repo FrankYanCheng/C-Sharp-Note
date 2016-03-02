@@ -1,0 +1,18 @@
+ StringBuilder s=new StringBuilder();
+            s.Append("<body>");
+            s.Append("<table>");
+            s.Append("<tr>");
+            s.Append("<td>");
+            s.Append("你好！");
+            s.Append("<td/>");
+            s.Append("<td>");
+            s.Append("你好！");
+            s.Append("<td/>");
+            s.Append("<td>");
+            s.Append("你好！");
+            s.Append("<td/>");
+            s.Append("<tr/>");
+            s.Append("<table/>");
+            File.WriteAllText("c:\\test.html",s.ToString(),Encoding.Default);
+
+省资源，string一次在内存中创建

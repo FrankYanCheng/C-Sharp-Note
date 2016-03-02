@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/ProjectERP/!svn/ver/9/DLL
+END
+DevComponents.DotNetBar2.dll
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ProjectERP/!svn/ver/3/DLL/DevComponents.DotNetBar2.dll
+END
+Interop.WMPLib.dll
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ProjectERP/!svn/ver/9/DLL/Interop.WMPLib.dll
+END
+Interop.ADOX.dll
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/ProjectERP/!svn/ver/9/DLL/Interop.ADOX.dll
+END
+LSGO.BusinessLogicLayer.Gis.dll
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/ProjectERP/!svn/ver/3/DLL/LSGO.BusinessLogicLayer.Gis.dll
+END
+LSGO.PresentationLayer.dll
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/ProjectERP/!svn/ver/3/DLL/LSGO.PresentationLayer.dll
+END
+Gigasoft.ProEssentials.dll
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/ProjectERP/!svn/ver/9/DLL/Gigasoft.ProEssentials.dll
+END
+LSGO.DataLinkLayer.NetControl.dll
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/ProjectERP/!svn/ver/3/DLL/LSGO.DataLinkLayer.NetControl.dll
+END
+Interop.SQLDMO.dll
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ProjectERP/!svn/ver/9/DLL/Interop.SQLDMO.dll
+END
+AxInterop.WMPLib.dll
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ProjectERP/!svn/ver/9/DLL/AxInterop.WMPLib.dll
+END

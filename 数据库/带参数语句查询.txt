@@ -1,0 +1,47 @@
+另外还有两种方法，分别是最原始的‘"+name+"'类型，但是也没有约束条件，而且多了得话很麻烦
+另一种是一样有@的，但是不是用addwithvalue
+而是sqlparameter name=new.....
+分别要用size啥的来约束很麻烦
+所以记住parameters.AddWithValue("@name",name)
+引号记得加
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data.SqlClient;
+
+namespace ConsoleApplication172
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string sno = Console.ReadLine();
+            string uu = "data source=.;initial catalog=123;integrated security=true";
+            using (SqlConnection con = new SqlConnection(uu))
+            {
+                using (SqlCommand com = con.CreateCommand())
+                {
+                    con.Open();
+                    com.CommandText = "select sname,sno from student where sno=@sno";
+                    com.Parameters.AddWithValue("@sno",sno);
+                    using (SqlDataReader sdr = com.ExecuteReader())
+                    {
+                        while (sdr.Read())
+                        {
+                            Console.WriteLine(sdr[0] + ""+sdr[1]);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

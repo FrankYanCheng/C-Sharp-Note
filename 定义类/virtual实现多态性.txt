@@ -1,0 +1,123 @@
+
+    class Employee
+    {
+        protected string _name;
+        public Employee() { }
+        public Employee(string name)
+        {
+            _name=name;
+        }
+        public virtual void StartWork()
+        {
+            Console.WriteLine(_name+"开始工作:);");
+        }
+    }
+    class Manager:Employee
+    {
+           public Manager(string name):base(name){}
+           public override void StartWork()
+           {
+               base.StartWork();
+               Console.WriteLine("给员工下达任务");
+           }
+    }
+    class Test
+    {
+        static void Main()
+        {
+            Employee[] emp=new Employee[1];
+            emp[0]=new Manager("张三");
+            foreach (Employee e in emp)
+            {
+                e.StartWork();
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication132
+{
+    class dormitory
+    {
+        protected string _name;
+        public dormitory() { }
+        public dormitory(string name)
+        {
+            _name = name;
+        }
+        public virtual void eat()
+        {
+            Console.WriteLine(_name + "是210宿舍的一员");
+        }
+    }
+    class fyc : dormitory
+    {
+        public fyc(string name) : base(name) { }
+        public override void eat()
+        {
+            base.eat();
+            Console.WriteLine("走，咱们去吃猪肉香菇的饺子");
+        }
+    }
+    class zc : dormitory
+    {
+        public zc(string name) : base(name) { }
+        public override void eat()
+        {
+            base.eat();
+            Console.WriteLine("二楼香锅走起！");
+        }
+    }
+    class fwz : dormitory
+    {
+        public fwz(string name) : base(name) { }
+        public override void eat()
+        {
+            base.eat();
+            Console.WriteLine("特供菜！");
+        }
+    }
+    class zh : dormitory
+    {
+        public zh(string k) : base(k) { }
+        public override void eat()
+        {
+            Console.WriteLine(_name);
+            Console.WriteLine("我也要吃饺子！！");
+        }
+    }
+
+    class text
+    {
+        static void Main()
+        {
+            dormitory[] a = new dormitory[4];
+            a[0] = new fyc("范衍铖");
+            a[1] = new zc("邹冲");
+            a[2] = new fwz("范文钊");
+            a[3]=new zh("周浩");
+            foreach (dormitory x in a)
+            {
+                x.eat();
+            }
+        }
+    }
+}

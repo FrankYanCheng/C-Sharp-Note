@@ -1,0 +1,61 @@
+ class Program
+        {
+            static void Main(string[] args)
+            {
+                int c;
+                int x;
+                int u;
+                int b;
+                int n = 0;
+                int N;
+                Console.WriteLine("输入集合A的元素个数");
+                N = Convert.ToInt32(Console.ReadLine());
+                int[] k = new int[N];
+                Console.WriteLine("输入集合A的元素");
+                for (int i = 0; i < k.Length; i++)
+                    k[i] = Convert.ToInt32(Console.ReadLine());
+
+                int M;
+                Console.WriteLine("输入集合B的元素个数");
+                M = Convert.ToInt32(Console.ReadLine());
+                int[] j = new int[M];
+                Console.WriteLine("输入集合B的元素");
+                for (int i = 0; i < j.Length; i++)
+                    j[i] = Convert.ToInt32(Console.ReadLine());
+
+                int[] MN = new int[M + N];
+                for (int i = 0; i < N; i++)
+                    MN[i] = k[i];
+                for (int g = N; g < MN.Length; g++)
+                    MN[g] = j[g - N];
+
+
+                Console.WriteLine("组合并集是");
+                for (c = 1; c < MN.Length; c++)
+                {
+                    b = c - 1;
+                    for (u = c - 1; u < MN.Length; u++)
+                        if (MN[u] < MN[b])
+                            b = u;
+                    x = MN[c - 1];
+                    MN[c - 1] = MN[b];
+                    MN[b] = x;
+                }
+                for (int e = 0; e < MN.Length - 1; e++)
+                {
+                    if (MN[e] == MN[e + 1])
+                        continue;
+                    else
+                        Console.WriteLine(MN[e]);
+                }
+                for (int e = MN.Length - 1; e < MN.Length; e++)
+                {
+                    if (MN[e] == MN[e - 1])
+                        continue;
+                    else
+                        Console.WriteLine(MN[e]);
+                }
+                Console.ReadKey();
+            }
+        }
+    }

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LSGO.DataLinkLayer</name>
+    </assembly>
+    <members>
+        <member name="T:LSGO.DataLinkLayer.LSGODataLinkLayerFacade">
+            <summary>
+            表示数据链接层的抽象类
+            </summary>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.ILSGOClone">
+            <summary>
+            表示原型克隆模式的接口
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.ILSGOClone.Clone">
+            <summary>
+            创建作为当前实例副本的新对象.
+            </summary>
+            <returns>作为此实例副本的新对象.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.LSGOClone.Clone">
+            <summary>
+            创建作为当前实例副本的新对象.
+            </summary>
+            <returns>作为此实例副本的新对象.</returns>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.ILSGODataLinkLayerFacade">
+            <summary>
+            表示数据链接层的接口
+            </summary>
+        </member>
+    </members>
+</doc>

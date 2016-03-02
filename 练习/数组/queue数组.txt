@@ -1,0 +1,15 @@
+ Queue a = new Queue();
+            a.Enqueue("你好！");
+            a.Enqueue("世界");
+            foreach (string k in a)
+            {
+                Console.WriteLine(k);
+                
+            }
+            a.Dequeue();
+            foreach (string k in a)
+            {
+                Console.WriteLine(k);
+
+            }
+都是从头开始。先进先出

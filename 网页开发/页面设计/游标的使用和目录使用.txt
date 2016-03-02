@@ -1,0 +1,16 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+<ul>
+<li style=" cursor:pointer; list-style-type:circle"><u><font color="blue">中国发射无人机</font></u></li>
+<li style="list-style-type:circle;cursor:url()">美国五角大楼遭到轰炸</li>
+</ul>
+</body>
+</html>
+<ul>是目录
+<li>是分小点，前边会有小点，这时候就要用到list-style-type的样式来加以改变
+<u>是加下划线意思是UnderLine
+
+游标使用cursor的属性

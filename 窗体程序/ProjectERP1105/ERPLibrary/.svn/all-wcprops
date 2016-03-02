@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/ProjectERP/!svn/ver/246/ERPLibrary
+END
+Payble.cs
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/ProjectERP/!svn/ver/3/ERPLibrary/Payble.cs
+END
+players.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ProjectERP/!svn/ver/242/ERPLibrary/players.cs
+END
+Product.cs
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ProjectERP/!svn/ver/3/ERPLibrary/Product.cs
+END
+NitricEquipment.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/ProjectERP/!svn/ver/177/ERPLibrary/NitricEquipment.cs
+END
+IEquipment.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ProjectERP/!svn/ver/192/ERPLibrary/IEquipment.cs
+END
+IPBox.cs
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ProjectERP/!svn/ver/196/ERPLibrary/IPBox.cs
+END
+Bill.cs
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/ProjectERP/!svn/ver/220/ERPLibrary/Bill.cs
+END
+LoanList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ProjectERP/!svn/ver/84/ERPLibrary/LoanList.cs
+END
+RowMaterial.cs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ProjectERP/!svn/ver/3/ERPLibrary/RowMaterial.cs
+END
+Class1.cs
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/ProjectERP/!svn/ver/3/ERPLibrary/Class1.cs
+END
+Loan.cs
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/ProjectERP/!svn/ver/125/ERPLibrary/Loan.cs
+END
+Account.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ProjectERP/!svn/ver/127/ERPLibrary/Account.cs
+END
+ClassDiagram1.cd
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/ProjectERP/!svn/ver/3/ERPLibrary/ClassDiagram1.cd
+END
+player.cs
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ProjectERP/!svn/ver/54/ERPLibrary/player.cs
+END
+LongLoan_5.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ProjectERP/!svn/ver/3/ERPLibrary/LongLoan_5.cs
+END
+Enum.cs
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/ProjectERP/!svn/ver/3/ERPLibrary/Enum.cs
+END
+LongLoanList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/ProjectERP/!svn/ver/139/ERPLibrary/LongLoanList.cs
+END
+IAccount.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ProjectERP/!svn/ver/14/ERPLibrary/IAccount.cs
+END
+ShortLoanList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/ProjectERP/!svn/ver/84/ERPLibrary/ShortLoanList.cs
+END
+Factory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ProjectERP/!svn/ver/81/ERPLibrary/Factory.cs
+END
+LongLoan.cs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ProjectERP/!svn/ver/3/ERPLibrary/LongLoan.cs
+END
+ShortLoan.cs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ProjectERP/!svn/ver/125/ERPLibrary/ShortLoan.cs
+END
+LongLoan_15.cs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/ProjectERP/!svn/ver/125/ERPLibrary/LongLoan_15.cs
+END
+IPBox.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/ProjectERP/!svn/ver/3/ERPLibrary/IPBox.Designer.cs
+END
+BillType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ProjectERP/!svn/ver/3/ERPLibrary/BillType.cs
+END
+Cerficate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ProjectERP/!svn/ver/185/ERPLibrary/Cerficate.cs
+END
+ILoad.cs
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/ProjectERP/!svn/ver/3/ERPLibrary/ILoad.cs
+END
+LoanType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ProjectERP/!svn/ver/23/ERPLibrary/LoanType.cs
+END
+IPBox.resx
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ProjectERP/!svn/ver/3/ERPLibrary/IPBox.resx
+END
+AccountType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ProjectERP/!svn/ver/3/ERPLibrary/AccountType.cs
+END
+ComprehensiveCost.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/ProjectERP/!svn/ver/3/ERPLibrary/ComprehensiveCost.cs
+END
+Receivable.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ProjectERP/!svn/ver/3/ERPLibrary/Receivable.cs
+END
+ILoan.cs
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ProjectERP/!svn/ver/125/ERPLibrary/ILoan.cs
+END
+ERPLibrary.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/ProjectERP/!svn/ver/196/ERPLibrary/ERPLibrary.csproj
+END
+Equipment.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ProjectERP/!svn/ver/3/ERPLibrary/Equipment.cs
+END

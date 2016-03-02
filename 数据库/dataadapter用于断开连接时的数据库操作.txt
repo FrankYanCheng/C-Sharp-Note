@@ -1,0 +1,12 @@
+还要用到data命名空间
+也用到connnection连接，但区别于command 和datareader方法，不用打开关闭连接。这些都由Fill自动完成，因为不是一直保持连接。
+要传入两个参数，即用了哪一条命令语句和哪个连接操作
+最后创建一个dataset的实例以后，进行填充操作。
+  string sql = "data source=.;initial catalog=123;integrated security=true";
+            using (SqlConnection con = new SqlConnection(sql))
+            {
+                string sql2="select * from student";
+                SqlDataAdapter sda = new SqlDataAdapter(sql2, con);
+                DataSet ds = new DataSet();
+                sda.Fill(ds);
+            }

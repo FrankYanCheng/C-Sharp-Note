@@ -1,0 +1,699 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using LSGO.DataLinkLayer.NetControl;
+using System.Net;
+using System.Threading;
+using ERPLibrary;
+using LSGO.PresentationLayer;
+using System.Data.OleDb;
+
+namespace ERPChess
+{
+    public class Client
+    {
+        public Client()
+        {
+            socketService = new SocketEvent();
+            socketService.OnConnectedEvent += new ConnectedEventHandler(OnConnectedEvent);
+            socketService.OnExceptionEvent += new ExceptionEventHandler(OnExceptionEvent);
+            socketService.OnReceivedEvent += new ReceivedEventHandler(OnReceivedEvent);
+            socketService.OnSendSuccessEvent += new SentEventHandler(OnSendSuccessEvent);
+            socketService.OnDisconnectedEvent += new DisconnectedEventHandler(OnDisconnectedEvent);
+
+            IPAddress[] IPContent = Dns.GetHostByName(Dns.GetHostName()).AddressList;
+            IPAddress IP = IPContent[0];
+            IP_Address = IP.ToString();
+        }
+        public string IP_Address = string.Empty;
+        public string Port = "8899";
+        public string ClientServerName = "";//如果当前是客户端，该变量用来保存连接服务器的服务器名称
+        private string OrderStr;
+        private bool AlreadySendInfo = false;//判断自己是否已经向服务器发送自己的信息
+        int playerCount = 0;
+
+        public NetClientHost ClientHost;
+        public ClientFacade ClientNet;
+        public NetFacadeCreator creator;
+        public SocketEvent socketService;
+        string[] receiveArr;//接受的信息
+        private delegate void SetInfo(string str);
+        Thread thread;
+
+        ILSGOfrmTipBox mesbox = new LSGOfrmInforMessageBox();
+
+        private void SetTextInfo(string str)
+        {
+            if (Program.Forms.frmOrgan.txtBox_Info.InvokeRequired)
+            {
+                SetInfo setInfo = SetTextInfo;
+                Program.Forms.frmOrgan.txtBox_Info.Invoke(setInfo, str);
+            }
+            else
+            {
+                Program.Forms.frmOrgan.txtBox_Info.Text += str+"\r\n";
+            }
+        }
+        private delegate void Change(string picBox, string pic);
+        /// <summary>
+        /// 更改图片
+        /// </summary>
+        /// <param name="picBoxName"></param>
+        /// <param name="picName"></param>
+        private void ChangePic(string picBoxName, string picName)
+        {
+            if (Program.Forms.frmOrgan.InvokeRequired)
+            {
+                Change mean = ChangePic;
+                Program.Forms.frmOrgan.Invoke(mean, new object[] { picBoxName, picName });
+            }
+            else
+            {
+                Program.Forms.frmOrgan.ChangePic(picBoxName, picName);
+            }
+        }
+        /// <summary>
+        /// 更改名字
+        /// </summary>
+        /// <param name="GrpName"></param>
+        /// <param name="TextName"></param>
+        private void ChangeGrp(string GrpName, string TextName)
+        {
+            Program.Forms.frmOrgan.ChangeGrp(GrpName, TextName);
+        }
+        private delegate void ShowInfo(string str);
+        /// <summary>
+        /// 颁布竞拍结果
+        /// </summary>
+        /// <param name="str"></param>
+        private void ShowBidReslut(string str)
+        {
+            if (Program.Forms.frmQuantity.rtbInfo.InvokeRequired)
+            {
+                ShowInfo showInfo = ShowBidReslut;
+                Program.Forms.frmQuantity.rtbInfo.Invoke(showInfo, str);
+            }
+            else
+            {
+                Program.Forms.frmQuantity.rtbInfo.Text += str + "\n";
+                Program.Forms.frmQuantity.rtbInfo.Refresh();
+            }
+        }
+        private delegate void Frm();
+        private void CloseSplashFrm()
+        {
+            try
+            {
+                if (Program.Forms.frmSplash.InvokeRequired)
+                {
+                    Frm Close = CloseSplashFrm;
+                    Program.Forms.frmSplash.BeginInvoke(Close);
+                }
+                else
+                {
+                    Program.Forms.frmSplash.Close();
+                }
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.Message);
+            }
+        }
+
+        private void CloseOrganFrm()
+        {
+            Thread.Sleep(100);
+            if (Program.Forms.frmOrgan.InvokeRequired)
+            {
+                Frm close = CloseOrganFrm;
+                Program.Forms.frmOrgan.Invoke(close);
+            }
+            else
+            {
+                Program.Forms.frmOrgan.Close();
+            }
+            thread.Abort();
+        }
+        private void CloseQuantity()
+        {
+            if (Program.Forms.frmQuantity.InvokeRequired)
+            {
+                Frm close = CloseQuantity;
+                Program.Forms.frmQuantity.Invoke(close);
+            }
+            else
+            {
+                Program.Forms.frmQuantity.Close();
+            }
+        }
+        private void ShowQuantity()
+        {
+            Program.Forms.frmQuantity = new Bid_EleQuantity();
+            if (Program.Forms.frmQuantity.InvokeRequired)
+            {
+                Frm close = ShowQuantity;
+                Program.Forms.frmMain.Invoke(close);
+            }
+            else
+            {
+                Program.Forms.frmQuantity.ShowDialog();
+            }
+        }
+        private void ShowEleResult()
+        {
+            Program.Forms.frmQuantity = new Bid_EleQuantity();
+            if (Program.Forms.frmEleResult.InvokeRequired)
+            {
+                Frm show = ShowEleResult;
+                Program.Forms.frmEleResult.Invoke(show);
+            }
+            else
+            {
+                Program.Forms.frmEleResult.ShowDialog();
+            }
+        }
+        /// <summary>
+        /// 打开ShowBuyResult窗口
+        /// </summary>
+        private void ShowBuyResult()
+        {
+            try
+            {
+                Program.Forms.frmBuyResult = new Form_BuyResult();
+                if (Program.Forms.frmBuyResult.InvokeRequired)
+                {
+                    Frm open = ShowBuyResult;
+                    Program.Forms.frmBuyResult.Invoke(open);
+                }
+                else
+                {
+                    Program.Forms.frmBuyResult.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+        }
+        /// <summary>
+        /// 初始化，万一没有连接成功，激活frmOrange中由于连接以后不能使用的控件
+        /// </summary>
+        private void initial()
+        {
+            if (Program.Forms.frmOrgan.InvokeRequired)
+            {
+                Frm enable = initial;
+                Program.Forms.frmOrgan.Invoke(enable);
+            }
+            else
+            {
+                Program.Forms.frmOrgan.ipBox1.Enabled = true;
+                Program.Forms.frmOrgan.btnJoin.Enabled = true;
+                Program.Forms.frmOrgan.Refresh();
+            }
+        }
+
+        /// <summary>
+        /// 根据不同的年限给相应的记录该年限的字段加上账款
+        /// </summary>
+        /// <param name="yearLimit">年限</param>
+        /// <param name="fund">金额总数</param>
+        private void UpdateAccount(List<double> list, int yearLimit, double fund)
+        {
+            if (yearLimit == 1)
+            {
+                list[0] += fund;
+            }
+            else if (yearLimit == 2)
+            {
+                list[1] += fund;
+            }
+            else if (yearLimit == 3)
+            {
+                list[2] += fund;
+            }
+            else if (yearLimit == 4)
+            {
+                list[3] += fund;
+            }
+            else if (yearLimit == 5)
+            {
+                list[4] += fund;
+            }
+        }
+
+        void OnDisconnectedEvent(object sender, ConnectionEventArgs e)
+        {
+            //客户端
+            SetTextInfo("已和服务器断开连接 ");
+        }
+
+        void OnSendSuccessEvent(object sender, MessageEventArgs e)
+        {
+            //SetText("\n数据发送成功:");//+e.Buffer.ToString());
+            if (PubVar.identify == 0)
+            {
+
+            }
+            //客户端
+            if (PubVar.identify == 1)
+            {
+
+            }
+        }
+
+        delegate void refreshCash(double fund);
+        private void refresh_cash(double fund)
+        {
+            if (Program.Forms.frmMain.lbl_Cash.InvokeRequired)
+            {
+                refreshCash t = refresh_cash;
+                Program.Forms.frmMain.lbl_Cash.Invoke(t, fund);
+            }
+            else
+            {
+                Program.Forms.frmMain.lbl_Cash.Text = fund.ToString() + "百万";
+                Program.Forms.frmMain.lbl_Cash.Refresh();
+            }
+        }
+        
+        void OnReceivedEvent(object sender, MessageEventArgs e)
+        {
+            string receiveStr = Encoding.Unicode.GetString(e.Buffer);
+            if(PubVar.live==true)
+            receiveArr = receiveStr.ToString().Split(("//").ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+
+
+            #region
+            if (receiveArr[0].ToString() == "DisConnect")
+            {
+                ILSGOfrmTipBox mesbox = new LSGOfrmInforMessageBox();
+                mesbox.ShowMessage("该房间人数已满，请选择其他房间", "系统提示");
+                Program.client.ClientNet.Stop();
+                initial();
+            }
+            #endregion
+            #region//连接成功时，记录必要的信息
+            if (receiveArr[0].ToString() == PubVar.ConstOrder.ToString())
+            {
+                if (receiveArr[1].ToString() == OrderInfo.ServerName.ToString())
+                {
+                    ClientServerName = receiveArr[2].ToString();
+                    //发送决策者信息
+                    if (!AlreadySendInfo)
+                    {
+                        OrderStr = OrderInfo.PlayerInfo.ToString() + "//" + PubVar.PlayerName.ToString();
+                        Program.client.ClientNet.BeginSend(Encoding.Unicode.GetBytes(OrderStr));
+                        SetTextInfo("已经连接至服务器 ");
+                        AlreadySendInfo = true;
+                    }
+                }
+                if (receiveArr[1].ToString() == OrderInfo.PlayerCount.ToString())
+                {
+                    playerCount = Convert.ToInt16(receiveArr[2].ToString());
+                    PubVar.playCount = playerCount;
+                    TP tp;
+                    PubVar.tp.Clear();
+                    for (int i = 0; i < playerCount; i++)
+                    {
+                        tp = new TP();
+                        tp.playerName = receiveArr[i + 3];
+                        PubVar.tp.Add(tp);
+                    }
+                    if (playerCount > 1)
+                    {
+                        int j = 1;
+                        for (int i = 3; i < receiveArr.Length; i++)
+                        {
+                            string pic = "pic_" + j.ToString();
+                            string grp = "grp_" + j.ToString();
+                            if (receiveArr[i] != PubVar.PlayerName)
+                            {
+                                ChangePic(pic, "3.jpg");
+                                ChangeGrp(grp, receiveArr[i].ToString());
+                                j++;
+                            }
+
+                        }
+                    }
+                }
+            }
+            else if (receiveArr[0] == MessageType.changeName.ToString())
+            {
+                PubVar.PlayerName = "_"+PubVar.PlayerName+"_";
+                ChangePic("pic_0", "2.jpg");
+                ChangeGrp("grp_0", PubVar.PlayerName);
+                SetTextInfo("系统检测到您的名字和另一位决策者相同，系统已强制修改了您的名字！ ");
+            }
+            #endregion
+            else if (receiveArr[0] == MessageType.playerChange.ToString())
+            {
+                PubVar.playCount = Convert.ToInt32(receiveArr[1]);
+                playerCount = PubVar.playCount;
+                /////重新计算机器人
+                
+                //int computer = 0;
+                
+                //        computer = Math.Round((string)receiveArr[1]);
+                //        PubVar.listInt.Add(computer);
+                    
+                
+
+
+            }
+
+            //开始游戏，关闭组织游戏窗口
+            else if (receiveArr[0].ToString() == MessageType.frmOrgan.ToString())
+            {
+                if (receiveArr[1].ToString() == MessageType.btnStartGame.ToString())
+                {
+                   
+                    PubVar.closeOrstart = true;
+                    thread = new Thread(CloseOrganFrm);
+                    thread.Start();
+                    
+                }
+            }
+            //根据决策者人数，生成机器人数及其相关统计
+            else if (receiveArr[0] == MessageType.computerCount.ToString())
+            {
+                TP tp;
+                List<int> list = new List<int>();
+                int computer = 0;
+                while (PubVar.listInt == null || PubVar.listInt.Count != 6 - PubVar.playCount)
+                {
+                    for (int i = 0; i < 6 - PubVar.playCount; i++)
+                    {
+                        computer = Convert.ToInt32((string)receiveArr[i + 1]);
+                        PubVar.listInt.Add(computer);
+                    }
+                }
+                string order = MessageType.initialComOver.ToString();
+                ClientNet.BeginSend(Encoding.Unicode.GetBytes(order));
+            }
+            //接受的指令来自订单
+            else if (receiveArr[0].ToString() == MessageType.ComEleFrm.ToString())
+            {
+                lock (this)
+                {
+                    if (receiveArr[1].ToString() == MessageType.CloseSplash.ToString())
+                    {
+                        System.Threading.Thread.Sleep(1000);
+                        if (Program.Forms.frmSplash != null)
+                        {
+                            lock (this)
+                            {
+                                CloseSplashFrm();
+                            }
+                        }
+                        thread = new Thread(ShowQuantity);
+                        thread.SetApartmentState(ApartmentState.STA);
+                        thread.Start();
+                    }
+                    else if (receiveArr[1].ToString() == MessageType.BidReslult.ToString())
+                    {
+                        if (receiveArr[2].ToString() == MessageType.Someone.ToString())
+                        {
+                            if (receiveArr[3].ToString() == PubVar.PlayerName)
+                            {
+
+                                ShowBidReslut("恭喜你获得本次订单！下面进行下一次的订单 \n");
+                                PubVar.listBidResult.Add("恭喜你获得本次订单！下面进行下一次的订单 \n");
+
+                                Account account = new Account();
+                                account.Fund = Convert.ToDouble(PubVar.TempBill.Sum);
+                                account.YearLimit = Convert.ToInt32(PubVar.TempBill.YearLimit);
+
+                                if (PubVar.TempBill.BillType == BillType.Bid)
+                                {
+                                    if (account.YearLimit == 0)
+                                    {
+                                        //PubVar.Fund += account.Fund;//如何记录收入
+                                        PubVar.inCome += account.Fund;
+                                    }
+                                    PubVar.BidEleResult.Add(PubVar.TempBill);
+                                }
+                                else if (PubVar.TempBill.BillType == BillType.Shopping)
+                                {
+                                    Program.factory.PAccount.Add(account);
+                                    UpdateAccount(PubVar.PaccountList, account.YearLimit, account.Fund);
+                                    PubVar.coalPrice = (PubVar.coal * PubVar.coalPrice + PubVar.TempBill.Price * PubVar.TempBill.Amount) / (PubVar.TempBill.Amount + PubVar.coal);
+                                    PubVar.bidCoalResult.Add(PubVar.TempBill);
+                                    PubVar.coal += PubVar.TempBill.Amount;
+                                    PubVar.Fund -= account.Fund;//如何记录收入
+                                    PubVar.coalValueLeft += account.Fund;
+                                    refresh_cash(PubVar.Fund);
+                                }
+                                
+                            }
+                            else
+                            {
+                                //此处添加if(PubVar.year!=1)，用以屏蔽第一年竞价机器人修改
+                                if (PubVar.year != 1)
+                                {
+                                    ShowBidReslut("恭喜决策者：" + receiveArr[3].ToString() + "获得本次订单，他所出的价格为：" + receiveArr[4].ToString() + "\n");
+                                    PubVar.listBidResult.Add("恭喜决策者：" + receiveArr[3].ToString() + "获得本次订单，他所出的价格为：" + receiveArr[4].ToString() + "\n");
+                                }
+                            }
+                        }
+                        else if (receiveArr[2].ToString() == MessageType.Nobody.ToString())
+                        {
+                            string str = string.Empty;
+                            for (int i = 0; i < PubVar.listBidResult.Count; i++)
+                            {
+                                str += PubVar.listBidResult[i];
+                            }
+                            ShowBidReslut("本次订单所有决策者均放弃，订单作废 \n");
+                            PubVar.listBidResult.Add("本次订单所有决策者均放弃，订单作废 \n");
+                        }
+                        string order = MessageType.ComEleFrm.ToString() + "//" + MessageType.isClose.ToString();
+                        System.Threading.Thread.Sleep(300);
+                        Program.client.ClientNet.BeginSend(Encoding.Unicode.GetBytes(order));
+                    }
+                    else if (receiveArr[1].ToString() == MessageType.Next.ToString())
+                    {
+                        System.Threading.Thread.Sleep(300);
+                        thread.Abort();
+                        if (receiveArr[2].ToString() == MessageType.frmQuantity.ToString())
+                        {
+                            Program.Forms.frmQuantity = new Bid_EleQuantity();
+                            thread = new Thread(ShowQuantity);
+                        }
+                        else if (receiveArr[2].ToString() == MessageType.frmEleRsult.ToString())
+                        {
+                            PubVar.listBidResult.Clear();
+                            Program.Forms.frmEleResult = new Form_BidEleResult();
+                            thread = new Thread(ShowEleResult);
+                        }
+                        else if (receiveArr[2].ToString() == MessageType.frmBuyResult.ToString())
+                        {
+                            PubVar.listBidResult.Clear();
+                            thread = new Thread(ShowBuyResult);
+                        }
+                        thread.SetApartmentState(ApartmentState.STA);
+                        thread.Start();
+                    }
+                }
+            }
+            #region//分数统计//改动
+            else if (receiveArr[0] == MessageType.totalPoint.ToString())
+            {
+                for (int i = 1; i <= playerCount; i++)
+                {
+                    for (int j = 0; j < playerCount; j++)
+                    {
+                        if (receiveArr[2 * i - 1] == PubVar.tp[j].playerName)
+                        {
+                            PubVar.tp[j].totalPoint = Convert.ToDouble(receiveArr[2 * i]);
+                        }
+                    }
+                }
+                if (playerCount < 6)
+                {
+                    for (int i = playerCount; i < 6; i++)
+                    {
+                        int j = 0;
+                        for (; j < 10; j++)
+                        {
+                            if (PubVar.tp[i].rigth[j] > 0)
+                                continue;
+                            else
+                            {
+                                PubVar.tp[i].totalPoint = PubVar.tp[i].rigth[j-1];
+                                break;
+                            }
+                        }
+                        if (j == 10)
+                        {
+                            PubVar.tp[i].totalPoint = PubVar.tp[i].rigth[j-1];
+                        }
+                    }
+                }
+
+                //string con = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + PubVar.StartupPath + "\\Computer1.mdb";
+                //OleDbConnection connection = new OleDbConnection(con);
+                //OleDbDataReader reader = default(OleDbDataReader);
+                //try
+                //{
+                //    connection.Open();
+                //    for (int i = 0; i < 6; i++)
+                //    {
+                //        totalPoint tp = new totalPoint();
+                //        tp.playerName = PubVar.tp[i].playerName;
+                //        tp.totalpoint = PubVar.tp[i].totalPoint;
+                //        tp.createTime = DateTime.Now.Date.ToString();
+                //        PubVar.totalpoint.Add(tp);
+                //        string sql = string.Format("insert into Hero values('{0}',{1},'{2}') ", tp.playerName, tp.totalpoint, tp.createTime);
+                //        OleDbCommand command = new OleDbCommand(sql, connection);
+                //        command.ExecuteNonQuery();
+                //    }
+
+                //}
+                //catch (Exception ex)
+                //{
+                //    mesbox.ShowMessage(ex.Message, "提示");
+                //}
+                //finally
+                //{
+                //    connection.Close();
+                //}
+
+
+                /////////////modify by tianxin
+                OleDbConnection connection = ERPLibrary.DataAClass.getInstanse().getDAO();
+                try
+                {
+                    connection.Open();
+                    for (int i = 0; i < 6; i++)
+                    {
+                        totalPoint tp = new totalPoint();
+                        tp.playerName = PubVar.tp[i].playerName;
+                        tp.totalpoint = PubVar.tp[i].totalPoint;
+                        tp.createTime = DateTime.Now.ToString();
+                        PubVar.totalpoint.Add(tp);
+                        string score = "";
+                        double t = (double)tp.totalpoint;
+                        if (t < 6000)
+                            score = "折合分:" + "不及格";
+                        else if (t <= 8000)
+                            score = "折合分:" + (Math.Round(t / 100)).ToString();
+                        else if (t < 10000)
+                            score = "折合分:" + (Math.Round(80 + (t - 8000) / 200)).ToString();
+                        else
+                            score = "折合分:" + 95.ToString();
+
+                        string sql = "insert into score(yxid,playerName,role,totalPoint,score,createTime) " +
+                                    "values('" + PubVar.YXID + "','"
+                                    + tp.playerName + "','"
+                                    + PubVar.identify + "',"
+                                    + tp.totalpoint + ",'"
+                                    + score + "','"
+                                    + tp.createTime + "')";
+
+                                   string sql_g = "insert into grb_tmp(yxid,playerName,totalPoint) " +
+                                                "values('" + PubVar.YXID + "','"
+                                                + tp.playerName + "','"
+                                                + tp.totalpoint + ",')";
+                                   if (PubVar.live == true)
+                                   {
+                                       OleDbCommand command = new OleDbCommand(sql, connection);
+                                       OleDbCommand command1 = new OleDbCommand(sql_g, connection);
+                                       command.ExecuteNonQuery();
+                                       command1.ExecuteNonQuery();
+                                   }
+                        //OleDbCommand command2 = new OleDbCommand(sql_gt, connection);
+                        
+                        //command2.ExecuteNonQuery();
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    mesbox.ShowMessage(ex.Message, "提示");
+                }
+                finally
+                {
+                    connection.Close();
+                }
+                //////////////////end
+            }
+
+
+
+            else if (receiveArr[0] == MessageType.ThisYearPoint.ToString())
+            {
+                lock (receiveArr)
+                {
+                    for (int j = 0; j < playerCount; j++)
+                    {
+                        for (int i = 1; i <= playerCount; i++)
+                        {
+                            if (PubVar.tp[j].playerName == receiveArr[3 * i - 2])
+                            {
+                                PubVar.tp[j].rigth[PubVar.year - 1] = Convert.ToDouble(receiveArr[3 * i - 1]);
+                                PubVar.tp[j].profit[PubVar.year - 1] = Convert.ToDouble(receiveArr[3 * i]);
+                            }
+                        }
+                    }
+                }
+            }
+            #endregion
+        }
+
+        void OnExceptionEvent(object sender, ExceptionEventArgs e)
+        {
+            //SetText("\n出现异常！异常信息：" + e.Exception.ToString());
+            if (PubVar.identify == 0)
+            {
+
+            }
+            //客户端
+            if (PubVar.identify == 1)
+            {
+
+            }
+        }
+
+        void OnConnectedEvent(object sender, ConnectionEventArgs e)
+        {
+        }
+        #region 枚举
+        enum OrderInfo
+        {
+            /// <summary>
+            /// 决策者个数
+            /// </summary>
+            PlayerCount,
+            /// <summary>
+            /// 断开指令
+            /// </summary>
+            DisConnect,
+            /// <summary>
+            /// 显示订单窗口
+            /// </summary>
+            BillShow,
+            /// <summary>
+            /// 关闭订单窗口
+            /// </summary>
+            BillClose,
+            /// <summary>
+            /// 订单价格
+            /// </summary>
+            BillPrice,
+            /// <summary>
+            /// 订单结果指令
+            /// </summary>
+            BillResult,
+            /// <summary>
+            /// 决策者信息
+            /// </summary>
+            PlayerInfo,
+            /// <summary>
+            /// 服务器名称
+            /// </summary>
+            ServerName,
+        }
+        #endregion
+    }
+}

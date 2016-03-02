@@ -1,0 +1,22 @@
+  Dictionary<string,Socket> sf=new Dictionary<string,Socket>();
+        void accept()
+        {
+            while (true)
+            {
+                con = Watch.Accept();
+                sf.Add(con.RemoteEndPoint.ToString(),con);
+                message("客户端连接成功"+con.RemoteEndPoint.ToString());
+                listBox1.Items.Add(con.RemoteEndPoint.ToString());
+            }
+        }
+
+
+
+
+
+
+ byte[] messagebyte=Encoding.UTF8.GetBytes(txtMessage.Text);
+            string a=listClient.Text.ToString();
+            ClientIp[a].Send(messagebyte);
+            Message("服务器说： "+txtMessage.Text);
+            txtMessage.Text = null;

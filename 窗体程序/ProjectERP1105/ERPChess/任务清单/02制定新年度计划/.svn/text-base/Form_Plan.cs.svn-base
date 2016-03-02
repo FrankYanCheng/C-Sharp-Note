@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using DevComponents.DotNetBar;
+using LSGO.PresentationLayer;
+
+namespace ERPChess
+{
+    public partial class Form_Plan : LSGOfrmBasement
+    {
+        public Form_Plan()
+        {
+            InitializeComponent();
+        }
+
+        private void buttonX1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
+}

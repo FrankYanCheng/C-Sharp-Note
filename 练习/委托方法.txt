@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
+
+namespace ConsoleApplication126
+{   delegate void a(string food);
+    class user
+    {
+        private string name;
+        public user(string Name)
+        {
+            this.name = Name;
+        }
+        public void eating(string food)
+        {
+            Console.WriteLine(name + "吃" + food);
+        }
+    }
+    class text
+    {
+        static void ee(string food,params a[] values)
+        {
+            if (values==null)
+            {
+                Console.WriteLine("OVER!");
+            }
+            else 
+            {
+                a eatchain=null;
+                Console.WriteLine(values);
+                foreach (a q in values)
+                    eatchain += q;
+                eatchain(food);
+            }
+        }
+        static void Main()
+        {
+            user A = new user("张三");
+            user B = new user("李四");
+            a x = new a(A.eating);
+            a z = new a(B.eating);
+            ee("西瓜", z, x);
+            
+        }
+    }
+}
+          
+           

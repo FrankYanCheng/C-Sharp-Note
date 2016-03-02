@@ -1,0 +1,122 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using DevComponents.DotNetBar;
+using System.Data.OleDb;
+using ERPLibrary;
+using LSGO.PresentationLayer;
+
+namespace ERPChess
+{
+    public partial class Form_BuyResult : LSGOfrmBasement
+    {
+        public Form_BuyResult()
+        {
+            InitializeComponent();
+        }
+        delegate void paRefresh(double d);
+        private void paccountRefresh(double d)
+        {
+            if (Program.Forms.frmMain.lbl_Paccount.InvokeRequired)
+            {
+                paRefresh r = paccountRefresh;
+                Program.Forms.frmMain.lbl_Paccount.Invoke(r, d);
+            }
+            else
+            {
+                Program.Forms.frmMain.lbl_Paccount.Text = d.ToString()+"百万";
+                Program.Forms.frmMain.lbl_Paccount.Refresh();
+            }
+        }
+        delegate void step();
+        private void nextStep()
+        {
+            if (Program.Forms.frmMain.listLklb[Program.Forms.frmMain.step-1].InvokeRequired)
+            {
+                step s = nextStep;
+                Program.Forms.frmMain.listLklb[Program.Forms.frmMain.step-1].Invoke(s);
+            }
+            else
+            {
+                Program.Forms.frmMain.listLklb[Program.Forms.frmMain.step-1].Enabled = true;
+                Program.Forms.frmMain.listLklb[Program.Forms.frmMain.step-1].Refresh();
+            }
+        }
+        private void refreshMain()
+        {
+            if (Program.Forms.frmMain.lbl_CurState.InvokeRequired)
+            {
+                step s = refreshMain;
+                Program.Forms.frmMain.lbl_CurState.Invoke(s);
+            }
+            else
+            {
+                Program.Forms.frmMain.lbl_CurState.Text = "正在决策：第" + PubVar.year.ToString() + "年 第" + Program.Forms.frmMain.step.ToString() + "步 " + Program.Forms.frmMain.listLklb[Program.Forms.frmMain.step - 1].Text;
+                Program.Forms.frmMain.lbl_CurState.Refresh();
+            }
+        }
+        private void Form_BuyResult_Load(object sender, EventArgs e)
+        {
+            Program.Forms.frmMain.step++;
+            int rows = 0;
+            if (PubVar.bidCoalResult != null)
+            {
+                for (int i = 0; i < PubVar.bidCoalResult.Count; i++)
+                {
+                    if (PubVar.bidCoalResult[i].GetTime == PubVar.year)
+                    {
+                        rows++;
+                    }
+                }
+            }
+            dataGridViewX1.RowCount = rows;
+            dataGridViewX3.RowCount = rows;
+            dataGridViewX4.RowCount = rows;
+            int k = 0;
+            if (PubVar.bidCoalResult != null)
+            {
+                for (int i = 0; i < PubVar.bidCoalResult.Count; i++)
+                {
+                    if (PubVar.bidCoalResult[i].GetTime == PubVar.year)
+                    {
+                        dataGridViewX1.Rows[k].Cells[0].Value = PubVar.bidCoalResult[i].BillNum;
+                        dataGridViewX1.Rows[k].Cells[1].Value = PubVar.bidCoalResult[i].Amount;
+                        dataGridViewX1.Rows[k].Cells[2].Value = PubVar.bidCoalResult[i].Price;
+                        dataGridViewX1.Rows[k].Cells[3].Value = PubVar.bidCoalResult[i].YearLimit;
+                        dataGridViewX1.Rows[k].Cells[4].Value = PubVar.bidCoalResult[i].Sum;
+                        dataGridViewX3.Rows[k].Cells[0].Value = PubVar.bidCoalResult[i].Sum * 0.035;
+                        dataGridViewX4.Rows[k].Cells[0].Value = PubVar.bidCoalResult[i].Sum * 0.006;
+                        k++;
+                    }
+                }
+            }
+            double cash = 0;
+            for (int i = 0; i < PubVar.PaccountList.Count; i++)
+            {
+                cash += PubVar.PaccountList[i];
+            }
+            PubVar.accountP = cash;
+            paccountRefresh(Math.Round(cash));
+        }
+
+        private void btn_ok_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < PubVar.bidCoalResult.Count; i++)
+            {
+                PubVar.coal += PubVar.bidCoalResult[i].Amount;
+            }
+            this.Close();
+        }
+
+        private void Form_BuyResult_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            nextStep();
+            refreshMain();
+        }
+    }
+}

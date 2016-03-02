@@ -1,0 +1,4 @@
+  Configuration configue = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            configue.ConnectionStrings.SectionInformation.ProtectSection(null);
+            configue.Save(ConfigurationSaveMode.Full);
+一定要用此名？

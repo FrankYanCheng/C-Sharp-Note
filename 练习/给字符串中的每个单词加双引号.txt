@@ -1,0 +1,11 @@
+ Console.WriteLine("请输入：");
+            string fyc = Console.ReadLine();
+            fyc = "\"" + fyc.Replace(" ", "\" \"") + "\"";
+            Console.WriteLine("{0}",fyc);
+            Console.ReadKey();
+
+
+
+1.ReadKey用来在结束时候看结果不至于跳走的
+2.可以直接对变量进行修改，自己对自己修改，如fyc;
+3.\"是加双引号

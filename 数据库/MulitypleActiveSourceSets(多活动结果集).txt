@@ -1,0 +1,1 @@
+MulitypleActiveSourceSets=true时，可以使用多个sdr型，不然每次要进行关闭

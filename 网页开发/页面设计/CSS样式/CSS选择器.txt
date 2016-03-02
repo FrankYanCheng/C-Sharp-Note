@@ -1,0 +1,15 @@
+<head>
+    <title></title>
+    <style type="text/css">
+        .A{font-size:xx-large}
+        .B{ background-color:Blue}
+    </style>
+</head>
+<body>
+<ul>
+<li style=" cursor:pointer; list-style-type:circle" class="A"><u><font color="blue" >中国发射无人机</font></u></li>
+<li style="list-style-type:circle;cursor:url()">美国五角大楼遭到轰炸</li>
+</ul>
+</body>
+
+style可以覆盖 class

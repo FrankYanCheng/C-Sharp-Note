@@ -1,0 +1,230 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using DevComponents.DotNetBar;
+using System.Threading;
+namespace ERPChess
+{
+    public partial class MainWork : DevComponents.DotNetBar.Office2007Form
+    {
+        public MainWork()
+        {
+            InitializeComponent();
+            this.dataGridViewX1.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewX1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+        }
+
+        private void buttonX1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void MainWork_Load(object sender, EventArgs e)
+        {
+            this.dataGridViewX1.RowCount = 1;
+            this.dataGridViewX1.Rows[0].Cells[0].Value = Math.Round(PubVar.Fund);
+            this.dataGridViewX1.Rows[0].Cells[1].Value = Math.Round(PubVar.EleIncome);
+            this.dataGridViewX1.Rows[0].Cells[2].Value = Math.Round(PubVar.EleIncome * 0.01);
+            PubVar.Fund -= Math.Round(PubVar.EleIncome * 0.01);
+            this.dataGridViewX1.Rows[0].Cells[3].Value = Math.Round(PubVar.Fund);
+            AddResult();
+            if (PubVar.Fund < 0)
+            {
+                Form_Fail frm = new Form_Fail();
+                frm.ShowDialog();
+                Application.Exit();
+            }
+        }
+        private void AddResult()
+        {
+            double coalcost = PubVar.coalValueUse;//本年燃煤费用
+            string receiveStr=pal_sale();
+            string[] receiveArr=receiveStr.Split(("//").ToCharArray(),StringSplitOptions.RemoveEmptyEntries);
+            double cc_sales=Convert.ToDouble(receiveArr[0]);
+            double raccountThisYear=Convert.ToDouble(receiveArr[1]);
+
+            Result result = new Result();
+            result.Cc_sales = Math.Round(cc_sales);
+            result.Cc_fmt_attach = Math.Round((result.Cc_sales * 0.01));
+            result.Cc_fmt_discount =Math.Round( PubVar.discount);
+            result.Cc_fmt_insurance = PubVar.valueguarsanttee;//jhkjjjjjjjjjjjjjjjjjjjjjjjj
+            result.Cc_fmt_Linterest = Math.Round(AnnualInterest());
+            result.Cc_fmt_nitric = Math.Round(PubVar.SNCost+PubVar.ISOCost);
+            result.Cc_fmt_powerRate = Math.Round(result.Cc_sales * 0.04);
+            result.Cc_fmt_Sinterest = Math.Round(PubVar.AnnualInterestS);
+
+            result.Cc_mbc_blowdown = Math.Round(coalcost * 0.02);
+            result.Cc_mbc_coal = Math.Round(coalcost);
+            result.Cc_mbc_dep = Math.Round(PubVar.depreciation);
+            result.Cc_mbc_entrust = Math.Round(coalcost * 0.02);
+            result.Cc_mbc_material = Math.Round(coalcost * 0.035);
+            result.Cc_mbc_oil = Math.Round(PubVar.oiluse);
+            result.Cc_mbc_others = Math.Round(coalcost * 0.23);
+            result.Cc_mbc_repair = Math.Round(coalcost * 0.07);
+            result.Cc_mbc_water = Math.Round(coalcost * 0.006);
+            result.Cc_mbc_welfare = Math.Round(3 * 10 * Math.Pow(1.08, PubVar.year-1));
+            result.Cc_mbc_littleOilfire = Math.Round(PubVar.littleOilfire);
+            result.Cc_mbc_total = Math.Round(result.Cc_mbc_blowdown + result.Cc_mbc_coal + result.Cc_mbc_dep + result.Cc_mbc_entrust +
+                result.Cc_mbc_material + result.Cc_mbc_oil + result.Cc_mbc_others + result.Cc_mbc_repair + result.Cc_mbc_water +
+                +result.Cc_mbc_welfare +
+                result.Cc_fmt_powerRate + result.Cc_fmt_nitric + result.Cc_fmt_insurance+result.Cc_mbc_littleOilfire);
+
+            result.Cc_o_building = Math.Round(PubVar.ValueOnBuilding);
+            result.Cc_o_cash = Math.Round(PubVar.Fund);
+            result.Cc_o_Lloan = Math.Round(PubVar.loanL);
+            result.Cc_o_Tdevicevalue = Math.Round(PubVar.Tdevicevalue);
+            result.Cc_o_Paccount = 0;//Math.Round(Paccount());已经取消应付账款
+            result.Cc_o_Raccount = Math.Round(Raccount());
+            result.Cc_o_saveCoal = Math.Round(PubVar.coalValueLeft);
+            result.Cc_o_Sloan = Math.Round(PubVar.sloan.shortLoanAmount);
+
+            result.Pal_cost = Math.Round(result.Cc_mbc_total);
+            result.Pal_financial = Math.Round(result.Cc_fmt_Sinterest + result.Cc_fmt_Linterest + result.Cc_fmt_discount);
+            result.Pal_manage = Math.Round(coalcost * 0.14);
+            result.Pal_sale = Math.Round(result.Cc_sales);
+            result.Pal_attach = Math.Round(result.Pal_sale * 0.01);
+            result.Pal_TBusProfit = Math.Round(result.Pal_sale - result.Pal_cost - result.Pal_attach);
+            result.Pal_busProfit = Math.Round(result.Pal_TBusProfit - result.Pal_financial);
+            result.Pal_profit = Math.Round(result.Pal_busProfit);
+
+            if (PubVar.closing[PubVar.year - 1].Anl_rprofitSave + PubVar.closing[PubVar.year - 1].Anl_rNetprofit < 0)
+            {
+                if (result.Pal_busProfit + PubVar.closing[PubVar.year - 1].Anl_rprofitSave + PubVar.closing[PubVar.year - 1].Anl_rNetprofit < 0)
+                {
+                    result.Cc_fmt_tax = 0;
+                }
+                else
+                {
+                    result.Cc_fmt_tax = Math.Round((result.Pal_busProfit + PubVar.closing[PubVar.year - 1].Anl_rprofitSave + PubVar.closing[PubVar.year - 1].Anl_rNetprofit) * 0.25);
+                }
+            }
+            else if (result.Pal_busProfit > 0)
+            {
+                result.Cc_fmt_tax = Math.Round(result.Pal_busProfit * 0.25);
+            }
+            else
+            {
+                result.Cc_fmt_tax = 0;
+            }
+
+            result.Pal_tax = result.Cc_fmt_tax;//待讨论
+            result.Pal_netProfit = Math.Round(result.Pal_profit - result.Pal_tax);
+
+            result.Anl_debtLloan = Math.Round(PubVar.loanL);
+            result.Anl_debtPaccount = 0;// Math.Round(Paccount());已经取消应付账款
+            result.Anl_debtSloan = Math.Round(PubVar.sloan.shortLoanAmount);
+            result.Anl_debtTax = Math.Round(result.Pal_tax);
+            result.Anl_debtT = Math.Round(result.Anl_debtLloan + result.Anl_debtPaccount + result.Anl_debtSloan + result.Anl_debtTax);
+
+            result.Anl_proBuilding = Math.Round(PubVar.ValueOnBuilding);//
+            result.Anl_proCash = Math.Round(PubVar.Fund);
+            result.Anl_proTdevicevalue = Math.Round(PubVar.Tdevicevalue);
+            result.Anl_proRaccount = Math.Round(Raccount());
+            result.Anl_proSave = Math.Round(PubVar.coalValueLeft);//存的是钱？
+            result.Anl_proTLiquid = Math.Round(result.Anl_proCash + result.Anl_proRaccount + result.Anl_proSave);
+            result.Anl_proTSolid = Math.Round(result.Anl_proTdevicevalue + result.Anl_proBuilding);
+            result.Anl_proTotal = Math.Round(result.Anl_proTLiquid + result.Anl_proTSolid);
+
+            result.Anl_rstock = 300;
+            result.Anl_rNetprofit = Math.Round(result.Pal_netProfit);
+            result.Anl_rprofitSave = Math.Round(PubVar.closing[PubVar.year - 1].Anl_rprofitSave + PubVar.closing[PubVar.year - 1].Anl_rNetprofit);
+            result.Anl_rightsT = Math.Round(result.Anl_rNetprofit + result.Anl_rprofitSave + result.Anl_rstock);          //////frwufhmdcwelhktfhfrhfjkdh
+            result.Anl_rightsDebt = Math.Round(result.Anl_debtT + result.Anl_rightsT);
+            PubVar.closing.Add(result);
+
+            //有改动
+            double right = 0;
+            double profit = 0;
+            right = result.Anl_rightsT;
+            profit = result.Anl_rNetprofit;
+            string order = MessageType.ThisYearPoint.ToString() + "//" + PubVar.PlayerName + "//" + right.ToString() + "//" + profit.ToString();
+            Program.client.ClientNet.BeginSend(Encoding.Unicode.GetBytes(order));
+            if (PubVar.year == 15)
+            {
+                Thread.Sleep(200);
+                double totalPoints = 0;
+                totalPoints = GameOver.total_Points();
+                order = MessageType.ThisYearPoint.ToString() + "//" + PubVar.PlayerName + "//" + totalPoints.ToString();
+                Program.client.ClientNet.BeginSend(Encoding.Unicode.GetBytes(order));
+            }
+            //
+            PubVar.lloan = new LoanList();
+        }
+        /// <summary>
+        /// 售电
+        /// </summary>
+        /// <returns>售电额</returns>
+        private string pal_sale()
+        {
+            double temp = 0;//销售额
+            double sum = 0;//应收账款
+            if (PubVar.BidEleResult != null)
+            {
+                for (int i = 0; i < PubVar.BidEleResult.Count; i++)
+                {
+                    if (PubVar.BidEleResult[i].IsCommite)
+                    {
+                        temp += PubVar.BidEleResult[i].Sum;
+                        if (PubVar.BidEleResult[i].YearLimit != 0)
+                        {
+                            sum += PubVar.BidEleResult[i].Sum;
+                        }
+                    }
+                }
+                for (int i = PubVar.BidEleResult.Count - 1; i >= 0; i--)
+                {
+                    if (PubVar.BidEleResult[i].IsCommite)
+                    {
+                        PubVar.BidEleResult.Remove(PubVar.BidEleResult[i]);
+                    }
+                }
+            }
+            return temp+"//"+sum;
+        }
+        /// <summary>
+        /// 应收账款
+        /// </summary>
+        /// <returns></returns>
+        private double Raccount()
+        {
+            double sum = 0;
+            if (Program.factory.RAccount != null)
+            {
+                for (int i = 0; i < Program.factory.RAccount.Count; i++)
+                {
+                    sum += Program.factory.RAccount[i].Fund;
+                }
+            }
+            return sum;
+        }
+        /// <summary>
+        /// 应付账款
+        /// </summary>
+        /// <returns></returns>
+        private double Paccount()
+        {
+            double sum = 0;
+            if (Program.factory.PAccount != null)
+            {
+                for (int i = 0; i < Program.factory.PAccount.Count; i++)
+                {
+                    sum += Program.factory.PAccount[i].Fund;
+                }
+            }
+            return sum;
+        }
+        private double AnnualInterest()
+        {
+            double sum = 0;
+            for (int i = 0; i < PubVar.year; i++)
+            {
+                sum += PubVar.longloanlist[i].AnnualInterest;
+            }
+            return sum;
+        }
+    }
+}

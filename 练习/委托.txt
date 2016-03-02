@@ -1,0 +1,60 @@
+
+重要的用途在事件和事件的处理
+
+一：委托(起全局引导函数变量的作用）
+委托函数帮忙带着变量
+
+1.委托的声明以及它在主函数里的关系
+  a.首先用delegate声明委托，然后加上类型和名字以及括号里边的参数
+  b.当然在后边的主函数里也要将命名的委托赋给一个函数，而这个函数的参数就是委托里的参数（和结构函数里的定义一样）
+  c.委托函数=new 命名的委托 （用new关键字创建一个新的委托）（用到委托里的函数参数的函数）
+
+2.委托与各个函数之间的关系
+  只要与委托里的参数对应，就能调用
+二：IndexOf的用法
+   int commaPos = input.IndexOf(',');
+  input函数里的字段在,号处分开，将,的位置赋值给commaPos
+  在用这个函数的时候联系Substring命令，可以将input.Substring(0,n)这类截取字符串赋值
+三；
+1，已经用了 input = Console.ReadLine();
+            if (input == "乘")
+                process = new processDelegate(Mulitiply);
+为什么这里可以重复定义？
+就是可以重新赋值，但是不能重新说类型了
+2.注意函数的显示转换，特别是输入的时候是string类型
+  
+
+
+
+delegate double processDelegate(double param1, double param2);
+        static double Mulitiply(double param1,double param2)
+        {return param1* param2;
+        }
+        static double Divide(double param1,double param2)
+        {
+            return param1 * param2;
+        }
+
+        static void Main(string[] args)
+        {
+            processDelegate process;
+            Console.WriteLine("输入两个数字，用逗号分开");
+            string input = Console.ReadLine();
+            int commaPos = input.IndexOf(',');
+            double param1 = Convert.ToDouble(input.Substring(0, commaPos));
+            double param2 = Convert.ToDouble(input.Substring(commaPos + 1, input.Length - commaPos - 1));
+            Console.WriteLine("请输入是乘还是除");
+            input = Console.ReadLine();
+            if (input == "乘")
+                process = new processDelegate(Mulitiply);
+            else process = new processDelegate(Divide);
+            Console.WriteLine("结果：{0}", process(param1, param2));
+            Console.ReadKey();
+
+
+
+
+                
+
+        }
+  

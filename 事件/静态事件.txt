@@ -1,0 +1,61 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication128
+{
+    class fruit
+    {
+        public delegate void fruiter(string food);
+        public static  event fruiter apple;
+        public static event fruiter peer;
+        public void eatapple()
+        {
+            Console.WriteLine("有人开始吃苹果了");
+            apple("苹果");
+        }
+        public void eatpeer()
+        {
+            Console.WriteLine("有人开始吃梨子了");
+            peer("梨子");
+        }
+    }
+    class eater
+    {
+        private string name;
+        public eater(string Name)
+        {
+            this.name = Name;
+        }
+        public void eatname(string food)
+        {
+            Console.WriteLine(name + "在偷吃" + food + "!");
+        }
+    }
+    class text
+    {
+        static void Main()
+        {
+            eater A = new eater("张三");
+            eater B = new eater("李四");
+            eater C = new eater("王五");
+            fruit D = new fruit();
+              fruit.apple  += new fruit.fruiter(A.eatname);
+              fruit.apple += new fruit.fruiter(B.eatname);
+              fruit.apple += new fruit.fruiter(C.eatname);
+           fruit.peer += new fruit.fruiter(A.eatname);
+           fruit.peer += new fruit.fruiter(B.eatname);
+            fruit.peer += new fruit.fruiter(C.eatname);
+            D.eatapple();
+            D.eatpeer();
+            Console.WriteLine();
+            Console.WriteLine("王五肚子疼走了");
+            fruit.apple -= new fruit.fruiter(C.eatname);
+            fruit.peer -= new fruit.fruiter(C.eatname);
+            D.eatapple();
+            D.eatpeer();
+
+        }
+    }
+}

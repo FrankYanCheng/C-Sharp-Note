@@ -1,0 +1,64 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication140
+{
+    class Student : IComparable
+    {
+        private string _name;
+        private int _age;
+        public Student(string name, int age)
+        {
+            _name = name;
+            _age = age;
+        }
+        public string Name
+        {
+            get { return _name; }
+            set
+            {
+                _name = value;
+            }
+        }
+        public int Age
+        {
+            get
+            {
+                return _age;
+            }
+            set
+            {
+                _age = value;
+            }
+        }
+        public int CompareTo(object a)
+            {
+                if(!(a is Student))
+                {
+                    throw new ArgumentException("参数必须为Student类型");
+                }
+                    return _age.CompareTo(((Student)a)._age);
+                }
+      
+    }
+    class text
+    {
+        static void Main()
+        {
+            Student[] arr = new Student[5];
+            arr[0] = new Student("张三", 5);
+            arr[1] = new Student("李四", 3);
+            arr[2] = new Student("王五", 2);
+            arr[3] = new Student("马六", 4);
+            arr[4] = new Student("钱七", 1);
+            Array.Sort(arr);
+            foreach (Student i in arr)
+            {
+                Console.WriteLine(i.Name+" "+i.Age);
+            }
+        }
+    }
+}
+      

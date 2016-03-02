@@ -1,0 +1,2 @@
+   dlg.ShowReadOnly = true;
+为真时，输入的文件名无效则不能进行下一步

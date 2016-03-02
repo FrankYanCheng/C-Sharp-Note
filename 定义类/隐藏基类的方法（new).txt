@@ -1,0 +1,31 @@
+直接在派生类中输入和基类中相同的成员即可
+实际就是new定义了隐藏了的成员，由基类访问
+
+        new public  void DoSomething()
+
+
+
+
+ public class MyBaseClass
+    {
+        public virtual void DoSomething()
+        {
+            Console.WriteLine("Base imp");
+        }
+    }
+    public class MyDerivedClass : MyBaseClass
+    {
+
+        static void Main(string[] args)
+        {
+            MyDerivedClass myObj = new MyDerivedClass();
+            MyBaseClass myBaseObj;
+            myBaseObj = myObj;
+            myBaseObj.DoSomething();
+        }
+
+        new public  void DoSomething()
+        {
+            Console.WriteLine("Derived imp");
+        }
+    }

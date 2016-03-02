@@ -1,0 +1,55 @@
+带参数的传入ParameterizedThreadStart
+
+
+
+void road(object name)
+        {
+
+            if (textBox2.Text != null)
+                MessageBox.Show(name + " 新年快乐！","2014年啦！",MessageBoxButtons.OK,MessageBoxIcon.Information);
+             if(textBox2.TextLength==0)
+                MessageBox.Show("大家新年快乐！","2014年啦！",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
+        }
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ParameterizedThreadStart ps = new ParameterizedThreadStart(road);
+            Thread a = new Thread(ps);
+            if(textBox2.Text!=null)
+            a.Start(textBox2.Text);
+        }
+
+
+也可以用
+
+  private void button5_Click(object sender, EventArgs e)
+        {
+         
+            Thread a = new Thread(road);
+            if(textBox2.Text!=null)
+            a.Start(textBox2.Text);
+        }
+
+但是当很多的时候还是用前一种的好
+
+
+
+用泛型的多线程传入多个参数。
+   void manyroad(object u)
+        {
+            List<string> li = u as List<string>;
+            if (li != null)
+            {
+                foreach (string a in li)
+                {
+                    MessageBox.Show(a + "新年快乐！","2014年啦！！",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                }
+                    
+            }
+        }
+        private void button6_Click(object sender, EventArgs e)
+        {
+            ParameterizedThreadStart ps = new ParameterizedThreadStart(manyroad);
+            Thread vvv = new Thread(ps);
+            vvv.Start(new List<string>() {"张三","李四","王五" });
+        }

@@ -1,0 +1,6 @@
+创建一个CSS文件，
+输入类似
+input{background-color:Green} 
+textarea{background-color:inherit}
+只要在头部输入即可
+<link type="text/css" rel="Stylesheet" href="/CSS/CSS1.css" />

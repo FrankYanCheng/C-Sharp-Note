@@ -1,0 +1,7 @@
+ <a href="www.baidu.com">
+    <img src="../Image/1.jpg" />
+    </a>
+<b/>加粗
+<center/>居中
+./一个点代表上一节目录
+/表示根目录

@@ -1,0 +1,22 @@
+1.导入命名空间using system.Thread;
+2.将要执行的代码包装成方法，无返回值，无传入参数。
+3.new一个线程的ThreadStart方法，并用委托传入方法
+4.new 一个线程
+5.调用线程的start方法
+
+也可以将threadstart直接省略，由thread调用
+    private void Count()
+        {
+            DateTime begin = DateTime.Now;
+            for (int i = 0; i < 999999999; i++)
+            {
+            };
+            TimeSpan ts = -begin.Subtract(DateTime.Now);
+            MessageBox.Show("执行完毕！"+ts.TotalSeconds);
+        }
+
+        private void btnMultiThread_Click(object sender, EventArgs e)
+        {
+            Thread a = new Thread(Count);
+            a.Start();
+        }

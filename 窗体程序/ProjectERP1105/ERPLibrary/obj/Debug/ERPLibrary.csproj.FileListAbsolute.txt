@@ -1,0 +1,112 @@
+D:\lt\ERPLibrary\ClassLibrary1\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\ERPLibrary\ClassLibrary1\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\ERPLibrary\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Documents and Settings\Administrator\桌面\ERPLibrary\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Documents and Settings\Administrator\桌面\ERPLibrary\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Documents and Settings\Administrator\桌面\ERPLibrary\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ClassLibrary1\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\ClassLibrary1\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPLibrary\bin\Debug\ERPLibrary.dll
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPLibrary\bin\Debug\ERPLibrary.pdb
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPLibrary\obj\Debug\ERPLibrary.dll
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPLibrary\obj\Debug\ERPLibrary.pdb
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPLibrary\obj\Debug\ERPLibrary.IPBox.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPLibrary\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPLibrary\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPLibrary\bin\Debug\ERPLibrary.dll
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPLibrary\bin\Debug\ERPLibrary.pdb
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPLibrary\obj\Debug\ERPLibrary.IPBox.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPLibrary\obj\Debug\ERPLibrary.dll
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPLibrary\obj\Debug\ERPLibrary.pdb
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPLibrary\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPLibrary\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\ProjectERP\ERPLibrary\bin\Debug\ERPLibrary.dll
+D:\ProjectERP\ERPLibrary\bin\Debug\ERPLibrary.pdb
+D:\ProjectERP\ERPLibrary\obj\Debug\ResolveAssemblyReference.cache
+D:\ProjectERP\ERPLibrary\obj\Debug\ERPLibrary.IPBox.resources
+D:\ProjectERP\ERPLibrary\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\ProjectERP\ERPLibrary\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\ProjectERP\ERPLibrary\obj\Debug\ERPLibrary.dll
+D:\ProjectERP\ERPLibrary\obj\Debug\ERPLibrary.pdb
+I:\火力发电模拟决策系统\ProjectERP\ERPLibrary\bin\Debug\ERPLibrary.dll
+I:\火力发电模拟决策系统\ProjectERP\ERPLibrary\bin\Debug\ERPLibrary.pdb
+I:\火力发电模拟决策系统\ProjectERP\ERPLibrary\obj\Debug\ResolveAssemblyReference.cache
+I:\火力发电模拟决策系统\ProjectERP\ERPLibrary\obj\Debug\ERPLibrary.IPBox.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPLibrary\obj\Debug\GenerateResource-ResGen.read.1.tlog
+I:\火力发电模拟决策系统\ProjectERP\ERPLibrary\obj\Debug\GenerateResource-ResGen.write.1.tlog
+I:\火力发电模拟决策系统\ProjectERP\ERPLibrary\obj\Debug\ERPLibrary.dll
+I:\火力发电模拟决策系统\ProjectERP\ERPLibrary\obj\Debug\ERPLibrary.pdb
+E:\LSGO团队\火力发电\ProjectERP\ERPLibrary\bin\Debug\ERPLibrary.dll
+E:\LSGO团队\火力发电\ProjectERP\ERPLibrary\bin\Debug\ERPLibrary.pdb
+E:\LSGO团队\火力发电\ProjectERP\ERPLibrary\obj\Debug\ResolveAssemblyReference.cache
+E:\LSGO团队\火力发电\ProjectERP\ERPLibrary\obj\Debug\ERPLibrary.IPBox.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPLibrary\obj\Debug\GenerateResource-ResGen.read.1.tlog
+E:\LSGO团队\火力发电\ProjectERP\ERPLibrary\obj\Debug\GenerateResource-ResGen.write.1.tlog
+E:\LSGO团队\火力发电\ProjectERP\ERPLibrary\obj\Debug\ERPLibrary.dll
+E:\LSGO团队\火力发电\ProjectERP\ERPLibrary\obj\Debug\ERPLibrary.pdb
+D:\项目\火力发电安装安装\ProjectERP\ERPLibrary\bin\Debug\ERPLibrary.dll
+D:\项目\火力发电安装安装\ProjectERP\ERPLibrary\bin\Debug\ERPLibrary.pdb
+D:\项目\火力发电安装安装\ProjectERP\ERPLibrary\obj\Debug\ResolveAssemblyReference.cache
+D:\项目\火力发电安装安装\ProjectERP\ERPLibrary\obj\Debug\ERPLibrary.IPBox.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPLibrary\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\项目\火力发电安装安装\ProjectERP\ERPLibrary\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\项目\火力发电安装安装\ProjectERP\ERPLibrary\obj\Debug\ERPLibrary.dll
+D:\项目\火力发电安装安装\ProjectERP\ERPLibrary\obj\Debug\ERPLibrary.pdb
+C:\Users\YHY\Desktop\ProjectERP79\ERPLibrary\bin\Debug\ERPLibrary.dll
+C:\Users\YHY\Desktop\ProjectERP79\ERPLibrary\bin\Debug\ERPLibrary.pdb
+C:\Users\YHY\Desktop\ProjectERP79\ERPLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\YHY\Desktop\ProjectERP79\ERPLibrary\obj\Debug\ERPLibrary.IPBox.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPLibrary\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\YHY\Desktop\ProjectERP79\ERPLibrary\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\YHY\Desktop\ProjectERP79\ERPLibrary\obj\Debug\ERPLibrary.dll
+C:\Users\YHY\Desktop\ProjectERP79\ERPLibrary\obj\Debug\ERPLibrary.pdb
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPLibrary\bin\Debug\ERPLibrary.dll
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPLibrary\bin\Debug\ERPLibrary.pdb
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPLibrary\obj\Debug\ERPLibrary.IPBox.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPLibrary\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPLibrary\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPLibrary\obj\Debug\ERPLibrary.dll
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPLibrary\obj\Debug\ERPLibrary.pdb
+D:\ProjectERP719\ERPLibrary\bin\Debug\ERPLibrary.dll
+D:\ProjectERP719\ERPLibrary\bin\Debug\ERPLibrary.pdb
+D:\ProjectERP719\ERPLibrary\obj\Debug\ResolveAssemblyReference.cache
+D:\ProjectERP719\ERPLibrary\obj\Debug\ERPLibrary.IPBox.resources
+D:\ProjectERP719\ERPLibrary\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\ProjectERP719\ERPLibrary\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\ProjectERP719\ERPLibrary\obj\Debug\ERPLibrary.dll
+D:\ProjectERP719\ERPLibrary\obj\Debug\ERPLibrary.pdb
+D:\ProjectERP725\ERPLibrary\bin\Debug\ERPLibrary.dll
+D:\ProjectERP725\ERPLibrary\bin\Debug\ERPLibrary.pdb
+D:\ProjectERP725\ERPLibrary\obj\Debug\ResolveAssemblyReference.cache
+D:\ProjectERP725\ERPLibrary\obj\Debug\ERPLibrary.IPBox.resources
+D:\ProjectERP725\ERPLibrary\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\ProjectERP725\ERPLibrary\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\ProjectERP725\ERPLibrary\obj\Debug\ERPLibrary.dll
+D:\ProjectERP725\ERPLibrary\obj\Debug\ERPLibrary.pdb
+D:\项目\ProjectERP0804\ERPLibrary\bin\Debug\ERPLibrary.dll
+D:\项目\ProjectERP0804\ERPLibrary\bin\Debug\ERPLibrary.pdb
+D:\项目\ProjectERP0804\ERPLibrary\obj\Debug\ResolveAssemblyReference.cache
+D:\项目\ProjectERP0804\ERPLibrary\obj\Debug\ERPLibrary.IPBox.resources
+D:\项目\ProjectERP0804\ERPLibrary\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\项目\ProjectERP0804\ERPLibrary\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\项目\ProjectERP0804\ERPLibrary\obj\Debug\ERPLibrary.dll
+D:\项目\ProjectERP0804\ERPLibrary\obj\Debug\ERPLibrary.pdb
+D:\项目\ProjectERP0816\ERPLibrary\bin\Debug\ERPLibrary.dll
+D:\项目\ProjectERP0816\ERPLibrary\bin\Debug\ERPLibrary.pdb
+D:\项目\ProjectERP0816\ERPLibrary\obj\Debug\ResolveAssemblyReference.cache
+D:\项目\ProjectERP0816\ERPLibrary\obj\Debug\ERPLibrary.IPBox.resources
+D:\项目\ProjectERP0816\ERPLibrary\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\项目\ProjectERP0816\ERPLibrary\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\项目\ProjectERP0816\ERPLibrary\obj\Debug\ERPLibrary.dll
+D:\项目\ProjectERP0816\ERPLibrary\obj\Debug\ERPLibrary.pdb

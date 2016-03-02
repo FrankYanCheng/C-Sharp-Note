@@ -1,0 +1,79 @@
+1.在类中声明了类
+2. 公共静态在全集中都可用？
+3.每调用一次将i再赋值
+4.不加{0}，可以直接 Console.WriteLine(A.i)
+
+
+
+
+
+ class Program
+    {
+        class A
+        {
+            public static int i = 3;
+            public void add()
+            {
+                i = i + 1;
+            }
+        }
+
+
+            static void Main(string[] args)
+            {
+                A fyc1 = new A();
+                fyc1.add();
+                A fyc2 = new A();
+                fyc2 .add();
+                Console.WriteLine(A.i);
+
+
+            }
+        }
+
+
+
+
+ class Program
+    {
+        class A
+        {
+            public static int i = 3;
+            public void add()
+            {
+                i = i + 1;
+            }
+        }
+
+
+        static void Main(string[] args)
+        {
+            A fyc1 = new A();
+            fyc1.add();
+            A fyc2 = new A();
+            fyc2.add();
+            u();
+            Console.WriteLine("{0}", u());
+            Console.WriteLine(A.i);
+
+
+        }
+        static DateTime u()
+        {
+            return DateTime.Now;
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+

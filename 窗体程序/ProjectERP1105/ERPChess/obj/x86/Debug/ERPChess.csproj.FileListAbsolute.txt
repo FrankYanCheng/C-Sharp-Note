@@ -1,0 +1,1537 @@
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Bid_Capacity.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Bid_EleQuantity.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Form_tex.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Form_Bid.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Form_BidResult.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Form_BuyConference.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Form_BuyResult.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Form_HuiYi.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Form_Loan.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Form_LongLoan.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Form_Plan.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Form_ShortLoan.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.frmMain.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Properties.Resources.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess._12_1FormDiscardOld.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess._12_2FormBuildNew.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Discount.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.MoneyNeedPay.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.RemoveSN.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\GenerateResource-ResGen.read.4.tlog
+C:\Documents and Settings\Administrator\桌面\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Bid_Capacity.resources
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Bid_EleQuantity.resources
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.frmMain.resources
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Form_PayOff.resources
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Form_tex.resources
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Form_Bid.resources
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Form_BidResult.resources
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Form_BuyConference.resources
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Form_BuyResult.resources
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Form_HuiYi.resources
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Form_Loan.resources
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Form_LongLoan.resources
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Form_Plan.resources
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Form_ShortLoan.resources
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Properties.Resources.resources
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.FormDiscardOld.resources
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.FormBuildNew.resources
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Discount.resources
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.MoneyNeedPay.resources
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.RemoveSN.resources
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\ERPChess.Certification.resources
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\GenerateResource-ResGen.read.4.tlog
+C:\Documents and Settings\Administrator\桌面\张正义\LSGOERP\WindowsFormsApplication1\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.Bid_EleQuantity.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.EquipmentRepairFee.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.PayFactoryElectricFee.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.Form_loan1.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.Form_SLoan.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.Form_BidElectric.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.Form_BidEleResult.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.FrmStartProduce.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.FrmCommiteProduct.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.RemoveSN.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.PayPropertyInsurancefee.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.Form_Fail.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.Form_SalePlant.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.Form_ByePlant.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.Form_Discount.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.Form_Register.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.Form_ShowRanking.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.Form_ShowResult.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.frmMain.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.Form_PayOff.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.Form_tex.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.Form_BuyConference.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.Form_BuyResult.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.Form_HuiYi.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.Form_LongLoan.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.Form_Plan.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.Form_ShortLoan.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.Properties.Resources.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.FormDiscardOld.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.FormBuildNew.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.Discount.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.MoneyNeedPay.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.Certification.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\bin\Debug\WindowsFormsApplication1.exe
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\bin\Debug\WindowsFormsApplication1.pdb
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\bin\Debug\ERPLibrary.dll
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\bin\Debug\ERPLibrary.pdb
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\bin\Debug\LSGO.BusinessLogicLayer.Gis.dll
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\bin\Debug\LSGO.PresentationLayer.dll
+C:\Documents and Settings\Administrator\桌面\LSGOERPNew\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Documents and Settings\Administrator\桌面\LSGOERPNew\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.frmBid_Capacity.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.frmLogin.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.frmOrgan.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.EntrustOperation.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.PayPolutionFee.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.PayWageWelfare.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.frmSplash.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.frmView.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.frmPaccount.resources
+C:\Documents and Settings\Administrator\桌面\LSGOERP\ERPChess\obj\x86\Debug\ERPChess.frmRaccount.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\LSGO.PresentationLayer.dll
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\ERPLibrary.dll
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.NetControl.dll
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.MisDBControl.dll
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\Gigasoft.ProEssentials.dll
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.dll
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.dll
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\Interop.ADOX.dll
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\Interop.SQLDMO.dll
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\ERPLibrary.pdb
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.NetControl.pdb
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\LSGO.PresentationLayer.pdb
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\LSGO.PresentationLayer.xml
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.MisDBControl.pdb
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.MisDBControl.xml
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.pdb
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.xml
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.pdb
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.xml
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Guarrante.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FrmTbDatagridView.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.HelpCommonEleBid.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Depreciation.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.MainWork.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmPaccount.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmRaccount.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmSplash.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmView.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmBid_Capacity.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Bid_EleQuantity.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmLogin.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmOrgan.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.EntrustOperation.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.PayPolutionFee.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.EquipmentRepairFee.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.PayFactoryElectricFee.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmLoan.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_SLoan.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_BidElectric.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_BidEleResult.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FrmStartProduce.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FrmCommiteProduct.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.RemoveSN.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.PayPropertyInsurancefee.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.PayWageWelfare.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_Fail.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_SalePlant.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_ByePlant.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_Discount.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_Register.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_ShowRanking.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmMain.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_PayOff.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_tex.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_BuyConference.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_BuyResult.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_HuiYi.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_LongLoan.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_Plan.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_ShortLoan.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Properties.Resources.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FormDiscardOld.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FormBuildNew.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Discount.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.MoneyNeedPay.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Certification.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_ShowResult.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\WindowsFormsApplication1.exe
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\WindowsFormsApplication1.pdb
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.LittleOilFire.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.moneypayback.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.6.tlog
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frm_Hero.resources
+D:\ProjectERP\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+D:\ProjectERP\ERPChess\bin\Debug\WindowsFormsApplication1.exe
+D:\ProjectERP\ERPChess\bin\Debug\WindowsFormsApplication1.pdb
+D:\ProjectERP\ERPChess\bin\Debug\DevComponents.DotNetBar2.dll
+D:\ProjectERP\ERPChess\bin\Debug\ERPLibrary.dll
+D:\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.dll
+D:\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.NetControl.dll
+D:\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.Tool.dll
+D:\ProjectERP\ERPChess\bin\Debug\LSGO.PresentationLayer.dll
+D:\ProjectERP\ERPChess\bin\Debug\Gigasoft.ProEssentials.dll
+D:\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.MisDBControl.dll
+D:\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.dll
+D:\ProjectERP\ERPChess\bin\Debug\Interop.SQLDMO.dll
+D:\ProjectERP\ERPChess\bin\Debug\Interop.ADOX.dll
+D:\ProjectERP\ERPChess\bin\Debug\ERPLibrary.pdb
+D:\ProjectERP\ERPChess\bin\Debug\LSGO.PresentationLayer.pdb
+D:\ProjectERP\ERPChess\bin\Debug\LSGO.PresentationLayer.xml
+D:\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.pdb
+D:\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.xml
+D:\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.NetControl.pdb
+D:\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.Tool.pdb
+D:\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.MisDBControl.pdb
+D:\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.MisDBControl.xml
+D:\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.pdb
+D:\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.xml
+D:\ProjectERP\ERPChess\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frm_Hero.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.LittleOilFire.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.moneypayback.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Guarrante.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FrmTbDatagridView.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.HelpCommonEleBid.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Depreciation.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.MainWork.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmPaccount.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmRaccount.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmSplash.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmView.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmBid_Capacity.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Bid_EleQuantity.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmLogin.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmOrgan.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.EntrustOperation.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.PayPolutionFee.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.EquipmentRepairFee.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.PayFactoryElectricFee.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmLoan.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_SLoan.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_BidElectric.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_BidEleResult.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FrmStartProduce.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FrmCommiteProduct.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.RemoveSN.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.PayPropertyInsurancefee.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.PayWageWelfare.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_Fail.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_SalePlant.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_ByePlant.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_Discount.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_Register.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_ShowRanking.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmMain.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_PayOff.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_tex.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_BuyConference.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_BuyResult.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_HuiYi.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_LongLoan.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_Plan.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_ShortLoan.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Properties.Resources.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FormDiscardOld.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FormBuildNew.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Discount.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.MoneyNeedPay.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Certification.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_ShowResult.resources
+D:\ProjectERP\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+D:\ProjectERP\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.7.tlog
+D:\ProjectERP\ERPChess\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+D:\ProjectERP\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+D:\ProjectERP\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+D:\ProjectERP\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.4.tlog
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.Tool.dll
+C:\Documents and Settings\Administrator\桌面\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.Tool.pdb
+J:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+J:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+J:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+G:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+G:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+G:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\WindowsFormsApplication1.exe
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\WindowsFormsApplication1.pdb
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\DevComponents.DotNetBar2.dll
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\ERPLibrary.dll
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.dll
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.NetControl.dll
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\LSGO.PresentationLayer.dll
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\Gigasoft.ProEssentials.dll
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.MisDBControl.dll
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.dll
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\Interop.ADOX.dll
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\Interop.SQLDMO.dll
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\ERPLibrary.pdb
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\LSGO.PresentationLayer.pdb
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\LSGO.PresentationLayer.xml
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.pdb
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.xml
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.NetControl.pdb
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.Tool.pdb
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.MisDBControl.pdb
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.MisDBControl.xml
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.pdb
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.xml
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frm_Hero.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.LittleOilFire.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.moneypayback.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Guarrante.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FrmTbDatagridView.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.HelpCommonEleBid.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Depreciation.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.MainWork.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmPaccount.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmRaccount.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmSplash.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmView.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmBid_Capacity.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Bid_EleQuantity.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmLogin.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmOrgan.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.EntrustOperation.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.PayPolutionFee.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.EquipmentRepairFee.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.PayFactoryElectricFee.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmLoan.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_SLoan.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_BidElectric.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_BidEleResult.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FrmStartProduce.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FrmCommiteProduct.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.RemoveSN.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.PayPropertyInsurancefee.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.PayWageWelfare.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_Fail.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_SalePlant.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_ByePlant.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_Discount.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_Register.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_ShowRanking.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmMain.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_PayOff.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_tex.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_BuyConference.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_BuyResult.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_HuiYi.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_LongLoan.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_Plan.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_ShortLoan.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Properties.Resources.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FormDiscardOld.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FormBuildNew.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Discount.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.MoneyNeedPay.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Certification.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_ShowResult.resources
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.8.tlog
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.6.tlog
+I:\火力发电模拟决策系统\ProjectERP\ERPChess\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frm_Hero.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.LittleOilFire.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.moneypayback.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Guarrante.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FrmTbDatagridView.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.HelpCommonEleBid.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Depreciation.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.MainWork.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmPaccount.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmRaccount.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmSplash.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmView.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmBid_Capacity.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Bid_EleQuantity.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmLogin.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmOrgan.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.EntrustOperation.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.PayPolutionFee.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.EquipmentRepairFee.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.PayFactoryElectricFee.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmLoan.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_SLoan.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_BidElectric.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_BidEleResult.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FrmStartProduce.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FrmCommiteProduct.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.RemoveSN.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.PayPropertyInsurancefee.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.PayWageWelfare.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_Fail.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_SalePlant.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_ByePlant.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_Discount.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_Register.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_ShowRanking.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmMain.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_PayOff.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_tex.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_BuyConference.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_BuyResult.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_HuiYi.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_LongLoan.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_Plan.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_ShortLoan.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Properties.Resources.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FormDiscardOld.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FormBuildNew.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Discount.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.MoneyNeedPay.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Certification.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_ShowResult.resources
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.4.tlog
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.6.tlog
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.8.tlog
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\bin\Debug\WindowsFormsApplication1.exe
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\bin\Debug\WindowsFormsApplication1.pdb
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\bin\Debug\DevComponents.DotNetBar2.dll
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\bin\Debug\ERPLibrary.dll
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.dll
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.NetControl.dll
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\bin\Debug\Gigasoft.ProEssentials.dll
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.MisDBControl.dll
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.dll
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\bin\Debug\Interop.ADOX.dll
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\bin\Debug\Interop.SQLDMO.dll
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\bin\Debug\ERPLibrary.pdb
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\bin\Debug\LSGO.PresentationLayer.pdb
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\bin\Debug\LSGO.PresentationLayer.xml
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.pdb
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.xml
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.NetControl.pdb
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.Tool.pdb
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.MisDBControl.pdb
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.MisDBControl.xml
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.pdb
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.xml
+E:\LSGO团队\火力发电\ProjectERP\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.7.tlog
+C:\Users\zhengyi\Desktop\ProjectERP\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\zhengyi\Desktop\ProjectERP\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\zhengyi\Desktop\ProjectERP\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\bin\Debug\WindowsFormsApplication1.exe
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\bin\Debug\WindowsFormsApplication1.pdb
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\bin\Debug\DevComponents.DotNetBar2.dll
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\bin\Debug\ERPLibrary.dll
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\bin\Debug\Gigasoft.ProEssentials.dll
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.MisDBControl.dll
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.dll
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\bin\Debug\Interop.SQLDMO.dll
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\bin\Debug\Interop.ADOX.dll
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\bin\Debug\ERPLibrary.pdb
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.pdb
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.xml
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.NetControl.pdb
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.Tool.pdb
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\bin\Debug\LSGO.PresentationLayer.pdb
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\bin\Debug\LSGO.PresentationLayer.xml
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.MisDBControl.pdb
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.MisDBControl.xml
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.pdb
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.xml
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frm_Hero.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.LittleOilFire.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.moneypayback.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Guarrante.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FrmTbDatagridView.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.HelpCommonEleBid.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Depreciation.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.MainWork.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmPaccount.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmRaccount.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmSplash.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmView.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmBid_Capacity.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Bid_EleQuantity.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmLogin.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmOrgan.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.EntrustOperation.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.PayPolutionFee.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.EquipmentRepairFee.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.PayFactoryElectricFee.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmLoan.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_SLoan.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_BidElectric.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_BidEleResult.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FrmStartProduce.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FrmCommiteProduct.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.RemoveSN.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.PayPropertyInsurancefee.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.PayWageWelfare.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_Fail.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_SalePlant.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_ByePlant.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_Discount.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_Register.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_ShowRanking.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.frmMain.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_PayOff.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_tex.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_BuyConference.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_BuyResult.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_HuiYi.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_LongLoan.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_Plan.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_ShortLoan.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Properties.Resources.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.FormBuildNew.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Discount.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.MoneyNeedPay.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Certification.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_ShowResult.resources
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.4.tlog
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.6.tlog
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.7.tlog
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.8.tlog
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+D:\项目\火力发电安装安装\ProjectERP\ERPChess\obj\x86\Debug\ERPChess.Form_chushi.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\bin\Debug\WindowsFormsApplication1.exe
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\bin\Debug\WindowsFormsApplication1.pdb
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\bin\Debug\DevComponents.DotNetBar2.dll
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\bin\Debug\ERPLibrary.dll
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\bin\Debug\Gigasoft.ProEssentials.dll
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.MisDBControl.dll
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.dll
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\bin\Debug\Interop.SQLDMO.dll
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\bin\Debug\Interop.ADOX.dll
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\bin\Debug\ERPLibrary.pdb
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\bin\Debug\LSGO.DataLinkLayer.pdb
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\bin\Debug\LSGO.DataLinkLayer.xml
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\bin\Debug\LSGO.DataLinkLayer.NetControl.pdb
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\bin\Debug\LSGO.DataLinkLayer.Tool.pdb
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\bin\Debug\LSGO.PresentationLayer.pdb
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\bin\Debug\LSGO.PresentationLayer.xml
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.MisDBControl.pdb
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.MisDBControl.xml
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.pdb
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\bin\Debug\LSGO.DataLinkLayer.DBControl.xml
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Form_chushi.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.frm_Hero.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.LittleOilFire.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.moneypayback.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Guarrante.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.FrmTbDatagridView.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.HelpCommonEleBid.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Depreciation.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.MainWork.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.frmPaccount.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.frmRaccount.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.frmSplash.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.frmView.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.frmBid_Capacity.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Bid_EleQuantity.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.frmLogin.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.frmOrgan.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.EntrustOperation.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.PayPolutionFee.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.EquipmentRepairFee.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.PayFactoryElectricFee.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.frmLoan.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Form_SLoan.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Form_BidElectric.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Form_BidEleResult.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.FrmStartProduce.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.FrmCommiteProduct.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.RemoveSN.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.PayPropertyInsurancefee.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.PayWageWelfare.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Form_Fail.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Form_SalePlant.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Form_ByePlant.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Form_Discount.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Form_Register.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Form_ShowRanking.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.frmMain.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Form_PayOff.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Form_tex.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Form_BuyConference.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Form_BuyResult.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Form_HuiYi.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Form_LongLoan.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Form_Plan.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Form_ShortLoan.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Properties.Resources.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.FormBuildNew.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Discount.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.MoneyNeedPay.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Certification.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\ERPChess.Form_ShowResult.resources
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.4.tlog
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.6.tlog
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.7.tlog
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.8.tlog
+D:\项目\火力发电安装安装\没问题\ProjectERP78\ERPChess\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+D:\项目\火力发电安装安装\没问题\ProjectERP79\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+D:\项目\火力发电安装安装\没问题\ProjectERP79\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+D:\项目\火力发电安装安装\没问题\ProjectERP79\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\bin\Debug\ERPLibrary.dll
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\bin\Debug\ERPLibrary.pdb
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Form_chushi.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.frm_Hero.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.LittleOilFire.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.moneypayback.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Guarrante.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.FrmTbDatagridView.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.HelpCommonEleBid.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Depreciation.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.MainWork.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.frmPaccount.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.frmRaccount.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.frmSplash.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.frmView.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.frmBid_Capacity.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Bid_EleQuantity.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.frmLogin.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.frmOrgan.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.EntrustOperation.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.PayPolutionFee.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.EquipmentRepairFee.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.PayFactoryElectricFee.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.frmLoan.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Form_SLoan.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Form_BidElectric.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Form_BidEleResult.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.FrmStartProduce.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.FrmCommiteProduct.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.RemoveSN.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.PayPropertyInsurancefee.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.PayWageWelfare.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Form_Fail.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Form_SalePlant.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Form_ByePlant.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Form_Discount.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Form_Register.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Form_ShowRanking.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.frmMain.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Form_PayOff.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Form_tex.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Form_BuyConference.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Form_BuyResult.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Form_HuiYi.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Form_LongLoan.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Form_Plan.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Form_ShortLoan.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Properties.Resources.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.FormBuildNew.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Discount.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.MoneyNeedPay.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Certification.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\ERPChess.Form_ShowResult.resources
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\GenerateResource-ResGen.read.4.tlog
+C:\Users\YHY\Desktop\ProjectERP79\ERPChess\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\YHY\Desktop\ProjectERP79 - 副本\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\YHY\Desktop\ProjectERP79 - 副本\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\YHY\Desktop\ProjectERP79 - 副本\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\bin\Debug\ERPLibrary.dll
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\bin\Debug\ERPLibrary.pdb
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.csproj.ResolveComReference.cache
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\MySchool.AnswerCardForm.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\MySchool.AnswerQuestionForm.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\MySchool.QuizResultForm.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\MySchool.SelectQuestionsForm.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_chushi.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_pbjg.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_pbjgnext.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_pm.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_zcj.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.frm_Hero.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.LittleOilFire.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.moneypayback.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Guarrante.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.FrmTbDatagridView.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Depreciation.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.MainWork.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.frmPaccount.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.frmRaccount.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.frmSplash.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.frmView.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.frmBid_Capacity.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Bid_EleQuantity.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.frmLogin.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.frmOrgan.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.EntrustOperation.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.PayPolutionFee.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.EquipmentRepairFee.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.PayFactoryElectricFee.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.frmLoan.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_SLoan.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_BidElectric.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_BidEleResult.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.FrmStartProduce.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.FrmCommiteProduct.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.RemoveSN.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.PayPropertyInsurancefee.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.PayWageWelfare.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_Fail.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_SalePlant.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_ByePlant.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_Discount.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_Register.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_ShowRanking.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.frmMain.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_PayOff.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_tex.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_BuyConference.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_BuyResult.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_HuiYi.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_LongLoan.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_Plan.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_ShortLoan.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Properties.Resources.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.FormBuildNew.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Discount.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.MoneyNeedPay.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Certification.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_ShowResult.resources
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\YHY\Desktop\ProjectERP79 - 副本 - 副本\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.csproj.ResolveComReference.cache
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\bin\Debug\WindowsFormsApplication1.exe
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\bin\Debug\WindowsFormsApplication1.pdb
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\bin\Debug\DevComponents.DotNetBar2.dll
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\bin\Debug\ERPLibrary.dll
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\bin\Debug\ERPLibrary.pdb
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\MySchool.AnswerCardForm.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\MySchool.AnswerQuestionForm.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\MySchool.QuizResultForm.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\MySchool.SelectQuestionsForm.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Form_chushi.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Form_pbjg.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Form_pbjgnext.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Form_pm.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Form_zcj.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.frm_Hero.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.LittleOilFire.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.moneypayback.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Guarrante.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.FrmTbDatagridView.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Depreciation.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.MainWork.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.frmPaccount.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.frmRaccount.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.frmSplash.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.frmView.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.frmBid_Capacity.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Bid_EleQuantity.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.frmLogin.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.frmOrgan.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.EntrustOperation.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.PayPolutionFee.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.EquipmentRepairFee.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.PayFactoryElectricFee.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.frmLoan.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Form_SLoan.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Form_BidElectric.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Form_BidEleResult.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.FrmStartProduce.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.FrmCommiteProduct.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.RemoveSN.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.PayPropertyInsurancefee.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.PayWageWelfare.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Form_Fail.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Form_SalePlant.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Form_ByePlant.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Form_Discount.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Form_Register.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Form_ShowRanking.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.frmMain.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Form_PayOff.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Form_tex.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Form_BuyConference.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Form_BuyResult.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Form_HuiYi.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Form_LongLoan.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Form_Plan.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Form_ShortLoan.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Properties.Resources.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.FormBuildNew.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Discount.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.MoneyNeedPay.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Certification.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\ERPChess.Form_ShowResult.resources
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\火力发电安装安装\ProjectERP718\ERPChess\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\火力发电安装安装\完结\ProjectERP719\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+D:\项目\火力发电安装安装\完结\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.csproj.ResolveComReference.cache
+D:\项目\火力发电安装安装\完结\ProjectERP719\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+D:\项目\火力发电安装安装\完结\ProjectERP719\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+D:\ProjectERP719\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.csproj.ResolveComReference.cache
+D:\ProjectERP719\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+D:\ProjectERP719\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+D:\ProjectERP719\ERPChess\bin\Debug\WindowsFormsApplication1.exe
+D:\ProjectERP719\ERPChess\bin\Debug\WindowsFormsApplication1.pdb
+D:\ProjectERP719\ERPChess\bin\Debug\DevComponents.DotNetBar2.dll
+D:\ProjectERP719\ERPChess\bin\Debug\ERPLibrary.dll
+D:\ProjectERP719\ERPChess\bin\Debug\ERPLibrary.pdb
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\ProjectERP719\ERPChess\obj\x86\Debug\MySchool.AnswerCardForm.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\MySchool.AnswerQuestionForm.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\MySchool.QuizResultForm.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\MySchool.SelectQuestionsForm.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Form_chushi.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Form_pbjg.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Form_pbjgnext.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Form_pm.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Form_zcj.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.frm_Hero.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.LittleOilFire.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.moneypayback.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Guarrante.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.FrmTbDatagridView.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Depreciation.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.MainWork.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.frmPaccount.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.frmRaccount.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.frmSplash.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.frmView.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.frmBid_Capacity.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Bid_EleQuantity.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.frmLogin.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.frmOrgan.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.EntrustOperation.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.PayPolutionFee.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.EquipmentRepairFee.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.PayFactoryElectricFee.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.frmLoan.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Form_SLoan.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Form_BidElectric.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Form_BidEleResult.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.FrmStartProduce.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.FrmCommiteProduct.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.RemoveSN.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.PayPropertyInsurancefee.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.PayWageWelfare.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Form_Fail.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Form_SalePlant.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Form_ByePlant.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Form_Discount.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Form_Register.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Form_ShowRanking.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.frmMain.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Form_PayOff.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Form_tex.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Form_BuyConference.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Form_BuyResult.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Form_HuiYi.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Form_LongLoan.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Form_Plan.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Form_ShortLoan.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Properties.Resources.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.FormBuildNew.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Discount.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.MoneyNeedPay.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Certification.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\ERPChess.Form_ShowResult.resources
+D:\ProjectERP719\ERPChess\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\ProjectERP719\ERPChess\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\ProjectERP723\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+D:\ProjectERP723\ERPChess\obj\x86\Debug\ERPChess.csproj.ResolveComReference.cache
+D:\ProjectERP723\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+D:\ProjectERP723\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+D:\ProjectERP723 - 副本\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.csproj.ResolveComReference.cache
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+D:\ProjectERP723 - 副本\ERPChess\bin\Debug\WindowsFormsApplication1.exe
+D:\ProjectERP723 - 副本\ERPChess\bin\Debug\WindowsFormsApplication1.pdb
+D:\ProjectERP723 - 副本\ERPChess\bin\Debug\DevComponents.DotNetBar2.dll
+D:\ProjectERP723 - 副本\ERPChess\bin\Debug\ERPLibrary.dll
+D:\ProjectERP723 - 副本\ERPChess\bin\Debug\ERPLibrary.pdb
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\MySchool.AnswerCardForm.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\MySchool.AnswerQuestionForm.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\MySchool.QuizResultForm.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\MySchool.SelectQuestionsForm.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_chushi.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_pbjg.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_pbjgnext.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_pm.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_zcj.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.frm_Hero.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.LittleOilFire.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.moneypayback.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Guarrante.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.FrmTbDatagridView.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Depreciation.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.MainWork.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.frmPaccount.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.frmRaccount.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.frmSplash.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.frmView.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.frmBid_Capacity.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Bid_EleQuantity.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.frmLogin.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.frmOrgan.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.EntrustOperation.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.PayPolutionFee.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.EquipmentRepairFee.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.PayFactoryElectricFee.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.frmLoan.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_SLoan.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_BidElectric.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_BidEleResult.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.FrmStartProduce.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.FrmCommiteProduct.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.RemoveSN.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.PayPropertyInsurancefee.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.PayWageWelfare.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_Fail.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_SalePlant.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_ByePlant.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_Discount.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_Register.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_ShowRanking.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.frmMain.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_PayOff.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_tex.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_BuyConference.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_BuyResult.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_HuiYi.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_LongLoan.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_Plan.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_ShortLoan.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Properties.Resources.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.FormBuildNew.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Discount.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.MoneyNeedPay.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Certification.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.Form_ShowResult.resources
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrator\桌面\ProjectERP723 - 副本\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Documents and Settings\Administrator\桌面\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\ERPChess.csproj.ResolveComReference.cache
+C:\Documents and Settings\Administrator\桌面\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Documents and Settings\Administrator\桌面\ProjectERP723 - 副本\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.csproj.ResolveComReference.cache
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\MySchool.AnswerCardForm.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\MySchool.AnswerQuestionForm.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\MySchool.QuizResultForm.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\MySchool.SelectQuestionsForm.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Form_chushi.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Form_pbjg.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Form_pbjgnext.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Form_pm.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Form_zcj.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.frm_Hero.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.LittleOilFire.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.moneypayback.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Guarrante.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.FrmTbDatagridView.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Depreciation.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.MainWork.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.frmPaccount.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.frmRaccount.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.frmSplash.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.frmView.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.frmBid_Capacity.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Bid_EleQuantity.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.frmLogin.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.frmOrgan.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.EntrustOperation.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.PayPolutionFee.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.EquipmentRepairFee.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.PayFactoryElectricFee.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.frmLoan.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Form_SLoan.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Form_BidElectric.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Form_BidEleResult.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.FrmStartProduce.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.FrmCommiteProduct.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.RemoveSN.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.PayPropertyInsurancefee.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.PayWageWelfare.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Form_Fail.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Form_SalePlant.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Form_ByePlant.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Form_Discount.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Form_Register.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Form_ShowRanking.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.frmMain.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Form_PayOff.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Form_tex.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Form_BuyConference.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Form_BuyResult.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Form_HuiYi.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Form_LongLoan.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Form_Plan.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Form_ShortLoan.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Properties.Resources.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.FormBuildNew.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Discount.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.MoneyNeedPay.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Certification.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\ERPChess.Form_ShowResult.resources
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\bin\Debug\WindowsFormsApplication1.exe
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\bin\Debug\WindowsFormsApplication1.pdb
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\bin\Debug\ERPLibrary.dll
+C:\Documents and Settings\Administrator\桌面\ProjectERP724\ERPChess\bin\Debug\ERPLibrary.pdb
+D:\ProjectERP725\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+D:\ProjectERP725\ERPChess\bin\Debug\WindowsFormsApplication1.exe
+D:\ProjectERP725\ERPChess\bin\Debug\WindowsFormsApplication1.pdb
+D:\ProjectERP725\ERPChess\bin\Debug\DevComponents.DotNetBar2.dll
+D:\ProjectERP725\ERPChess\bin\Debug\ERPLibrary.dll
+D:\ProjectERP725\ERPChess\bin\Debug\ERPLibrary.pdb
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.csproj.ResolveComReference.cache
+D:\ProjectERP725\ERPChess\obj\x86\Debug\MySchool.AnswerCardForm.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\MySchool.AnswerQuestionForm.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\MySchool.QuizResultForm.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\MySchool.SelectQuestionsForm.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_chushi.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_pbjg.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_pbjgnext.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_pm.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_zcj.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.frm_Hero.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.LittleOilFire.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.moneypayback.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Guarrante.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.FrmTbDatagridView.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Depreciation.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.MainWork.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.frmPaccount.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.frmRaccount.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.frmSplash.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.frmView.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.frmBid_Capacity.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Bid_EleQuantity.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.frmLogin.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.frmOrgan.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.EntrustOperation.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.PayPolutionFee.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.EquipmentRepairFee.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.PayFactoryElectricFee.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.frmLoan.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_SLoan.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_BidElectric.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_BidEleResult.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.FrmStartProduce.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.FrmCommiteProduct.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.RemoveSN.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.PayPropertyInsurancefee.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.PayWageWelfare.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_Fail.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_SalePlant.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_ByePlant.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_Discount.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_Register.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_ShowRanking.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.frmMain.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_PayOff.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_tex.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_BuyConference.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_BuyResult.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_HuiYi.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_LongLoan.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_Plan.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_ShortLoan.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Properties.Resources.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.FormBuildNew.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Discount.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.MoneyNeedPay.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Certification.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_ShowResult.resources
+D:\ProjectERP725\ERPChess\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\ProjectERP725\ERPChess\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\ProjectERP725\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+D:\ProjectERP725\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+E:\ProjectERP725\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.csproj.ResolveComReference.cache
+E:\ProjectERP725\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+E:\ProjectERP725\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\ProjectERP725\ERPChess\obj\x86\Debug\MySchool.AnswerCardForm.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\MySchool.AnswerQuestionForm.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\MySchool.QuizResultForm.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\MySchool.SelectQuestionsForm.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_chushi.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_pbjg.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_pbjgnext.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_pm.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_zcj.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.frm_Hero.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.LittleOilFire.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.moneypayback.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Guarrante.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.FrmTbDatagridView.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Depreciation.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.MainWork.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.frmPaccount.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.frmRaccount.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.frmSplash.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.frmView.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.frmBid_Capacity.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Bid_EleQuantity.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.frmLogin.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.frmOrgan.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.EntrustOperation.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.PayPolutionFee.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.EquipmentRepairFee.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.PayFactoryElectricFee.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.frmLoan.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_SLoan.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_BidElectric.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_BidEleResult.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.FrmStartProduce.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.FrmCommiteProduct.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.RemoveSN.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.PayPropertyInsurancefee.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.PayWageWelfare.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_Fail.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_SalePlant.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_ByePlant.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_Discount.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_Register.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_ShowRanking.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.frmMain.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_PayOff.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_tex.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_BuyConference.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_BuyResult.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_HuiYi.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_LongLoan.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_Plan.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_ShortLoan.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Properties.Resources.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.FormBuildNew.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Discount.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.MoneyNeedPay.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Certification.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\ERPChess.Form_ShowResult.resources
+E:\ProjectERP725\ERPChess\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\ProjectERP725\ERPChess\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\ProjectERP725\ERPChess\bin\Debug\WindowsFormsApplication1.exe
+E:\ProjectERP725\ERPChess\bin\Debug\WindowsFormsApplication1.pdb
+E:\ProjectERP725\ERPChess\bin\Debug\DevComponents.DotNetBar2.dll
+E:\ProjectERP725\ERPChess\bin\Debug\ERPLibrary.dll
+E:\ProjectERP725\ERPChess\bin\Debug\ERPLibrary.pdb
+E:\ProjectERP0804\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.csproj.ResolveComReference.cache
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+E:\ProjectERP0804\ERPChess\bin\Debug\WindowsFormsApplication1.exe
+E:\ProjectERP0804\ERPChess\bin\Debug\WindowsFormsApplication1.pdb
+E:\ProjectERP0804\ERPChess\bin\Debug\DevComponents.DotNetBar2.dll
+E:\ProjectERP0804\ERPChess\bin\Debug\ERPLibrary.dll
+E:\ProjectERP0804\ERPChess\bin\Debug\ERPLibrary.pdb
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\MySchool.AnswerCardForm.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\MySchool.AnswerQuestionForm.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\MySchool.QuizResultForm.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\MySchool.SelectQuestionsForm.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_chushi.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_pbjg.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_pbjgnext.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_pm.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_zcj.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frm_Hero.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.LittleOilFire.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.moneypayback.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Guarrante.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.FrmTbDatagridView.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Depreciation.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.MainWork.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmPaccount.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmRaccount.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmSplash.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmView.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmBid_Capacity.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Bid_EleQuantity.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmLogin.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmOrgan.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.EntrustOperation.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.PayPolutionFee.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.EquipmentRepairFee.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.PayFactoryElectricFee.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmLoan.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_SLoan.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_BidElectric.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_BidEleResult.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.FrmStartProduce.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.FrmCommiteProduct.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.RemoveSN.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.PayPropertyInsurancefee.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.PayWageWelfare.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_Fail.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_SalePlant.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_ByePlant.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_Discount.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_Register.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_ShowRanking.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmMain.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_PayOff.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_tex.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_BuyConference.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_BuyResult.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_HuiYi.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_LongLoan.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_Plan.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_ShortLoan.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Properties.Resources.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.FormBuildNew.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Discount.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.MoneyNeedPay.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Certification.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_ShowResult.resources
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\ProjectERP0804\ERPChess\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\ProjectERP0804\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.csproj.ResolveComReference.cache
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+D:\ProjectERP0804\ERPChess\bin\Debug\WindowsFormsApplication1.exe
+D:\ProjectERP0804\ERPChess\bin\Debug\WindowsFormsApplication1.pdb
+D:\ProjectERP0804\ERPChess\bin\Debug\DevComponents.DotNetBar2.dll
+D:\ProjectERP0804\ERPChess\bin\Debug\ERPLibrary.dll
+D:\ProjectERP0804\ERPChess\bin\Debug\ERPLibrary.pdb
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.csprojResolveAssemblyReference.cache
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\MySchool.AnswerCardForm.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\MySchool.AnswerQuestionForm.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\MySchool.QuizResultForm.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\MySchool.SelectQuestionsForm.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_chushi.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_pbjg.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_pbjgnext.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_pm.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_zcj.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frm_Hero.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.LittleOilFire.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.moneypayback.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Guarrante.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.FrmTbDatagridView.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Depreciation.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.MainWork.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmPaccount.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmRaccount.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmSplash.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmView.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmBid_Capacity.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Bid_EleQuantity.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmLogin.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmOrgan.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.EntrustOperation.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.PayPolutionFee.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.EquipmentRepairFee.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.PayFactoryElectricFee.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmLoan.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_SLoan.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_BidElectric.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_BidEleResult.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.FrmStartProduce.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.FrmCommiteProduct.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.RemoveSN.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.PayPropertyInsurancefee.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.PayWageWelfare.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_Fail.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_SalePlant.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_ByePlant.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_Discount.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_Register.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_ShowRanking.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmMain.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_PayOff.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_tex.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_BuyConference.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_BuyResult.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_HuiYi.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_LongLoan.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_Plan.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_ShortLoan.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Properties.Resources.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.FormBuildNew.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Discount.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.MoneyNeedPay.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Certification.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_ShowResult.resources
+D:\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.csproj.GenerateResource.Cache
+D:\项目\ProjectERP0804\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+D:\项目\ProjectERP0804\ERPChess\bin\Debug\WindowsFormsApplication1.exe
+D:\项目\ProjectERP0804\ERPChess\bin\Debug\WindowsFormsApplication1.pdb
+D:\项目\ProjectERP0804\ERPChess\bin\Debug\DevComponents.DotNetBar2.dll
+D:\项目\ProjectERP0804\ERPChess\bin\Debug\ERPLibrary.dll
+D:\项目\ProjectERP0804\ERPChess\bin\Debug\ERPLibrary.pdb
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.csproj.ResolveComReference.cache
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\MySchool.AnswerCardForm.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\MySchool.AnswerQuestionForm.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\MySchool.QuizResultForm.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\MySchool.SelectQuestionsForm.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_chushi.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_pbjg.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_pbjgnext.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_pm.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_zcj.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frm_Hero.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.LittleOilFire.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.moneypayback.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Guarrante.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.FrmTbDatagridView.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Depreciation.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.MainWork.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmPaccount.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmRaccount.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmSplash.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmView.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmBid_Capacity.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Bid_EleQuantity.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmLogin.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmOrgan.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.EntrustOperation.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.PayPolutionFee.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.EquipmentRepairFee.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.PayFactoryElectricFee.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmLoan.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_SLoan.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_BidElectric.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_BidEleResult.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.FrmStartProduce.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.FrmCommiteProduct.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.RemoveSN.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.PayPropertyInsurancefee.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.PayWageWelfare.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_Fail.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_SalePlant.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_ByePlant.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_Discount.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_Register.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_ShowRanking.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.frmMain.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_PayOff.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_tex.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_BuyConference.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_BuyResult.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_LongLoan.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_Plan.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_ShortLoan.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Properties.Resources.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.FormBuildNew.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Discount.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.MoneyNeedPay.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Certification.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\ERPChess.Form_ShowResult.resources
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+D:\项目\ProjectERP0804\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+D:\项目\ProjectERP0816\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.csproj.ResolveComReference.cache
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+D:\项目\ProjectERP0816\ERPChess\bin\Debug\WindowsFormsApplication1.exe
+D:\项目\ProjectERP0816\ERPChess\bin\Debug\WindowsFormsApplication1.pdb
+D:\项目\ProjectERP0816\ERPChess\bin\Debug\DevComponents.DotNetBar2.dll
+D:\项目\ProjectERP0816\ERPChess\bin\Debug\ERPLibrary.dll
+D:\项目\ProjectERP0816\ERPChess\bin\Debug\ERPLibrary.pdb
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\MySchool.AnswerCardForm.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\MySchool.AnswerQuestionForm.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\MySchool.QuizResultForm.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\MySchool.SelectQuestionsForm.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Form_chushi.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Form_pbjg.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Form_pbjgnext.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Form_pm.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Form_zcj.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.frm_Hero.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.LittleOilFire.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.moneypayback.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Guarrante.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.FrmTbDatagridView.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Depreciation.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.MainWork.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.frmPaccount.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.frmRaccount.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.frmSplash.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.frmView.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.frmBid_Capacity.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Bid_EleQuantity.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.frmLogin.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.frmOrgan.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.EntrustOperation.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.PayPolutionFee.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.EquipmentRepairFee.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.PayFactoryElectricFee.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.frmLoan.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Form_SLoan.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Form_BidElectric.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Form_BidEleResult.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.FrmStartProduce.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.FrmCommiteProduct.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.RemoveSN.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.PayPropertyInsurancefee.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.PayWageWelfare.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Form_Fail.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Form_SalePlant.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Form_ByePlant.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Form_Discount.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Form_Register.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Form_ShowRanking.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.frmMain.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Form_PayOff.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Form_tex.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Form_BuyConference.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Form_BuyResult.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Form_LongLoan.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Form_Plan.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Form_ShortLoan.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Properties.Resources.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.FormBuildNew.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Discount.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.MoneyNeedPay.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Certification.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\ERPChess.Form_ShowResult.resources
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\项目\ProjectERP0816\ERPChess\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\项目\ProjectERP1105\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+F:\项目\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.csproj.ResolveComReference.cache
+F:\项目\ProjectERP1105\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+F:\项目\ProjectERP1105\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\MySchool.AnswerCardForm.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\MySchool.AnswerQuestionForm.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\MySchool.QuizResultForm.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\MySchool.SelectQuestionsForm.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Form_chushi.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Form_pbjg.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Form_pbjgnext.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Form_pm.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Form_zcj.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.frm_Hero.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.LittleOilFire.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.moneypayback.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Guarrante.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.FrmTbDatagridView.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Depreciation.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.MainWork.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.frmPaccount.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.frmRaccount.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.frmSplash.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.frmView.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.frmBid_Capacity.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Bid_EleQuantity.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.frmLogin.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.frmOrgan.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.EntrustOperation.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.PayPolutionFee.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.EquipmentRepairFee.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.PayFactoryElectricFee.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.frmLoan.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Form_SLoan.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Form_BidElectric.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Form_BidEleResult.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.FrmStartProduce.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.FrmCommiteProduct.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.RemoveSN.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.PayPropertyInsurancefee.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.PayWageWelfare.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Form_Fail.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Form_SalePlant.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Form_ByePlant.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Form_Discount.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Form_Register.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Form_ShowRanking.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.frmMain.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Form_PayOff.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Form_tex.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Form_BuyConference.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Form_BuyResult.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Form_LongLoan.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Form_Plan.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Form_ShortLoan.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Properties.Resources.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.FormBuildNew.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Discount.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.MoneyNeedPay.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Certification.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.Form_ShowResult.resources
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\ProjectERP1105\ERPChess\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\紫青\窗体程序\ProjectERP1105\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Administrator\Desktop\紫青\窗体程序\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\紫青\窗体程序\ProjectERP1105\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe
+E:\fan\基础测试\c#\窗体程序\ProjectERP1105\ERPChess\bin\Debug\WindowsFormsApplication1.exe.config
+E:\fan\基础测试\c#\窗体程序\ProjectERP1105\ERPChess\obj\x86\Debug\ERPChess.csproj.ResolveComReference.cache
+E:\fan\基础测试\c#\窗体程序\ProjectERP1105\ERPChess\obj\x86\Debug\WindowsFormsApplication1.exe

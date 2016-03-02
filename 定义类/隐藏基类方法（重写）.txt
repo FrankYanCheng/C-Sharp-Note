@@ -1,0 +1,36 @@
+1.重写时将派生类实例化，
+2.然后在主函数中（在派生类里）对基类进行定义名称，
+3.将派生类赋值给基类
+4.再执行基类中修改了的函数，
+这样就完成了对基类的覆盖，记住使用virtual 和override
+5.记得加（）相当于是获取
+ 
+
+
+
+
+
+
+public class MyBaseClass
+    {
+        public virtual void DoSomething()
+        {
+            Console.WriteLine("Base imp");
+        }
+    }
+    public class MyDerivedClass : MyBaseClass
+    {
+        
+            static void Main(string[] args)
+            {
+                MyDerivedClass myObj = new MyDerivedClass();
+                MyBaseClass myBaseObj;
+                myBaseObj = myObj;
+                myBaseObj.DoSomething();
+            }
+        
+        public override void DoSomething()
+        {
+            Console.WriteLine("Derived imp");
+        }
+    }

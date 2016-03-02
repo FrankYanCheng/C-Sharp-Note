@@ -1,0 +1,38 @@
+在服务器端的accept()方法所在的方法下，如果直接调用receive方法，因为如果在同一个线程中调用时，receive方法会阻断线程，导致accept无法接受。所以，可以在方法accept所在的方法下，在创建一个新的线程。由新的线程传入accept方法所用的套接字，给它赋一个receive（）方法。当然，一般不止一个客户端的情况下，和服务端对客户端发送消息一样，可以设置一个数据字典，方便调用不同客户端的线程。
+
+
+
+
+ Dictionary<string, Socket> ClientIp = new Dictionary<string, Socket>();
+        Dictionary<string, Thread> ClientThread = new Dictionary<string, Thread>();
+        Socket con = null;
+        void Accept()
+        {
+            while (true)
+            {
+                con = Watch.Accept();
+                ClientIp.Add(con.RemoteEndPoint.ToString(),con);
+                Message("客户端连接成功"+con.RemoteEndPoint.ToString());
+                listClient.Items.Add(con.RemoteEndPoint.ToString());
+                Thread rt = new Thread(Receive);
+                rt.IsBackground = true;
+                rt.Start(con);
+                ClientThread.Add(con.RemoteEndPoint.ToString(),rt);      
+            }
+        }
+
+
+
+
+
+  void Receive(object con)
+        {        
+            while (true)
+            {
+                Socket socketlient = con as Socket;
+                byte[] remessage = new byte[1024 * 1024 * 2];
+                int k = socketlient.Receive(remessage);
+                string a = System.Text.Encoding.UTF8.GetString(remessage, 0, k);
+                Message("客户端说： " + a); 
+            }
+        }

@@ -1,0 +1,50 @@
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = 0;
+            int N;
+            Console.WriteLine("输入集合A的元素个数");
+            N = Convert.ToInt32(Console.ReadLine());
+            int[] k = new int[N];
+            Console.WriteLine("输入集合A的元素");
+            for (int i = 0; i < k.Length; i++)
+                k[i] = Convert.ToInt32(Console.ReadLine());
+
+            int M;
+            Console.WriteLine("输入集合B的元素个数");
+            M = Convert.ToInt32(Console.ReadLine());
+            int[] j = new int[M];
+            Console.WriteLine("输入集合B的元素");
+            for (int i = 0; i < j.Length; i++)
+                j[i] = Convert.ToInt32(Console.ReadLine());
+
+            {
+                for (int i = 0; i < j.Length; i++)
+                    for (int u = 0; u < k.Length; u++)
+                        if (j[i] == k[u])
+                        {
+                            n++;
+
+                        }
+            }
+            int[] MN = new int[M + N];
+            for (int i = 0; i < N; i++)
+                MN[i] = k[i];
+            for (int c = N; c < MN.Length; c++)
+                MN[c] = j[c - N];
+            int x;        
+            Console.WriteLine("组合交集是");
+                for (int i = 1; i < MN.Length; i++)
+                {
+                     x = i - 1;
+                     for (int u = i; u < MN.Length; u++)
+                         if (MN[u] == MN[x])
+
+                   
+                             Console.WriteLine(MN[x]);
+                }
+                Console.ReadKey();
+        }
+       
+    }

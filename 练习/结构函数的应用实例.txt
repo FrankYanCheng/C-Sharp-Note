@@ -1,0 +1,49 @@
+1.赋值是在主函数中，结构函数只是定义
+2.在主函数中也必须先声明结构+空格+要定义的变量
+3.结构函数不用static修饰
+4.用结构函数里的运算式，可用点号在主函数里直接用（本质上就是一个函数）
+5.好像在这问题里不能用数字，会出现隐式转换成INT问题，如何用构造函数设计数值的加减？
+
+
+
+
+ static void Main(string[] args)
+        {  customerName myCustomer;
+            myCustomer.firstName="john";
+            myCustomer.lastName="Franklin";
+            Console.WriteLine(myCustomer.Name());
+        }
+          struct customerName
+    {  
+            public string firstName,lastName;
+
+           
+            public string Name()
+            {return firstName +" "+lastName;
+            }
+
+
+
+
+
+ static void Main(string[] args)
+        {
+            fyc fycq;
+            fycq.n = "To be";
+            fycq.k="or not to be";
+            fycq.o = "That is a question!";
+            Console.Write(fycq.i());
+            Console.ReadKey();
+
+        }
+          struct fyc
+        {  public string  n,k,o;
+              public string i()
+        {
+            return n +" "+ k+" "+o;
+            
+            }
+
+
+
+

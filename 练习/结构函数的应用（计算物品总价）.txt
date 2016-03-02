@@ -1,0 +1,122 @@
+  要是有很多个物品，怎么实现多个输入不用这么麻烦的每个来定？
+结构很好用，调用不易混
+
+
+
+
+
+
+
+
+
+
+1.原版
+
+static void Main(string[] args)
+        {
+            order fyc1;
+            Console.WriteLine("输入产品名称");
+            fyc1.itemName = Console.ReadLine();
+            Console.WriteLine("产品单价");
+            fyc1.unitCost = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("产品个数");
+            fyc1.unitCount = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("产品花费");
+           Console.WriteLine("{0}",fyc1.cost());
+           order fyc2;
+           Console.WriteLine("输入产品名称");
+           fyc2.itemName = Console.ReadLine();
+           Console.WriteLine("产品单价");
+           fyc2.unitCost = Convert.ToDouble(Console.ReadLine());
+           Console.WriteLine("产品个数");
+           fyc2.unitCount = Convert.ToInt32(Console.ReadLine());
+           Console.WriteLine("产品花费");
+           Console.WriteLine("{0}", fyc2.cost());
+           Console.WriteLine("产品类型");
+           Console.WriteLine("{0},{1}", fyc1.itemName,fyc2.itemName);
+           Console.WriteLine("总花费{0}", fyc1.cost() + fyc2.cost());
+           Console.ReadKey();      
+        }
+        struct order
+        {
+            public string itemName;
+            public int unitCount;
+            public double unitCost;
+            public double cost()
+            { return unitCost * unitCount; }
+
+        }
+
+
+
+
+
+
+2.改进版
+
+
+
+  static void Main(string[] args)
+        {
+            order fyc1;
+            Console.WriteLine("输入产品名称");
+            fyc1.itemName = Console.ReadLine();
+            Console.WriteLine("产品单价");
+            fyc1.unitCost = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("产品个数");
+            fyc1.unitCount = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("产品花费");
+            Console.WriteLine("{0}", fyc1.cost());
+            Console.WriteLine("是否还有产品？");
+            string i = Console.ReadLine();
+            char[] k = { ' ' };
+            i = i.ToLower();
+            i = i.Trim(k);
+            if (i == "yes")
+            {
+
+
+                order fyc2;
+                Console.WriteLine("输入产品名称");
+                fyc2.itemName = Console.ReadLine();
+                Console.WriteLine("产品单价");
+                fyc2.unitCost = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("产品个数");
+                fyc2.unitCount = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("产品花费");
+                Console.WriteLine("{0}", fyc2.cost());
+                Console.WriteLine("产品类型");
+                Console.WriteLine("{0},{1}", fyc1.itemName, fyc2.itemName);
+                Console.WriteLine("总花费{0}", fyc1.cost() + fyc2.cost());
+                Console.ReadKey();
+            }
+            else
+            {  Console.WriteLine("完成！");
+            }
+        }
+  
+    }
+        struct order
+        {
+            public string itemName;
+            public int unitCount;
+            public double unitCost;
+            public double cost()
+            { return unitCost * unitCount; }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,104 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using DevComponents.DotNetBar;
+using ERPLibrary;
+using LSGO.PresentationLayer;
+
+namespace ERPChess
+{
+    public partial class Form_PayOff : LSGOfrmBasement
+    {
+        public Form_PayOff()
+        {
+            InitializeComponent();
+        }
+
+        private void buttonX1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            if (PubVar.Fund >= 0)
+            {
+                frmLoan frm = new frmLoan();
+                frm.ShowDialog();
+            }
+            else
+            {
+                GameOver.gameOver();
+            }
+            this.Close();
+        }
+
+        private void Form_PayOff_Load(object sender, EventArgs e)
+        {
+            dgvX_1.RowCount = 15;
+             if (PubVar.longloanlist != null)
+            {
+                for (int i = PubVar.longloanlist.Count - 1; i >= 0; i--)
+                {
+                    PubVar.longloanlist[i].payOffyear--;
+                    dgvX_1.Rows[i].Cells[0].Value = "有";
+                    dgvX_1.Rows[i].Cells[1].Value = PubVar.longloanlist[i].longDateTime;
+                    dgvX_1.Rows[i].Cells[2].Value = PubVar.longloanlist[i].longLoan;
+                    dgvX_1.Rows[i].Cells[3].Value = PubVar.longloanlist[i].longLoanAmount;
+                    dgvX_1.Rows[i].Cells[4].Value = Math.Round((PubVar.longloanlist[i].longLoanAmount - PubVar.longloanlist[i].payadd) * 0.061);
+                    dgvX_1.Rows[i].Cells[5].Value = Math.Round(PubVar.longloanlist[i].longLoanAmount / PubVar.longloanlist[i].loan.YearLimit);
+                    PubVar.longloanlist[i].save -= Math.Round(PubVar.longloanlist[i].longLoanAmount / PubVar.longloanlist[i].loan.YearLimit);
+                    PubVar.longloanlist[i].payadd += Math.Round(Convert.ToDouble(dgvX_1.Rows[i].Cells[4].Value) + Convert.ToDouble(dgvX_1.Rows[i].Cells[5].Value));
+                    PubVar.longloanlist[i].AnnualInterest = Convert.ToDouble(dgvX_1.Rows[i].Cells[4].Value);
+                    PubVar.Fund = PubVar.Fund - Convert.ToDouble(dgvX_1.Rows[i].Cells[4].Value) - Convert.ToDouble(dgvX_1.Rows[i].Cells[5].Value);
+                    if (PubVar.longloanlist[i].payOffyear == 0)
+                    {
+                        PubVar.longloanlist.Remove(PubVar.longloanlist[i]);
+                        PubVar.loanL -= Math.Round(PubVar.longloanlist[i].longLoanAmount);
+                    }
+                    else
+                    {
+                        PubVar.loanL -= Math.Round(PubVar.longloanlist[i].longLoanAmount / PubVar.longloanlist[i].loan.YearLimit);
+                    }
+                }
+            }
+            else
+            {
+                dgvX_1.Rows[0].Cells[0].Value = "无";
+            }
+            if (PubVar.sloan == null)
+            {
+                dgvX_2.Rows[0].Cells[0].Value = "无";
+            }
+            else
+            {
+                dgvX_2.Rows[0].Cells[0].Value = "有";
+                dgvX_2.Rows[0].Cells[1].Value = PubVar.sloan.shortDateTime;
+                dgvX_2.Rows[0].Cells[2].Value = PubVar.sloan.shortLoan;
+                dgvX_2.Rows[0].Cells[3].Value = PubVar.sloan.shortLoanAmount;
+                dgvX_2.Rows[0].Cells[4].Value = Math.Round(PubVar.sloan.shortLoanAmount*0.04);
+                dgvX_2.Rows[0].Cells[5].Value = PubVar.sloan.shortLoanAmount;
+                PubVar.AnnualInterestS = PubVar.sloan.shortLoanAmount * 0.04;
+                PubVar.Fund = Math.Round(PubVar.Fund - Convert.ToDouble(dgvX_2.Rows[0].Cells[4].Value) - Convert.ToDouble(dgvX_2.Rows[0].Cells[5].Value));
+                PubVar.sloan = new ShortLoanList();
+                PubVar.loanS = 0;
+            }
+            if (PubVar.Fund < 0)
+            {
+                Form_Fail frm = new Form_Fail();
+                frm.ShowDialog();
+            }
+        }
+
+        private void Form_PayOff_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (PubVar.Fund < 0)
+            {
+                string order = MessageType.totalPoint.ToString() + "//" + PubVar.PlayerName + "//" + GameOver.total_Points().ToString();
+                Program.client.ClientNet.BeginSend(Encoding.Unicode.GetBytes(order));
+                GameOver.gameOver();
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+1.实现接口的类必须包含该接口的所有成员，且必须匹配指定的签名（包括匹配指定的get和set块），并且必须是公共的
+2.可以使用virtual，abstract来执行接口成员，但不使用像static或const之类的共享成员。
+3.基类和派生类在接口的包含定义上是互通的
+
+
+
+
+
+
+
+
+public interface IMyInterface
+    {
+        void DoSomething();
+        void DoSomethingElse();
+    }
+    public class MyClass : IMyInterface
+    {
+        static void Main()
+        {
+        }
+        public void DoSomething()
+        {
+        }
+        public void DoSomethingElse()
+        {
+        }
+    }
+
+也可以在基类中实现，既是基类和派生类的并集就是接口中的成员
+儿子的东西老子随便用，接口就是血缘关系的认定书
+public  interface IMyInterface
+{
+void DoSomething();
+void DoSomethingaElse();
+}
+public class MyBaseClass
+{
+  public void DoSomething()
+    {
+}
+}
+public class MyDerivedClass:MyBaseClass,IMyInterface
+{  
+  public void DoSomethingElse()
+   {
+    }
+｝
+
+
+
+
+在基类中定义为虚拟，派生类中可以替换实现他们，通过派生类这个接口来访问。
+老子的东西儿子随便改
+ public interface IMyInterface
+    {
+        void DoSomething();
+        void DoSomethingaElse();
+    }
+    public class MyBaseClass : IMyInterface
+    {
+        public virtual void DoSomething()
+        {
+        }
+        public virtual void DoSomethingElse()
+        {
+        }
+    }
+    public class MyDerivedClass : MyBaseClass
+    {
+        public override void DoSomething()
+        {
+        }
+    }
+
+
+
+
+
+

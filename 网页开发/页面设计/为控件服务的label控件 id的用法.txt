@@ -1,0 +1,2 @@
+<label for="name">пуцШ</label><input type="text" style="width: 117px; height: 20px" id="name"/>
+<label for="ma">╩И╥Я</label>

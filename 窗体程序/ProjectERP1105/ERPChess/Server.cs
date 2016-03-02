@@ -1,0 +1,473 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using LSGO.DataLinkLayer.Net;
+using LSGO.DataLinkLayer.NetControl;
+using System.Net;
+using ERPLibrary;
+
+namespace ERPChess
+{
+    public class Server
+    {
+        public Server()
+        {
+            socketService = new SocketEvent();
+            socketService.OnConnectedEvent += new ConnectedEventHandler(OnConnectedEvent);
+            socketService.OnExceptionEvent += new ExceptionEventHandler(OnExceptionEvent);
+            socketService.OnReceivedEvent += new ReceivedEventHandler(OnReceivedEvent);
+            socketService.OnSendSuccessEvent += new SentEventHandler(OnSendSuccessEvent);
+            socketService.OnDisconnectedEvent += new DisconnectedEventHandler(OnDisconnectedEvent);
+
+            IPAddress[] IPContent = Dns.GetHostByName(Dns.GetHostName()).AddressList;
+            IPAddress IP = IPContent[0];
+            IP_Address = IP.ToString();
+            PlayerLst = new List<PlayerInfo>();
+        }
+        public string IP_Address = string.Empty;
+        public string Port = "8899";
+        public int playerCount = 0;//判断当前决策者数
+        public string ServerServerName = "";//如果当前是服务器，则设定该服务器名称，再发送的时候容易识别
+        private string OrderStr;
+        public BillTemp BillPrice;//用来记录决策者上传的订单价格，第一位为账单编号,从第二位开始为决策者上交的价格，默认为0
+        public List<PlayerInfo> PlayerLst;//用来记录所有决策者的信息
+        int mark = 0;
+        int temp = 0;
+        public PlayerInfo playerInfo;
+        public NetServerHost ServerHost;
+        public ServerFacade ServerNet;
+        public NetFacadeCreator creator;
+        public SocketEvent socketService;
+        string[] receiveArr;//接受的信息
+
+        private delegate void SetInfo(string str);
+        private void SetTextInfo(string str)
+        {
+            if (Program.Forms.frmOrgan.txtBox_Info.InvokeRequired)
+            {
+                SetInfo setInfo = SetTextInfo;
+                Program.Forms.frmOrgan.txtBox_Info.Invoke(setInfo, str);
+            }
+            else
+            {
+                Program.Forms.frmOrgan.txtBox_Info.Text += str+"\r\n";
+            }
+        }
+        private delegate void Change(string picBox, string pic);
+        /// <summary>
+        /// 更改图片
+        /// </summary>
+        /// <param name="picBoxName"></param>
+        /// <param name="picName"></param>
+        private void ChangePic(string picBoxName, string picName)
+        {
+            if (Program.Forms.frmOrgan.InvokeRequired)
+            {
+                Change mean = ChangePic;
+                Program.Forms.frmOrgan.Invoke(mean, new object[] { picBoxName, picName });
+            }
+            else
+            {
+                Program.Forms.frmOrgan.ChangePic(picBoxName, picName);
+            }
+        }
+        /// <summary>
+        /// 更改名字
+        /// </summary>
+        /// <param name="GrpName"></param>
+        /// <param name="TextName"></param>
+        private void ChangeGrp(string GrpName, string TextName)
+        {
+            if (Program.Forms.frmOrgan.InvokeRequired)
+            {
+                Change mean = ChangePic;
+                Program.Forms.frmOrgan.Invoke(mean, new object[] { GrpName, TextName });
+            }
+            else
+            {
+                Program.Forms.frmOrgan.ChangeGrp(GrpName, TextName);
+            }
+        }
+        private delegate void ShowInfo(string str);
+        /// <summary>
+        /// 颁布竞拍结果
+        /// </summary>
+        /// <param name="str"></param>
+        private void ShowBidReslut(string str)
+        {
+            if (Program.Forms.frmQuantity.rtbInfo.InvokeRequired)
+            {
+                ShowInfo showInfo = ShowBidReslut;
+                Program.Forms.frmQuantity.rtbInfo.Invoke(showInfo, str);
+            }
+            else
+            {
+                Program.Forms.frmQuantity.rtbInfo.Text += str + "/n";
+                Program.Forms.frmQuantity.rtbInfo.Refresh();
+            }
+        }
+
+        void OnDisconnectedEvent(object sender, ConnectionEventArgs e)
+        {
+            //服务器
+            if (PubVar.identify==0)
+            {
+                //playerCount--;
+                //PubVar.count--;
+                SetTextInfo("决策者已退出游戏 ");
+            }
+            //客户端
+            if (PubVar.identify==1)
+            {
+                SetTextInfo("已和服务器断开连接 ");
+            }
+        }
+
+        void OnSendSuccessEvent(object sender, MessageEventArgs e)
+        {
+            //SetText("\n数据发送成功:");//+e.Buffer.ToString());
+            if (PubVar.identify == 0)
+            {
+
+            }
+            //客户端
+            if (PubVar.identify == 1)
+            {
+
+            }
+        }
+
+        void OnReceivedEvent(object sender, MessageEventArgs e)
+        {
+            string computer_result = string.Empty;
+            string receiveStr = Encoding.Unicode.GetString(e.Buffer);
+            receiveArr = receiveStr.ToString().Split(("//").ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+
+            //玩家退出
+            if (receiveArr[0].ToString() == "Quit")
+            {
+                playerInfo = new PlayerInfo();
+                playerInfo.PlayerName = receiveArr[1].ToString();
+                for (int i = 0; i < PlayerLst.Count; i++)
+                {
+                    if (PlayerLst[i].PlayerName == playerInfo.PlayerName)
+                    {
+                        PlayerLst.RemoveAt(i);
+                        break;
+                    }
+                }
+                playerCount = PlayerLst.Count;
+                string order = MessageType.playerChange + "//" + PlayerLst.Count.ToString();
+                ServerNet.BeginSend(Encoding.Unicode.GetBytes(order));
+            }
+
+
+            #region//记录决策者的信息，并作出相应的改变图片措施
+            if (receiveArr[0].ToString() == OrderInfo.PlayerInfo.ToString())
+            {
+                if (PlayerLst.Count < 6)
+                {
+                    playerInfo = new PlayerInfo();
+                    playerInfo.PlayerName = receiveArr[1].ToString();
+                    for (int i = 0; i < playerCount - 1; i++)
+                    {
+                        if (PlayerLst[i].PlayerName == playerInfo.PlayerName)
+                        {
+                            playerInfo.PlayerName = "_" + playerInfo.PlayerName + "_";
+                            string order = MessageType.changeName.ToString() + "//";
+                            NetFacade netFacade = ServerNet.GetConnectionById(e.Connection.ConnectionID) as NetFacade;
+                            ServerNet.BeginSend(netFacade, Encoding.Unicode.GetBytes(order));
+                        }
+                    }
+                    PlayerLst.Add(playerInfo);
+                    OrderStr = PubVar.ConstOrder.ToString() + "//PlayerCount//" + playerCount.ToString();
+                    for (int i = 0; i < PubVar.playCount; i++)
+                    {
+                        OrderStr += "//" + PlayerLst[i].PlayerName;
+                    }
+                    Program.server.ServerNet.BeginSend(Encoding.Unicode.GetBytes(OrderStr));
+                }
+                else
+                {
+                    OrderStr = PubVar.PlayerName.ToString() + "//" + OrderInfo.DisConnect.ToString();
+                    e.Connection.BeginDisconnect();
+                }
+            }
+            #region//所有决策者都已初始化机器人完毕（如果人数少于6）
+            else if (receiveArr[0] == MessageType.initialComOver.ToString())
+            {
+                mark++;
+                if (mark == playerCount)
+                {
+                    mark = 0;
+                    PubVar.closeOrstart = true;
+                    string Order = MessageType.frmOrgan.ToString() + "//" + MessageType.btnStartGame.ToString();
+                    Program.server.ServerNet.BeginSend(Encoding.Unicode.GetBytes(Order));
+                }
+            }
+            #endregion
+            #endregion
+            #region//接受的指令来自订单
+            if (receiveArr[0].ToString() == MessageType.ComEleFrm.ToString())
+            {
+                //竞拍订单前的准备
+                if (receiveArr[1].ToString() == MessageType.ReadyCom.ToString())
+                {
+                    mark++;
+                    //所有决策者都准备完毕
+                    if (mark == PlayerLst.Count)
+                    {
+                        mark = 0;
+                        temp = 0;
+                        string Order = MessageType.ComEleFrm.ToString() + "//" + MessageType.CloseSplash.ToString();//确定指令处理的事务为竞价
+                        Program.server.ServerNet.BeginSend(Encoding.Unicode.GetBytes(Order));
+                    }
+                }
+                //订单结果比较中心
+                if (receiveArr[1].ToString() == MessageType.CommitResult.ToString())
+                {
+                    temp++;
+                    if (Convert.ToDouble(receiveArr[3].ToString()) > 0)
+                    {
+                        if (BillPrice == null)
+                        {
+                            BillPrice = new BillTemp();
+                            BillPrice.PlayerName = receiveArr[2].ToString();
+                            BillPrice.price = Convert.ToDouble(receiveArr[3].ToString());
+                        }
+                        else
+                        {
+                            //如果是竞拍电量，则把订单给出价格最小的决策者,此时服务器代表消费人民
+                            if (Program.factory.Bill.BillType == BillType.Bid)
+                            {
+                                if (Convert.ToDouble(receiveArr[3].ToString()) >= BillPrice.price)
+                                {
+                                    //如果客户端上交的价格大于现有的价格，则忽视
+                                }
+                                else
+                                {
+                                    BillPrice.PlayerName = receiveArr[2].ToString();
+                                    BillPrice.price = Convert.ToDouble(receiveArr[3].ToString());
+                                }
+                            }
+                            
+                        }
+                    }
+                    //所有决策者都上交完毕
+                    if (temp == PlayerLst.Count)
+                    {
+                        if (BillPrice == null)
+                        {
+                            if (Program.factory.Bill.BillType == BillType.Bid)
+                            {
+                                computer_result = Program.players.p06BidForEle(double.MaxValue);
+                            }
+                            else
+                            {
+                                computer_result = Program.players.p09BidForCoal(double.MinValue);
+                            }
+                        }
+                        else
+                        {
+                            if (Program.factory.Bill.BillType == BillType.Bid)
+                            {
+                                computer_result = Program.players.p06BidForEle(BillPrice.price);
+                            }
+                            else
+                            {
+                                computer_result = Program.players.p09BidForCoal(BillPrice.price);
+                            }
+                        }
+                        if (Int32.Parse(computer_result.Substring(0, 1)) != 0)
+                        {
+                            BillPrice = new BillTemp();
+                            BillPrice.PlayerName = "Computer" + computer_result.Substring(0, 1);
+                            string pri = computer_result.Substring(1, 4);
+                            BillPrice.price = double.Parse(pri);
+                            PubVar.TempBill.Price = BillPrice.price;
+                            PubVar.TempBill.Sum = PubVar.TempBill.Amount * BillPrice.price;
+                            
+                        }
+                        temp = 0;
+                        if (BillPrice != null)
+                        {
+                            string Order = MessageType.ComEleFrm.ToString() + "//" + MessageType.BidReslult.ToString() + "//" +MessageType.Someone.ToString()+"//"+ BillPrice.PlayerName + "//" + BillPrice.price;
+                            Program.server.ServerNet.BeginSend(Encoding.Unicode.GetBytes(Order));                        
+                        }
+                        else
+                        {
+                            string order = MessageType.ComEleFrm.ToString() + "//" + MessageType.BidReslult.ToString()+"//"+ MessageType.Nobody.ToString();
+                            ServerNet.BeginSend(Encoding.Unicode.GetBytes(order));
+                        }
+                        BillPrice = null;//记得清空信息，否则会一直记录这个价格和决策者名，直到有更低的价格，这是不符合事实的
+                    }
+                }
+                else if (receiveArr[1].ToString() == MessageType.isClose.ToString())
+                {
+                    mark++;
+                    if (mark == playerCount)
+                    {
+                        mark = 0;
+                        System.Threading.Thread.Sleep(300);
+                        if (PubVar.countth < PubVar.billThisYear.Count)
+                        {
+                            string order = MessageType.ComEleFrm.ToString() + "//" + MessageType.Next.ToString() + "//" + MessageType.frmQuantity.ToString();
+                            Program.server.ServerNet.BeginSend(Encoding.Unicode.GetBytes(order));
+                        }
+                        else
+                        {
+                            PubVar.countth = 0;
+                            if (Program.factory.Bill.BillType == BillType.Bid)
+                            {
+                                string str = MessageType.ComEleFrm.ToString() + "//" + MessageType.Next.ToString() + "//" + MessageType.frmEleRsult.ToString();
+                                Program.server.ServerNet.BeginSend(Encoding.Unicode.GetBytes(str));
+                            }
+                            else if (Program.factory.Bill.BillType == BillType.Shopping)
+                            {
+                                string str = MessageType.ComEleFrm.ToString() + "//" + MessageType.Next.ToString() + "//" + MessageType.frmBuyResult.ToString();
+                                Program.server.ServerNet.BeginSend(Encoding.Unicode.GetBytes(str));
+                            }
+                        }
+                    }
+                }
+                //为保证时间差一致
+            }
+            #endregion
+            #region//分数统计
+            else if (receiveArr[0] == MessageType.totalPoint.ToString())
+            {
+                temp++;
+                for (int i = 0; i < playerCount; i++)
+                {
+                    if (receiveArr[1] == PlayerLst[i].PlayerName)
+                        PlayerLst[i].totalPoints = Convert.ToDouble(receiveArr[2]);
+                }
+                if (temp == playerCount)
+                {
+                    temp = 0;
+                    string order = MessageType.totalPoint.ToString();
+                    for (int i = 0; i < playerCount; i++)
+                    {
+                        order += "//" + PlayerLst[i].PlayerName + "//" + PlayerLst[i].totalPoints;
+                    }
+                    Program.server.ServerNet.BeginSend(Encoding.Unicode.GetBytes(order));
+                }
+            }
+            else if (receiveArr[0] == MessageType.ThisYearPoint.ToString())
+            {
+                temp++;
+                for (int i = 0; i < playerCount; i++)
+                {
+                    if (receiveArr[1] == PlayerLst[i].PlayerName)
+                    {
+                        PlayerLst[i].right = Convert.ToDouble(receiveArr[2]);
+                        PlayerLst[i].profit = Convert.ToDouble(receiveArr[3]);
+                    }
+                }
+                if (temp == playerCount)
+                {
+                    temp = 0;
+                    string order = MessageType.ThisYearPoint.ToString();
+                    for (int i = 0; i < playerCount; i++)
+                    {
+                        order += "//" + PlayerLst[i].PlayerName + "//" + PlayerLst[i].right + "//" + PlayerLst[i].profit;
+                    }
+                    Program.server.ServerNet.BeginSend(Encoding.Unicode.GetBytes(order));
+                }
+            }
+              #endregion
+        }
+
+        void OnExceptionEvent(object sender, ExceptionEventArgs e)
+        {
+            //SetText("\n出现异常！异常信息：" + e.Exception.ToString());
+            if (PubVar.identify == 0)
+            {
+
+            }
+            //客户端
+            if (PubVar.identify == 1)
+            {
+
+            }
+        }
+        void OnConnectedEvent(object sender, ConnectionEventArgs e)
+        {
+            if (playerCount < 6)
+            {
+                if (playerCount != 0)
+                {
+                    SetTextInfo("接收客户端的连接:" + e.Connection.RemoteEndPoint.ToString());
+                    ChangePic("pic_" + playerCount.ToString(), "3.jpg");
+                }
+                playerCount++;
+                PubVar.playCount = playerCount;
+                //发送当前服务器名称
+                OrderStr = PubVar.ConstOrder.ToString() + "//" + OrderInfo.ServerName.ToString() + "//" + ServerServerName.ToString();
+                Program.server.ServerNet.BeginSend(Encoding.Unicode.GetBytes(OrderStr));              
+            }
+            else
+            {
+                OrderStr = "DisConnect";
+                Program.server .ServerNet.BeginSend(Encoding.Unicode.GetBytes(OrderStr));
+            }
+        }
+        #region 枚举
+        enum OrderInfo
+        {
+            /// <summary>
+            /// 决策者个数
+            /// </summary>
+            PlayerCount,
+            /// <summary>
+            /// 断开指令
+            /// </summary>
+            DisConnect,
+            /// <summary>
+            /// 显示订单窗口
+            /// </summary>
+            BillShow,
+            /// <summary>
+            /// 关闭订单窗口
+            /// </summary>
+            BillClose,
+            /// <summary>
+            /// 订单价格
+            /// </summary>
+            BillPrice,
+            /// <summary>
+            /// 订单结果指令
+            /// </summary>
+            BillResult,
+            /// <summary>
+            /// 决策者信息
+            /// </summary>
+            PlayerInfo,
+            /// <summary>
+            /// 服务器名称
+            /// </summary>
+            ServerName,
+        }
+        #endregion
+        public class PlayerInfo
+        {
+            /// <summary>
+            /// 决策者姓名
+            /// </summary>
+            public string PlayerName;
+            /// <summary>
+            /// 决策者总分
+            /// </summary>
+            public double totalPoints;
+            /// <summary>
+            /// 权益
+            /// </summary>
+            public double right = 0;
+            /// <summary>
+            /// 本年利润
+            /// </summary>
+            public double profit = 0;
+        }
+    }
+}

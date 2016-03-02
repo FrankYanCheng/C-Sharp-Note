@@ -1,0 +1,20 @@
+ class Program
+    {
+        static int counter = 0;
+        static string displaystring = "this string wil appear one letter at a time.";
+        static void Main(string[] args)
+        {
+            Timer myTimer = new Timer(100);
+            myTimer.Elapsed += new ElapsedEventHandler(WriteChar);
+            myTimer.Start();
+            Console.ReadLine();
+        }
+        static void WriteChar(object source,ElapsedEventArgs w)
+        {
+            Console.Write(displaystring[counter++%displaystring.Length]);   
+
+            }
+    }
++=运算符，给事件添加一个处理程序，其形式是使用事件处理程序方法初始化的一个新委托实例；
+启动计时器，myTimer.start();
+Main（）中的处理会停止，但Timer对象中的处理将继续。当该对象引发事件时，就调用WriteChar()方法，同时该方法运行Console.Readline()语句。

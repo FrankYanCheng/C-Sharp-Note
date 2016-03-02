@@ -1,0 +1,1658 @@
+﻿namespace ERPChess
+{
+    partial class frmMain
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+            this.dockContainerItem1 = new DevComponents.DotNetBar.DockContainerItem();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.superTooltip1 = new DevComponents.DotNetBar.SuperTooltip();
+            this.pic = new System.Windows.Forms.PictureBox();
+            this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.labelX13 = new DevComponents.DotNetBar.LabelX();
+            this.labelX12 = new DevComponents.DotNetBar.LabelX();
+            this.labelX3 = new DevComponents.DotNetBar.LabelX();
+            this.lab_Have100w = new DevComponents.DotNetBar.LabelX();
+            this.lab_Have60w = new DevComponents.DotNetBar.LabelX();
+            this.lab_Have30w = new DevComponents.DotNetBar.LabelX();
+            this.groupPanel4 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.labelX14 = new DevComponents.DotNetBar.LabelX();
+            this.lab_DesNitrate = new DevComponents.DotNetBar.LabelX();
+            this.lab_ISO14000 = new DevComponents.DotNetBar.LabelX();
+            this.lab_ISO9000 = new DevComponents.DotNetBar.LabelX();
+            this.groupPanel_FinInfor = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.lbl_Paccount = new DevComponents.DotNetBar.LabelX();
+            this.lbl_Raccount = new DevComponents.DotNetBar.LabelX();
+            this.lbl_Sloan = new DevComponents.DotNetBar.LabelX();
+            this.lbl_Lloan = new DevComponents.DotNetBar.LabelX();
+            this.lbl_ = new DevComponents.DotNetBar.LabelX();
+            this.labelX11 = new DevComponents.DotNetBar.LabelX();
+            this.labelX10 = new DevComponents.DotNetBar.LabelX();
+            this.labelX9 = new DevComponents.DotNetBar.LabelX();
+            this.lbl_Cash = new DevComponents.DotNetBar.LabelX();
+            this.groupPanel_System = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.lab_CurTime = new DevComponents.DotNetBar.LabelX();
+            this.lab_Actor = new DevComponents.DotNetBar.LabelX();
+            this.lab_Company = new DevComponents.DotNetBar.LabelX();
+            this.labelX7 = new DevComponents.DotNetBar.LabelX();
+            this.labelX6 = new DevComponents.DotNetBar.LabelX();
+            this.labelX5 = new DevComponents.DotNetBar.LabelX();
+            this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.linkLabel11 = new System.Windows.Forms.LinkLabel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel27 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel17 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel26 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel9 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel22 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel12 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel25 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel15 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel8 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel21 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel10 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel24 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel14 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel20 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel23 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel13 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel19 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel18 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.panelEx3 = new DevComponents.DotNetBar.PanelEx();
+            this.lbl_CurState = new DevComponents.DotNetBar.LabelX();
+            this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
+            this.dockSite2 = new DevComponents.DotNetBar.DockSite();
+            this.dockSite1 = new DevComponents.DotNetBar.DockSite();
+            this.bubbleBar1 = new DevComponents.DotNetBar.BubbleBar();
+            this.bubbleBarTab1 = new DevComponents.DotNetBar.BubbleBarTab(this.components);
+            this.bubbleButton1 = new DevComponents.DotNetBar.BubbleButton();
+            this.bubbleButton2 = new DevComponents.DotNetBar.BubbleButton();
+            this.bubbleButton3 = new DevComponents.DotNetBar.BubbleButton();
+            this.bubbleButton7 = new DevComponents.DotNetBar.BubbleButton();
+            this.bubbleButton6 = new DevComponents.DotNetBar.BubbleButton();
+            this.bubbleButton8 = new DevComponents.DotNetBar.BubbleButton();
+            this.bubbleButton9 = new DevComponents.DotNetBar.BubbleButton();
+            this.bubbleButton10 = new DevComponents.DotNetBar.BubbleButton();
+            this.bubbleBarTab2 = new DevComponents.DotNetBar.BubbleBarTab(this.components);
+            this.bubbleButton5 = new DevComponents.DotNetBar.BubbleButton();
+            this.reflectionLabel1 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
+            this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
+            this.labelX2 = new DevComponents.DotNetBar.LabelX();
+            this.lblName = new DevComponents.DotNetBar.LabelX();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dockSite3 = new DevComponents.DotNetBar.DockSite();
+            this.dockSite4 = new DevComponents.DotNetBar.DockSite();
+            this.dockSite5 = new DevComponents.DotNetBar.DockSite();
+            this.dockSite6 = new DevComponents.DotNetBar.DockSite();
+            this.dockSite7 = new DevComponents.DotNetBar.DockSite();
+            this.dockSite8 = new DevComponents.DotNetBar.DockSite();
+            this.dotNetBarManager1 = new DevComponents.DotNetBar.DotNetBarManager(this.components);
+            this.bubbleButton4 = new DevComponents.DotNetBar.BubbleButton();
+            this.lbregister = new DevComponents.DotNetBar.LabelX();
+            ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
+            this.groupPanel2.SuspendLayout();
+            this.groupPanel4.SuspendLayout();
+            this.groupPanel_FinInfor.SuspendLayout();
+            this.groupPanel_System.SuspendLayout();
+            this.groupPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panelEx3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bubbleBar1)).BeginInit();
+            this.panelEx1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dockContainerItem1
+            // 
+            this.dockContainerItem1.Name = "dockContainerItem1";
+            this.dockContainerItem1.Text = "dockContainerItem1";
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "Alert_09.png");
+            this.imageList1.Images.SetKeyName(1, "Alert_11.png");
+            this.imageList1.Images.SetKeyName(2, "B_click.png");
+            this.imageList1.Images.SetKeyName(3, "B_on.png");
+            this.imageList1.Images.SetKeyName(4, "Coins.png");
+            this.imageList1.Images.SetKeyName(5, "Connection.png");
+            this.imageList1.Images.SetKeyName(6, "File_28.png");
+            this.imageList1.Images.SetKeyName(7, "gld.JPG");
+            this.imageList1.Images.SetKeyName(8, "help.png");
+            this.imageList1.Images.SetKeyName(9, "ichat.png");
+            this.imageList1.Images.SetKeyName(10, "Logo01.bmp");
+            this.imageList1.Images.SetKeyName(11, "Logo02.bmp");
+            this.imageList1.Images.SetKeyName(12, "MCCF.png");
+            this.imageList1.Images.SetKeyName(13, "Money.png");
+            this.imageList1.Images.SetKeyName(14, "MRCF.png");
+            this.imageList1.Images.SetKeyName(15, "PingFen.png");
+            this.imageList1.Images.SetKeyName(16, "png0010.png");
+            this.imageList1.Images.SetKeyName(17, "png0058.png");
+            this.imageList1.Images.SetKeyName(18, "png-0013.png");
+            this.imageList1.Images.SetKeyName(19, "png-0221.png");
+            this.imageList1.Images.SetKeyName(20, "png-0223.png");
+            this.imageList1.Images.SetKeyName(21, "png-0234.png");
+            this.imageList1.Images.SetKeyName(22, "png-0241.png");
+            this.imageList1.Images.SetKeyName(23, "png-0264.png");
+            this.imageList1.Images.SetKeyName(24, "png-0273.png");
+            this.imageList1.Images.SetKeyName(25, "png-0404.png");
+            this.imageList1.Images.SetKeyName(26, "png-0422.png");
+            this.imageList1.Images.SetKeyName(27, "png-0441.png");
+            this.imageList1.Images.SetKeyName(28, "png-0505.png");
+            this.imageList1.Images.SetKeyName(29, "png-0566.png");
+            this.imageList1.Images.SetKeyName(30, "png-1180.png");
+            this.imageList1.Images.SetKeyName(31, "Run.png");
+            this.imageList1.Images.SetKeyName(32, "Table.bmp");
+            this.imageList1.Images.SetKeyName(33, "Coins.png");
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // pic
+            // 
+            this.pic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pic.Image = ((System.Drawing.Image)(resources.GetObject("pic.Image")));
+            this.pic.Location = new System.Drawing.Point(977, 641);
+            this.pic.Name = "pic";
+            this.pic.Size = new System.Drawing.Size(116, 74);
+            this.pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic.TabIndex = 5;
+            this.pic.TabStop = false;
+            this.pic.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // groupPanel2
+            // 
+            this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel2.Controls.Add(this.labelX13);
+            this.groupPanel2.Controls.Add(this.labelX12);
+            this.groupPanel2.Controls.Add(this.labelX3);
+            this.groupPanel2.Controls.Add(this.lab_Have100w);
+            this.groupPanel2.Controls.Add(this.lab_Have60w);
+            this.groupPanel2.Controls.Add(this.lab_Have30w);
+            this.groupPanel2.Location = new System.Drawing.Point(4, 460);
+            this.groupPanel2.Name = "groupPanel2";
+            this.groupPanel2.Size = new System.Drawing.Size(230, 105);
+            // 
+            // 
+            // 
+            this.groupPanel2.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel2.Style.BackColorGradientAngle = 90;
+            this.groupPanel2.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.groupPanel2.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel2.Style.BorderBottomWidth = 1;
+            this.groupPanel2.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel2.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel2.Style.BorderLeftWidth = 1;
+            this.groupPanel2.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel2.Style.BorderRightWidth = 1;
+            this.groupPanel2.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel2.Style.BorderTopWidth = 1;
+            this.groupPanel2.Style.CornerDiameter = 4;
+            this.groupPanel2.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel2.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel2.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel2.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            this.groupPanel2.TabIndex = 19;
+            this.groupPanel2.Text = "生产资格";
+            // 
+            // labelX13
+            // 
+            this.labelX13.BackColor = System.Drawing.Color.Transparent;
+            this.labelX13.Location = new System.Drawing.Point(110, 50);
+            this.labelX13.Name = "labelX13";
+            this.labelX13.Size = new System.Drawing.Size(75, 23);
+            this.labelX13.TabIndex = 13;
+            this.labelX13.Text = "0";
+            // 
+            // labelX12
+            // 
+            this.labelX12.BackColor = System.Drawing.Color.Transparent;
+            this.labelX12.Location = new System.Drawing.Point(110, 24);
+            this.labelX12.Name = "labelX12";
+            this.labelX12.Size = new System.Drawing.Size(75, 23);
+            this.labelX12.TabIndex = 12;
+            this.labelX12.Text = "0";
+            // 
+            // labelX3
+            // 
+            this.labelX3.BackColor = System.Drawing.Color.Transparent;
+            this.labelX3.Location = new System.Drawing.Point(110, 0);
+            this.labelX3.Name = "labelX3";
+            this.labelX3.Size = new System.Drawing.Size(75, 23);
+            this.labelX3.TabIndex = 11;
+            this.labelX3.Text = "0";
+            // 
+            // lab_Have100w
+            // 
+            this.lab_Have100w.BackColor = System.Drawing.Color.Transparent;
+            this.lab_Have100w.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lab_Have100w.Location = new System.Drawing.Point(20, 56);
+            this.lab_Have100w.Name = "lab_Have100w";
+            this.lab_Have100w.Size = new System.Drawing.Size(122, 18);
+            this.lab_Have100w.TabIndex = 10;
+            this.lab_Have100w.Text = "100万生产资格";
+            // 
+            // lab_Have60w
+            // 
+            this.lab_Have60w.BackColor = System.Drawing.Color.Transparent;
+            this.lab_Have60w.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lab_Have60w.Location = new System.Drawing.Point(20, 29);
+            this.lab_Have60w.Name = "lab_Have60w";
+            this.lab_Have60w.Size = new System.Drawing.Size(122, 18);
+            this.lab_Have60w.TabIndex = 9;
+            this.lab_Have60w.Text = "60万生产资格";
+            // 
+            // lab_Have30w
+            // 
+            this.lab_Have30w.BackColor = System.Drawing.Color.Transparent;
+            this.lab_Have30w.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lab_Have30w.Location = new System.Drawing.Point(20, 3);
+            this.lab_Have30w.Name = "lab_Have30w";
+            this.lab_Have30w.Size = new System.Drawing.Size(122, 18);
+            this.lab_Have30w.TabIndex = 8;
+            this.lab_Have30w.Text = "30万生产资格";
+            // 
+            // groupPanel4
+            // 
+            this.groupPanel4.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel4.Controls.Add(this.labelX14);
+            this.groupPanel4.Controls.Add(this.lab_DesNitrate);
+            this.groupPanel4.Controls.Add(this.lab_ISO14000);
+            this.groupPanel4.Controls.Add(this.lab_ISO9000);
+            this.groupPanel4.Location = new System.Drawing.Point(3, 569);
+            this.groupPanel4.Name = "groupPanel4";
+            this.groupPanel4.Size = new System.Drawing.Size(231, 128);
+            // 
+            // 
+            // 
+            this.groupPanel4.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel4.Style.BackColorGradientAngle = 90;
+            this.groupPanel4.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.groupPanel4.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel4.Style.BorderBottomWidth = 1;
+            this.groupPanel4.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel4.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel4.Style.BorderLeftWidth = 1;
+            this.groupPanel4.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel4.Style.BorderRightWidth = 1;
+            this.groupPanel4.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel4.Style.BorderTopWidth = 1;
+            this.groupPanel4.Style.CornerDiameter = 4;
+            this.groupPanel4.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel4.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel4.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel4.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            this.groupPanel4.TabIndex = 4;
+            this.groupPanel4.Text = "认证证书";
+            // 
+            // labelX14
+            // 
+            this.labelX14.Location = new System.Drawing.Point(128, 70);
+            this.labelX14.Name = "labelX14";
+            this.labelX14.Size = new System.Drawing.Size(52, 22);
+            this.labelX14.TabIndex = 5;
+            this.labelX14.Text = "0";
+            // 
+            // lab_DesNitrate
+            // 
+            this.lab_DesNitrate.BackColor = System.Drawing.Color.Transparent;
+            this.lab_DesNitrate.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lab_DesNitrate.Location = new System.Drawing.Point(19, 70);
+            this.lab_DesNitrate.Name = "lab_DesNitrate";
+            this.lab_DesNitrate.Size = new System.Drawing.Size(122, 18);
+            this.lab_DesNitrate.TabIndex = 4;
+            this.lab_DesNitrate.Text = "脱硫硝认证个数";
+            // 
+            // lab_ISO14000
+            // 
+            this.lab_ISO14000.BackColor = System.Drawing.Color.Transparent;
+            this.lab_ISO14000.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.lab_ISO14000.Location = new System.Drawing.Point(19, 40);
+            this.lab_ISO14000.Name = "lab_ISO14000";
+            this.lab_ISO14000.Size = new System.Drawing.Size(122, 18);
+            this.lab_ISO14000.TabIndex = 3;
+            this.lab_ISO14000.Text = "未获得ISO14000认证";
+            // 
+            // lab_ISO9000
+            // 
+            this.lab_ISO9000.BackColor = System.Drawing.Color.Transparent;
+            this.lab_ISO9000.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.lab_ISO9000.Location = new System.Drawing.Point(19, 10);
+            this.lab_ISO9000.Name = "lab_ISO9000";
+            this.lab_ISO9000.Size = new System.Drawing.Size(122, 18);
+            this.lab_ISO9000.TabIndex = 2;
+            this.lab_ISO9000.Text = "未获得ISO9000认证";
+            // 
+            // groupPanel_FinInfor
+            // 
+            this.groupPanel_FinInfor.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel_FinInfor.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel_FinInfor.Controls.Add(this.lbl_Paccount);
+            this.groupPanel_FinInfor.Controls.Add(this.lbl_Raccount);
+            this.groupPanel_FinInfor.Controls.Add(this.lbl_Sloan);
+            this.groupPanel_FinInfor.Controls.Add(this.lbl_Lloan);
+            this.groupPanel_FinInfor.Controls.Add(this.lbl_);
+            this.groupPanel_FinInfor.Controls.Add(this.labelX11);
+            this.groupPanel_FinInfor.Controls.Add(this.labelX10);
+            this.groupPanel_FinInfor.Controls.Add(this.labelX9);
+            this.groupPanel_FinInfor.Location = new System.Drawing.Point(3, 311);
+            this.groupPanel_FinInfor.Name = "groupPanel_FinInfor";
+            this.groupPanel_FinInfor.Size = new System.Drawing.Size(231, 143);
+            // 
+            // 
+            // 
+            this.groupPanel_FinInfor.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel_FinInfor.Style.BackColorGradientAngle = 90;
+            this.groupPanel_FinInfor.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.groupPanel_FinInfor.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel_FinInfor.Style.BorderBottomWidth = 1;
+            this.groupPanel_FinInfor.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel_FinInfor.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel_FinInfor.Style.BorderLeftWidth = 1;
+            this.groupPanel_FinInfor.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel_FinInfor.Style.BorderRightWidth = 1;
+            this.groupPanel_FinInfor.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel_FinInfor.Style.BorderTopWidth = 1;
+            this.groupPanel_FinInfor.Style.CornerDiameter = 4;
+            this.groupPanel_FinInfor.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel_FinInfor.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel_FinInfor.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel_FinInfor.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            this.groupPanel_FinInfor.TabIndex = 4;
+            this.groupPanel_FinInfor.Text = "财产信息";
+            // 
+            // lbl_Paccount
+            // 
+            this.lbl_Paccount.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Paccount.Location = new System.Drawing.Point(91, 93);
+            this.lbl_Paccount.Name = "lbl_Paccount";
+            this.lbl_Paccount.Size = new System.Drawing.Size(66, 18);
+            this.lbl_Paccount.TabIndex = 10;
+            this.lbl_Paccount.Text = "0w";
+            this.lbl_Paccount.Visible = false;
+            // 
+            // lbl_Raccount
+            // 
+            this.lbl_Raccount.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Raccount.Location = new System.Drawing.Point(91, 74);
+            this.lbl_Raccount.Name = "lbl_Raccount";
+            this.lbl_Raccount.Size = new System.Drawing.Size(66, 18);
+            this.lbl_Raccount.TabIndex = 9;
+            this.lbl_Raccount.Text = "0w";
+            // 
+            // lbl_Sloan
+            // 
+            this.lbl_Sloan.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Sloan.Location = new System.Drawing.Point(91, 48);
+            this.lbl_Sloan.Name = "lbl_Sloan";
+            this.lbl_Sloan.Size = new System.Drawing.Size(66, 18);
+            this.lbl_Sloan.TabIndex = 8;
+            this.lbl_Sloan.Text = "0w";
+            // 
+            // lbl_Lloan
+            // 
+            this.lbl_Lloan.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Lloan.Location = new System.Drawing.Point(91, 12);
+            this.lbl_Lloan.Name = "lbl_Lloan";
+            this.lbl_Lloan.Size = new System.Drawing.Size(66, 18);
+            this.lbl_Lloan.TabIndex = 7;
+            this.lbl_Lloan.Text = "0w";
+            // 
+            // lbl_
+            // 
+            this.lbl_.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_.Location = new System.Drawing.Point(19, 93);
+            this.lbl_.Name = "lbl_";
+            this.lbl_.Size = new System.Drawing.Size(66, 18);
+            this.lbl_.TabIndex = 5;
+            this.lbl_.Text = "应付账款：";
+            this.lbl_.Visible = false;
+            // 
+            // labelX11
+            // 
+            this.labelX11.BackColor = System.Drawing.Color.Transparent;
+            this.labelX11.Location = new System.Drawing.Point(19, 74);
+            this.labelX11.Name = "labelX11";
+            this.labelX11.Size = new System.Drawing.Size(66, 18);
+            this.labelX11.TabIndex = 4;
+            this.labelX11.Text = "应收账款：";
+            // 
+            // labelX10
+            // 
+            this.labelX10.BackColor = System.Drawing.Color.Transparent;
+            this.labelX10.Location = new System.Drawing.Point(19, 48);
+            this.labelX10.Name = "labelX10";
+            this.labelX10.Size = new System.Drawing.Size(66, 18);
+            this.labelX10.TabIndex = 3;
+            this.labelX10.Text = "短期贷款：";
+            // 
+            // labelX9
+            // 
+            this.labelX9.BackColor = System.Drawing.Color.Transparent;
+            this.labelX9.Location = new System.Drawing.Point(19, 12);
+            this.labelX9.Name = "labelX9";
+            this.labelX9.Size = new System.Drawing.Size(66, 18);
+            this.labelX9.TabIndex = 2;
+            this.labelX9.Text = "长期贷款：";
+            // 
+            // lbl_Cash
+            // 
+            this.lbl_Cash.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Cash.Font = new System.Drawing.Font("宋体", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lbl_Cash.Location = new System.Drawing.Point(5, 67);
+            this.lbl_Cash.Name = "lbl_Cash";
+            this.lbl_Cash.Size = new System.Drawing.Size(192, 60);
+            this.lbl_Cash.TabIndex = 6;
+            this.lbl_Cash.Text = "0w";
+            // 
+            // groupPanel_System
+            // 
+            this.groupPanel_System.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel_System.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel_System.Controls.Add(this.lab_CurTime);
+            this.groupPanel_System.Controls.Add(this.lab_Actor);
+            this.groupPanel_System.Controls.Add(this.lab_Company);
+            this.groupPanel_System.Controls.Add(this.labelX7);
+            this.groupPanel_System.Controls.Add(this.labelX6);
+            this.groupPanel_System.Controls.Add(this.labelX5);
+            this.groupPanel_System.Location = new System.Drawing.Point(3, 195);
+            this.groupPanel_System.Name = "groupPanel_System";
+            this.groupPanel_System.Size = new System.Drawing.Size(231, 105);
+            // 
+            // 
+            // 
+            this.groupPanel_System.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel_System.Style.BackColorGradientAngle = 90;
+            this.groupPanel_System.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.groupPanel_System.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel_System.Style.BorderBottomWidth = 1;
+            this.groupPanel_System.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel_System.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel_System.Style.BorderLeftWidth = 1;
+            this.groupPanel_System.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel_System.Style.BorderRightWidth = 1;
+            this.groupPanel_System.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel_System.Style.BorderTopWidth = 1;
+            this.groupPanel_System.Style.CornerDiameter = 4;
+            this.groupPanel_System.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel_System.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel_System.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel_System.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            this.groupPanel_System.TabIndex = 4;
+            this.groupPanel_System.Text = "系统信息";
+            // 
+            // lab_CurTime
+            // 
+            this.lab_CurTime.BackColor = System.Drawing.Color.Transparent;
+            this.lab_CurTime.Location = new System.Drawing.Point(91, 55);
+            this.lab_CurTime.Name = "lab_CurTime";
+            this.lab_CurTime.Size = new System.Drawing.Size(66, 18);
+            this.lab_CurTime.TabIndex = 5;
+            this.lab_CurTime.Text = "CurTime";
+            // 
+            // lab_Actor
+            // 
+            this.lab_Actor.BackColor = System.Drawing.Color.Transparent;
+            this.lab_Actor.Location = new System.Drawing.Point(91, 32);
+            this.lab_Actor.Name = "lab_Actor";
+            this.lab_Actor.Size = new System.Drawing.Size(66, 18);
+            this.lab_Actor.TabIndex = 4;
+            this.lab_Actor.Text = "Actor";
+            // 
+            // lab_Company
+            // 
+            this.lab_Company.BackColor = System.Drawing.Color.Transparent;
+            this.lab_Company.Location = new System.Drawing.Point(91, 7);
+            this.lab_Company.Name = "lab_Company";
+            this.lab_Company.Size = new System.Drawing.Size(66, 18);
+            this.lab_Company.TabIndex = 3;
+            this.lab_Company.Text = "company";
+            // 
+            // labelX7
+            // 
+            this.labelX7.BackColor = System.Drawing.Color.Transparent;
+            this.labelX7.Location = new System.Drawing.Point(19, 57);
+            this.labelX7.Name = "labelX7";
+            this.labelX7.Size = new System.Drawing.Size(66, 18);
+            this.labelX7.TabIndex = 2;
+            this.labelX7.Text = "当前时间：";
+            // 
+            // labelX6
+            // 
+            this.labelX6.BackColor = System.Drawing.Color.Transparent;
+            this.labelX6.Location = new System.Drawing.Point(31, 32);
+            this.labelX6.Name = "labelX6";
+            this.labelX6.Size = new System.Drawing.Size(54, 18);
+            this.labelX6.TabIndex = 1;
+            this.labelX6.Text = "决策者：";
+            // 
+            // labelX5
+            // 
+            this.labelX5.BackColor = System.Drawing.Color.Transparent;
+            this.labelX5.Location = new System.Drawing.Point(19, 7);
+            this.labelX5.Name = "labelX5";
+            this.labelX5.Size = new System.Drawing.Size(66, 18);
+            this.labelX5.TabIndex = 0;
+            this.labelX5.Text = "公司名称：";
+            // 
+            // groupPanel1
+            // 
+            this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.linkLabel11);
+            this.groupPanel1.Controls.Add(this.pictureBox4);
+            this.groupPanel1.Controls.Add(this.pictureBox3);
+            this.groupPanel1.Controls.Add(this.linkLabel6);
+            this.groupPanel1.Controls.Add(this.linkLabel27);
+            this.groupPanel1.Controls.Add(this.linkLabel17);
+            this.groupPanel1.Controls.Add(this.linkLabel26);
+            this.groupPanel1.Controls.Add(this.linkLabel9);
+            this.groupPanel1.Controls.Add(this.linkLabel22);
+            this.groupPanel1.Controls.Add(this.linkLabel12);
+            this.groupPanel1.Controls.Add(this.linkLabel4);
+            this.groupPanel1.Controls.Add(this.linkLabel25);
+            this.groupPanel1.Controls.Add(this.linkLabel15);
+            this.groupPanel1.Controls.Add(this.linkLabel8);
+            this.groupPanel1.Controls.Add(this.linkLabel21);
+            this.groupPanel1.Controls.Add(this.linkLabel10);
+            this.groupPanel1.Controls.Add(this.linkLabel3);
+            this.groupPanel1.Controls.Add(this.linkLabel24);
+            this.groupPanel1.Controls.Add(this.linkLabel14);
+            this.groupPanel1.Controls.Add(this.linkLabel7);
+            this.groupPanel1.Controls.Add(this.linkLabel20);
+            this.groupPanel1.Controls.Add(this.linkLabel5);
+            this.groupPanel1.Controls.Add(this.linkLabel23);
+            this.groupPanel1.Controls.Add(this.linkLabel13);
+            this.groupPanel1.Controls.Add(this.linkLabel19);
+            this.groupPanel1.Controls.Add(this.linkLabel2);
+            this.groupPanel1.Controls.Add(this.linkLabel18);
+            this.groupPanel1.Controls.Add(this.linkLabel1);
+            this.groupPanel1.Location = new System.Drawing.Point(240, 195);
+            this.groupPanel1.Name = "groupPanel1";
+            this.groupPanel1.Size = new System.Drawing.Size(857, 440);
+            // 
+            // 
+            // 
+            this.groupPanel1.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel1.Style.BackColorGradientAngle = 90;
+            this.groupPanel1.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.groupPanel1.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel1.Style.BorderBottomWidth = 1;
+            this.groupPanel1.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel1.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel1.Style.BorderLeftWidth = 1;
+            this.groupPanel1.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel1.Style.BorderRightWidth = 1;
+            this.groupPanel1.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel1.Style.BorderTopWidth = 1;
+            this.groupPanel1.Style.CornerDiameter = 4;
+            this.groupPanel1.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel1.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel1.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel1.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            this.groupPanel1.TabIndex = 18;
+            this.groupPanel1.Text = "执行操作";
+            // 
+            // linkLabel11
+            // 
+            this.linkLabel11.AutoSize = true;
+            this.linkLabel11.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel11.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel11.ImageIndex = 0;
+            this.linkLabel11.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel11.Location = new System.Drawing.Point(342, 53);
+            this.linkLabel11.Name = "linkLabel11";
+            this.linkLabel11.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel11.Size = new System.Drawing.Size(88, 16);
+            this.linkLabel11.TabIndex = 4;
+            this.linkLabel11.TabStop = true;
+            this.linkLabel11.Text = "投资新机组";
+            this.linkLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel11.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Black;
+            this.pictureBox4.Location = new System.Drawing.Point(580, 15);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(3, 363);
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Black;
+            this.pictureBox3.Location = new System.Drawing.Point(287, 15);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(3, 363);
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // linkLabel6
+            // 
+            this.linkLabel6.AutoSize = true;
+            this.linkLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel6.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel6.ImageIndex = 0;
+            this.linkLabel6.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel6.Location = new System.Drawing.Point(40, 193);
+            this.linkLabel6.Name = "linkLabel6";
+            this.linkLabel6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel6.Size = new System.Drawing.Size(152, 16);
+            this.linkLabel6.TabIndex = 1;
+            this.linkLabel6.TabStop = true;
+            this.linkLabel6.Text = "参加竞价上网订单会";
+            this.linkLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel27
+            // 
+            this.linkLabel27.AutoSize = true;
+            this.linkLabel27.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel27.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel27.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel27.ImageIndex = 0;
+            this.linkLabel27.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel27.Location = new System.Drawing.Point(635, 331);
+            this.linkLabel27.Name = "linkLabel27";
+            this.linkLabel27.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel27.Size = new System.Drawing.Size(40, 16);
+            this.linkLabel27.TabIndex = 0;
+            this.linkLabel27.TabStop = true;
+            this.linkLabel27.Text = "关账";
+            this.linkLabel27.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel27.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel17
+            // 
+            this.linkLabel17.AutoSize = true;
+            this.linkLabel17.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel17.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel17.ImageIndex = 0;
+            this.linkLabel17.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel17.Location = new System.Drawing.Point(342, 268);
+            this.linkLabel17.Name = "linkLabel17";
+            this.linkLabel17.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel17.Size = new System.Drawing.Size(104, 16);
+            this.linkLabel17.TabIndex = 0;
+            this.linkLabel17.TabStop = true;
+            this.linkLabel17.Text = "支付厂用电费";
+            this.linkLabel17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel17.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel26
+            // 
+            this.linkLabel26.AutoSize = true;
+            this.linkLabel26.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel26.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel26.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel26.ImageIndex = 0;
+            this.linkLabel26.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel26.Location = new System.Drawing.Point(635, 293);
+            this.linkLabel26.Name = "linkLabel26";
+            this.linkLabel26.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel26.Size = new System.Drawing.Size(168, 16);
+            this.linkLabel26.TabIndex = 0;
+            this.linkLabel26.TabStop = true;
+            this.linkLabel26.Text = "付主营业务税金及附加";
+            this.linkLabel26.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel26.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel9
+            // 
+            this.linkLabel9.AutoSize = true;
+            this.linkLabel9.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel9.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel9.ImageIndex = 0;
+            this.linkLabel9.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel9.Location = new System.Drawing.Point(40, 322);
+            this.linkLabel9.Name = "linkLabel9";
+            this.linkLabel9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel9.Size = new System.Drawing.Size(152, 16);
+            this.linkLabel9.TabIndex = 0;
+            this.linkLabel9.TabStop = true;
+            this.linkLabel9.Text = "参加电煤采购订货会";
+            this.linkLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel9.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel22
+            // 
+            this.linkLabel22.AutoSize = true;
+            this.linkLabel22.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel22.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel22.ImageIndex = 0;
+            this.linkLabel22.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel22.Location = new System.Drawing.Point(635, 133);
+            this.linkLabel22.Name = "linkLabel22";
+            this.linkLabel22.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel22.Size = new System.Drawing.Size(104, 16);
+            this.linkLabel22.TabIndex = 0;
+            this.linkLabel22.TabStop = true;
+            this.linkLabel22.Text = "付委托运行费";
+            this.linkLabel22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel22.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel12
+            // 
+            this.linkLabel12.AutoSize = true;
+            this.linkLabel12.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel12.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel12.ImageIndex = 0;
+            this.linkLabel12.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel12.Location = new System.Drawing.Point(342, 93);
+            this.linkLabel12.Name = "linkLabel12";
+            this.linkLabel12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel12.Size = new System.Drawing.Size(104, 16);
+            this.linkLabel12.TabIndex = 0;
+            this.linkLabel12.TabStop = true;
+            this.linkLabel12.Text = "开始新的生产";
+            this.linkLabel12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel12.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel4
+            // 
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel4.ImageIndex = 0;
+            this.linkLabel4.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel4.Location = new System.Drawing.Point(167, 106);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel4.Size = new System.Drawing.Size(88, 16);
+            this.linkLabel4.TabIndex = 0;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "更新应付款";
+            this.linkLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel4.Visible = false;
+            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel25
+            // 
+            this.linkLabel25.AutoSize = true;
+            this.linkLabel25.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel25.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel25.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel25.ImageIndex = 0;
+            this.linkLabel25.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel25.Location = new System.Drawing.Point(635, 253);
+            this.linkLabel25.Name = "linkLabel25";
+            this.linkLabel25.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel25.Size = new System.Drawing.Size(104, 16);
+            this.linkLabel25.TabIndex = 0;
+            this.linkLabel25.TabStop = true;
+            this.linkLabel25.Text = "付微油点火费";
+            this.linkLabel25.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel25.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel15
+            // 
+            this.linkLabel15.AutoSize = true;
+            this.linkLabel15.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel15.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel15.ImageIndex = 0;
+            this.linkLabel15.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel15.Location = new System.Drawing.Point(339, 216);
+            this.linkLabel15.Name = "linkLabel15";
+            this.linkLabel15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel15.Size = new System.Drawing.Size(168, 16);
+            this.linkLabel15.TabIndex = 0;
+            this.linkLabel15.TabStop = true;
+            this.linkLabel15.Text = "ISO9000/ISO14000资格";
+            this.linkLabel15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel15.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel8
+            // 
+            this.linkLabel8.AutoSize = true;
+            this.linkLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel8.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel8.ImageIndex = 0;
+            this.linkLabel8.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel8.Location = new System.Drawing.Point(40, 280);
+            this.linkLabel8.Name = "linkLabel8";
+            this.linkLabel8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel8.Size = new System.Drawing.Size(120, 16);
+            this.linkLabel8.TabIndex = 0;
+            this.linkLabel8.TabStop = true;
+            this.linkLabel8.Text = "办理新短期贷款";
+            this.linkLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel8.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel21
+            // 
+            this.linkLabel21.AutoSize = true;
+            this.linkLabel21.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel21.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel21.ImageIndex = 0;
+            this.linkLabel21.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel21.Location = new System.Drawing.Point(635, 93);
+            this.linkLabel21.Name = "linkLabel21";
+            this.linkLabel21.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel21.Size = new System.Drawing.Size(72, 16);
+            this.linkLabel21.TabIndex = 0;
+            this.linkLabel21.TabStop = true;
+            this.linkLabel21.Text = "付排污费";
+            this.linkLabel21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel21.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel10
+            // 
+            this.linkLabel10.AutoSize = true;
+            this.linkLabel10.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel10.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel10.ImageIndex = 0;
+            this.linkLabel10.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel10.Location = new System.Drawing.Point(342, 15);
+            this.linkLabel10.Name = "linkLabel10";
+            this.linkLabel10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel10.Size = new System.Drawing.Size(72, 16);
+            this.linkLabel10.TabIndex = 0;
+            this.linkLabel10.TabStop = true;
+            this.linkLabel10.Text = "报废机组";
+            this.linkLabel10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel10.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel3
+            // 
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel3.ImageIndex = 0;
+            this.linkLabel3.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel3.Location = new System.Drawing.Point(40, 106);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel3.Size = new System.Drawing.Size(88, 16);
+            this.linkLabel3.TabIndex = 0;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "更新应收款";
+            this.linkLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel24
+            // 
+            this.linkLabel24.AutoSize = true;
+            this.linkLabel24.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel24.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel24.ImageIndex = 0;
+            this.linkLabel24.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel24.Location = new System.Drawing.Point(635, 213);
+            this.linkLabel24.Name = "linkLabel24";
+            this.linkLabel24.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel24.Size = new System.Drawing.Size(72, 16);
+            this.linkLabel24.TabIndex = 0;
+            this.linkLabel24.TabStop = true;
+            this.linkLabel24.Text = "其他费用";
+            this.linkLabel24.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel24.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel14
+            // 
+            this.linkLabel14.AutoSize = true;
+            this.linkLabel14.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel14.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel14.ImageIndex = 0;
+            this.linkLabel14.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel14.Location = new System.Drawing.Point(342, 173);
+            this.linkLabel14.Name = "linkLabel14";
+            this.linkLabel14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel14.Size = new System.Drawing.Size(248, 16);
+            this.linkLabel14.TabIndex = 0;
+            this.linkLabel14.TabStop = true;
+            this.linkLabel14.Text = "脱硫、脱硝设备投资以及微油点火";
+            this.linkLabel14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel14.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel7
+            // 
+            this.linkLabel7.AutoSize = true;
+            this.linkLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel7.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel7.ImageIndex = 0;
+            this.linkLabel7.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel7.Location = new System.Drawing.Point(40, 238);
+            this.linkLabel7.Name = "linkLabel7";
+            this.linkLabel7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel7.Size = new System.Drawing.Size(104, 16);
+            this.linkLabel7.TabIndex = 0;
+            this.linkLabel7.TabStop = true;
+            this.linkLabel7.Text = "新贷长期贷款";
+            this.linkLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel20
+            // 
+            this.linkLabel20.AutoSize = true;
+            this.linkLabel20.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel20.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel20.ImageIndex = 0;
+            this.linkLabel20.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel20.Location = new System.Drawing.Point(635, 53);
+            this.linkLabel20.Name = "linkLabel20";
+            this.linkLabel20.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel20.Size = new System.Drawing.Size(104, 16);
+            this.linkLabel20.TabIndex = 0;
+            this.linkLabel20.TabStop = true;
+            this.linkLabel20.Text = "付财产保险费";
+            this.linkLabel20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel20.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel5
+            // 
+            this.linkLabel5.AutoSize = true;
+            this.linkLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel5.ImageIndex = 0;
+            this.linkLabel5.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel5.Location = new System.Drawing.Point(40, 152);
+            this.linkLabel5.Name = "linkLabel5";
+            this.linkLabel5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel5.Size = new System.Drawing.Size(120, 16);
+            this.linkLabel5.TabIndex = 0;
+            this.linkLabel5.TabStop = true;
+            this.linkLabel5.Text = "支付上年所得税";
+            this.linkLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel23
+            // 
+            this.linkLabel23.AutoSize = true;
+            this.linkLabel23.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel23.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel23.ImageIndex = 0;
+            this.linkLabel23.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel23.Location = new System.Drawing.Point(635, 173);
+            this.linkLabel23.Name = "linkLabel23";
+            this.linkLabel23.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel23.Size = new System.Drawing.Size(72, 16);
+            this.linkLabel23.TabIndex = 0;
+            this.linkLabel23.TabStop = true;
+            this.linkLabel23.Text = "计提折旧";
+            this.linkLabel23.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel23.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel13
+            // 
+            this.linkLabel13.AutoSize = true;
+            this.linkLabel13.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel13.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel13.ImageIndex = 0;
+            this.linkLabel13.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel13.Location = new System.Drawing.Point(342, 133);
+            this.linkLabel13.Name = "linkLabel13";
+            this.linkLabel13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel13.Size = new System.Drawing.Size(88, 16);
+            this.linkLabel13.TabIndex = 0;
+            this.linkLabel13.TabStop = true;
+            this.linkLabel13.Text = "交货给客户";
+            this.linkLabel13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel13.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel19
+            // 
+            this.linkLabel19.AutoSize = true;
+            this.linkLabel19.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel19.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel19.ImageIndex = 0;
+            this.linkLabel19.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel19.Location = new System.Drawing.Point(635, 15);
+            this.linkLabel19.Name = "linkLabel19";
+            this.linkLabel19.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel19.Size = new System.Drawing.Size(120, 16);
+            this.linkLabel19.TabIndex = 0;
+            this.linkLabel19.TabStop = true;
+            this.linkLabel19.Text = "付工资及福利费";
+            this.linkLabel19.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel19.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel2.ImageIndex = 0;
+            this.linkLabel2.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel2.Location = new System.Drawing.Point(40, 63);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel2.Size = new System.Drawing.Size(120, 16);
+            this.linkLabel2.TabIndex = 0;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "制定新年度计划";
+            this.linkLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel18
+            // 
+            this.linkLabel18.AutoSize = true;
+            this.linkLabel18.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel18.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel18.ImageIndex = 0;
+            this.linkLabel18.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel18.Location = new System.Drawing.Point(339, 320);
+            this.linkLabel18.Name = "linkLabel18";
+            this.linkLabel18.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel18.Size = new System.Drawing.Size(120, 16);
+            this.linkLabel18.TabIndex = 0;
+            this.linkLabel18.TabStop = true;
+            this.linkLabel18.Text = "支付设备修理费";
+            this.linkLabel18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel18.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.linkLabel1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel1.ImageIndex = 0;
+            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel1.Location = new System.Drawing.Point(40, 15);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkLabel1.Size = new System.Drawing.Size(152, 16);
+            this.linkLabel1.TabIndex = 0;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "新年度信息采集会议";
+            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+            // 
+            // panelEx3
+            // 
+            this.panelEx3.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.panelEx3.Controls.Add(this.lbl_CurState);
+            this.panelEx3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelEx3.Location = new System.Drawing.Point(0, 165);
+            this.panelEx3.Name = "panelEx3";
+            this.panelEx3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.panelEx3.Size = new System.Drawing.Size(1105, 24);
+            this.panelEx3.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx3.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx3.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.panelEx3.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx3.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx3.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx3.Style.GradientAngle = 90;
+            this.panelEx3.TabIndex = 17;
+            // 
+            // lbl_CurState
+            // 
+            this.lbl_CurState.Location = new System.Drawing.Point(732, 3);
+            this.lbl_CurState.Name = "lbl_CurState";
+            this.lbl_CurState.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbl_CurState.Size = new System.Drawing.Size(371, 17);
+            this.lbl_CurState.TabIndex = 0;
+            this.lbl_CurState.Text = "当前时间";
+            // 
+            // panelEx2
+            // 
+            this.panelEx2.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.panelEx2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelEx2.Location = new System.Drawing.Point(0, 722);
+            this.panelEx2.Name = "panelEx2";
+            this.panelEx2.Size = new System.Drawing.Size(1105, 19);
+            this.panelEx2.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx2.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx2.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.panelEx2.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx2.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx2.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx2.Style.GradientAngle = 90;
+            this.panelEx2.TabIndex = 15;
+            this.panelEx2.Text = "版权所有";
+            // 
+            // dockSite2
+            // 
+            this.dockSite2.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
+            this.dockSite2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.dockSite2.DocumentDockContainer = new DevComponents.DotNetBar.DocumentDockContainer();
+            this.dockSite2.Location = new System.Drawing.Point(1105, 165);
+            this.dockSite2.Name = "dockSite2";
+            this.dockSite2.Size = new System.Drawing.Size(0, 576);
+            this.dockSite2.TabIndex = 8;
+            this.dockSite2.TabStop = false;
+            // 
+            // dockSite1
+            // 
+            this.dockSite1.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
+            this.dockSite1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.dockSite1.DocumentDockContainer = new DevComponents.DotNetBar.DocumentDockContainer();
+            this.dockSite1.Location = new System.Drawing.Point(0, 165);
+            this.dockSite1.Name = "dockSite1";
+            this.dockSite1.Size = new System.Drawing.Size(0, 576);
+            this.dockSite1.TabIndex = 7;
+            this.dockSite1.TabStop = false;
+            // 
+            // bubbleBar1
+            // 
+            this.bubbleBar1.Alignment = DevComponents.DotNetBar.eBubbleButtonAlignment.Bottom;
+            this.bubbleBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.bubbleBar1.AntiAlias = true;
+            // 
+            // 
+            // 
+            this.bubbleBar1.ButtonBackAreaStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bubbleBar1.ButtonBackAreaStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.bubbleBar1.ButtonBackAreaStyle.BorderBottomWidth = 1;
+            this.bubbleBar1.ButtonBackAreaStyle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.bubbleBar1.ButtonBackAreaStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.bubbleBar1.ButtonBackAreaStyle.BorderLeftWidth = 1;
+            this.bubbleBar1.ButtonBackAreaStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.bubbleBar1.ButtonBackAreaStyle.BorderRightWidth = 1;
+            this.bubbleBar1.ButtonBackAreaStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.bubbleBar1.ButtonBackAreaStyle.BorderTopWidth = 1;
+            this.bubbleBar1.ButtonBackAreaStyle.PaddingBottom = 3;
+            this.bubbleBar1.ButtonBackAreaStyle.PaddingLeft = 3;
+            this.bubbleBar1.ButtonBackAreaStyle.PaddingRight = 3;
+            this.bubbleBar1.ButtonBackAreaStyle.PaddingTop = 3;
+            this.bubbleBar1.ButtonBackgroundStretch = false;
+            this.bubbleBar1.ForeColor = System.Drawing.Color.Transparent;
+            this.bubbleBar1.ImageSizeLarge = new System.Drawing.Size(88, 88);
+            this.bubbleBar1.ImageSizeNormal = new System.Drawing.Size(68, 68);
+            this.bubbleBar1.Location = new System.Drawing.Point(162, 641);
+            this.bubbleBar1.MouseOverTabColors.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.bubbleBar1.Name = "bubbleBar1";
+            this.bubbleBar1.SelectedTab = this.bubbleBarTab1;
+            this.bubbleBar1.SelectedTabColors.BorderColor = System.Drawing.Color.Black;
+            this.bubbleBar1.Size = new System.Drawing.Size(881, 75);
+            this.bubbleBar1.TabIndex = 6;
+            this.bubbleBar1.Tabs.Add(this.bubbleBarTab1);
+            this.bubbleBar1.Tabs.Add(this.bubbleBarTab2);
+            this.bubbleBar1.Text = "bubbleBar1";
+            // 
+            // bubbleBarTab1
+            // 
+            this.bubbleBarTab1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(230)))), ((int)(((byte)(247)))));
+            this.bubbleBarTab1.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(168)))), ((int)(((byte)(228)))));
+            this.bubbleBarTab1.Buttons.AddRange(new DevComponents.DotNetBar.BubbleButton[] {
+            this.bubbleButton1,
+            this.bubbleButton2,
+            this.bubbleButton3,
+            this.bubbleButton7,
+            this.bubbleButton6,
+            this.bubbleButton8,
+            this.bubbleButton9,
+            this.bubbleButton10});
+            this.bubbleBarTab1.DarkBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bubbleBarTab1.LightBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bubbleBarTab1.Name = "bubbleBarTab1";
+            this.bubbleBarTab1.PredefinedColor = DevComponents.DotNetBar.eTabItemColor.Blue;
+            this.bubbleBarTab1.Text = "主操作";
+            this.bubbleBarTab1.TextColor = System.Drawing.Color.Black;
+            // 
+            // bubbleButton1
+            // 
+            this.bubbleButton1.Image = ((System.Drawing.Image)(resources.GetObject("bubbleButton1.Image")));
+            this.bubbleButton1.ImageLarge = ((System.Drawing.Image)(resources.GetObject("bubbleButton1.ImageLarge")));
+            this.bubbleButton1.Name = "bubbleButton1";
+            // 
+            // bubbleButton2
+            // 
+            this.bubbleButton2.Image = ((System.Drawing.Image)(resources.GetObject("bubbleButton2.Image")));
+            this.bubbleButton2.ImageLarge = ((System.Drawing.Image)(resources.GetObject("bubbleButton2.ImageLarge")));
+            this.bubbleButton2.Name = "bubbleButton2";
+            this.bubbleButton2.TooltipText = "查看经营业绩排名";
+            this.bubbleButton2.Click += new DevComponents.DotNetBar.ClickEventHandler(this.bubbleButton_Click);
+            // 
+            // bubbleButton3
+            // 
+            this.bubbleButton3.Image = ((System.Drawing.Image)(resources.GetObject("bubbleButton3.Image")));
+            this.bubbleButton3.ImageLarge = ((System.Drawing.Image)(resources.GetObject("bubbleButton3.ImageLarge")));
+            this.bubbleButton3.Name = "bubbleButton3";
+            this.bubbleButton3.TooltipText = "查看经营结果";
+            this.bubbleButton3.Click += new DevComponents.DotNetBar.ClickEventHandler(this.bubbleButton_Click);
+            // 
+            // bubbleButton7
+            // 
+            this.bubbleButton7.Image = ((System.Drawing.Image)(resources.GetObject("bubbleButton7.Image")));
+            this.bubbleButton7.ImageLarge = ((System.Drawing.Image)(resources.GetObject("bubbleButton7.ImageLarge")));
+            this.bubbleButton7.Name = "bubbleButton7";
+            this.bubbleButton7.TooltipText = "查看英雄榜";
+            this.bubbleButton7.Click += new DevComponents.DotNetBar.ClickEventHandler(this.bubbleButton_Click);
+            // 
+            // bubbleButton6
+            // 
+            this.bubbleButton6.Image = ((System.Drawing.Image)(resources.GetObject("bubbleButton6.Image")));
+            this.bubbleButton6.ImageLarge = ((System.Drawing.Image)(resources.GetObject("bubbleButton6.ImageLarge")));
+            this.bubbleButton6.Name = "bubbleButton6";
+            this.bubbleButton6.TooltipText = "贴现";
+            this.bubbleButton6.Click += new DevComponents.DotNetBar.ClickEventHandler(this.bubbleButton_Click);
+            // 
+            // bubbleButton8
+            // 
+            this.bubbleButton8.Image = ((System.Drawing.Image)(resources.GetObject("bubbleButton8.Image")));
+            this.bubbleButton8.ImageLarge = ((System.Drawing.Image)(resources.GetObject("bubbleButton8.ImageLarge")));
+            this.bubbleButton8.Name = "bubbleButton8";
+            this.bubbleButton8.TooltipText = "系统帮助";
+            this.bubbleButton8.Click += new DevComponents.DotNetBar.ClickEventHandler(this.bubbleButton_Click);
+            // 
+            // bubbleButton9
+            // 
+            this.bubbleButton9.Image = ((System.Drawing.Image)(resources.GetObject("bubbleButton9.Image")));
+            this.bubbleButton9.ImageLarge = ((System.Drawing.Image)(resources.GetObject("bubbleButton9.ImageLarge")));
+            this.bubbleButton9.Name = "bubbleButton9";
+            this.bubbleButton9.TooltipText = "系统注册";
+            this.bubbleButton9.Click += new DevComponents.DotNetBar.ClickEventHandler(this.bubbleButton_Click);
+            // 
+            // bubbleButton10
+            // 
+            this.bubbleButton10.Image = ((System.Drawing.Image)(resources.GetObject("bubbleButton10.Image")));
+            this.bubbleButton10.ImageLarge = ((System.Drawing.Image)(resources.GetObject("bubbleButton10.ImageLarge")));
+            this.bubbleButton10.Name = "bubbleButton10";
+            this.bubbleButton10.TooltipText = "退出";
+            this.bubbleButton10.Click += new DevComponents.DotNetBar.ClickEventHandler(this.bubbleButton_Click);
+            // 
+            // bubbleBarTab2
+            // 
+            this.bubbleBarTab2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(244)))), ((int)(((byte)(213)))));
+            this.bubbleBarTab2.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(105)))));
+            this.bubbleBarTab2.DarkBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bubbleBarTab2.LightBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bubbleBarTab2.Name = "bubbleBarTab2";
+            this.bubbleBarTab2.PredefinedColor = DevComponents.DotNetBar.eTabItemColor.Yellow;
+            this.bubbleBarTab2.Text = "bubbleBarTab2";
+            this.bubbleBarTab2.TextColor = System.Drawing.Color.Black;
+            // 
+            // bubbleButton5
+            // 
+            this.bubbleButton5.Image = ((System.Drawing.Image)(resources.GetObject("bubbleButton5.Image")));
+            this.bubbleButton5.ImageLarge = ((System.Drawing.Image)(resources.GetObject("bubbleButton5.ImageLarge")));
+            this.bubbleButton5.Name = "bubbleButton5";
+            this.bubbleButton5.TooltipText = "变卖厂房";
+            this.bubbleButton5.Click += new DevComponents.DotNetBar.ClickEventHandler(this.bubbleButton_Click);
+            // 
+            // reflectionLabel1
+            // 
+            this.reflectionLabel1.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.reflectionLabel1.Location = new System.Drawing.Point(27, 24);
+            this.reflectionLabel1.Name = "reflectionLabel1";
+            this.reflectionLabel1.Size = new System.Drawing.Size(263, 93);
+            this.reflectionLabel1.TabIndex = 4;
+            this.reflectionLabel1.Text = "<b><font size=\"+6\"><i>火力发电</i><font color=\"#B02B2C\">    模拟决策系统</font></font></b>";
+            // 
+            // panelEx1
+            // 
+            this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.panelEx1.Controls.Add(this.labelX2);
+            this.panelEx1.Controls.Add(this.lbl_Cash);
+            this.panelEx1.Location = new System.Drawing.Point(890, 12);
+            this.panelEx1.Name = "panelEx1";
+            this.panelEx1.Size = new System.Drawing.Size(203, 147);
+            this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.panelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx1.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx1.Style.GradientAngle = 90;
+            this.panelEx1.TabIndex = 3;
+            // 
+            // labelX2
+            // 
+            this.labelX2.AutoSize = true;
+            this.labelX2.BackColor = System.Drawing.Color.Transparent;
+            this.labelX2.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelX2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.labelX2.Location = new System.Drawing.Point(8, 22);
+            this.labelX2.Name = "labelX2";
+            this.labelX2.Size = new System.Drawing.Size(172, 29);
+            this.labelX2.TabIndex = 1;
+            this.labelX2.Text = "决策者当前现金:";
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblName.Location = new System.Drawing.Point(776, 141);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(50, 18);
+            this.lblName.TabIndex = 1;
+            this.lblName.Text = "Player";
+            // 
+            // labelX1
+            // 
+            this.labelX1.AutoSize = true;
+            this.labelX1.BackColor = System.Drawing.Color.Transparent;
+            this.labelX1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelX1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.labelX1.Location = new System.Drawing.Point(714, 141);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(65, 20);
+            this.labelX1.TabIndex = 1;
+            this.labelX1.Text = "用户名：";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1105, 165);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
+            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
+            // 
+            // dockSite3
+            // 
+            this.dockSite3.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
+            this.dockSite3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dockSite3.DocumentDockContainer = new DevComponents.DotNetBar.DocumentDockContainer();
+            this.dockSite3.Location = new System.Drawing.Point(0, 0);
+            this.dockSite3.Name = "dockSite3";
+            this.dockSite3.Size = new System.Drawing.Size(1105, 0);
+            this.dockSite3.TabIndex = 9;
+            this.dockSite3.TabStop = false;
+            // 
+            // dockSite4
+            // 
+            this.dockSite4.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
+            this.dockSite4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dockSite4.DocumentDockContainer = new DevComponents.DotNetBar.DocumentDockContainer();
+            this.dockSite4.Location = new System.Drawing.Point(0, 741);
+            this.dockSite4.Name = "dockSite4";
+            this.dockSite4.Size = new System.Drawing.Size(1105, 0);
+            this.dockSite4.TabIndex = 10;
+            this.dockSite4.TabStop = false;
+            // 
+            // dockSite5
+            // 
+            this.dockSite5.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
+            this.dockSite5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.dockSite5.Location = new System.Drawing.Point(0, 0);
+            this.dockSite5.Name = "dockSite5";
+            this.dockSite5.Size = new System.Drawing.Size(0, 741);
+            this.dockSite5.TabIndex = 11;
+            this.dockSite5.TabStop = false;
+            // 
+            // dockSite6
+            // 
+            this.dockSite6.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
+            this.dockSite6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.dockSite6.Location = new System.Drawing.Point(1105, 0);
+            this.dockSite6.Name = "dockSite6";
+            this.dockSite6.Size = new System.Drawing.Size(0, 741);
+            this.dockSite6.TabIndex = 12;
+            this.dockSite6.TabStop = false;
+            // 
+            // dockSite7
+            // 
+            this.dockSite7.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
+            this.dockSite7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dockSite7.Location = new System.Drawing.Point(0, 0);
+            this.dockSite7.Name = "dockSite7";
+            this.dockSite7.Size = new System.Drawing.Size(1105, 0);
+            this.dockSite7.TabIndex = 13;
+            this.dockSite7.TabStop = false;
+            // 
+            // dockSite8
+            // 
+            this.dockSite8.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
+            this.dockSite8.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dockSite8.Location = new System.Drawing.Point(0, 741);
+            this.dockSite8.Name = "dockSite8";
+            this.dockSite8.Size = new System.Drawing.Size(1105, 0);
+            this.dockSite8.TabIndex = 14;
+            this.dockSite8.TabStop = false;
+            // 
+            // dotNetBarManager1
+            // 
+            this.dotNetBarManager1.AutoDispatchShortcuts.Add(DevComponents.DotNetBar.eShortcut.F1);
+            this.dotNetBarManager1.AutoDispatchShortcuts.Add(DevComponents.DotNetBar.eShortcut.CtrlC);
+            this.dotNetBarManager1.AutoDispatchShortcuts.Add(DevComponents.DotNetBar.eShortcut.CtrlA);
+            this.dotNetBarManager1.AutoDispatchShortcuts.Add(DevComponents.DotNetBar.eShortcut.CtrlV);
+            this.dotNetBarManager1.AutoDispatchShortcuts.Add(DevComponents.DotNetBar.eShortcut.CtrlX);
+            this.dotNetBarManager1.AutoDispatchShortcuts.Add(DevComponents.DotNetBar.eShortcut.CtrlZ);
+            this.dotNetBarManager1.AutoDispatchShortcuts.Add(DevComponents.DotNetBar.eShortcut.CtrlY);
+            this.dotNetBarManager1.AutoDispatchShortcuts.Add(DevComponents.DotNetBar.eShortcut.Del);
+            this.dotNetBarManager1.AutoDispatchShortcuts.Add(DevComponents.DotNetBar.eShortcut.Ins);
+            this.dotNetBarManager1.BottomDockSite = this.dockSite4;
+            this.dotNetBarManager1.DefinitionName = "";
+            this.dotNetBarManager1.EnableFullSizeDock = false;
+            this.dotNetBarManager1.LeftDockSite = this.dockSite1;
+            this.dotNetBarManager1.ParentForm = this;
+            this.dotNetBarManager1.RightDockSite = this.dockSite2;
+            this.dotNetBarManager1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2003;
+            this.dotNetBarManager1.ToolbarBottomDockSite = this.dockSite8;
+            this.dotNetBarManager1.ToolbarLeftDockSite = this.dockSite5;
+            this.dotNetBarManager1.ToolbarRightDockSite = this.dockSite6;
+            this.dotNetBarManager1.ToolbarTopDockSite = this.dockSite7;
+            this.dotNetBarManager1.TopDockSite = this.dockSite3;
+            // 
+            // bubbleButton4
+            // 
+            this.bubbleButton4.Image = ((System.Drawing.Image)(resources.GetObject("bubbleButton4.Image")));
+            this.bubbleButton4.ImageLarge = ((System.Drawing.Image)(resources.GetObject("bubbleButton4.ImageLarge")));
+            this.bubbleButton4.Name = "bubbleButton4";
+            this.bubbleButton4.TooltipText = "查看应收、应付、长贷";
+            // 
+            // lbregister
+            // 
+            this.lbregister.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lbregister.ForeColor = System.Drawing.Color.Red;
+            this.lbregister.Location = new System.Drawing.Point(18, 702);
+            this.lbregister.Name = "lbregister";
+            this.lbregister.Size = new System.Drawing.Size(96, 20);
+            this.lbregister.TabIndex = 20;
+            this.lbregister.Text = "未注册版本";
+            // 
+            // frmMain
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1105, 741);
+            this.Controls.Add(this.lbregister);
+            this.Controls.Add(this.pic);
+            this.Controls.Add(this.groupPanel2);
+            this.Controls.Add(this.groupPanel4);
+            this.Controls.Add(this.groupPanel_FinInfor);
+            this.Controls.Add(this.groupPanel_System);
+            this.Controls.Add(this.groupPanel1);
+            this.Controls.Add(this.panelEx3);
+            this.Controls.Add(this.panelEx2);
+            this.Controls.Add(this.dockSite2);
+            this.Controls.Add(this.dockSite1);
+            this.Controls.Add(this.bubbleBar1);
+            this.Controls.Add(this.reflectionLabel1);
+            this.Controls.Add(this.panelEx1);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.labelX1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.dockSite3);
+            this.Controls.Add(this.dockSite4);
+            this.Controls.Add(this.dockSite5);
+            this.Controls.Add(this.dockSite6);
+            this.Controls.Add(this.dockSite7);
+            this.Controls.Add(this.dockSite8);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ERP模拟沙盘";
+            this.Load += new System.EventHandler(this.frmMain_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pic)).EndInit();
+            this.groupPanel2.ResumeLayout(false);
+            this.groupPanel4.ResumeLayout(false);
+            this.groupPanel_FinInfor.ResumeLayout(false);
+            this.groupPanel_System.ResumeLayout(false);
+            this.groupPanel1.ResumeLayout(false);
+            this.groupPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panelEx3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bubbleBar1)).EndInit();
+            this.panelEx1.ResumeLayout(false);
+            this.panelEx1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private DevComponents.DotNetBar.DockContainerItem dockContainerItem1;
+        private DevComponents.DotNetBar.LabelX labelX1;
+        private DevComponents.DotNetBar.LabelX lblName;
+        private DevComponents.DotNetBar.LabelX labelX2;
+        private DevComponents.DotNetBar.PanelEx panelEx1;
+        private DevComponents.DotNetBar.Controls.ReflectionLabel reflectionLabel1;
+        private System.Windows.Forms.PictureBox pic;
+        private DevComponents.DotNetBar.BubbleBar bubbleBar1;
+        private DevComponents.DotNetBar.DotNetBarManager dotNetBarManager1;
+        private DevComponents.DotNetBar.DockSite dockSite4;
+        private DevComponents.DotNetBar.DockSite dockSite1;
+        private DevComponents.DotNetBar.PanelEx panelEx2;
+        private DevComponents.DotNetBar.DockSite dockSite2;
+        private DevComponents.DotNetBar.DockSite dockSite3;
+        private DevComponents.DotNetBar.DockSite dockSite5;
+        private DevComponents.DotNetBar.DockSite dockSite6;
+        private DevComponents.DotNetBar.DockSite dockSite7;
+        private DevComponents.DotNetBar.DockSite dockSite8;
+        private DevComponents.DotNetBar.BubbleBarTab bubbleBarTab1;
+        private DevComponents.DotNetBar.BubbleButton bubbleButton1;
+        private DevComponents.DotNetBar.BubbleButton bubbleButton2;
+        private DevComponents.DotNetBar.BubbleButton bubbleButton3;
+        private DevComponents.DotNetBar.BubbleButton bubbleButton5;
+        private DevComponents.DotNetBar.BubbleButton bubbleButton7;
+        private DevComponents.DotNetBar.BubbleButton bubbleButton8;
+        private DevComponents.DotNetBar.BubbleButton bubbleButton9;
+        private DevComponents.DotNetBar.BubbleButton bubbleButton10;
+        private DevComponents.DotNetBar.PanelEx panelEx3;
+        private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.LinkLabel linkLabel27;
+        private System.Windows.Forms.LinkLabel linkLabel17;
+        private System.Windows.Forms.LinkLabel linkLabel26;
+        private System.Windows.Forms.LinkLabel linkLabel9;
+        private System.Windows.Forms.LinkLabel linkLabel22;
+        private System.Windows.Forms.LinkLabel linkLabel12;
+        private System.Windows.Forms.LinkLabel linkLabel4;
+        private System.Windows.Forms.LinkLabel linkLabel25;
+        private System.Windows.Forms.LinkLabel linkLabel15;
+        private System.Windows.Forms.LinkLabel linkLabel8;
+        private System.Windows.Forms.LinkLabel linkLabel21;
+        private System.Windows.Forms.LinkLabel linkLabel10;
+        private System.Windows.Forms.LinkLabel linkLabel3;
+        private System.Windows.Forms.LinkLabel linkLabel24;
+        private System.Windows.Forms.LinkLabel linkLabel14;
+        private System.Windows.Forms.LinkLabel linkLabel7;
+        private System.Windows.Forms.LinkLabel linkLabel20;
+        private System.Windows.Forms.LinkLabel linkLabel5;
+        private System.Windows.Forms.LinkLabel linkLabel23;
+        private System.Windows.Forms.LinkLabel linkLabel13;
+        private System.Windows.Forms.LinkLabel linkLabel19;
+        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel linkLabel18;
+        private System.Windows.Forms.LinkLabel linkLabel6;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        public DevComponents.DotNetBar.LabelX lbl_CurState;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private DevComponents.DotNetBar.Controls.GroupPanel groupPanel_System;
+        private DevComponents.DotNetBar.Controls.GroupPanel groupPanel4;
+        private DevComponents.DotNetBar.Controls.GroupPanel groupPanel_FinInfor;
+        private System.Windows.Forms.Timer timer1;
+        private DevComponents.DotNetBar.LabelX labelX6;
+        private DevComponents.DotNetBar.LabelX labelX5;
+        private DevComponents.DotNetBar.LabelX lab_CurTime;
+        private DevComponents.DotNetBar.LabelX lab_Actor;
+        private DevComponents.DotNetBar.LabelX lab_Company;
+        private DevComponents.DotNetBar.LabelX labelX7;
+        private DevComponents.DotNetBar.LabelX lab_DesNitrate;
+        private DevComponents.DotNetBar.LabelX lab_ISO14000;
+        private DevComponents.DotNetBar.LabelX lab_ISO9000;
+        public DevComponents.DotNetBar.LabelX lbl_Paccount;
+        public DevComponents.DotNetBar.LabelX lbl_Raccount;
+        public DevComponents.DotNetBar.LabelX lbl_Sloan;
+        public DevComponents.DotNetBar.LabelX lbl_Cash;
+        private DevComponents.DotNetBar.LabelX lbl_;
+        private DevComponents.DotNetBar.LabelX labelX11;
+        private DevComponents.DotNetBar.LabelX labelX10;
+        private DevComponents.DotNetBar.LabelX labelX9;
+        private DevComponents.DotNetBar.SuperTooltip superTooltip1;
+        private DevComponents.DotNetBar.BubbleButton bubbleButton6;
+        private DevComponents.DotNetBar.Controls.GroupPanel groupPanel2;
+        private DevComponents.DotNetBar.LabelX lab_Have100w;
+        private DevComponents.DotNetBar.LabelX lab_Have60w;
+        private DevComponents.DotNetBar.LabelX lab_Have30w;
+        public DevComponents.DotNetBar.LabelX lbl_Lloan;
+        private System.Windows.Forms.LinkLabel linkLabel11;
+        private DevComponents.DotNetBar.LabelX labelX13;
+        private DevComponents.DotNetBar.LabelX labelX12;
+        private DevComponents.DotNetBar.LabelX labelX3;
+        private DevComponents.DotNetBar.LabelX labelX14;
+        private DevComponents.DotNetBar.BubbleButton bubbleButton4;
+        private DevComponents.DotNetBar.BubbleBarTab bubbleBarTab2;
+        public DevComponents.DotNetBar.LabelX lbregister;
+    }
+}

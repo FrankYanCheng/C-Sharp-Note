@@ -1,0 +1,10 @@
+public class MyClass:IMyInterface
+{
+    void IMyInterface.DoSomething()
+     { 
+      }
+    public void DoSomethingElse()
+      {
+       }
+}
+前者是显示的实现，后者是隐式的实现，后者才能通过类来访问。

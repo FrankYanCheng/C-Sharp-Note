@@ -1,0 +1,71 @@
+1.和其他参数函数一样，调用函数是看返回值
+2.out必须在int前
+3.out定义的变量必须在主函数中有定义
+4.定义后直接对变量进行运算即可
+5.在主函数中调用函数，如f(k,out sc),不用int;
+
+
+
+
+
+
+
+static void Main(string[] args)
+        {
+            int[] k = { 2, 3, 4, 5, 3, 2, 13, 51, 35, 1 };
+            int sc;
+            Console.WriteLine("最大的数是：{0}",a(k,out sc));
+            Console.WriteLine("最大数的位置是：{0}",sc+1);
+        }
+        static int a(int[] k,out int sc)
+        {int r=k[0];
+            sc=0;
+            for(int i=1;i<k.Length;i++)
+            {if(k[i]>r)
+            {
+                r=k[i];
+                sc =i;
+            }
+            }
+            return r;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+ static void Main(string[] args)
+        {
+            int[] shuzu = {103,2,32,2,2,3,3,22,1,4,5,6};
+            int s;
+            j(shuzu, out s);
+            Console.Write("位置：{0}", s);
+            
+
+        }
+        static int j(int[] f, out int s)
+        {
+            int i;
+            int h;
+            h = f[0];
+            for (i = 0; i < f.Length; i++)
+                if (h < f[i])
+                {
+                    h = f[i];
+                };
+            Console.Write("最大数是：{0}", h);
+            s = i;
+            return s;
+
+
+        }
+    
+    }
+    

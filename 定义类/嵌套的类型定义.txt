@@ -1,0 +1,45 @@
+namespace ConsoleApplication77
+1.为什么加了一个嵌套类型定义就不能重写基类了？
+2.嵌套的类命名的时候在前多加一个点就可以了
+3.public int...已经对它定义了一个公共变量，只有public。。。。才可以赋值
+
+   
+
+
+ public class MyBaseClass
+    {
+        public virtual void DoSomething()
+        {
+            Console.WriteLine("Base imp");
+        }
+    }
+    public class MyDerivedClass : MyBaseClass
+    {
+
+        static void Main(string[] args)
+        {
+            MyDerivedClass myObj = new MyDerivedClass();
+            MyBaseClass myBaseObj;
+            myBaseObj = myObj;
+            myBaseObj.DoSomething();
+            MyClass.myNestedClass k = new MyClass.myNestedClass();
+            k.nestedClassField = 3;
+            Console.WriteLine("k={0}", k.nestedClassField);
+
+
+        }
+        public class MyClass
+        {
+            public class myNestedClass
+            {
+                public int nestedClassField;
+
+            
+            }
+
+            public override void DoSomething()
+            {
+                Console.WriteLine("Derived imp");
+            }
+        }
+    }

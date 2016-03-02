@@ -1,0 +1,25 @@
+using System.Drawing.Drawing2D;
+和Drawing;
+  Graphics g = this.CreateGraphics();
+            Pen p1 = new Pen(Color.Red,10);
+            p1.DashStyle = DashStyle.Dot;
+            g.DrawLine(p1, 100,1,100, 100);
+首先创建一个绘图GDI+绘图图面，用CreateGraphics来创建。
+有了画布接下来就需要画笔，可以选定画笔的颜色和宽度。
+画笔画的线条是否有断点，形象的比喻就是冲撞风格。Dot表示留下的线短，Dash表示留下的线长。
+画布上画的图形，是直线或是椭圆？外加坐标加以判断。前边是左上角的坐标，后边两个量是宽度和长度。
+另外还有画笔的StartCap属性，和End,表示线段的开头结尾的样子。
+
+
+  Graphics g = this.CreateGraphics();
+            g.Clear(this.BackColor);
+            Pen p1 = new Pen(Color.Red,2);
+            p1.DashStyle = DashStyle.DashDot;
+            g.DrawRectangle(p1,30,50,300,150);
+            Pen p2 = new Pen(Color.Green);
+            p2.DashStyle = DashStyle.Dot;
+            g.DrawRectangle(p2,130.0f,150.0f,300.0f,250.0f);
+            Pen p3 = new Pen(Color.Green,2);
+            p3.DashStyle = DashStyle.DashDot;
+            Rectangle re = new Rectangle(10,20,200,150);
+            g.DrawRectangle(p3,re);

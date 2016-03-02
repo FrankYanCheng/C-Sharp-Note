@@ -1,0 +1,21 @@
+开始接受时调用异步回调的方法，和套接字。其实BeginAccept方法是实现了IasyncResult接口，AsyncState是在接口中的object参数存放的对象，就是socket套接字（刚开始的），当
+
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+             Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            IPEndPoint iep = new IPEndPoint(IPAddress.Parse("10.2.17.214"), 9050);
+            socket.Bind(iep);
+            socket.Listen(10);
+            socket.BeginAccept(new AsyncCallback(CallAccept), socket);
+              
+
+      
+        }
+        private static void CallAccept(IAsyncResult iar)
+        {
+            Socket sever = (Socket)iar.AsyncState;
+            MessageBox.Show("as飞");
+            Socket client = sever.EndAccept(iar);
+        }

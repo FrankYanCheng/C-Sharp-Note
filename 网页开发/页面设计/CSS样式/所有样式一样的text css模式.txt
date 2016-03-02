@@ -1,0 +1,10 @@
+<head>
+    <title></title>
+    <style type="text/css">
+        input{background-color:ButtonFace}
+        textarea{background-color:ButtonFace}
+        
+    </style>
+</head>
+
+设置样式在头中

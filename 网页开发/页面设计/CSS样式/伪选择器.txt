@@ -1,0 +1,18 @@
+a:visited{ text-decoration:none; background-color:Red}
+a:active{ text-decoration:none; background-color:Yellow}
+a:link{ text-decoration:none; background-color:White}
+a:hover{ text-decoration:underline; background-color:Black}
+ 
+link:未点击的状态 因为超链接是在A下的，有点像继承
+<html>
+<head>
+    <title></title>
+    <link  rel="Stylesheet" href="/CSS/Click.css" type="text/css" />
+</head>
+<body>
+<a href="HTMLPage1.htm" target="_blank">链接1</a>
+<a href="HTMLPage1.htm" target="_blank">链接2</a>
+<a href="HTMLPage1.htm" target="_blank">链接3</a>
+<a href="HTMLPage1.htm" target="_blank">链接4</a>
+</body>
+</html>

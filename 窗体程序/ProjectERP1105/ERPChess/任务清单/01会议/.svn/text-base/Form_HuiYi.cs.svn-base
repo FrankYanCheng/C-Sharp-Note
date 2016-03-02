@@ -1,0 +1,42 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using DevComponents.DotNetBar;
+using LSGO.PresentationLayer;
+
+namespace ERPChess
+{
+    public partial class Form_HuiYi : LSGOfrmBasement
+    {
+        public Form_HuiYi()
+        {
+            InitializeComponent();
+        }
+
+        private void buttonX1_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < Program.factory.IEquipment.Count; i++)
+            {
+                Program.factory.IEquipment[i].IsEndInvestment();
+                Program.factory.IEquipment[i].SetUseOli();
+                Program.factory.IEquipment[i].NitricEquipment.IsEndInvestment();
+                Program.factory.Cerficate14000.IsAvailable();
+                Program.factory.Certificate9000.IsAvailable();
+            }
+            if (Program.factory.Cerficate14000.Canuse)
+            {
+                PubVar.IsHaveISO14000 = true;
+            }
+            if (Program.factory.Certificate9000.Canuse)
+            {
+                PubVar.IsHaveISO9000 = true;
+            }
+            this.Close();
+        }
+    }
+}

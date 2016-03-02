@@ -1,0 +1,386 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LSGO.DataLinkLayer.DBControl</name>
+    </assembly>
+    <members>
+        <member name="P:LSGO.DataLinkLayer.DBControl.ILSGOFieldValue.Field">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.ILSGOFieldValue.Value">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.ILSGOFieldValue.Tag">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.ILSGODBControlFacade">
+            <summary>
+            控制数据库操作的外观接口
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.ILSGODBControlFacade.GetFieldTypeByString(System.String)">
+            <summary>
+            根据lsgoFieldType枚举中的字符串找到该枚举项目
+            </summary>
+            <param name="FieldType">枚举中的字符串</param>
+            <returns>符合条件的枚举项目</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.ILSGODBControlFacade.GetCurrentDatabaseType">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.LSGOConnectionProperty">
+            <summary>
+            表示存储创建或连接数据库所需的参数的类
+            <para>在安装SDE时Instance默认为"port:5151</para>
+            <para>对于没有使用版本或者第一次连接SDE时Version默认为SDE.DEFAULT</para>
+            </summary>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty">
+            <summary>
+            表示存储创建或连接数据库所需的参数的接口
+            <para>在安装SDE时Instance默认为"port:5151</para>
+            <para>对于没有使用版本或者第一次连接SDE时Version默认为SDE.DEFAULT</para>
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty.ParentDirectory">
+            <summary>
+            数据库的路径
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty.Name">
+            <summary>
+            数据库物理文件名
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty.Server">
+            <summary>
+            服务器的名字
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty.Instance">
+            <summary>
+            SDE的端口(在安装时指定,默认安装"port:5151")
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty.Database">
+            <summary>
+            数据库逻辑文件名
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty.User">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty.Version">
+            <summary>
+            SDE的版本(默认"SDE.DEFAULT")
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.LSGOConnectionProperty.#ctor">
+            <summary>
+            初始化 LSGOConnectionProperty 类的新实例。
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.LSGOConnectionProperty.Clone">
+            <summary>
+            克隆ILSGOConnectionProperty
+            </summary>
+            <returns>返回克隆得到的ILSGOConnectionProperty对象</returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.LSGOConnectionProperty.ParentDirectory">
+            <summary>
+            数据库的路径
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.LSGOConnectionProperty.Name">
+            <summary>
+            数据库物理文件名
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.LSGOConnectionProperty.Server">
+            <summary>
+            服务器的名字
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.LSGOConnectionProperty.Instance">
+            <summary>
+            SDE的端口(在安装时指定,默认安装"port:5151")
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.LSGOConnectionProperty.Database">
+            <summary>
+            数据库逻辑文件名
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.LSGOConnectionProperty.User">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.LSGOConnectionProperty.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.LSGOConnectionProperty.Version">
+            <summary>
+            SDE的版本(默认"SDE.DEFAULT")
+            </summary>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity">
+            <summary>
+            表示构造FieldValue值对的实体接口
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity.AddFieldValue(System.String,System.Object)">
+            <summary>
+            添加字段的数据
+            </summary>
+            <param name="FieldName">字段名称</param>
+            <param name="Value">字段上的值</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity.ModifyTag(System.String,System.Object)">
+            <summary>
+            修改字段信息
+            </summary>
+            <param name="FieldName">需要修改的字段名称</param>
+            <param name="Value">修改后字段的值</param>
+            <param name="mValue">标识是修改Value还是Tag</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity.ModifyValue(System.String,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="FieldName"></param>
+            <param name="Value"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity.Modify(System.String,System.Object,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="FieldName"></param>
+            <param name="Value"></param>
+            <param name="Tag"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity.GetFieldCollection">
+            <summary>
+            返回Update语句需要更新的字段集合,若不存在则返回null.
+            </summary>
+            <returns>Update语句需要更新的字段的集合,若不存在则返回null.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity.GetValueCollection">
+            <summary>
+            返回Update语句需要更新的字段上值的集合,若不存在则返回null.
+            </summary>
+            <returns>Update语句需要更新的字段上值的集合,若不存在则返回null.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity.ConvertToAndWhereClause">
+            <summary>
+            转换为以And进行连接的Where语句
+            </summary>
+            <returns>以And进行连接的Where语句</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity.ConvertToOrWhereClause">
+            <summary>
+            转化为Or类型的Where语句
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity.ClearAll">
+            <summary>
+            清空所有项
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity.Count">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity.Item(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity.Item(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Field"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.LSGOFieldValueEntity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.LSGOFieldValueEntity.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.LSGOFieldValueEntity.AddFieldValue(System.String,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="FieldName"></param>
+            <param name="Value"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.LSGOFieldValueEntity.AddFieldValue(System.String,System.Object,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="FieldName"></param>
+            <param name="Value"></param>
+            <param name="Tag"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.LSGOFieldValueEntity.ModifyTag(System.String,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="FieldName"></param>
+            <param name="Tag"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.LSGOFieldValueEntity.ModifyValue(System.String,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="FieldName"></param>
+            <param name="Value"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.LSGOFieldValueEntity.GetFieldCollection">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.LSGOFieldValueEntity.Count">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.lsgoFieldType">
+            <summary>
+            表示数据库字段类型的枚举
+            </summary>
+        </member>
+        <member name="F:LSGO.DataLinkLayer.DBControl.lsgoFieldType.Bit">
+            <summary>
+            是/否类型
+            </summary>
+        </member>
+        <member name="F:LSGO.DataLinkLayer.DBControl.lsgoFieldType.Int">
+            <summary>
+            整型
+            </summary>
+        </member>
+        <member name="F:LSGO.DataLinkLayer.DBControl.lsgoFieldType.Long">
+            <summary>
+            长整型
+            </summary>
+        </member>
+        <member name="F:LSGO.DataLinkLayer.DBControl.lsgoFieldType.Double">
+            <summary>
+            双精度浮点型
+            </summary>
+        </member>
+        <member name="F:LSGO.DataLinkLayer.DBControl.lsgoFieldType.String">
+            <summary>
+            文本型
+            </summary>
+        </member>
+        <member name="F:LSGO.DataLinkLayer.DBControl.lsgoFieldType.Memo">
+            <summary>
+            备注型
+            </summary>
+        </member>
+        <member name="F:LSGO.DataLinkLayer.DBControl.lsgoFieldType.DateTime">
+            <summary>
+            日期时间型
+            </summary>
+        </member>
+        <member name="F:LSGO.DataLinkLayer.DBControl.lsgoFieldType.OleObject">
+            <summary>
+            OLE对象型
+            </summary>
+        </member>
+        <member name="F:LSGO.DataLinkLayer.DBControl.lsgoFieldType.OID">
+            <summary>
+            自动编号-----没有确定
+            </summary>
+        </member>
+        <member name="F:LSGO.DataLinkLayer.DBControl.lsgoFieldType.Text">
+            <summary>
+            大文本
+            </summary>
+        </member>
+        <member name="F:LSGO.DataLinkLayer.DBControl.lsgoFieldType.Float">
+            <summary>
+            单精度浮点型
+            </summary>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.LSGODBControlFacade">
+            <summary>
+            控制数据库操作的外观接口实现抽象类
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.LSGODBControlFacade.GetFieldTypeByString(System.String)">
+            <summary>
+            根据lsgoFieldType枚举中的字符串找到该枚举项目
+            </summary>
+            <param name="FieldType">枚举中的字符串</param>
+            <returns>符合条件的枚举项目</returns>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.lsgoDatabaseType">
+            <summary>
+            数据库类型
+            </summary>
+        </member>
+        <member name="F:LSGO.DataLinkLayer.DBControl.lsgoDatabaseType.OLEDB">
+            <summary>
+            Access
+            </summary>
+        </member>
+        <member name="F:LSGO.DataLinkLayer.DBControl.lsgoDatabaseType.SQLSERVER">
+            <summary>
+            SQLServer
+            </summary>
+        </member>
+        <member name="F:LSGO.DataLinkLayer.DBControl.lsgoDatabaseType.ORACLE">
+            <summary>
+            Oracle
+            </summary>
+        </member>
+        <member name="F:LSGO.DataLinkLayer.DBControl.lsgoDatabaseType.EXCEL">
+            <summary>
+            Excel
+            </summary>
+        </member>
+        <member name="F:LSGO.DataLinkLayer.DBControl.lsgoDatabaseType.PersonalGeoDB">
+            <summary>
+            PersonalGeoDatabase
+            </summary>
+        </member>
+        <member name="F:LSGO.DataLinkLayer.DBControl.lsgoDatabaseType.SDEGeoDb">
+            <summary>
+            SDEGeoDatabase
+            </summary>
+        </member>
+    </members>
+</doc>

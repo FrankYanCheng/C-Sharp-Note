@@ -1,0 +1,13 @@
+  OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Title = "sample";
+            dlg.ShowReadOnly = true;
+
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                string dir = Environment.GetFolderPath(Environment.SpecialFolder.Templates);
+                dlg.InitialDirectory = dir;
+                string fileNme = dlg.FileName;
+                textBox1.Text = fileNme;
+            }
+
+floder:ÎÄ¼þ¼Ð

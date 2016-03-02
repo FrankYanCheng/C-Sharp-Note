@@ -1,0 +1,3 @@
+每次提交的时候，客户端都会重新刷新页面，就会使用pageload方法，如果不希望内容消失，即可以用  if(!IsPostBack)
+            TextBox1.Text = "";
+同样对于加属性的时候      Button2.Attributes.Add("onclick", "window.close()");也可以达到目的

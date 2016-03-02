@@ -1,0 +1,524 @@
+﻿namespace ERPChess
+{
+    partial class FormBuildNew
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.buttonX1_Sure = new DevComponents.DotNetBar.ButtonX();
+            this.dataGridViewX1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.DeviceType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DeviceType_30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DeviceType_60 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DeviceType_100 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buttonX3_Cancle = new DevComponents.DotNetBar.ButtonX();
+            this.tabControl1 = new DevComponents.DotNetBar.TabControl();
+            this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
+            this.tabIteml = new DevComponents.DotNetBar.TabItem(this.components);
+            this.tabControlPanel2 = new DevComponents.DotNetBar.TabControlPanel();
+            this.dataGridViewX2 = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.DeviceList = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Device = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BuildTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.process = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PayThisTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabItem2 = new DevComponents.DotNetBar.TabItem(this.components);
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.comboBoxEx1 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.comboItem1 = new DevComponents.Editors.ComboItem();
+            this.comboItem2 = new DevComponents.Editors.ComboItem();
+            this.comboItem3 = new DevComponents.Editors.ComboItem();
+            this.comboItem4 = new DevComponents.Editors.ComboItem();
+            this.comboItem5 = new DevComponents.Editors.ComboItem();
+            this.comboItem6 = new DevComponents.Editors.ComboItem();
+            this.comboItem7 = new DevComponents.Editors.ComboItem();
+            this.comboItem8 = new DevComponents.Editors.ComboItem();
+            this.comboItem9 = new DevComponents.Editors.ComboItem();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabControlPanel1.SuspendLayout();
+            this.tabControlPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX2)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // buttonX1_Sure
+            // 
+            this.buttonX1_Sure.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1_Sure.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX1_Sure.Location = new System.Drawing.Point(343, 388);
+            this.buttonX1_Sure.Name = "buttonX1_Sure";
+            this.buttonX1_Sure.Size = new System.Drawing.Size(75, 23);
+            this.buttonX1_Sure.TabIndex = 1;
+            this.buttonX1_Sure.Text = "添加";
+            this.buttonX1_Sure.Click += new System.EventHandler(this.buttonX1_Sure_Click);
+            // 
+            // dataGridViewX1
+            // 
+            this.dataGridViewX1.AllowUserToAddRows = false;
+            this.dataGridViewX1.AllowUserToDeleteRows = false;
+            this.dataGridViewX1.AllowUserToResizeColumns = false;
+            this.dataGridViewX1.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewX1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewX1.BackgroundColor = System.Drawing.Color.Gray;
+            this.dataGridViewX1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridViewX1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.dataGridViewX1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
+            this.dataGridViewX1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dataGridViewX1.ColumnHeadersHeight = 30;
+            this.dataGridViewX1.ColumnHeadersVisible = false;
+            this.dataGridViewX1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DeviceType,
+            this.DeviceType_30,
+            this.DeviceType_60,
+            this.DeviceType_100});
+            this.dataGridViewX1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridViewX1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dataGridViewX1.Location = new System.Drawing.Point(1, 1);
+            this.dataGridViewX1.Name = "dataGridViewX1";
+            this.dataGridViewX1.RowHeadersVisible = false;
+            this.dataGridViewX1.RowTemplate.Height = 60;
+            this.dataGridViewX1.RowTemplate.ReadOnly = true;
+            this.dataGridViewX1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dataGridViewX1.ShowRowErrors = false;
+            this.dataGridViewX1.Size = new System.Drawing.Size(601, 298);
+            this.dataGridViewX1.TabIndex = 4;
+            // 
+            // DeviceType
+            // 
+            this.DeviceType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.DeviceType.DefaultCellStyle = dataGridViewCellStyle2;
+            this.DeviceType.HeaderText = "机组类型";
+            this.DeviceType.Name = "DeviceType";
+            this.DeviceType.ReadOnly = true;
+            this.DeviceType.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.DeviceType.Width = 210;
+            // 
+            // DeviceType_30
+            // 
+            this.DeviceType_30.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.DeviceType_30.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DeviceType_30.HeaderText = "30万千瓦";
+            this.DeviceType_30.Name = "DeviceType_30";
+            this.DeviceType_30.ReadOnly = true;
+            this.DeviceType_30.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.DeviceType_30.Width = 130;
+            // 
+            // DeviceType_60
+            // 
+            this.DeviceType_60.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.DeviceType_60.DefaultCellStyle = dataGridViewCellStyle4;
+            this.DeviceType_60.HeaderText = "60万千瓦";
+            this.DeviceType_60.Name = "DeviceType_60";
+            this.DeviceType_60.ReadOnly = true;
+            this.DeviceType_60.Width = 130;
+            // 
+            // DeviceType_100
+            // 
+            this.DeviceType_100.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.DeviceType_100.DefaultCellStyle = dataGridViewCellStyle5;
+            this.DeviceType_100.HeaderText = "100万千瓦";
+            this.DeviceType_100.Name = "DeviceType_100";
+            this.DeviceType_100.ReadOnly = true;
+            this.DeviceType_100.Width = 130;
+            // 
+            // buttonX3_Cancle
+            // 
+            this.buttonX3_Cancle.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX3_Cancle.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX3_Cancle.Location = new System.Drawing.Point(473, 388);
+            this.buttonX3_Cancle.Name = "buttonX3_Cancle";
+            this.buttonX3_Cancle.Size = new System.Drawing.Size(75, 23);
+            this.buttonX3_Cancle.TabIndex = 5;
+            this.buttonX3_Cancle.Text = "下一步";
+            this.buttonX3_Cancle.Click += new System.EventHandler(this.buttonX3_Cancle_Click);
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
+            this.tabControl1.CanReorderTabs = true;
+            this.tabControl1.Controls.Add(this.tabControlPanel1);
+            this.tabControl1.Controls.Add(this.tabControlPanel2);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedTabFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold);
+            this.tabControl1.SelectedTabIndex = 1;
+            this.tabControl1.Size = new System.Drawing.Size(603, 326);
+            this.tabControl1.TabIndex = 9;
+            this.tabControl1.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox;
+            this.tabControl1.Tabs.Add(this.tabIteml);
+            this.tabControl1.Tabs.Add(this.tabItem2);
+            this.tabControl1.Text = "在建机组";
+            // 
+            // tabControlPanel1
+            // 
+            this.tabControlPanel1.Controls.Add(this.dataGridViewX1);
+            this.tabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControlPanel1.Location = new System.Drawing.Point(0, 26);
+            this.tabControlPanel1.Name = "tabControlPanel1";
+            this.tabControlPanel1.Padding = new System.Windows.Forms.Padding(1);
+            this.tabControlPanel1.Size = new System.Drawing.Size(603, 300);
+            this.tabControlPanel1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
+            this.tabControlPanel1.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
+            this.tabControlPanel1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.tabControlPanel1.Style.BorderColor.Color = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(156)))));
+            this.tabControlPanel1.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right)
+                        | DevComponents.DotNetBar.eBorderSide.Bottom)));
+            this.tabControlPanel1.Style.GradientAngle = 90;
+            this.tabControlPanel1.TabIndex = 1;
+            this.tabControlPanel1.TabItem = this.tabIteml;
+            // 
+            // tabIteml
+            // 
+            this.tabIteml.AttachedControl = this.tabControlPanel1;
+            this.tabIteml.Name = "tabIteml";
+            this.tabIteml.Text = "投资新机组";
+            // 
+            // tabControlPanel2
+            // 
+            this.tabControlPanel2.Controls.Add(this.dataGridViewX2);
+            this.tabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControlPanel2.Location = new System.Drawing.Point(0, 26);
+            this.tabControlPanel2.Name = "tabControlPanel2";
+            this.tabControlPanel2.Padding = new System.Windows.Forms.Padding(1);
+            this.tabControlPanel2.Size = new System.Drawing.Size(603, 300);
+            this.tabControlPanel2.Style.BackColor1.Color = System.Drawing.Color.Transparent;
+            this.tabControlPanel2.Style.BackColor2.Color = System.Drawing.Color.Transparent;
+            this.tabControlPanel2.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.tabControlPanel2.Style.BorderColor.Color = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(156)))));
+            this.tabControlPanel2.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right)
+                        | DevComponents.DotNetBar.eBorderSide.Bottom)));
+            this.tabControlPanel2.Style.GradientAngle = -90;
+            this.tabControlPanel2.TabIndex = 2;
+            this.tabControlPanel2.TabItem = this.tabItem2;
+            // 
+            // dataGridViewX2
+            // 
+            this.dataGridViewX2.AllowUserToAddRows = false;
+            this.dataGridViewX2.AllowUserToDeleteRows = false;
+            this.dataGridViewX2.AllowUserToResizeColumns = false;
+            this.dataGridViewX2.AllowUserToResizeRows = false;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewX2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridViewX2.BackgroundColor = System.Drawing.Color.Gray;
+            this.dataGridViewX2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridViewX2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.dataGridViewX2.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
+            this.dataGridViewX2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dataGridViewX2.ColumnHeadersHeight = 30;
+            this.dataGridViewX2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridViewX2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DeviceList,
+            this.Device,
+            this.BuildTime,
+            this.process,
+            this.PayThisTime});
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewX2.DefaultCellStyle = dataGridViewCellStyle12;
+            this.dataGridViewX2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewX2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dataGridViewX2.Location = new System.Drawing.Point(1, 1);
+            this.dataGridViewX2.Name = "dataGridViewX2";
+            this.dataGridViewX2.RowHeadersVisible = false;
+            this.dataGridViewX2.RowTemplate.Height = 30;
+            this.dataGridViewX2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dataGridViewX2.ShowRowErrors = false;
+            this.dataGridViewX2.Size = new System.Drawing.Size(601, 298);
+            this.dataGridViewX2.TabIndex = 5;
+            // 
+            // DeviceList
+            // 
+            this.DeviceList.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.DeviceList.DefaultCellStyle = dataGridViewCellStyle8;
+            this.DeviceList.HeaderText = "机位";
+            this.DeviceList.Name = "DeviceList";
+            this.DeviceList.ReadOnly = true;
+            this.DeviceList.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.DeviceList.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Device
+            // 
+            this.Device.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Device.DefaultCellStyle = dataGridViewCellStyle9;
+            this.Device.HeaderText = "机型";
+            this.Device.Name = "Device";
+            this.Device.ReadOnly = true;
+            this.Device.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // BuildTime
+            // 
+            this.BuildTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.BuildTime.DefaultCellStyle = dataGridViewCellStyle10;
+            this.BuildTime.HeaderText = "建造日期";
+            this.BuildTime.Name = "BuildTime";
+            this.BuildTime.ReadOnly = true;
+            this.BuildTime.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // process
+            // 
+            this.process.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.process.DefaultCellStyle = dataGridViewCellStyle11;
+            this.process.HeaderText = "投资金额进度";
+            this.process.Name = "process";
+            this.process.ReadOnly = true;
+            this.process.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // PayThisTime
+            // 
+            this.PayThisTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.PayThisTime.HeaderText = "今年应付";
+            this.PayThisTime.Name = "PayThisTime";
+            this.PayThisTime.ReadOnly = true;
+            this.PayThisTime.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.PayThisTime.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // tabItem2
+            // 
+            this.tabItem2.AttachedControl = this.tabControlPanel2;
+            this.tabItem2.BackColor = System.Drawing.Color.Transparent;
+            this.tabItem2.BackColor2 = System.Drawing.Color.Transparent;
+            this.tabItem2.Name = "tabItem2";
+            this.tabItem2.Text = "在建机组";
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton3.Location = new System.Drawing.Point(455, 350);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(77, 16);
+            this.radioButton3.TabIndex = 12;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "100万千瓦";
+            this.radioButton3.UseVisualStyleBackColor = false;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton2.Location = new System.Drawing.Point(347, 350);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(71, 16);
+            this.radioButton2.TabIndex = 11;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "60万千瓦";
+            this.radioButton2.UseVisualStyleBackColor = false;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton1.Location = new System.Drawing.Point(230, 350);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(71, 16);
+            this.radioButton1.TabIndex = 10;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "30万千瓦";
+            this.radioButton1.UseVisualStyleBackColor = false;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // comboBoxEx1
+            // 
+            this.comboBoxEx1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.comboBoxEx1.DisplayMember = "Text";
+            this.comboBoxEx1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxEx1.FormattingEnabled = true;
+            this.comboBoxEx1.ItemHeight = 15;
+            this.comboBoxEx1.Items.AddRange(new object[] {
+            this.comboItem1,
+            this.comboItem2,
+            this.comboItem3,
+            this.comboItem4,
+            this.comboItem5,
+            this.comboItem6,
+            this.comboItem7,
+            this.comboItem8,
+            this.comboItem9});
+            this.comboBoxEx1.Location = new System.Drawing.Point(51, 345);
+            this.comboBoxEx1.Name = "comboBoxEx1";
+            this.comboBoxEx1.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxEx1.TabIndex = 9;
+            this.comboBoxEx1.SelectedIndexChanged += new System.EventHandler(this.comboBoxEx1_SelectedIndexChanged);
+            // 
+            // comboItem1
+            // 
+            this.comboItem1.Text = "第一机位";
+            // 
+            // comboItem2
+            // 
+            this.comboItem2.Text = "第二机位";
+            // 
+            // comboItem3
+            // 
+            this.comboItem3.Text = "第三机位";
+            // 
+            // comboItem4
+            // 
+            this.comboItem4.Text = "第四机位";
+            // 
+            // comboItem5
+            // 
+            this.comboItem5.Text = "第五机位";
+            // 
+            // comboItem6
+            // 
+            this.comboItem6.Text = "第六机位";
+            // 
+            // comboItem7
+            // 
+            this.comboItem7.Text = "第七机位";
+            // 
+            // comboItem8
+            // 
+            this.comboItem8.Text = "第八机位";
+            // 
+            // comboItem9
+            // 
+            this.comboItem9.Text = "第九机位";
+            // 
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX1.Location = new System.Drawing.Point(194, 388);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Size = new System.Drawing.Size(75, 23);
+            this.buttonX1.TabIndex = 13;
+            this.buttonX1.Text = "取消";
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
+            // 
+            // FormBuildNew
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(603, 440);
+            this.Controls.Add(this.buttonX1);
+            this.Controls.Add(this.radioButton3);
+            this.Controls.Add(this.buttonX3_Cancle);
+            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.buttonX1_Sure);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.comboBoxEx1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "FormBuildNew";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "投资新机组";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormBuildNew_FormClosed);
+            this.Load += new System.EventHandler(this.FormBuildNew_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabControlPanel1.ResumeLayout(false);
+            this.tabControlPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX2)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private DevComponents.DotNetBar.ButtonX buttonX1_Sure;
+        private DevComponents.DotNetBar.Controls.DataGridViewX dataGridViewX1;
+        private DevComponents.DotNetBar.ButtonX buttonX3_Cancle;
+        private DevComponents.DotNetBar.TabControl tabControl1;
+        private DevComponents.DotNetBar.TabControlPanel tabControlPanel1;
+        private DevComponents.DotNetBar.TabItem tabIteml;
+        private DevComponents.DotNetBar.TabControlPanel tabControlPanel2;
+        private DevComponents.DotNetBar.TabItem tabItem2;
+        private DevComponents.DotNetBar.Controls.DataGridViewX dataGridViewX2;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxEx1;
+        private DevComponents.Editors.ComboItem comboItem1;
+        private DevComponents.Editors.ComboItem comboItem2;
+        private DevComponents.Editors.ComboItem comboItem3;
+        private DevComponents.Editors.ComboItem comboItem4;
+        private DevComponents.Editors.ComboItem comboItem5;
+        private DevComponents.Editors.ComboItem comboItem6;
+        private DevComponents.Editors.ComboItem comboItem7;
+        private DevComponents.Editors.ComboItem comboItem8;
+        private DevComponents.Editors.ComboItem comboItem9;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DeviceType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DeviceType_30;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DeviceType_60;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DeviceType_100;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DeviceList;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Device;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BuildTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn process;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PayThisTime;
+        private DevComponents.DotNetBar.ButtonX buttonX1;
+    }
+}

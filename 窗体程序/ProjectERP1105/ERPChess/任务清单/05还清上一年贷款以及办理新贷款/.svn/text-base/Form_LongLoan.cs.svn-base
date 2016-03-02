@@ -1,0 +1,103 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using DevComponents.DotNetBar;
+using LSGO.PresentationLayer;
+using ERPLibrary;
+
+namespace ERPChess
+{
+    public partial class Form_LongLoan : LSGOfrmBasement
+    {
+        public Form_LongLoan()
+        {
+            InitializeComponent();
+        }
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+            ILSGOfrmTipBox mesBox=new LSGOfrmInforMessageBox(MessageBoxButtons.OKCancel);
+            int year = PubVar.year;
+            ERPChess.LongLoanList longloanlist = new ERPChess.LongLoanList();
+            if ( comb_LoanType.SelectedItem == null||comb_Count.SelectedItem == null)
+            {
+                mesBox.ShowMessage("请选择贷款额或者贷款类型", "提示");
+                return;
+            }
+            if (Convert.ToDouble(comb_Count.SelectedItem.ToString()) > PubVar.closing[PubVar.year-1].Anl_rightsT*3)
+            {
+                mesBox.ShowMessage("所能贷的款额不能大于上一年的权益的三倍", "提示");
+                return;
+            }
+            if (mesBox.ShowMessage("选择确定办理长期贷款，退出选取消", "提示") == DialogResult.OK)
+            {
+                if (comb_LoanType.SelectedIndex == 0)
+                {
+                    longloanlist.loanType = LoanType.LongLoan;
+                    longloanlist.year = PubVar.year;
+                    longloanlist.longDateTime = "第"+PubVar.year+"年";
+                    longloanlist.longLoan = "长期贷款（5年）";
+                    longloanlist.loan.AnnualInterest = 0.045f;
+                    longloanlist.loan.LoanLimitRate = "上一年玩家权益的两倍";
+                    longloanlist.loan.YearLimit = 5;
+                    longloanlist.payOffyear = 5;
+                    longloanlist.longLoanAmount = Convert.ToDouble(comb_Count.SelectedItem.ToString());
+                    longloanlist.save = longloanlist.longLoanAmount;
+                    //2012.12.18正义 现金更新
+                    PubVar.Fund += longloanlist.longLoanAmount;
+                    PubVar.loanL += longloanlist.longLoanAmount;
+
+                    PubVar.lloan.year = PubVar.year;
+                    PubVar.lloan.longDateTime = "第" + PubVar.year + "年";
+                    PubVar.lloan.longLoan = "长期贷款（5年）";
+                    PubVar.lloan.loan.AnnualInterest = 0.045f;
+                    PubVar.lloan.loan.LoanLimitRate = "上一年玩家权益的两倍";
+                    PubVar.lloan.loan.YearLimit = 5;
+                    PubVar.lloan.longLoanAmount = Convert.ToDouble(comb_Count.SelectedItem.ToString());
+                }
+                else if (comb_LoanType.SelectedIndex == 1)
+                {
+                    longloanlist.loanType = LoanType.LongLoan;
+                    longloanlist.year = PubVar.year;
+                    longloanlist.longDateTime = "第" + PubVar.year + "年";
+                    longloanlist.longLoan = "长期贷款（15年）";
+                    longloanlist.loan.AnnualInterest = 0.055f;
+                    longloanlist.loan.LoanLimitRate = "上一年玩家权益的三倍";
+                    longloanlist.loan.YearLimit = 15;
+                    longloanlist.payOffyear = 15;
+                    longloanlist.longLoanAmount = Convert.ToDouble(comb_Count.SelectedItem.ToString());
+                    longloanlist.save = longloanlist.longLoanAmount;
+                    //2012.12.18正义 现金更新
+                    PubVar.Fund += longloanlist.longLoanAmount;
+                    PubVar.loanL += longloanlist.longLoanAmount;
+
+                    PubVar.lloan.year = PubVar.year;
+                    PubVar.lloan.longDateTime = "第" + PubVar.year + "年";
+                    PubVar.lloan.longLoan = "长期贷款（5年）";
+                    PubVar.lloan.loan.AnnualInterest = 0.045f;
+                    PubVar.lloan.loan.LoanLimitRate = "上一年玩家权益的三倍";
+                    PubVar.lloan.loan.YearLimit = 5;
+                    PubVar.lloan.longLoanAmount = Convert.ToDouble(comb_Count.SelectedItem.ToString());
+                }
+                PubVar.longloanlist.Add(longloanlist);
+                this.Close();//当comb_LoanType.SelectedIndex没选中为何会窗体为何不关闭？
+            }       
+        }
+
+        private void Form_LongLoan_Load(object sender, EventArgs e)
+        {
+            lab_LoandateTime.Text = PubVar.year.ToString();
+            lab_rights.Text = (PubVar.closing[PubVar.year-1].Anl_rightsT).ToString();
+            lab_MaxLoan.Text = (PubVar.closing[PubVar.year-1].Anl_rightsT*3-PubVar.loanL).ToString();
+            for (int i = 1; i <= Convert.ToDouble(lab_MaxLoan.Text)/20;i++ )
+            {
+                comb_Count.Items.Add((i * 20).ToString());
+            }
+        }
+    }
+}

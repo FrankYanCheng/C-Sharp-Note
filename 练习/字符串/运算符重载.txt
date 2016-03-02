@@ -1,0 +1,71 @@
+要重新给dog赋一次值
+public dog(dog t)
+            {
+                x = t.x;
+                y = t.y;
+                z = t.z;
+            }
+
+
+不也可以，不过在  dog can=new dog(a);需要多加xyz而已。
+重新修改了tostring()方法，重载的运算赋必须是静态的，它不和实例有关系。
+
+ struct dog
+        {
+            double x, y, z;
+            public dog(double x, double y, double z)
+            {
+                this.x = x;
+                this.y = y;
+                this.z = z;
+            }
+            public dog(dog t)
+            {
+                x = t.x;
+                y = t.y;
+                z = t.z;
+            }
+            public override string ToString()
+            {
+                return "(" + x + "," + y + "," + z + ")";
+            }
+            public static dog operator *(dog a,dog b)
+            {
+                dog can=new dog(a);
+                can.x=can.x*b.x;
+                can.y=can.y*b.y;
+                can.z=can.z*b.z;
+                return can;
+            }
+        }
+   
+        private void button1_Click(object sender, EventArgs e)
+        {
+           int i= textBox1.Text.IndexOf('(')+1;
+           string u = textBox1.Text.Substring(i, textBox1.Text.Length - 2);
+           string[] k = u.Split(',');
+           int x =Convert.ToInt32( k[0]);
+           int y = Convert.ToInt32(k[1]);
+           int z = Convert.ToInt32(k[2]);
+           dog a = new dog(x,y,z);
+
+           int i2 = textBox2.Text.IndexOf('(') + 1;
+           string u2 = textBox2.Text.Substring(i2, textBox2.Text.Length - 2);
+           string[] k2 = u2.Split(',');
+           int x2 = Convert.ToInt32(k2[0]);
+           int y2 = Convert.ToInt32(k2[1]);
+           int z2 = Convert.ToInt32(k2[2]);
+           dog a2 = new dog(x2, y2, z2);
+
+           dog a3 = a2 * a;
+          textBox3.Text=a3.ToString();
+
+           
+            
+
+           
+             
+          
+        }
+       
+    }

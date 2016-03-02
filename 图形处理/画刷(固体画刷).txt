@@ -1,0 +1,22 @@
+
+            Graphics g = this.CreateGraphics();
+            g.Clear(this.BackColor);
+            Pen p1 = new Pen(Color.Black);
+            SolidBrush bb1 = new SolidBrush(Color.Red);
+            bb1.Color = Color.Yellow;
+            g.FillEllipse(bb1, 20, 80, 200, 100);
+            bb1.Color = Color.Red;
+            g.FillEllipse(bb1, 20, 80, 200, 100);
+ 
+原来在画布上是用Draw,填充的话用Fill,填充必用到画刷，所以先规定画刷的颜色。
+透明画刷，用了Color.FromArgb(基色，红，绿，蓝)几种颜色混合而成的颜色。可用这个实现渐变颜色。
+
+   Graphics g = this.CreateGraphics();
+            g.Clear(BackColor);
+            int i = 255;
+            for (int j = 0; j < 255; j++)
+            {
+                SolidBrush s1 = new SolidBrush(Color.FromArgb(255, 255, i,255));
+                g.FillEllipse(s1, 35+j, 45, 45, 30);
+                i--;
+            }

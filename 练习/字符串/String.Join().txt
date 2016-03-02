@@ -1,0 +1,3 @@
+ string[] a = { "w", "a", "d", "s", "f" };
+            string s = string.Join("×Ö·û:", a);
+            Console.Write(s);

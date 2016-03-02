@@ -1,0 +1,84 @@
+1.其实就是定义两个名称相同的函数，但是类型不同  
+2.根据主函数的指示选择不同的表达式
+
+
+
+
+
+
+
+
+
+
+
+
+class Program
+    {
+        static void Main(string[] args)
+        {
+            double [] myArray = { 2.0, 23.0, 45.0, 26.0, 234.2, 45.3 };
+            double maxval = MaxValue(myArray);
+            Console.Write("the maximum value in myArray is {0}", maxval);
+        }
+        static int MaxValue(int[] intArray)
+        {
+            int maxVal = intArray[0];
+            for (int i = 1; i < intArray.Length; i++)
+            {
+                if (intArray[i] > maxVal)
+                    maxVal = intArray[i];
+            }
+            return maxVal;
+        }
+          static double MaxValue(double[] doubleArray)
+        {
+            double maxVal = doubleArray[0];
+            for (int i = 1; i < doubleArray.Length; i++)
+            {
+                if (doubleArray[i] > maxVal)
+                    maxVal = doubleArray[i];
+            }
+            return maxVal;
+        }
+
+
+
+
+
+
+
+
+  static void Main(string[] args)
+        {
+            int e = 2;
+            Console.WriteLine("{0}", e);
+            k( e);
+            Console.WriteLine("{0}", e);
+
+
+
+
+        }
+        static void k(ref int a)
+        {
+            a = a * 2;
+            Console.WriteLine("{0}", a);
+            
+        }
+        static void k( int a)
+        {
+            a = a * 2;
+            Console.WriteLine("{0}", a);
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+

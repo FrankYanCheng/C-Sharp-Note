@@ -1,0 +1,7 @@
+ OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "BMP(*bmp)|*.bmp|GIF File(*.gif)|*.gif";
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                Bitmap image = new Bitmap(ofd.FileName);
+                image.Save("SveFile.bmp",System.Drawing.Imaging.ImageFormat.Bmp);
+            }

@@ -1,0 +1,68 @@
+1.类属性里定义
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication115
+{
+    class user
+    {
+        private string sex;
+        private string name;
+        public DateTime birthday
+        {
+            set
+            {
+                if (value < Convert.ToDateTime("1900-1-1") || value.Year > DateTime.Now.Year - 3)
+                    birthday = value;
+            }
+        }
+
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
+        public string Sex
+        {
+            get
+            {
+                return sex;
+            }
+            set
+            {
+
+                if (value == "男" || value == "女")
+                {
+                    sex = value;
+                }
+                else
+                {
+                    Console.WriteLine("性别只能为男或女");
+                }
+                value = sex;
+            }
+        }
+    }
+    class property
+    {
+        static void Main(string[] args)
+        {
+            user q = new user();
+
+            q.Name = Console.ReadLine();
+            q.Sex = Console.ReadLine();
+            q.birthday = Convert.ToDateTime("1800-1-1");
+            Console.WriteLine("姓名：" + q.Name + " 性别:" + q.Sex);
+
+        }
+    }
+}
+

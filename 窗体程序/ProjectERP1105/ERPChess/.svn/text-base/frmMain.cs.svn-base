@@ -1,0 +1,765 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using DevComponents.DotNetBar;
+using LSGO.PresentationLayer;
+using System.Data.OleDb;
+using ERPLibrary;
+using LSGO.DataLinkLayer.Tool;
+using LSGO.DataLinkLayer;
+
+namespace ERPChess
+{
+    public partial class frmMain : LSGOfrmBasement
+    {
+        public List<LinkLabel> listLklb = new List<LinkLabel>();//装载步骤的linklable
+        public int step = 1;//记录当前运行到第几步
+        Point mousePoint;//移动窗口使用
+        bool IsClick = false;
+        Size tmp = new Size();
+        Point point;
+        public frmMain()
+        {
+            InitializeComponent();
+            connection();
+            timer1.Start();
+            Initialize();
+            SetIsRegistion();
+            InitialComputer();
+            this.lblName.Text = PubVar.PlayerName;
+            for (int i = 1; i < listLklb.Count; i++)
+            {
+                listLklb[i].Enabled = false;
+            }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        private void SetIsRegistion()
+        {
+            Register();
+            GetUserID();
+            LSGOCodeB code = new LSGOCodeB();
+            string temp=code.Cipher(PubVar.UserID);
+            if (temp == PubVar.RegistrationID)
+            {
+                PubVar.IsRegistration = true;
+                this.lbregister.Text = "已注册版本";
+            }
+        }
+        /// <summary>
+        /// 读取RegistrationID
+        /// </summary>
+        /// <param name="bl"></param>
+        private void Register()
+        {
+            string con = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Application.StartupPath + "\\Computer1.mdb";
+            OleDbConnection connection = new OleDbConnection(con);
+            if (connection.State == ConnectionState.Closed)
+            {
+                connection.Open();
+            }
+            string sql = "SELECT RegisterID FROM Register";
+            OleDbCommand command = new OleDbCommand(sql, connection);
+            OleDbDataReader reader = command.ExecuteReader();
+            if (reader.HasRows == true)
+            {
+                while (reader.Read())
+                {
+                    PubVar.RegistrationID = reader[0].ToString();
+                    break;
+                }
+            }
+        }
+        /// <summary>
+        /// 获得UserID
+        /// </summary>
+        private void GetUserID()
+        {
+            SystemOperating sys = new SystemOperating();
+            List<string> temp = sys.GetMainBoardID();
+            string result=string.Empty;
+            for (int k = 0; k < temp.Count;k++)
+            {
+                result += temp[k];
+            }
+            LSGOCodeB code = new LSGOCodeB();
+            PubVar.UserID = code.Cipher(result);
+        }
+        /// <summary>
+        ///系统初始化
+        /// </summary>
+        private void Initialize()
+        {
+            listLklb.Add(linkLabel1);
+            listLklb.Add(linkLabel2);
+            listLklb.Add(linkLabel3);
+            listLklb.Add(linkLabel4);
+            listLklb.Add(linkLabel5);
+            listLklb.Add(linkLabel6);
+            listLklb.Add(linkLabel7);
+            listLklb.Add(linkLabel8);
+            listLklb.Add(linkLabel9);
+            listLklb.Add(linkLabel10);
+            listLklb.Add(linkLabel11);
+            listLklb.Add(linkLabel12);
+            listLklb.Add(linkLabel13);
+            listLklb.Add(linkLabel14);
+            listLklb.Add(linkLabel15);
+            listLklb.Add(linkLabel17);
+            listLklb.Add(linkLabel18);
+            listLklb.Add(linkLabel19);
+            listLklb.Add(linkLabel20);
+            listLklb.Add(linkLabel21);
+            listLklb.Add(linkLabel22);
+            listLklb.Add(linkLabel23);
+            listLklb.Add(linkLabel24);
+            listLklb.Add(linkLabel25);
+            listLklb.Add(linkLabel26);
+            listLklb.Add(linkLabel27);
+        }
+        private void InitialComputer()
+        {
+            TP tp;
+            for (int i = 0; i < 6 - PubVar.playCount; i++)
+            {
+                tp = new TP();
+                tp.playerName = "computer" + (i + 1).ToString();
+                PubVar.tp.Add(tp);
+                for (int j = 0; j < PubVar.computerRights.Count; j++)
+                {
+                    if (PubVar.computerRights[j].playerName == PubVar.listInt[i])
+                    {
+                        PubVar.tp[i + PubVar.playCount].profit[PubVar.computerRights[j].yearID - 1] = PubVar.computerRights[j].profit;
+                        PubVar.tp[i + PubVar.playCount].rigth[PubVar.computerRights[j].yearID - 1] = PubVar.computerRights[j].right;
+                    }
+                }
+            }
+        }
+        private void linkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form frm;
+            int yea = PubVar.year;
+            switch (step)
+            {
+                case 1: frm = new Form_HuiYi();
+                    frm.ShowDialog();
+                    if (step != 0)
+                    {
+                        listLklb[step - 1].Enabled = false;
+                        step++;
+                        listLklb[step - 1].Enabled = true;
+                    }
+                    break;
+                case 2: frm = new Form_Plan(); 
+                    frm.ShowDialog();
+                    if (step != 0)
+                    {
+                        listLklb[step - 1].Enabled = false;
+                        step++;
+                        listLklb[step - 1].Enabled = true;
+                    }
+                    break;
+                case 3: frm = new frmRaccount();
+                    frm.ShowDialog();
+                    if (step != 0)
+                    {
+                        listLklb[step - 1].Enabled = false;
+                        step+=2;
+                        listLklb[step - 1].Enabled = true;
+                    }
+                    break;
+                case 4: frm = new frmPaccount();
+                    frm.ShowDialog();
+                    if (step != 0)
+                    {
+                        listLklb[step - 1].Enabled = false;
+                        step++;
+                        listLklb[step - 1].Enabled = true;
+                    }
+                    break;
+                case 5: frm = new Form_tex(); 
+                    frm.ShowDialog();
+                    if (step != 0)
+                    {
+                        listLklb[step - 1].Enabled = false;
+                        step++;
+                        listLklb[step - 1].Enabled = true;
+                    }
+                    break;
+                case 6: frm = new Form_BidElectric();
+                    frm.Show(); 
+                    listLklb[step - 1].Enabled = false;  
+                    break;
+                case 7: frm = new Form_PayOff();
+                    frm.ShowDialog();
+                    if (step != 0)
+                    {
+                        listLklb[step - 1].Enabled = false;
+                        step++;
+                        listLklb[step - 1].Enabled = true;
+                    }
+                    break;
+                case 8: frm = new Form_SLoan();
+                    frm.ShowDialog();
+                    if (step != 0)
+                    {
+                        listLklb[step - 1].Enabled = false;
+                        step++;
+                        listLklb[step - 1].Enabled = true;
+                    }
+                    break;
+                case 9: frm = new Form_BuyConference();
+                    frm.Show();
+                    listLklb[step - 1].Enabled = false;
+                    break;
+                case 10: frm = new FormDiscardOld();
+                    frm.ShowDialog();
+                    if (step != 0)
+                    {
+                        listLklb[step - 1].Enabled = false;
+                        step++;
+                        listLklb[step - 1].Enabled = true;
+                    }
+                    break;
+                case 11: frm = new FormBuildNew();
+                    frm.ShowDialog();
+                    if (step != 0)
+                    {
+                        listLklb[step - 1].Enabled = false;
+                        step++;
+                        listLklb[step - 1].Enabled = true;
+                    }
+                    break;
+                case 12: frm = new FrmStartProduce();
+                    frm.ShowDialog();
+                    if (step != 0)
+                    {
+                        listLklb[step - 1].Enabled = false;
+                        step++;
+                        listLklb[step - 1].Enabled = true;
+                    }
+                    break;
+                case 13: frm = new FrmCommiteProduct();
+                    listLklb[step - 1].Enabled = false;
+                    frm.ShowDialog();
+                    if (step != 0)
+                    {
+                        step++;
+                        listLklb[step - 1].Enabled = true;
+                    }
+                    
+                    break;
+                case 14: frm = new RemoveSN(); 
+                    frm.ShowDialog();
+                    if (step != 0)
+                    {
+                        listLklb[step - 1].Enabled = false;
+                        step++;
+                        listLklb[step - 1].Enabled = true;
+                    }
+                    break;
+                case 15: frm = new Certification(); 
+                    frm.ShowDialog();
+                    if (step != 0)
+                    {
+                        listLklb[step - 1].Enabled = false;
+                        step++;
+                        listLklb[step - 1].Enabled = true;
+                    }
+                    break;
+                case 16: frm = new PayFactoryElectricFee();
+                    frm.ShowDialog();
+                    if (step != 0)
+                    {
+                        listLklb[step - 1].Enabled = false;
+                        step++;
+                        listLklb[step - 1].Enabled = true;
+                    }
+                    break;
+                case 17: frm = new EquipmentRepairFee(); 
+                    frm.ShowDialog();
+                    if (step != 0)
+                    {
+                        listLklb[step - 1].Enabled = false;
+                        step++;
+                        listLklb[step - 1].Enabled = true;
+                    }
+                    break;
+                case 18: frm = new PayWageWelfare(); 
+                    frm.ShowDialog();
+                    if (step != 0)
+                    {
+                        listLklb[step - 1].Enabled = false;
+                        step++;
+                        listLklb[step - 1].Enabled = true;
+                    }
+                    break;
+                case 19: frm = new PayPropertyInsurancefee();
+                    frm.ShowDialog();
+                    if (step != 0)
+                    {
+                        listLklb[step - 1].Enabled = false;
+                        step++;
+                        listLklb[step - 1].Enabled = true;
+                    }
+                    break;
+                case 20: frm = new PayPolutionFee(); 
+                    frm.ShowDialog();
+                    if (step != 0)
+                    {
+                        listLklb[step - 1].Enabled = false;
+                        step++;
+                        listLklb[step - 1].Enabled = true;
+                    }
+                    break;
+                case 21: frm = new EntrustOperation();
+                    frm.ShowDialog();
+                    if (step != 0)
+                    {
+                        listLklb[step - 1].Enabled = false;
+                        step++;
+                        listLklb[step - 1].Enabled = true;
+                    }
+                    break;
+                    //计提折旧
+                case 22: frm = new Depreciation();
+                    frm.ShowDialog();
+                    if (step != 0)
+                    {
+                        listLklb[step - 1].Enabled = false;
+                        step++;
+                        listLklb[step - 1].Enabled = true;
+                    }
+                    break;
+                    //其他费用
+                case 23: frm = new FrmTbDatagridView();
+                    frm.ShowDialog();
+                    if (step != 0)
+                    {
+                        listLklb[step - 1].Enabled = false;
+                        step++;
+                        listLklb[step - 1].Enabled = true;
+                    }
+                    break;
+                //管理费用
+                case 24: frm = new Guarrante();
+                    frm.ShowDialog();
+                    if (step != 0)
+                    {
+                        listLklb[step - 1].Enabled = false;
+                        step++;
+                        listLklb[step - 1].Enabled = true;
+                    }
+                    break;
+                //主营业务税及附加
+                case 25: frm = new MainWork();
+                    frm.ShowDialog();
+                    if (step != 0)
+                    {
+                        listLklb[step - 1].Enabled = false;
+                        step++;
+                        listLklb[step - 1].Enabled = true;
+                    }
+                    break;
+                //关账
+                case 26: frm = new Form_ShowResult();
+                    PubVar.mark = 0;
+                    listLklb[step - 1].Enabled = false;
+                    frm.ShowDialog();
+                    if (step == 0)
+                    {
+                        listLklb[0].Enabled = false;
+                    }
+                    else
+                    {                       
+                        step = 1;
+                        listLklb[0].Enabled = true;
+                    }
+                    while (PubVar.IsRegistration == false)
+                    {
+                        frm = new Form_Register(); frm.ShowDialog();
+                        ILSGOfrmTipBox message = new LSGOfrmInforMessageBox();
+                        message.ShowMessage("你必须完成注册才能继续玩", "提示");
+                    }
+                    break;
+                default: throw new Exception("ERROR");
+            }
+            InforLoad();
+        }
+
+        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
+        {
+            mousePoint = new Point(e.X, e.Y);
+        }
+
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.SetBounds(this.Location.X + e.X - mousePoint.X, this.Location.Y + e.Y - mousePoint.Y, this.Width, this.Height);
+            }
+        }
+
+        private void bubbleButton_Click(object sender, ClickEventArgs e)
+        {
+            BubbleButton bbtn = (BubbleButton)sender;
+            Form frm;
+            ILSGOfrmTipBox mesbox = new LSGOfrmInforMessageBox(MessageBoxButtons.OKCancel);
+            switch (bbtn.TooltipText)
+            {
+                case "退出": if (mesbox.ShowMessage("确定退出火力发电模拟决策系统吗", "系统提示") == DialogResult.OK)
+                        Application.Exit(); break;
+                case "系统注册": frm = new Form_Register(); frm.ShowDialog(); break;
+                case "系统帮助": ; break;
+                case "贴现": frm = new Form_Discount(); frm.ShowDialog(); break;
+                case "变卖厂房": frm = new Form_SalePlant(); frm.ShowDialog(); break;
+                case "购买厂房": frm = new Form_ByePlant(); frm.ShowDialog(); break;
+                case "查看经营结果": PubVar.mark = 1; frm = new Form_ShowResult(); frm.ShowDialog(); break;
+                case "查看经营业绩排名": frm = new Form_ShowRanking(); frm.ShowDialog(); break;
+                case "查看英雄榜": frm = new frm_Hero();frm.ShowDialog() ; break;
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (lbl_CurState.Location.X <= -69)
+            {
+                lbl_CurState.SetBounds(1103, lbl_CurState.Location.Y, lbl_CurState.Size.Width, lbl_CurState.Size.Height);
+            }
+            lbl_CurState.SetBounds(lbl_CurState.Location.X - 2, lbl_CurState.Location.Y, lbl_CurState.Size.Width, lbl_CurState.Size.Height);
+            lbl_CurState.Refresh();
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            Bill bill = new Bill();
+            bill.Amount = 14;
+            bill.Price = 500;
+            bill.Sum = bill.Amount*bill.Price/100;
+            PubVar.bidCoalResult.Add(bill);
+
+            InforLoad();
+            Initial();
+        }
+        /// <summary>
+        /// 加载信息
+        /// </summary>
+        private void InforLoad()
+        {
+            //系统部分
+            lab_Company.Text = PubVar.CompanyName;
+            lab_Actor.Text = PubVar.Actor;
+            lab_CurTime.Text = "第" + PubVar.year.ToString() + "年";
+            //财产部分
+            lbl_Cash.Text = Math.Round(PubVar.Fund).ToString() + "百万";
+            lbl_Lloan.Text = Math.Round(PubVar.loanL).ToString()+"百万";
+            lbl_Sloan.Text = Math.Round(PubVar.loanS).ToString()+ "百万";
+            lbl_Raccount.Text = Math.Round(PubVar.RaccountList[0] + PubVar.RaccountList[1] + PubVar.RaccountList[2] + PubVar.RaccountList[3] + PubVar.RaccountList[4]).ToString() + "百万";
+            lbl_Paccount.Text = Math.Round(PubVar.accountP).ToString()+"百万";
+            //游动标签
+            if (step == 0)
+            {
+                lbl_CurState.Text = "由于您的决策不当，企业倒闭！请继续努力";
+            }
+            else
+            {
+                lbl_CurState.Text = "正在决策：" + lab_CurTime.Text + "  第" + step + "步  " + listLklb[step - 1].Text;
+            }
+            int x1=0, x2=0, x3=0,x4=0,x5=0;
+            for (int k = 0; k < Program.factory.IEquipment.Count; k++)
+            {
+                if (Program.factory.IEquipment[k].MachineType == 30 && Program.factory.IEquipment[k].Canuse==true)
+                {
+                    x1++;
+                }
+                if (Program.factory.IEquipment[k].MachineType == 60 && Program.factory.IEquipment[k].Canuse == true)
+                {
+                    x2++;
+                }
+                if (Program.factory.IEquipment[k].MachineType == 100 && Program.factory.IEquipment[k].Canuse == true)
+                {
+                    x3++;
+                }
+                if (Program.factory.IEquipment[k].MachineType == 100 && Program.factory.IEquipment[k].Canuse == true)
+                {
+                    x5++;
+                }
+            }
+            for (int k = 0; k < Program.factory.IEquipment.Count; k++)
+            {
+                if (Program.factory.IEquipment[k].NitricEquipment.Canuse==true)
+                {
+                    x4++;
+                }
+
+            }
+            if (x4 > 0)
+            {
+                PubVar.IsHaveNitric = true;
+            }
+            PubVar.equipment_10kw = x5;
+            PubVar.equipment_30kw = x1;
+            PubVar.equipment_60kw = x2;
+            PubVar.equipment_100kw = x3;
+            this.labelX3.Text = x1.ToString();
+            this.labelX12.Text = x2.ToString();
+            this.labelX13.Text = x3.ToString();
+            if(Program.factory.Certificate9000.Canuse)
+            {
+                this.lab_ISO9000.Text="已获得ISO9000证书";
+                lab_ISO9000.ForeColor = Color.Blue;
+            }
+            if (Program.factory.Cerficate14000.Canuse)
+            {
+                this.lab_ISO14000.Text = "已获得ISO14000证书";
+                lab_ISO14000.ForeColor = Color.Blue;
+            }
+            if (PubVar.IsHaveNitric)
+            {
+                this.labelX14.Text = x4.ToString();
+            }
+        }
+        /// <summary>
+        /// 初始化入库的订单和贷款，记录使用
+        /// </summary>
+        private void Initial()
+        {
+            Bill bidResult = new Bill();
+            PubVar.BidEResult.Add(bidResult);
+            PubVar.BidCResult.Add(bidResult);
+            PubVar.scoreList = new List<double>(15);
+            for (int i = 0; i < 15; i++)
+            {
+                PubVar.scoreList.Add(0);
+            }
+           
+            LoanList loanList = new LoanList();
+            PubVar.listBidResult = new List<string>();
+            PubVar.closing = new List<Result>();
+            InitialStatement();
+        }
+        private void InitialStatement()
+        {
+            Result result = new Result();
+            result.Cc_fmt_attach = 0;
+            result.Cc_fmt_discount = 0;
+            result.Cc_fmt_insurance = 0;
+            result.Cc_fmt_Linterest = 0;
+            result.Cc_fmt_nitric = 0;
+            result.Cc_fmt_powerRate = 0;
+            result.Cc_fmt_Sinterest = 0;
+            result.Cc_fmt_tax = 0;
+
+            result.Cc_mbc_blowdown = 0;
+            result.Cc_mbc_coal = 0;
+            result.Cc_mbc_dep = 0;
+            result.Cc_mbc_entrust = 0;
+            result.Cc_mbc_material = 0;
+            result.Cc_mbc_oil = 0;
+            result.Cc_mbc_others = 0;
+            result.Cc_mbc_repair = 0;
+            result.Cc_mbc_water = 0;
+            result.Cc_mbc_welfare = 0;
+            result.Cc_mbc_total = 0;
+
+            result.Cc_o_building = 0;
+            result.Cc_o_cash = 0;
+            result.Cc_o_Lloan = 0;
+            result.Cc_o_Paccount = 0;
+            result.Cc_o_Raccount = 0;
+            result.Cc_o_saveCoal = 0;
+            result.Cc_o_Sloan = 0;
+
+            result.Pal_cost = 204;
+            result.Pal_financial = 19;
+            result.Pal_manage = 13;
+            result.Pal_sale = 267;
+            result.Pal_attach = 3;
+            result.Pal_tax = 10;//待讨论
+            result.Pal_TBusProfit = 60;
+            result.Pal_busProfit = 41;
+            result.Pal_profit = 41;
+            result.Pal_netProfit = 31;
+
+            result.Anl_debtLloan = 200;
+            result.Anl_debtPaccount = 0;
+            result.Anl_debtSloan = 34;
+            result.Anl_debtTax = 10;
+            result.Anl_debtT = 244;
+
+            result.Anl_proBuilding = 0;//
+            result.Anl_proCash = 85;
+            result.Anl_proRaccount = 100;
+            result.Anl_proSave = 70;//存的是钱？
+            result.Anl_proTLiquid = 255;
+            result.Anl_proTSolid = 345;
+            result.Anl_proTdevicevalue = 345;
+            result.Anl_proTotal = 600;
+
+            result.Anl_rstock = 300;
+            result.Anl_rNetprofit = 31;
+            result.Anl_rprofitSave = 25;
+            result.Anl_rightsT = 356;
+            result.Anl_rightsDebt = 600;
+            PubVar.closing.Add(result);
+        }
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            //if (!IsClick)
+            //{
+            //    tmp = pic.Size;
+            //    point = pic.Location;
+            //    PictrBxMaxMin temp = new PictrBxMaxMin(new PointF(0, 0), pic, 300);
+            //    temp.PictureStretch();
+            //    IsClick = true;
+            //}
+            //else
+            //{
+            //    pic.Size = tmp;
+            //    pic.Location = point;
+            //    IsClick = false;
+            //}
+        }
+        #region//读取数据 梁添添加
+        private delegate void AddStringDelegate(string str);//建立委托
+        private void AddString(string str)
+        {
+            if (Program.Forms.frmSplash.lbl_AddString.InvokeRequired)
+            {
+                AddStringDelegate d = AddString;
+                Program.Forms.frmSplash.lbl_AddString.Invoke(d, str);
+            }
+            else
+            {
+                Program.Forms.frmSplash.lbl_AddString.Text = str;
+                Program.Forms.frmSplash.lbl_AddString.Refresh();
+            }
+        }
+        ILSGOfrmTipBox mesbox = new LSGOfrmInforMessageBox();
+        public void connection()
+        {      
+            BillAdd billAdd = new BillAdd();
+            string con = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Application.StartupPath + "\\Bill.mdb";
+            OleDbConnection connection = new OleDbConnection(con);
+            OleDbDataReader reader = default(OleDbDataReader);
+            try
+            {
+                connection.Open();
+                string sql = "select * from CapEleBill ";
+                OleDbCommand command = new OleDbCommand(sql, connection);
+                reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    billAdd = new BillAdd();
+                    billAdd.year = int.Parse(reader["year"].ToString());
+                    AddString("正在加载第"+billAdd.year+"年容量订单");
+                    billAdd.amount = int.Parse(reader["amount"].ToString());
+                    billAdd.billNum = int.Parse(reader["billNum"].ToString());
+                    billAdd.yearLimit = int.Parse(reader["yearLimit"].ToString());
+                    billAdd.price = Convert.ToDouble(reader["price"].ToString());
+                    billAdd.sum = billAdd.price * billAdd.amount*100;
+                    PubVar.CapEleBillAdd.Add(billAdd);
+                }
+                Program.Forms.frmSplash.prgX.Value += 30 ;
+                reader.Close();
+                command.CommandText = "select * from ComEleBill";
+                reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    billAdd = new BillAdd();
+                    billAdd.year = int.Parse(reader["year"].ToString());
+                    AddString("正在加载第" + billAdd.year + "年电量订单");
+                    billAdd.amount = int.Parse(reader["amount"].ToString());
+                    billAdd.billNum = int.Parse(reader["billNum"].ToString());
+                    billAdd.yearLimit = int.Parse(reader["yearLimit"].ToString());
+                    billAdd.isNitric = (bool)reader["isNitric"];
+                    billAdd.isISO = (bool)reader["isISO"];
+                    //billAdd.cerficateType=(CerficateType)reader["CertificateType"];
+                    PubVar.ComEleBillAdd.Add(billAdd);
+                }
+                Program.Forms.frmSplash.prgX.Value += 30;
+                reader.Close();
+                command.CommandText = "select * from CoalBill";
+                reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    billAdd = new BillAdd();
+                    billAdd.year = int.Parse(reader["year"].ToString());
+                    AddString("正在加载第" + billAdd.year + "年燃煤订单");
+                    billAdd.amount = int.Parse(reader["amount"].ToString());
+                    billAdd.billNum = int.Parse(reader["billNum"].ToString());
+                    billAdd.yearLimit = int.Parse(reader["yearLimit"].ToString());
+                    PubVar.CoalBillAdd.Add(billAdd);
+                }
+                connect1();
+                Program.Forms.frmSplash.prgX.Value = 100;
+                Program.Forms.frmSplash.timer.Stop();
+                Program.Forms.frmSplash.Close();
+            }
+            catch (Exception ex)
+            {
+                mesbox.ShowMessage(ex.Message, "提示");
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+        private void connect1()
+        {
+            string con = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Application.StartupPath + "\\Computer1.mdb";
+            PubVar.StartupPath = Application.StartupPath;
+            OleDbConnection connection = new OleDbConnection(con);
+            OleDbDataReader reader = default(OleDbDataReader);
+            try
+            {
+                connection.Open();
+                string sql = "select * from fit ";
+                OleDbCommand command = new OleDbCommand(sql, connection);
+                reader = command.ExecuteReader();
+                TP1 tp;
+                while (reader.Read())
+                {
+                    //回家修改
+                    tp = new TP1();
+                    tp.playerName = Convert.ToInt32((string)reader["playerID"]);
+                    tp.yearID = Convert.ToInt32((string)reader["yearID"]);
+                    tp.right = Convert.ToDouble((string)reader["right"]);
+                    tp.profit = Convert.ToDouble((string)reader["profit"]);
+                    PubVar.computerRights.Add(tp);
+                }
+                reader.Close();
+
+                sql = "select * from Hero";
+                totalPoint totalpoint;
+                command.CommandText = sql;
+                reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    totalpoint = new totalPoint();
+                    totalpoint.playerName = (string)reader["playerName"];
+                    totalpoint.totalpoint = Convert.ToDouble(Convert.ToString(reader["totalPoint"]));
+                    totalpoint.createTime = (string)reader["createTime"];
+                    PubVar.totalpoint.Add(totalpoint);
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                mesbox.ShowMessage(ex.Message, "提示");
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+        #endregion
+
+    }
+}

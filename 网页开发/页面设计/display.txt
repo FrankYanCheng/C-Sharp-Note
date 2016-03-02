@@ -1,0 +1,1 @@
+显示属性，在style里<table style="display:block">

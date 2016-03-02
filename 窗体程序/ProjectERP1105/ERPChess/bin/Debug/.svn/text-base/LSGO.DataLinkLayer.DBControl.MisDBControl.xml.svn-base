@@ -1,0 +1,2719 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LSGO.DataLinkLayer.DBControl.MisDBControl</name>
+    </assembly>
+    <members>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTableCollection">
+            <summary>
+            表集合
+            </summary>     
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTableCollection.AddTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            功能描述:将Table对象添加到TableCollection集合的结尾处
+            </summary>
+            <param name="Table">要添加到TableCollection集合的末尾处的Table对象,该值不可以为null.</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTableCollection.DeleteTable">
+            <summary>
+            从TableCollection集合中移除所有Table元素
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTableCollection.DeleteTable(System.String)">
+            <summary>
+            注意：在AliasName或Name中找
+            </summary>
+            <param name="Name"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTableCollection.DeleteTable(System.Int32)">
+            <summary>
+            功能描述:移除TableCollection集合中指定索引处的Table元素
+            </summary>
+            <param name="index">要移除Table元素的从零开始的索引</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTableCollection.FindTable(System.String)">
+            <summary>
+            根据Name或AliasName在TableCollecion集合中搜索第一个匹配的Table元素,并返回其在TableCollection集合中从零开始的索引. 
+            </summary>
+            <param name="Name">要搜索Talbe元素的Name</param>
+            <returns>如果找到则为该元素从零开始的索引,否则为 -1.</returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTableCollection.Count">
+            <summary>
+            获取TableCollection集合中实际包含Table元素数目 
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTableCollection.Item(System.Int32)">
+            <summary>
+            获取或设置指定索引处的Table元素
+            </summary>
+            <param name="Index">要获得或设置的Table元素从零开始的索引</param>
+            <returns>指定索引处的Table元素</returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTableCollection.Item(System.String)">
+            <summary>
+            注意：实现代码中要结合AliasName和Name中找
+            </summary>
+            <param name="Name"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade">
+            <summary>
+            访问属性数据库的Facade接口
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.OpenConnection">
+            <summary>
+            打开数据库连接
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.CloseConnection">
+            <summary>
+            关闭数据库连接
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.CreateDatabase(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty)">
+            <summary>
+            创建物理数据库
+            </summary>
+            <param name="ConnectionProperty">链接属性</param>
+            <returns>若创建成功返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.CreateTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.Boolean,System.Boolean)">
+            <summary>
+            根据表Table的结构在数据库中创建表
+            <para>需要给DataTableCollection同步添加表,同时修改TableInfor和fieldsInfor.</para>
+            </summary>
+            <param name="Table">要创建的带结构的表</param>
+            <param name="Synchronous">是否同步将信息加入到TableInfor和fieldsInfor</param>
+            <param name="isAddAliasName">是否添加字段说明和表说明</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.BeginTranscation">
+            <summary>
+            启动数据库事务
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.commitTransaction">
+            <summary>
+            提交事务 
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.RollBackTransaction">
+            <summary>
+            回滚事务
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.GetTablesName">
+             <summary>
+            得到数据库中所有用户表的表名 
+             </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.GetColumnsInfo(System.String)">
+            <summary>
+            得到TableName的所有字段信息
+            </summary>
+            <param name="TableName">表名</param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.CreateMisDbConnection(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty)">
+            <summary>
+            创建与数据库的链接,连接信息于构造函数提供
+            </summary>
+            <returns>如果链接成功返回true,否则返回false</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.DestroyMisDbConnection">
+            <summary>
+            销毁与数据库的链接
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.ExistTable(System.String)">
+            <summary>
+            判断表Table是否在数据库中存在
+            </summary>
+            <param name="Table">要判断是否存在的表的表名</param>
+            <returns>如果存在返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.CreateTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.Boolean)">
+            <summary>
+            根据表Table的结构在数据库中创建表
+            <para>需要给DataTableCollection同步添加表,同时修改TableInfor和fieldsInfor.</para>
+            </summary>
+            <param name="Table">要创建的带结构的表</param>
+            <param name="Synchronous">是否同步将信息加入到TableInfo FieldsInfo里面</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.DeleteTable(System.String,System.Boolean)">
+            <summary>
+            在数据库中删除表
+            <para>需要给DataTableCollection同步删除表,同时修改TableInfor和FieldsInfor.</para> 
+            </summary>
+            <param name="TableName">要删除的表</param>
+            <param name="Synchronous">是否同步将信息加入到TableInfo FieldsInfo里面</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.InsertRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRow)">
+            <summary>
+            在数据库中插入行
+            </summary>
+            <param name="Row">要插入的行</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.InsertRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRowCollection)">
+            <summary>
+            在数据库中插入行的集合
+            </summary>
+            <param name="RowCollection">要插入的行的集合</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.GetRowCollection(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            获得Table中的所有记录
+            </summary>
+            <param name="Table">要获得所有记录的带结构的Table.</param>
+            <returns>若记录集合为空则记录集合的Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.GetRowCollection(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            获得DataTable中满足查询条件的记录集合
+            <para>(1)如果QueryFilter的WhereClause为Empty,则返回Table中的所有记录.</para> 
+            <para>(2)如果QueryFilter的OrderByField不为Empty,则按照该Field排序.</para> 
+            </summary>
+            <param name="Table">要查询的带结构的表</param>
+            <param name="SearchFilter">查询过滤器</param>
+            <returns>若记录集合为空则记录集合的Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.ExistRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            判断Tale中满足查询条件的记录是否存在.
+            </summary>
+            <param name="Table">要查询的表</param>
+            <param name="QueryFilter">查询过滤器</param>
+            <returns>如果满足条件的记录存在返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.UpdateRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOUpdateEntity,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            更新满足查询条件的记录
+            </summary>
+            <param name="UpdateEntity">要更新的实体信息</param>
+            <param name="QueryFilter">查询过滤器</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.DeleteRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            删除表中满足条件的记录
+            </summary>
+            <param name="Table">要删除记录的表</param>
+            <param name="QueryFilter">条件过滤器</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.DeleteRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            删除表中所有记录
+            </summary>
+            <param name="Table">要删除所有记录的表</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.GetUniqueValue(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.String)">
+            <summary>
+            在Table表中获取Field字段对应的唯一值序列.
+            </summary>
+            <param name="Table">数据表</param>
+            <param name="FieldName">字段名称</param>
+            <returns>含有唯一值的序列,若没有唯一值则序列Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.GetUniqueValue(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.String,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            在Table表中根据条件获取Field字段对应的唯一值序列.
+            </summary>
+            <param name="Table">数据表</param>
+            <param name="FieldName">字段名称</param>
+            <param name="pSearchFilter">条件</param>
+            <returns>含有唯一值的序列,若没有唯一值则序列Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.ExecuteStoredProcedure(System.String)">
+            <summary>
+            执行无返回不带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程名称</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.ExecuteStoredProcedure(System.String,LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity)">
+            <summary>
+            执行无返回带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程名称</param>
+            <param name="StoredProcedureEntity">存储过程参数实体</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.ExecuteStoredProcedure(System.String,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            执行有返回不带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程</param>
+            <param name="Table">存储过程对应的数据表</param>
+            <returns>返回数据集合,如果数据集合为空则Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.ExecuteStoredProcedure(System.String,LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            执行有返回带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程名称</param>
+            <param name="StoredProcedureEntity">存储过程参数实体</param>
+            <param name="Table">存储过程对应的数据表</param>
+            <returns>返回数据集合,如果数据集合为空则Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.MergeTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            将B表中的记录追加到A表的记录尾部
+            <para>A,B表需要拥有相同的结构.</para>
+            </summary>
+            <param name="DataTableA">被追加记录的表</param>
+            <param name="DataTableB">要追加记录的表</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.MergeTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            将B表中满足条件的记录追加到A表的记录尾部
+            <para>A,B表需要拥有相同的结构.</para>
+            </summary>
+            <param name="DataTableA">被追加记录的表</param>
+            <param name="DataTableB">要追加记录的表</param>
+            <param name="SearchFilter">过滤条件(针对于B表)</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.DataBaseBackup(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty,System.String)">
+            <summary>
+            备份数据库
+            </summary>
+            <param name="path">数据库备份的物理位置</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.DataBaseRestore(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty,System.String)">
+            <summary>
+            还原数据库
+            </summary>
+            <param name="path">曾备份数据库的物理位置</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.TryConnectDataBase(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty)">
+            <summary>
+            尝试连接数据库
+            </summary>
+            <param name="ConnectionProperty">数据库链接属性</param>
+            <returns>若链接成功返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.GetTableNamesFromDataBase">
+            <summary>
+            从TableInfo中得到数据库中所有表的名称
+            </summary>
+            <returns>返回所有表名的集合,若集合为空则该集合的Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.ExcuteSQLReturn(System.String)">
+            <summary>
+            执行有返回值的sql语句
+            </summary>
+            <param name="Sql">sql语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.ExcuteSQL(System.String)">
+            <summary>
+            执行无返回的sql语句,执行事务方法
+            </summary>
+            <param name="sql">sql语句</param>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.IsConnected">
+            <summary>
+            获取与数据库的链接状态
+            <para>该属性只有get方法,true表示已经建立链接,false表示没有建立链接.</para> 
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.DataTableCollection">
+            <summary>
+            从数据库TableInfo和FieldInfo表中获取系统所用数据表结构的集合
+            <para>先在数据库中定义TableInfo和FieldInfo表</para>
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlFacade.IsOperate">
+            <summary>
+            启动事务后，获取判断是否对数据库进行了操作
+            </summary>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataField">
+            <summary>
+            表示数据库字段的接口,是DataTable中列的架构.
+            <para>DataField是DataTable的基本构造块,通过向DataFieldCollection中添加一个或多个Field对象来生成这个架构.</para>
+            <para>DataField通过Type属性确定所包含的数据的种类.例如将数据类型限制为整数,字符串或小数.</para>
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataField.Name">
+            <summary>
+            获取或设置DataFieldCollection中列的名称,属性设置不能为Empty.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataField.AliasName">
+            <summary>
+            获取或设置DataFieldCollection中列的别名,属性设置不能为Empty.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataField.Type">
+            <summary>
+            获取或设置存储在列中的数据类型,默认值为lsgoFieldType.String.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataField.IsNullable">
+            <summary>
+            获取或设置一个值,该值指示对于属于该表的行,此列中是否允许空值.如果允许空值,则为 true(默认),否则为 false.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataField.IsVisible">
+            <summary>
+            获取或设置该字段是否显示,默认true.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataField.ShowWidth">
+            <summary>
+            获取或设置显示该字段时,呈现的宽度,默认100.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataField.DefaultValue">
+            <summary>
+             获取或设置该字段的缺省值.
+            </summary>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.BeginTranscation">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.commitTransaction">
+            <summary>
+            提交事务
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.RollBackTransaction">
+            <summary>
+            回滚事务
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.CreateDatabase(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty)">
+            <summary>
+            
+            </summary>
+            <param name="ConnectionProperty"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.CreateTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.Boolean,System.Boolean)">
+            <summary>
+            根据表Table的结构在数据库中创建表
+            <para>需要给DataTableCollection同步添加表,同时修改TableInfor和fieldsInfor.</para>
+            </summary>
+            <param name="Table">要创建的带结构的表</param>
+            <param name="Synchronous">是否同步将信息加入到TableInfor和fieldsInfor</param>
+            <param name="isAddAliasName">是否添加字段说明和表说明</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.CreateMisDbConnection(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty)">
+            <summary>
+            
+            </summary>
+            <param name="ConnectionProperty"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.DestroyMisDbConnection">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.ExistTable(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="TableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.CreateTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="Table"></param>
+            <param name="Synchronous"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.DeleteTable(System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="TableName"></param>
+            <param name="Synchronous"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.InsertRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRow)">
+            <summary>
+            
+            </summary>
+            <param name="Row"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.InsertRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRowCollection)">
+            <summary>
+            
+            </summary>
+            <param name="RowCollection"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.GetRowCollection(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            
+            </summary>
+            <param name="Table"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.GetRowCollection(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            
+            </summary>
+            <param name="Table"></param>
+            <param name="SearchFilter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.ExistRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            
+            </summary>
+            <param name="Table"></param>
+            <param name="QueryFilter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.UpdateRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOUpdateEntity,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            
+            </summary>
+            <param name="UpdateEntity"></param>
+            <param name="QueryFilter"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.DeleteRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            
+            </summary>
+            <param name="Table"></param>
+            <param name="QueryFilter"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.DeleteRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            
+            </summary>
+            <param name="Table"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.GetUniqueValue(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Table"></param>
+            <param name="Field"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.GetUniqueValue(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.String,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            
+            </summary>
+            <param name="Table"></param>
+            <param name="Field"></param>
+            <param name="pSearchFilter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.ExecuteStoredProcedure(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="StoredProcedureName"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.ExecuteStoredProcedure(System.String,LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity)">
+            <summary>
+            
+            </summary>
+            <param name="StoredProcedureName"></param>
+            <param name="StoredProcedureEntity"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.ExecuteStoredProcedure(System.String,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            
+            </summary>
+            <param name="StoredProcedureName"></param>
+            <param name="Table"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.ExecuteStoredProcedure(System.String,LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            
+            </summary>
+            <param name="StoredProcedureName"></param>
+            <param name="StoredProcedureEntity"></param>
+            <param name="Table"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.MergeTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            
+            </summary>
+            <param name="DataTableA"></param>
+            <param name="DataTableB"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.MergeTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            
+            </summary>
+            <param name="DataTableA"></param>
+            <param name="DataTableB"></param>
+            <param name="SearchFilter"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.DataBaseBackup(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ConnectionProperty"></param>
+            <param name="path"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.DataBaseRestore(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ConnectionProperty"></param>
+            <param name="path"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.TryConnectDataBase(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty)">
+            <summary>
+            
+            </summary>
+            <param name="ConnectionProperty"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.GetTableNamesFromDataBase">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.ExcuteSQLReturn(System.String)">
+            <summary>
+             执行有返回值的sql语句
+            </summary>
+            <param name="Sql">sql语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.ExcuteSQL(System.String)">
+            <summary>
+            执行无返回的sql语句
+            </summary>
+            <param name="Sql">sql语句</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.GetTablesName">
+            <summary>
+            获取数据库中用户表的表名
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.GetColumnsInfo(System.String)">
+            <summary>
+            得到TableName的所有字段信息
+            </summary>
+            <param name="TableName">表名</param>
+            <returns></returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.IsConnected">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlFacade.DataTableCollection">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.CreateDatabase(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty)">
+            <summary>
+            创建物理数据库
+            </summary>
+            <param name="ConnectionProperty">链接属性</param>
+            <returns>若创建成功返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.CreateMisDbConnection(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty)">
+            <summary>
+            创建与数据库的链接
+            </summary>
+            <param name="ConnectionProperty">链接属性</param>
+            <returns>如果链接成功返回true,否则返回false</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.DestroyMisDbConnection">
+            <summary>
+            销毁与数据库的链接
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.ExistTable(System.String)">
+            <summary>
+            判断表Table是否在数据库中存在
+            </summary>
+            <param name="TableName">要判断是否存在的表</param>
+            <returns>如果存在返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.CreateTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.Boolean)">
+            <summary>
+            根据表Table的结构在数据库中创建表
+            <para>需要给DataTableCollection同步添加表,同时修改TableInfor和fieldsInfor.</para>
+            </summary>
+            <param name="Table">要创建的带结构的表</param>
+            <param name="Synchronous"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.CreateTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.Boolean,System.Boolean)">
+            <summary>
+            根据表Table的结构在数据库中创建表
+            <para>需要给DataTableCollection同步添加表,同时修改TableInfor和fieldsInfor.</para>
+            </summary>
+            <param name="Table">要创建的带结构的表</param>
+            <param name="Synchronous">是否同步将信息加入到TableInfor和fieldsInfor</param>
+            <param name="isAddAliasName">是否添加字段说明和表说明</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.DeleteTable(System.String,System.Boolean)">
+            <summary>
+            在数据库中删除表
+            <para>需要给DataTableCollection同步删除表,同时修改TableInfor和FieldsInfor.</para> 
+            </summary>
+            <param name="TableName">要删除的表</param>
+            <param name="Synchronous"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.InsertRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRow)">
+            <summary>
+            在数据库中插入行
+            </summary>
+            <param name="Row">要插入的行</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.InsertRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRowCollection)">
+            <summary>
+            在数据库中插入行的集合
+            </summary>
+            <param name="RowCollection">要插入的行的集合</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.GetRowCollection(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            获得Table中的所有记录
+            </summary>
+            <param name="Table">要获得所有记录的带结构的Table.</param>
+            <returns>若记录集合为空则记录集合的Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.GetRowCollection(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            获得DataTable中满足查询条件的记录集合
+            <para>(1)如果QueryFilter的WhereClause为Empty,则返回Table中的所有记录.</para> 
+            <para>(2)如果QueryFilter的OrderByField不为Empty,则按照该Field排序.</para> 
+            </summary>
+            <param name="Table">要查询的带结构的表</param>
+            <param name="SearchFilter">查询过滤器</param>
+            <returns>若记录集合为空则记录集合的Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.ExistRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            判断Tale中满足查询条件的记录是否存在.
+            </summary>
+            <param name="Table">要查询的表</param>
+            <param name="QueryFilter">查询过滤器</param>
+            <returns>如果满足条件的记录存在返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.UpdateRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOUpdateEntity,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            更新满足查询条件的记录
+            </summary>
+            <param name="UpdateEntity">要更新的实体信息</param>
+            <param name="QueryFilter">查询过滤器</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.DeleteRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            删除表中满足条件的记录
+            </summary>
+            <param name="Table">要删除记录的表</param>
+            <param name="QueryFilter">条件过滤器</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.DeleteRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            删除表中所有记录
+            </summary>
+            <param name="Table">要删除所有记录的表</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.GetUniqueValue(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.String)">
+            <summary>
+            在Table表中获取Field字段对应的唯一值序列.
+            </summary>
+            <param name="Table">数据表</param>
+            <param name="FieldName">字段</param>
+            <returns>含有唯一值的序列,若没有唯一值则序列Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.GetUniqueValue(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.String,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            在Table表中根据条件获取Field字段对应的唯一值序列.
+            </summary>
+            <param name="Table">数据表</param>
+            <param name="FieldName">字段</param>
+            <param name="pSearchFilter">条件</param>
+            <returns>含有唯一值的序列,若没有唯一值则序列Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.ExecuteStoredProcedure(System.String)">
+            <summary>
+            执行无返回不带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程名称</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.ExecuteStoredProcedure(System.String,LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity)">
+            <summary>
+            执行无返回带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程名称</param>
+            <param name="StoredProcedureEntity">存储过程参数实体</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.ExecuteStoredProcedure(System.String,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            执行有返回不带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程</param>
+            <param name="Table">存储过程对应的数据表</param>
+            <returns>返回数据集合,如果数据集合为空则Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.ExecuteStoredProcedure(System.String,LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            执行有返回带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程名称</param>
+            <param name="StoredProcedureEntity">存储过程参数实体</param>
+            <param name="Table">存储过程对应的数据表</param>
+            <returns>返回数据集合,如果数据集合为空则Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.MergeTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            将B表中的记录追加到A表的记录尾部
+            <para>A,B表需要拥有相同的结构.</para>
+            </summary>
+            <param name="DataTableA">被追加记录的表</param>
+            <param name="DataTableB">要追加记录的表</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.MergeTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            将B表中满足条件的记录追加到A表的记录尾部
+            <para>A,B表需要拥有相同的结构.</para>
+            </summary>
+            <param name="DataTableA">被追加记录的表</param>
+            <param name="DataTableB">要追加记录的表</param>
+            <param name="SearchFilter">过滤条件(针对于B表)</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.DataBaseBackup(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty,System.String)">
+            <summary>
+            备份数据库
+            </summary>
+            <param name="path">数据库备份的物理位置</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.DataBaseRestore(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty,System.String)">
+            <summary>
+            还原数据库
+            </summary>
+            <param name="path">曾备份数据库的物理位置</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.TryConnectDataBase(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty)">
+            <summary>
+            尝试连接数据库
+            </summary>
+            <param name="ConnectionProperty">数据库链接属性</param>
+            <returns>若链接成功返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.GetTableNamesFromDataBase">
+            <summary>
+            从TableInfo中得到数据库中所有表的名称
+            </summary>
+            <returns>返回所有表名的集合,若集合为空则该集合的Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.Clone">
+            <summary>
+            克隆方法
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.ExcuteSQL(System.String)">
+            <summary>
+            执行有返回值的sql语句
+            </summary>
+            <param name="Sql">sql语句</param>
+            <returns></returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.IsConnected">
+            <summary>
+            获取与数据库的链接状态
+            <para>该属性只有get方法,true表示已经建立链接,false表示没有建立链接.</para> 
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOracleMisDBControlFacade.DataTableCollection">
+            <summary>
+            从数据库TableInfo和FieldInfo表中获取系统所用数据表结构的集合
+            <para>先在数据库中定义TableInfo和FieldInfo表</para>
+            </summary>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataTableCollection">
+            <summary>
+            数据表的集合
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataTableCollection.AddTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            将Table对象添加到TableCollection集合的结尾处
+            </summary>
+            <param name="Table">要添加到TableCollection集合的末尾处的Table对象,该值不可以为null.</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataTableCollection.DeleteTable">
+            <summary>
+            从TableCollection集合中移除所有Table元素
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataTableCollection.DeleteTable(System.String)">
+            <summary>
+            按表名删除表
+            </summary>
+            <param name="Name">表名</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataTableCollection.DeleteTable(System.Int32)">
+            <summary>
+             移除TableCollection集合中指定索引处的Table元素
+            </summary>
+            <param name="index">要移除Table元素的从零开始的索引</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataTableCollection.FindTable(System.String)">
+            <summary>
+            根据Name在TableCollection集合中搜索第一个匹配的Table元素,并返回其在TableCollection集合中从零开始的索引.
+            </summary>
+            <param name="Name">要搜索Table元素的Name</param>
+            <returns>如果找到则为该元素从零开始的索引,否则为 -1.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataTableCollection.Clone">
+            <summary>
+            创建一个TableCollection集合对象的副本
+            </summary>
+            <returns>返回TableCollection集合对象的副本</returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataTableCollection.Count">
+            <summary>
+            获取TableCollection集合中实际包含Table元素数目
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataTableCollection.Item(System.Int32)">
+            <summary>
+            获取或设置指定索引处的Table元素
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataTableCollection.Item(System.String)">
+            <summary>
+            按Name获取或设置Table元素
+            </summary>
+            <param name="Name">表的名称</param>
+            <returns></returns>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOUpdateEntity">
+            <summary>
+            构造Update语句实体的接口
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOUpdateEntity.AddFieldValue(System.String,System.Object)">
+            <summary>
+            添加字段的数据
+            </summary>
+            <param name="FieldName">字段名称</param>
+            <param name="Value">字段上的值</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOUpdateEntity.ModifyFieldValue(System.String,System.Object)">
+            <summary>
+            修改字段信息
+            </summary>
+            <param name="FieldName">需要修改的字段名称</param>
+            <param name="Value">修改后字段的值</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOUpdateEntity.GetFieldCollection">
+            <summary>
+            返回Update语句需要更新的字段集合,若不存在则返回null.
+            </summary>
+            <returns>Update语句需要更新的字段的集合,若不存在则返回null.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOUpdateEntity.GetValueCollection">
+            <summary>
+            返回Update语句需要更新的字段上值的集合,若不存在则返回null.
+            </summary>
+            <returns>Update语句需要更新的字段上值的集合,若不存在则返回null.</returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOUpdateEntity.Table">
+            <summary>
+            需要更新的ITable表
+            </summary>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRowCollection">
+            <summary>
+            封装数据记录集合的接口
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRowCollection.AddRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRow)">
+            <summary>
+            将Row对象添加到RowCollection集合的结尾处
+            <para>注意:要判断是否来自同一张表.</para>
+            </summary>
+            <param name="Row">要添加到RowCollection集合的末尾处的Row对象,该值不可以为null.</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRowCollection.AddRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRowCollection)">
+            <summary>
+            将Row集合添加到RowCollection集合的结尾处
+            </summary>
+            <param name="RowCollection">要添加到RowCollection集合的末尾处的Row集合对象.</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRowCollection.DeleteRow">
+            <summary>
+            从RowCollection集合中移除所有Row元素
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRowCollection.DeleteRow(System.Int32)">
+            <summary>
+            移除RowCollection集合中指定索引处的Row元素
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRowCollection.ExchangeRowsTableName(System.String)">
+            <summary>
+            改变RowCollection中每行的表名
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRowCollection.DataTable">
+            <summary>
+            获取数据记录所在的表
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRowCollection.Count">
+            <summary>
+            获取集合中的元素的总数
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRowCollection.Item(System.Int32)">
+            <summary>
+            从集合中获取或设置指定索引处的Row元素
+            </summary>
+            <param name="Index">要获得或设置的Row元素从零开始的索引</param>
+            <returns>指定索引处的Row元素</returns>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade">
+            <summary>
+            访问SQLServer数据库的外观接口
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.Clone">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.CreateDatabase(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty)">
+            <summary>
+            创建物理数据库
+            </summary>
+            <param name="ConnectionProperty">链接属性</param>
+            <returns>若创建成功返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.CreateMisDbConnection(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty)">
+            <summary>
+            创建与数据库的链接
+            </summary>
+            <param name="ConnectionProperty">链接属性</param>
+            <returns>如果链接成功返回true,否则返回false</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.DestroyMisDbConnection">
+            <summary>
+            销毁与数据库的链接
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.ExistTable(System.String)">
+            <summary>
+            判断表Table是否在数据库中存在
+            </summary>
+            <param name="TableName">要判断是否存在的表的表名</param>
+            <returns>如果存在返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.CreateTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.Boolean)">
+            <summary>
+            根据表Table的结构在数据库中创建表
+            <para>需要给DataTableCollection同步添加表,同时修改TableInfor和fieldsInfor.</para>
+            </summary>
+            <param name="Table">要创建的带结构的表</param>
+            <param name="Synchronous">是否同步将信息加入到TableInfor和fieldsInfor</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.CreateTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.Boolean,System.Boolean)">
+            <summary>
+            根据表Table的结构在数据库中创建表
+            <para>需要给DataTableCollection同步添加表,同时修改TableInfor和fieldsInfor.</para>
+            </summary>
+            <param name="Table">要创建的带结构的表</param>
+            <param name="Synchronous">是否同步将信息加入到TableInfor和fieldsInfor</param>
+            <param name="isAddAliasName">是否添加字段说明和表说明</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.DeleteTable(System.String,System.Boolean)">
+            <summary>
+            在数据库中删除表
+            <para>需要给DataTableCollection同步删除表,同时修改TableInfor和FieldsInfor.</para> 
+            </summary>
+            <param name="Table">要删除的表</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.InsertRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRow)">
+            <summary>
+            在数据库中插入行
+            </summary>
+            <param name="Row">要插入的行</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.InsertRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRowCollection)">
+            <summary>
+            在数据库中插入行的集合
+            </summary>
+            <param name="RowCollection">要插入的行的集合</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.GetRowCollection(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            获得Table中的所有记录
+            </summary>
+            <param name="Table">要获得所有记录的带结构的Table.</param>
+            <returns>若记录集合为空则记录集合的Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.GetRowCollection(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            获得DataTable中满足查询条件的记录集合
+            <para>(1)如果QueryFilter的WhereClause为Empty,则返回Table中的所有记录.</para> 
+            <para>(2)如果QueryFilter的OrderByField不为Empty,则按照该Field排序.</para> 
+            </summary>
+            <param name="Table">要查询的带结构的表</param>
+            <param name="SearchFilter">查询过滤器</param>
+            <returns>若记录集合为空则记录集合的Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.ExistRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            判断Tale中满足查询条件的记录是否存在.
+            </summary>
+            <param name="Table">要查询的表</param>
+            <param name="QueryFilter">查询过滤器</param>
+            <returns>如果满足条件的记录存在返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.UpdateRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOUpdateEntity,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            更新满足查询条件的记录
+            </summary>
+            <param name="UpdateEntity">要更新的实体信息</param>
+            <param name="QueryFilter">查询过滤器</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.DeleteRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            删除表中满足条件的记录
+            </summary>
+            <param name="Table">要删除记录的表</param>
+            <param name="QueryFilter">条件过滤器</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.DeleteRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            删除表中所有记录
+            </summary>
+            <param name="Table">要删除所有记录的表</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.GetUniqueValue(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.String)">
+            <summary>
+            在Table表中获取Field字段对应的唯一值序列.
+            </summary>
+            <param name="Table">数据表</param>
+            <param name="FieldName">字段</param>
+            <returns>含有唯一值的序列,若没有唯一值则序列Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.GetUniqueValue(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.String,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            在Table表中根据条件获取Field字段对应的唯一值序列.
+            </summary>
+            <param name="Table">数据表</param>
+            <param name="FieldName">字段</param>
+            <param name="pSearchFilter">条件</param>
+            <returns>含有唯一值的序列,若没有唯一值则序列Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.ExecuteStoredProcedure(System.String)">
+            <summary>
+            执行无返回不带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程名称</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.ExecuteStoredProcedure(System.String,LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity)">
+            <summary>
+            执行无返回带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程名称</param>
+            <param name="StoredProcedureEntity">存储过程参数实体</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.ExecuteStoredProcedure(System.String,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            执行有返回不带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程</param>
+            <param name="Table">存储过程对应的数据表</param>
+            <returns>返回数据集合,如果数据集合为空则Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.ExecuteStoredProcedure(System.String,LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            执行有返回带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程名称</param>
+            <param name="StoredProcedureEntity">存储过程参数实体</param>
+            <param name="Table">存储过程对应的数据表</param>
+            <returns>返回数据集合,如果数据集合为空则Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.MergeTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            将B表中的记录追加到A表的记录尾部
+            <para>A,B表需要拥有相同的结构.</para>
+            </summary>
+            <param name="DataTableA">被追加记录的表</param>
+            <param name="DataTableB">要追加记录的表</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.MergeTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            将B表中满足条件的记录追加到A表的记录尾部
+            <para>A,B表需要拥有相同的结构.</para>
+            </summary>
+            <param name="DataTableA">被追加记录的表</param>
+            <param name="DataTableB">要追加记录的表</param>
+            <param name="SearchFilter">过滤条件(针对于B表)</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.DataBaseBackup(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty,System.String)">
+            <summary>
+            备份数据库
+            </summary>
+            <param name="path">数据库备份的物理位置</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.DataBaseRestore(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty,System.String)">
+            <summary>
+            还原数据库
+            </summary>
+            <param name="ConnectionProperty"></param>
+            <param name="path">曾备份数据库的物理位置</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.TryConnectDataBase(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty)">
+            <summary>
+            尝试连接数据库
+            </summary>
+            <param name="ConnectionProperty">数据库链接属性</param>
+            <returns>若链接成功返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.GetTableNamesFromDataBase">
+            <summary>
+            从TableInfo中得到数据库中所有表的名称
+            </summary>
+            <returns>返回所有表名的集合,若集合为空则该集合的Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.ExcuteSQLReturn(System.String)">
+            <summary>
+            执行有返回值的sql语句
+            </summary>
+            <param name="Sql">sql语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.GetColumnsInfo(System.String)">
+            <summary>
+            得到TableName的所有字段信息
+            </summary>
+            <param name="TableName">表名</param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.GetTablesName">
+            <summary>
+            获取数据库中用户表的表名
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.IsConnected">
+            <summary>
+            获取与数据库的链接状态
+            <para>该属性只有get方法,true表示已经建立链接,false表示没有建立链接.</para> 
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLMisDBControlFacade.DataTableCollection">
+            <summary>
+            从数据库TableInfo和FieldInfo表中获取系统所用数据表结构的集合
+            <para>先在数据库中定义TableInfo和FieldInfo表</para>
+            </summary>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlStructureCollection">
+            <summary>
+            封装MisDBControlStructure集合的接口
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlStructureCollection.Add(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlStructure)">
+            <param name="MisDBControlStructure">要添加的MisDBControlStructure对象</param>
+            <param name="MisDBControlStructure">MisDBControlStructure对象</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlStructureCollection.Delete">
+            <summary>
+            删除ILSGOMisDBControlStructureCollection集合中所有MisDBControlStructure对象
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlStructureCollection.Delete(System.String)">
+            <summary>
+            删除ILSGOMisDBControlStructureCollection集合中移除指定名字的MisDBControlStructure对象
+            </summary>
+            <param name="Name">要删除的MisDBControlStructure对象的Name</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlStructureCollection.Delete(System.Int32)">
+            <summary>
+            删除ILSGOMisDBControlStructureCollection集合中移除指定索引的MisDBControlStructure对象
+            </summary>
+            <param name="index">要删除的MisDBControlStructure对象的索引</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlStructureCollection.Find(System.String)">
+            <summary>
+            根据MisDBControlStructure对象的Name找该对象的索引
+            </summary>
+            <param name="Name">要查找的MisDBControlStructure对象的Name</param>
+            <returns>找到的MisDBControlStructure对象的索引</returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlStructureCollection.Count">
+            <summary>
+            获取MisDBControlStructure集合中含有MisDBControlStructure的个数.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlStructureCollection.Item(System.Int32)">
+            <summary>
+            索引器,根据索引编号获取或设置MisDBControlStructure.
+            </summary>
+            <param name="Index">索引编号</param>
+            <returns>索引编号对应的MisDBControlStructure</returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlStructureCollection.Item(System.String)">
+            <summary>
+            索引器,根据索引名称获取或设置MisDBControlStructure.
+            </summary>
+            <param name="Name">索引名称</param>
+            <returns>索引名称对应的MisDBControlStructure,如果没有返回null.</returns>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOUpdateEntity">
+            <summary>
+            更新数据时所提供的信息
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOUpdateEntity.#ctor(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="DataTable">数据表</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOUpdateEntity.AddFieldValue(System.String,System.Object)">
+            <summary>
+            添加字段的数据
+            </summary>
+            <param name="FieldName">字段名称</param>
+            <param name="Value">字段上的值</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOUpdateEntity.ModifyFieldValue(System.String,System.Object)">
+            <summary>
+            修改字段信息
+            </summary>
+            <param name="FieldName">需要修改的字段名称</param>
+            <param name="Value">修改后的字段值</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOUpdateEntity.GetFieldCollection">
+            <summary>
+            返回Update语句需要更新的字段集合,若不存在则返回null.
+            </summary>
+            <returns>Update语句需要更新的字段的集合,若不存在则返回null.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOUpdateEntity.GetValueCollection">
+            <summary>
+            返回Update语句需要更新的字段上值的集合,若不存在则返回null.
+            </summary>
+            <returns>Update语句需要更新的字段上值的集合,若不存在则返回null.</returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOUpdateEntity.Table">
+            <summary>
+            获取需要更新的表
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.Clone">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.CreateDatabase(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty)">
+            <summary>
+            创建物理数据库
+            </summary>
+            <param name="ConnectionProperty">链接属性</param>
+            <returns>若创建成功返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.CreateMisDbConnection(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty)">
+            <summary>
+            创建与数据库的链接
+            </summary>
+            <param name="ConnectionProperty">链接属性</param>
+            <returns>如果链接成功返回true,否则返回false</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.DestroyMisDbConnection">
+            <summary>
+            销毁与数据库的链接
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.ExistTable(System.String)">
+            <summary>
+            判断表Table是否在数据库中存在
+            </summary>
+            <param name="TableName">要判断是否存在的表的表名</param>
+            <returns>如果存在返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.CreateTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.Boolean)">
+            <summary>
+            根据表Table的结构在数据库中创建表
+            <para>需要给DataTableCollection同步添加表,同时修改TableInfor和fieldsInfor.</para>
+            </summary>
+            <param name="Table">要创建的带结构的表</param>
+            <param name="Synchronous">是否同步将信息加入到TableInfor和fieldsInfor</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.CreateTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.Boolean,System.Boolean)">
+            <summary>
+            根据表Table的结构在数据库中创建表
+            <para>需要给DataTableCollection同步添加表,同时修改TableInfor和fieldsInfor.</para>
+            </summary>
+            <param name="Table">要创建的带结构的表</param>
+            <param name="Synchronous">是否同步将信息加入到TableInfor和fieldsInfor</param>
+            <param name="isAddAliasName">是否添加字段说明和表说明</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.DeleteTable(System.String,System.Boolean)">
+            <summary>
+            在数据库中删除表
+            <para>需要给DataTableCollection同步删除表,同时修改TableInfor和FieldsInfor.</para> 
+            </summary>
+            <param name="Table">要删除的表</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.InsertRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRow)">
+            <summary>
+            在数据库中插入行
+            </summary>
+            <param name="Row">要插入的行</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.InsertRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRowCollection)">
+            <summary>
+            在数据库中插入行的集合
+            </summary>
+            <param name="RowCollection">要插入的行的集合</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.GetRowCollection(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            获得Table中的所有记录
+            </summary>
+            <param name="Table">要获得所有记录的带结构的Table.</param>
+            <returns>若记录集合为空则记录集合的Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.GetRowCollection(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            获得DataTable中满足查询条件的记录集合
+            <para>(1)如果QueryFilter的WhereClause为Empty,则返回Table中的所有记录.</para> 
+            <para>(2)如果QueryFilter的OrderByField不为Empty,则按照该Field排序.</para> 
+            </summary>
+            <param name="Table">要查询的带结构的表</param>
+            <param name="SearchFilter">查询过滤器</param>
+            <returns>若记录集合为空则记录集合的Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.ExistRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            判断Tale中满足查询条件的记录是否存在.
+            </summary>
+            <param name="Table">要查询的表</param>
+            <param name="QueryFilter">查询过滤器</param>
+            <returns>如果满足条件的记录存在返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.UpdateRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOUpdateEntity,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            更新满足查询条件的记录
+            </summary>
+            <param name="UpdateEntity">要更新的实体信息</param>
+            <param name="QueryFilter">查询过滤器</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.DeleteRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            删除表中满足条件的记录
+            </summary>
+            <param name="Table">要删除记录的表</param>
+            <param name="QueryFilter">条件过滤器</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.DeleteRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            删除表中所有记录
+            </summary>
+            <param name="Table">要删除所有记录的表</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.GetUniqueValue(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.String)">
+            <summary>
+            在Table表中获取Field字段对应的唯一值序列.
+            </summary>
+            <param name="Table">数据表</param>
+            <param name="Field">字段</param>
+            <returns>含有唯一值的序列,若没有唯一值则序列Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.GetUniqueValue(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.String,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            在Table表中根据条件获取Field字段对应的唯一值序列.
+            </summary>
+            <param name="Table">数据表</param>
+            <param name="FieldName">字段</param>
+            <param name="pSearchFilter">条件</param>
+            <returns>含有唯一值的序列,若没有唯一值则序列Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.ExecuteStoredProcedure(System.String)">
+            <summary>
+            执行无返回不带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程名称</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.ExecuteStoredProcedure(System.String,LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity)">
+            <summary>
+            执行无返回带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程名称</param>
+            <param name="StoredProcedureEntity">存储过程参数实体</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.ExecuteStoredProcedure(System.String,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            执行有返回不带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程</param>
+            <param name="Table">存储过程对应的数据表</param>
+            <returns>返回数据集合,如果数据集合为空则Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.ExecuteStoredProcedure(System.String,LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            执行有返回带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程名称</param>
+            <param name="StoredProcedureEntity">存储过程参数实体</param>
+            <param name="Table">存储过程对应的数据表</param>
+            <returns>返回数据集合,如果数据集合为空则Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.MergeTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            将B表中的记录追加到A表的记录尾部
+            <para>A,B表需要拥有相同的结构.</para>
+            </summary>
+            <param name="DataTableA">被追加记录的表</param>
+            <param name="DataTableB">要追加记录的表</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.MergeTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            将B表中满足条件的记录追加到A表的记录尾部
+            <para>A,B表需要拥有相同的结构.</para>
+            </summary>
+            <param name="DataTableA">被追加记录的表</param>
+            <param name="DataTableB">要追加记录的表</param>
+            <param name="SearchFilter">过滤条件(针对于B表)</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.DataBaseBackup(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty,System.String)">
+            <summary>
+            备份数据库
+            </summary>
+            <param name="path">数据库备份的物理位置</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.DataBaseRestore(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty,System.String)">
+            <summary>
+            还原数据库
+            </summary>
+            <param name="ConnectionProperty"></param>
+            <param name="path">曾备份数据库的物理位置</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.TryConnectDataBase(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty)">
+            <summary>
+            尝试连接数据库
+            </summary>
+            <param name="ConnectionProperty">数据库链接属性</param>
+            <returns>若链接成功返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.GetTableNamesFromDataBase">
+            <summary>
+            从TableInfo中得到数据库中所有表的名称
+            </summary>
+            <returns>返回所有表名的集合,若集合为空则该集合的Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.ExcuteSQLReturn(System.String)">
+            <summary>
+            执行有返回值的sql语句
+            </summary>
+            <param name="Sql">sql语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.GetColumnsInfo(System.String)">
+            <summary>
+            得到TableName的所有字段信息
+            </summary>
+            <param name="TableName">表名</param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.GetTablesName">
+            <summary>
+            获取数据库中用户表的表名
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.IsConnected">
+            <summary>
+            获取与数据库的链接状态
+            <para>该属性只有get方法,true表示已经建立链接,false表示没有建立链接.</para> 
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSQLConcurrentDBFacade.DataTableCollection">
+            <summary>
+            从数据库TableInfo和FieldInfo表中获取系统所用数据表结构的集合
+            <para>先在数据库中定义TableInfo和FieldInfo表</para>
+            </summary>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter">
+            <summary>
+            查询过滤器
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter.WhereClause">
+            <summary>
+            获取或设置查询条件
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter.OrderByClause">
+            <summary>
+            获取或设置排序条件,多个字段时用逗号隔开.例如:[FieldA] Desc,[FieldB] Asc
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter.GroupByClause">
+            <summary>
+            获取或设置分组条件
+            </summary>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlStructure">
+            <summary>
+            Mis系统连接数据库的实体对象.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlStructure.Name">
+            <summary>
+            获取或设置MisDBControl的名字.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlStructure.MisDBControlFacade">
+            <summary>
+            获取或设置MisDBControl.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlStructure.ConnectionProperty">
+            <summary>
+            获取或设置MisDBControl对应数据库的配置属性.
+            </summary>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRow">
+            <summary>
+            表示数据库中记录的接口
+            <para>若要创建新Row,使用Table对象的CreateRow方法.</para>
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRow.ExchangeRowTableName(System.String)">
+            <summary>
+            功能描述:修改该行所对应的表的名称
+            </summary>
+            <param name="Name">新的表名</param>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRow.FieldCollection">
+            <summary>
+            获取该行的Filed构架
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRow.Table">
+            <summary>
+            获取该行拥有其架构的Table.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRow.Length">
+            <summary>
+            获取该行容纳元素的个数
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRow.Item(System.Int32)">
+            <summary>
+            从集合中获取或设置指定索引处的元素
+            </summary>
+            <param name="Index">要获得或设置的元素从零开始的索引</param>
+            <returns>指定索引处的元素值</returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRow.Item(System.String)">
+            <summary>
+            从集合中获取或设置指定Filed名称的元素
+            </summary>
+            <param name="FieldName">Feild的名称</param>
+            <returns></returns>
+            <returns>具有指定Name的集合中的Field，如果Field不存在，则为null。</returns>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataFieldCollection">
+            <summary>
+            表示Table中Field对象的集合的接口
+            <para>(1)FieldCollection定义了Table的架构,可以通过Table对象的FieldCollection属性进行访问.</para>
+            <para>(2)FieldCollection使用AddField和DeleteField方法插入和删除Field对象,使用Count属性确定集合中有多少Field对象.</para>
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataFieldCollection.AddField(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataField)">
+            <summary>
+            将Field对象添加到FieldCollection集合的结尾处
+            </summary>
+            <param name="Field">要添加到FieldCollection集合的末尾处的Field对象，该值不可以为null。</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataFieldCollection.AddField(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataFieldCollection)">
+            <summary>
+            向现有FieldCollection尾部追加新的FieldCollection
+            </summary>
+            <param name="FieldCollection">字段的集合</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataFieldCollection.DeleteField">
+            <summary>
+            从FieldCollection集合中移除所有Field元素
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataFieldCollection.DeleteField(System.Int32)">
+            <summary>
+            移除FieldCollection集合中指定索引处的Field元素
+            </summary>
+            <param name="index">要移除Field元素的从零开始的索引</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataFieldCollection.DeleteField(System.String)">
+            <summary>
+            移除FieldCollection集合中指定名称的Field元素
+            </summary>
+            <param name="Name">Field名称</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataFieldCollection.FindField(System.String)">
+            <summary>
+            根据Name在FieldCollection集合中搜索第一个匹配的Field元素,并返回其在FieldCollection集合中从零开始的索引,若没找到返回-1.
+            </summary>
+            <param name="Name">要搜索Field元素的Name</param>
+            <returns>如果找到则为该元素从零开始的索引,否则为 -1.</returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataFieldCollection.Count">
+            <summary>
+            获取集合中的元素的总数。
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataFieldCollection.Item(System.Int32)">
+            <summary>
+            从集合中获取或设置指定索引处的Filed元素
+            </summary>
+            <param name="Index">要获得或设置的Fild元素从零开始的索引</param>
+            <returns>指定索引处的Field元素</returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataFieldCollection.Item(System.String)">
+            <summary>
+            从集合中获取或设置指定名称的Filed元素,若Field不存在，则为null.
+            </summary>
+            <param name="Name">Feild的名称</param>
+            <returns></returns>
+            <returns>具有指定Name的集合中的Field，如果Field不存在，则为null。</returns>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataRow">
+            <summary>
+            封装数据库中记录接口的实现.
+            <para>若要创建新Row,使用Table对象的CreateRow方法.</para>
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataRow.#ctor(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataFieldCollection)">
+            <summary>
+            构造一个Row对象
+            </summary>
+            <param name="Table">Row所属的Table</param>
+            <param name="FieldCollection">Row的Field构架</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataRow.Clone">
+            <summary>
+            创建一个Row对象的副本
+            </summary>
+            <returns>Row对象的副本</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataRow.ExchangeRowTableName(System.String)">
+            <summary>
+            功能描述:修改该行所对应的表的名称
+            </summary>
+            <param name="Name">新的表名</param>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataRow.FieldCollection">
+            <summary>
+            获取该行的Filed构架。
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataRow.Table">
+            <summary>
+            获取该行拥有其架构的Table.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataRow.Length">
+            <summary>
+            该行容纳元素的个数。
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataRow.Item(System.Int32)">
+            <summary>
+            从集合中获取或设置指定索引处的元素。
+            </summary>
+            <param name="Index">要获得或设置的元素从零开始的索引</param>
+            <returns>指定索引处的元素值</returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataRow.Item(System.String)">
+            <summary>
+            从集合中获取或设置指定Filed名称的元素
+            </summary>
+            <param name="FieldName">Feild的名称</param>
+            <returns></returns>
+            <returns>具有指定Name的集合中的Field，如果Field不存在，则为null。</returns>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataTable">
+            <summary>
+            <para>表示一个数据表.</para>
+            <para>(1)创建DataTable时先将DataFeild对象添加到DataFieldCollection中定义其架构.</para>
+            <para>(2)使用DataTable.CreateRow方法返回与DataTable具有相同构架的DataRow对象.</para>
+            <para>(3)使用DataTable.CreateUpdateEntity方法返回更新该表的UpdateEntity对象.</para>
+            </summary>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable">
+            <summary>
+            <para>表示数据库中表结构的接口.</para>
+            <para>(1)创建DataTable时先将DataFeild对象添加到DataFieldCollection中定义其架构.</para>
+            <para>(2)使用DataTable.CreateRow方法返回与DataTable具有相同构架的DataRow对象.</para>
+            <para>(3)使用DataTable.CreateRowCollection方法返回与DataTable具有相同构架的DataRowCollection对象.</para>
+            <para>(4)使用DataTable.CreateUpdateEntity方法返回更新该表的UpdateEntity对象.</para>
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable.CreateRow">
+            <summary>
+            创建与该表具有相同架构的新Row
+            </summary>
+            <returns>与该表具有相同构架的新Row</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable.CreateUpdateEntity">
+            <summary>
+            创建该表Update记录时的配置实体
+            </summary>
+            <returns>该表Update记录时的配置实体对象</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable.CreateRowCollection">
+            <summary>
+            创建与该表具有相同架构的新RowCollection
+            </summary>
+            <returns>与该表具有相同构架的新RowCollection</returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable.Name">
+            <summary>
+            获取或设置DataTable的名称,且DataTable的Name不能为Empty.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable.PrimaryKeyName">
+            <summary>
+            获取或设置PrimaryKey的名称,默认值为string.Empty,可以赋空值.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable.AliasName">
+            <summary>
+            获取或设置数据表别名,默认与Name相同.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable.Tag">
+            <summary>
+            获取或设置与对象关联的用户定义数据.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable.IsMetaDataSet">
+            <summary>
+            是否为索引表标识
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable.FieldCollection">
+            <summary>
+            获取DataTable中DataFieldCollection集合.
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataTable.#ctor">
+            <summary>
+            构造函数,创建DataTable对象.
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataTable.#ctor(System.String)">
+            <summary>
+            构造函数,创建DataTable对象且DataTable的Name不能为Empty.
+            </summary>
+            <param name="Name">DataTable的名称</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataTable.CreateRow">
+            <summary>
+            创建与该表具有相同架构的新Row.
+            <para>(1)Row对象只有通过这个方法得到.</para>
+            <para>(2)Table的Name不能为Empty.</para>
+            <para>(3)Table的FieldCollection中必须包含Field元素.</para>
+            </summary>
+            <returns>与该表具有相同构架的新Row</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataTable.CreateUpdateEntity">
+            <summary>
+            创建该表Update记录时的配置实体.
+            <para>(1)UpdateEntity对象只有通过这个方法得到.</para>
+            <para>(2)Table的Name不能为Empty.</para>
+            <para>(3)Table的FieldCollection中必须包含Field元素.</para>
+            </summary>
+            <returns>该表Update记录时的配置实体对象</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataTable.CreateRowCollection">
+            <summary>
+            创建Row的集合
+            </summary>
+            <returns>返回Row的集合</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataTable.Clone">
+            <summary>
+            创建一个DataTable对象的副本
+            </summary>
+            <returns>返回DataTable对象的副本</returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataTable.Name">
+            <summary>
+            获取或设置DataTable的名称,且DataTable的Name不能为Empty.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataTable.PrimaryKeyName">
+            <summary>
+            获取或设置PrimaryKey的名称,默认值为string.Empty,可以赋空值
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataTable.AliasName">
+            <summary>
+            获取或设置数据表别名,默认与Name相同.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataTable.Tag">
+            <summary>
+            获取或设置与对象关联的用户定义数据.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataTable.IsMetaDataSet">
+            <summary>
+            是否为索引表标识
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataTable.FieldCollection">
+            <summary>
+            获取DataTable中DataFieldCollection集合.
+            </summary>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSearchFilter">
+            <summary>
+            查询过滤器实现类
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSearchFilter.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSearchFilter.Clone">
+            <summary>
+            克隆方法
+            </summary>
+            <returns>返回ILSGOSearchFilter对象的一个实例.</returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSearchFilter.WhereClause">
+            <summary>
+            获取或设置查询条件
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSearchFilter.OrderByClause">
+            <summary>
+            获取或设置排序条件,多个字段时用逗号隔开.例如:[FieldA] Desc,[FieldB] Asc
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOSearchFilter.GroupByClause">
+            <summary>
+            获取或设置分组条件
+            </summary>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlStructure">
+            <summary>
+            ????
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlStructure.Clone">
+            <summary>
+            创建一个MisDBControlStructure对象的副本
+            </summary>
+            <returns>返回MisDBControlStructure对象的副本</returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlStructure.Name">
+            <summary>
+            获取或设置MisDBControlStructure的名称
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlStructure.MisDBControlFacade">
+            <summary>
+            获取或设置MisDBControlFacade
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlStructure.ConnectionProperty">
+            <summary>
+            获取或设置MisDBControlStructure的连接属性
+            </summary>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataRowCollection">
+            <summary>
+            封装数据记录集合的接口
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataRowCollection.#ctor(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            创建一个LSGODataRowCollection对象。
+            </summary>
+            <param name="Table">该LSGODataRowCollection所属的Table。</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataRowCollection.AddRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRow)">
+            <summary>
+            将Row对象添加到RowCollection集合的结尾处
+            </summary>
+            <param name="Row">要添加到RowCollection集合的末尾处的Row对象，该值不可以为null。</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataRowCollection.AddRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRowCollection)">
+            <summary>
+            将已知RowCollection中的Row对象添加到RowCollection集合的结尾处
+            </summary>
+            <param name="RowCollection">记录集合</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataRowCollection.DeleteRow">
+            <summary>
+            清空DataRowCollection中的Row元素
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataRowCollection.DeleteRow(System.Int32)">
+            <summary>
+            移除RowCollection集合中指定索引处的Row元素
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataRowCollection.Clone">
+            <summary>
+            创建一个RowCollection集合对象的副本
+            </summary>
+            <returns>返回RowCollection集合对象的副本</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataRowCollection.ExchangeRowsTableName(System.String)">
+            <summary>
+            改变RowCollection中每行的表名
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataRowCollection.DataTable">
+            <summary>
+            获取DataRowCollection的DataTable
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataRowCollection.Count">
+            <summary>
+            获取集合中的元素的总数。
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataRowCollection.Item(System.Int32)">
+            <summary>
+            从集合中获取或设置指定索引处的Row元素
+            </summary>
+            <param name="Index">要获得或设置的Row元素从零开始的索引</param>
+            <returns>指定索引处的Row元素</returns>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataFieldCollection">
+            <summary>
+            Table中Field对象的集合
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataFieldCollection.AddField(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataField)">
+            <summary>
+            将Field对象添加到FieldCollection集合的结尾处
+            </summary>
+            <param name="Field">要添加到FieldCollection集合的末尾处的Field对象，该值不可以为null。</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataFieldCollection.AddField(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataFieldCollection)">
+            <summary>
+            将某个已知的FieldCollection中的Field元素逐个添加到当前的FieldCollection中
+            </summary>
+            <param name="FieldCollection">已知的FieldCollection，该FieldCollection中的Field元素将被添加到当前FieldCollection中</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataFieldCollection.DeleteField">
+            <summary>
+            从FieldCollection集合中移除所有Field元素
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataFieldCollection.DeleteField(System.Int32)">
+            <summary>
+            移除FieldCollection集合中指定索引处的Field元素
+            </summary>
+            <param name="index">要移除Field元素的从零开始的索引</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataFieldCollection.DeleteField(System.String)">
+            <summary>
+            移除FieldCollection集合中指定名称的Field元素
+            </summary>
+            <param name="Name">字段名称</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataFieldCollection.FindField(System.String)">
+            <summary>
+            根据Name在FieldCollection集合中搜索第一个匹配的Field元素,并返回其在FieldCollection集合中从零开始的索引,若没找到返回-1. 
+            </summary>
+            <param name="Name">要搜索Field元素的Name</param>
+            <returns>如果找到则为该元素从零开始的索引,否则为 -1.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataFieldCollection.Clone">
+            <summary>
+            创建一个DataFieldCollection对象的副本
+            </summary>
+            <returns>返回DataFieldCollection对象的副本</returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataFieldCollection.Count">
+            <summary>
+            获取字段集合DataFieldCollection中字段的个数
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataFieldCollection.Item(System.Int32)">
+            <summary>
+            从集合中获取或设置指定索引处的Filed元素
+            </summary>
+            <param name="Index">要获得或设置的Fild元素从零开始的索引</param>
+            <returns>指定索引处的Field元素</returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataFieldCollection.Item(System.String)">
+            <summary>
+            从集合中获取或设置指定名称的Filed元素,若Field不存在，则为null.
+            </summary>
+            <param name="Name">Feild的名称</param>
+            <returns></returns>
+            <returns>具有指定Name的集合中的Field，如果Field不存在，则为null。</returns>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade">
+            <summary>
+            实现ILSGOMisDBControlFacade的实体类，封装了对Access数据库访问的所有方法和属性。
+            <para>马燕鹏 2012-11-09 对该类中的属性、方法进行注释。</para>
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.GetCurrentDatabaseType">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.BeginTranscation">
+            <summary>
+            启动数据库事务
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.CreateDatabase(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty)">
+            <summary>
+            创建物理数据库
+            </summary>
+            <param name="ConnectionProperty">链接属性</param>
+            <returns>若创建成功返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.CreateMisDbConnection(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty)">
+            <summary>
+            创建与数据库的链接
+            </summary>
+            <param name="ConnectionProperty">链接属性</param>
+            <returns>如果链接成功返回true,否则返回false</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.DestroyMisDbConnection">
+            <summary>
+            销毁与数据库的链接
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.ExistTable(System.String)">
+            <summary>
+            判断表Table是否在数据库中存在，首先调用CreateMisDbConnection方法与Access数据库建立连接.
+            </summary>
+            <param name="TableName">要判断是否存在的表</param>
+            <returns>如果存在返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.CreateTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.Boolean)">
+            <summary>
+            根据表Table的结构在数据库中创建表
+            <para>需要给DataTableCollection同步添加表,同时修改TableInfor和fieldsInfor.</para>
+            </summary>
+            <param name="Table">要创建的带结构的表</param>
+            <param name="Synchronous">是否同步将信息添加到TableInfo FieldsInfo表中</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.CreateTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.Boolean,System.Boolean)">
+            <summary>
+            根据表Table的结构在数据库中创建表
+            <para>需要给DataTableCollection同步添加表,同时修改TableInfor和fieldsInfor.</para>
+            </summary>
+            <param name="Table">要创建的带结构的表</param>
+            <param name="Synchronous">是否同步将信息加入到TableInfor和fieldsInfor</param>
+            <param name="isAddAliasName">是否添加字段说明和表说明</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.DeleteTable(System.String,System.Boolean)">
+            <summary>
+            在数据库中删除表
+            <para>需要给DataTableCollection同步删除表,同时修改TableInfor和FieldsInfor.</para> 
+            </summary>
+            <param name="TableName">要删除的表</param>
+            <param name="Synchronous">是否同步将信息添加到TableInfo FieldsInfo表中</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.InsertRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRow)">
+            <summary>
+            在数据库中插入行
+            </summary>
+            <param name="Row">要插入的行</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.InsertRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRowCollection)">
+            <summary>
+            在数据库中插入行的集合
+            </summary>
+            <param name="RowCollection">要插入的行的集合</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.GetRowCollection(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            获得Table中的所有记录
+            </summary>
+            <param name="Table">要获得所有记录的带结构的Table。</param>
+            <returns>若记录集合为空则记录集合的Count属性为0。</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.GetRowCollection(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            获得DataTable中满足查询条件的记录集合
+            <para>(1)如果QueryFilter的WhereClause为Empty,则返回Table中的所有记录.</para> 
+            <para>(2)如果QueryFilter的OrderByField不为Empty,则按照该Field排序.</para> 
+            </summary>
+            <param name="Table">要查询的带结构的表</param>
+            <param name="SearchFilter">查询过滤器</param>
+            <returns>若记录集合为空则记录集合的Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.ExistRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            判断Tale中满足查询条件的记录是否存在.
+            </summary>
+            <param name="Table">要查询的表</param>
+            <param name="QueryFilter">查询过滤器</param>
+            <returns>如果满足条件的记录存在返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.UpdateRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOUpdateEntity,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            更新满足查询条件的记录
+            </summary>
+            <param name="UpdateEntity">要更新的实体信息</param>
+            <param name="QueryFilter">查询过滤器</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.DeleteRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            删除表中满足条件的记录
+            </summary>
+            <param name="Table">要删除记录的表</param>
+            <param name="QueryFilter">条件过滤器</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.DeleteRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            删除表中所有记录
+            </summary>
+            <param name="Table">要删除所有记录的表</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.GetUniqueValue(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.String)">
+            <summary>
+            在Table表中获取Field字段对应的唯一值序列.
+            </summary>
+            <param name="Table">数据表</param>
+            <param name="FieldName">字段</param>
+            <returns>含有唯一值的序列,若没有唯一值则序列Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.GetUniqueValue(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.String,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            在Table表中根据条件获取Field字段对应的唯一值序列.
+            </summary>
+            <param name="Table">数据表</param>
+            <param name="FieldName">字段</param>
+            <param name="pSearchFilter">条件</param>
+            <returns>含有唯一值的序列,若没有唯一值则序列Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.ExecuteStoredProcedure(System.String)">
+            <summary>
+            执行无返回不带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程名称</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.ExecuteStoredProcedure(System.String,LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity)">
+            <summary>
+            执行无返回带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程名称</param>
+            <param name="StoredProcedureEntity">存储过程参数实体</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.ExecuteStoredProcedure(System.String,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            执行有返回不带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程</param>
+            <param name="Table">存储过程对应的数据表</param>
+            <returns>返回数据集合,如果数据集合为空则Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.ExecuteStoredProcedure(System.String,LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            执行有返回带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程名称</param>
+            <param name="StoredProcedureEntity">存储过程参数实体</param>
+            <param name="Table">存储过程对应的数据表</param>
+            <returns>返回数据集合,如果数据集合为空则Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.MergeTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            将B表中的记录追加到A表的记录尾部
+            <para>A,B表需要拥有相同的结构.</para>
+            </summary>
+            <param name="DataTableA">被追加记录的表</param>
+            <param name="DataTableB">要追加记录的表</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.MergeTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            将B表中满足条件的记录追加到A表的记录尾部
+            <para>A,B表需要拥有相同的结构.</para>
+            </summary>
+            <param name="DataTableA">被追加记录的表</param>
+            <param name="DataTableB">要追加记录的表</param>
+            <param name="SearchFilter">过滤条件(针对于B表)</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.DataBaseBackup(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty,System.String)">
+            <summary>
+            备份数据库
+            </summary>
+            <param name="ConnectionProperty"></param>
+            <param name="path">数据库备份的物理位置</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.DataBaseRestore(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty,System.String)">
+            <summary>
+            还原数据库
+            </summary>
+            <param name="ConnectionProperty"></param>
+            <param name="path">曾备份数据库的物理位置</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.TryConnectDataBase(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty)">
+            <summary>
+            尝试连接数据库
+            </summary>
+            <param name="ConnectionProperty">数据库链接属性</param>
+            <returns>若链接成功返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.GetTableNamesFromDataBase">
+            <summary>
+            从TableInfo中得到数据库中所有表的名称
+            </summary>
+            <returns>返回所有表名的集合,若集合为空则该集合的Count属性为0.出现异常，则返回Null</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.Clone">
+            <summary>
+            克隆方法
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.ExcuteSQLReturn(System.String)">
+            <summary>
+            执行有返回的sql语句
+            </summary>
+            <param name="Sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.ExcuteSQL(System.String)">
+            <summary>
+            执行无返回的sql语句 可以处理事务sql
+            </summary>
+            <param name="Sql"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.commitTransaction">
+            <summary>
+            提交事务 
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.RollBackTransaction">
+            <summary>
+            回滚事务
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.GetTablesName">
+            <summary>
+            获取数据库中用户表的表名
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.GetColumnsInfo(System.String)">
+            <summary>
+            得到TableName的所有字段信息
+            </summary>
+            <param name="TableName">表名</param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.GetTypeFromDATA_TYPE(System.Int32,System.Int32)">
+            <summary>
+            根据DATA_TYPE的值获得数据类型
+            </summary>
+            <param name="number"></param>
+            <param name="judge_number"></param>
+            <returns></returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.IsOperate">
+            <summary>
+            获取在启动启动事务后，是否对数据库进行了操作。
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.IsConnected">
+            <summary>
+            获取与数据库的链接状态。
+            <para>该属性只有get方法，true表示已经建立链接，false表示没有建立链接。</para> 
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOOLEMisDBControlFacade.DataTableCollection">
+            <summary>
+            从数据库TableInfo和FieldInfo表中获取系统所用数据表结构的集合,第一次调用需要打开数据库连接。
+            <para>需要先在数据库中定义TableInfo和FieldInfo表。</para>
+            <para>马燕鹏 2012-11-10 修改代码</para>
+            </summary>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlStructureCollection">
+            <summary>
+            MisDBControlStructure的集合
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlStructureCollection.Add(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOMisDBControlStructure)">
+            <summary>
+            将MisDBControlStructure对象添加到MisDBControlStructureCollection集合的结尾处
+            </summary>
+            <param name="Table">要添加到MisDBControlStructureCollection集合的末尾处的MisDBControlStructure对象,该值不可以为null.</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlStructureCollection.Delete">
+            <summary>
+            从MisDBControlStructureCollection集合中移除所有MisDBControlStructure元素
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlStructureCollection.Delete(System.String)">
+            <summary>
+            按MisDBControlStructure元素的名称删除MisDBControlStructure
+            </summary>
+            <param name="Name">MisDBControlStructure元素的名称</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlStructureCollection.Delete(System.Int32)">
+            <summary>
+             移除MisDBControlStructureCollection集合中指定索引处的Table元素。
+            </summary>
+            <param name="index">要移除MisDBControlStructure元素的从零开始的索引。</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlStructureCollection.Find(System.String)">
+            <summary>
+            根据Name在MisDBControlStructureCollection集合中搜索第一个匹配的MisDBControlStructure元素,
+            并返回其在MisDBControlStructureCollection集合中从零开始的索引.
+            </summary>
+            <param name="Name">要查找的MisDBControlStructure元素的名称</param>
+            <returns>如果找到则为该MisDBControlStructure元素从零开始的索引,否则为 -1.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlStructureCollection.Clone">
+            <summary>
+            创建一个MisDBControlStructureCollection集合对象的副本
+            </summary>
+            <returns>返回MisDBControlStructureCollection集合对象的副本</returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlStructureCollection.Count">
+            <summary>
+            获取MisDBControlStructureCollection集合中实际包含MisDBControlStructure元素的数目
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlStructureCollection.Item(System.Int32)">
+            <summary>
+            按索引获取或设置MisDBControlStructure元素
+            </summary>
+            <param name="Index">指定的索引</param>
+            <returns>ILSGOMisDBControlStructure</returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOMisDBControlStructureCollection.Item(System.String)">
+            <summary>
+            按Name获取或设置MisDBControlStructure元素
+            </summary>
+            <param name="Name">MisDBControlStructure元素的名称</param>
+            <returns>ILSGOMisDBControlStructure</returns>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataField">
+            <summary>
+            表示数据库字段的接口,是DataTable中列的架构.
+            <para>DataField是DataTable的基本构造块,通过向DataFieldCollection中添加一个或多个Field对象来生成这个架构.</para>
+            <para>DataField通过Type属性确定所包含的数据的种类.例如将数据类型限制为整数,字符串或小数.</para>
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataField.Clone">
+            <summary>
+            克隆ILSGODataField
+            </summary>
+            <returns>返回克隆得到的ILSGODataField对象</returns>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataField.Name">
+            <summary>
+            获取或设置DataFieldCollection中列的名称,属性设置不能为Empty.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataField.AliasName">
+            <summary>
+            获取或设置DataFieldCollection中列的别名,属性设置不能为Empty.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataField.Type">
+            <summary>
+            获取或设置存储在列中的数据类型,默认值为lsgoFieldType.String.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataField.IsNullable">
+            <summary>
+            获取或设置一个值,该值指示对于属于该表的行,此列中是否允许空值.如果允许空值,则为 true(默认),否则为 false.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataField.IsVisible">
+            <summary>
+            获取或设置该字段是否允许显示,若允许显示则为true(默认),否则为false.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataField.ShowWidth">
+            <summary>
+            获取或设置显示该字段时,呈现的宽度,默认100.
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGODataField.DefaultValue">
+            <summary>
+             获取或设置该字段的缺省值.
+            </summary>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOGlobeTable">
+            <summary>
+            表示数据库中必须存在的表结构的类
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOGlobeTable.TableInfo">
+            <summary>
+            获取TableInfo表结构
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOGlobeTable.FieldsInfo">
+            <summary>
+            获取FieldsInfo表结构
+            </summary>
+        </member>
+        <member name="T:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.CreateDatabase(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty)">
+            <summary>
+            创建物理数据库
+            </summary>
+            <param name="ConnectionProperty">链接属性</param>
+            <returns>若创建成功返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.CreateMisDbConnection(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty)">
+            <summary>
+            创建与数据库的链接
+            </summary>
+            <param name="ConnectionProperty">链接属性</param>
+            <returns>如果链接成功返回true,否则返回false</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.DestroyMisDbConnection">
+            <summary>
+            销毁与数据库的链接
+            </summary>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.ExistTable(System.String)">
+            <summary>
+            判断表Table是否在数据库中存在
+            </summary>
+            <param name="TableName">要判断是否存在的表</param>
+            <returns>如果存在返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.CreateTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.Boolean)">
+            <summary>
+            根据表Table的结构在数据库中创建表
+            <para>需要给DataTableCollection同步添加表,同时修改TableInfor和fieldsInfor.</para>
+            </summary>
+            <param name="Table">要创建的带结构的表</param>
+            <param name="Synchronous"></param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.CreateTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.Boolean,System.Boolean)">
+            <summary>
+            根据表Table的结构在数据库中创建表
+            <para>需要给DataTableCollection同步添加表,同时修改TableInfor和fieldsInfor.</para>
+            </summary>
+            <param name="Table">要创建的带结构的表</param>
+            <param name="Synchronous">是否同步将信息加入到TableInfor和fieldsInfor</param>
+            <param name="isAddAliasName">是否添加字段说明和表说明</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.DeleteTable(System.String,System.Boolean)">
+            <summary>
+            在数据库中删除表
+            <para>需要给DataTableCollection同步删除表,同时修改TableInfor和FieldsInfor.</para> 
+            </summary>
+            <param name="TableName">要删除的表</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.InsertRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRow)">
+            <summary>
+            在数据库中插入行
+            </summary>
+            <param name="Row">要插入的行</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.InsertRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRowCollection)">
+            <summary>
+            在数据库中插入行的集合
+            </summary>
+            <param name="RowCollection">要插入的行的集合</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.GetRowCollection(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            获得Table中的所有记录
+            </summary>
+            <param name="Table">要获得所有记录的带结构的Table.</param>
+            <returns>若记录集合为空则记录集合的Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.GetRowCollection(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            获得DataTable中满足查询条件的记录集合
+            <para>(1)如果QueryFilter的WhereClause为Empty,则返回Table中的所有记录.</para> 
+            <para>(2)如果QueryFilter的OrderByField不为Empty,则按照该Field排序.</para> 
+            </summary>
+            <param name="Table">要查询的带结构的表</param>
+            <param name="SearchFilter">查询过滤器</param>
+            <returns>若记录集合为空则记录集合的Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.ExistRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            判断Tale中满足查询条件的记录是否存在.
+            </summary>
+            <param name="Table">要查询的表</param>
+            <param name="QueryFilter">查询过滤器</param>
+            <returns>如果满足条件的记录存在返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.UpdateRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOUpdateEntity,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            更新满足查询条件的记录
+            </summary>
+            <param name="UpdateEntity">要更新的实体信息</param>
+            <param name="QueryFilter">查询过滤器</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.DeleteRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            删除表中满足条件的记录
+            </summary>
+            <param name="Table">要删除记录的表</param>
+            <param name="QueryFilter">条件过滤器</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.DeleteRow(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            删除表中所有记录
+            </summary>
+            <param name="Table">要删除所有记录的表</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.GetUniqueValue(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.String)">
+            <summary>
+            在Table表中获取Field字段对应的唯一值序列.
+            </summary>
+            <param name="Table">数据表</param>
+            <param name="Field">字段</param>
+            <returns>含有唯一值的序列,若没有唯一值则序列Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.GetUniqueValue(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,System.String,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            在Table表中根据条件获取Field字段对应的唯一值序列.
+            </summary>
+            <param name="Table">数据表</param>
+            <param name="Field">字段</param>
+            <param name="pSearchFilter">条件</param>
+            <returns>含有唯一值的序列,若没有唯一值则序列Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.ExecuteStoredProcedure(System.String)">
+            <summary>
+            执行无返回不带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程名称</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.ExecuteStoredProcedure(System.String,LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity)">
+            <summary>
+            执行无返回带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程名称</param>
+            <param name="StoredProcedureEntity">存储过程参数实体</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.ExecuteStoredProcedure(System.String,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            执行有返回不带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程</param>
+            <param name="Table">存储过程对应的数据表</param>
+            <returns>返回数据集合,如果数据集合为空则Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.ExecuteStoredProcedure(System.String,LSGO.DataLinkLayer.DBControl.ILSGOFieldValueEntity,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            执行有返回带参数的存储过程
+            </summary>
+            <param name="StoredProcedureName">存储过程名称</param>
+            <param name="StoredProcedureEntity">存储过程参数实体</param>
+            <param name="Table">存储过程对应的数据表</param>
+            <returns>返回数据集合,如果数据集合为空则Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.MergeTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable)">
+            <summary>
+            将B表中的记录追加到A表的记录尾部
+            <para>A,B表需要拥有相同的结构.</para>
+            </summary>
+            <param name="DataTableA">被追加记录的表</param>
+            <param name="DataTableB">要追加记录的表</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.MergeTable(LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataTable,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGOSearchFilter)">
+            <summary>
+            将B表中满足条件的记录追加到A表的记录尾部
+            <para>A,B表需要拥有相同的结构.</para>
+            </summary>
+            <param name="DataTableA">被追加记录的表</param>
+            <param name="DataTableB">要追加记录的表</param>
+            <param name="SearchFilter">过滤条件(针对于B表)</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.DataBaseBackup(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty,System.String)">
+            <summary>
+            备份数据库
+            </summary>
+            <param name="path">数据库备份的物理位置</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.DataBaseRestore(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty,System.String)">
+            <summary>
+            还原数据库
+            </summary>
+            <param name="path">曾备份数据库的物理位置</param>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.TryConnectDataBase(LSGO.DataLinkLayer.DBControl.ILSGOConnectionProperty)">
+            <summary>
+            尝试连接数据库
+            </summary>
+            <param name="ConnectionProperty">数据库链接属性</param>
+            <returns>若链接成功返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.GetTableNamesFromDataBase">
+            <summary>
+            从TableInfo中得到数据库中所有表的名称
+            </summary>
+            <returns>返回所有表名的集合,若集合为空则该集合的Count属性为0.</returns>
+        </member>
+        <member name="M:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.Clone">
+            <summary>
+            克隆方法
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.IsConnected">
+            <summary>
+            获取与数据库的链接状态
+            <para>该属性只有get方法,true表示已经建立链接,false表示没有建立链接.</para> 
+            </summary>
+        </member>
+        <member name="P:LSGO.DataLinkLayer.DBControl.MisDBControl.LSGOExcelMisDBControlFacade.DataTableCollection">
+            <summary>
+            从数据库TableInfo和FieldInfo表中获取系统所用数据表结构的集合
+            <para>先在数据库中定义TableInfo和FieldInfo表</para>
+            </summary>
+        </member>
+    </members>
+</doc>

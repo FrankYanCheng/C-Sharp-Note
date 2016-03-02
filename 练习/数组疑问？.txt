@@ -1,0 +1,7 @@
+1.怎么输入一串随即数字赋值给一个数组
+2. static void Main(string[] args)
+        {string a=Console.ReadLine();
+        string b = Console.ReadLine();
+        string[] c = { a, b };
+        Console.WriteLine("c={0,0}", c);
+只能显示a?

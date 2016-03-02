@@ -1,0 +1,47 @@
+1.结构、类
+  结构是值类型
+  类是引用类型
+2.输出结果：
+  20
+  20
+  30
+  40
+ 类是复制了对象的地址
+ 结构是把第一个结构的所有信息复制到另一个结构中
+ 所以就不用把它再实例化
+ 
+
+
+
+
+
+
+
+
+ class MyClass
+    {
+        public int val;
+        }
+    struct myStruct
+    {
+        public int val;
+    }
+    class Class1
+    {
+        static void Main(string[] args)
+        {
+            MyClass objectA = new MyClass();
+            MyClass objectB =  objectA;
+            objectA.val = 10;
+            objectB.val = 20;
+            myStruct structA = new myStruct();
+            myStruct structB = structA;
+            structA.val = 30;
+            structB.val = 40;
+            Console.WriteLine("objectA.wal={0}", objectA.val);
+            Console.WriteLine("objectB.val={0}", objectB.val);
+            Console.WriteLine("structA.val={0}", structA.val);
+            Console.WriteLine("structB.val={0}", structB.val);
+
+        }
+    }

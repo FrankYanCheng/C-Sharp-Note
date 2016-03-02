@@ -1,0 +1,51 @@
+ 还是有点问题，怎么在括号里加东西？
+
+
+
+
+ public class fyc1
+
+
+        {
+            public fyc1()
+            {
+                Console.WriteLine("你好，fyc1基类()程序开始");
+            }
+            public fyc1(string k)
+            {
+                k = "fyc1 string k类开始";
+                Console.WriteLine("{0}", k);
+            }
+        
+        }
+        public class fyc2:fyc1
+  {
+        static void Main(string[] args)
+        {fyc2 fyc1=new fyc2();
+        Console.ReadKey();
+        }
+        public fyc2()
+        {
+            Console.WriteLine("fyc2派生类()开始运行");
+        }
+        public fyc2(string[] s)
+        {
+            int i;
+            Console.WriteLine("执行派生类fyc2的string[]s构造函数");
+            Console.WriteLine("输入fyc2字符串数组，将会方向输出");
+            for (i = 0; i < s.Length; i++)
+            {
+                s[i] = Console.ReadLine();
+            }
+            for (i = s.Length - 1; i >= 0; i--)
+            {
+                Console.WriteLine("{0}", s[i]);
+
+            }
+        }
+            public fyc2(string k)
+            {Console.WriteLine("执行fyc2 （string k）派生类构造函数");
+            }
+
+    }
+ 

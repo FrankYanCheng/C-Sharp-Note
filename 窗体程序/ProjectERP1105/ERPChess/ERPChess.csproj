@@ -1,0 +1,704 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AF885BDF-E3C0-451F-BAE5-7669E2346E20}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ERPChess</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="clclbl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\clclbl.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\DLL\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="LSGO.DataLinkLayer, Version=1.0.0.1, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LSGO.DataLinkLayer\bin\Debug\LSGO.DataLinkLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="LSGO.DataLinkLayer.NetControl">
+      <HintPath>..\LSGO.DataLinkLayer.NetControl\bin\Debug\LSGO.DataLinkLayer.NetControl.dll</HintPath>
+    </Reference>
+    <Reference Include="LSGO.DataLinkLayer.Tool">
+      <HintPath>C:\Documents and Settings\Administrator\桌面\ProjectLSGOLibraryV1.0.0\LSGO.DataLinkLayer.Tool\bin\Debug\LSGO.DataLinkLayer.Tool.dll</HintPath>
+    </Reference>
+    <Reference Include="LSGO.PresentationLayer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\LSGO.PresentationLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\WINDOWS\assembly\GAC\Microsoft.Office.Interop.Excel\11.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client.cs" />
+    <Compile Include="DataNeed.cs" />
+    <Compile Include="Exam\AnswerCardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam\AnswerCardForm.designer.cs">
+      <DependentUpon>AnswerCardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam\AnswerQuestionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam\AnswerQuestionForm.designer.cs">
+      <DependentUpon>AnswerQuestionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam\DBHelper.cs" />
+    <Compile Include="Exam\QuizHelper.cs" />
+    <Compile Include="Exam\QuizResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam\QuizResultForm.designer.cs">
+      <DependentUpon>QuizResultForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam\SelectQuestionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam\SelectQuestionsForm.designer.cs">
+      <DependentUpon>SelectQuestionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam\Subject.cs" />
+    <Compile Include="Power_Control.cs" />
+    <Compile Include="Pubfun.cs" />
+    <Compile Include="任务清单\01会议\Form_chushi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\01会议\Form_chushi.Designer.cs">
+      <DependentUpon>Form_chushi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统\Form_pbjg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统\Form_pbjg.designer.cs">
+      <DependentUpon>Form_pbjg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统\Form_pbjgnext.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统\Form_pbjgnext.designer.cs">
+      <DependentUpon>Form_pbjgnext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统\Form_pm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统\Form_pm.Designer.cs">
+      <DependentUpon>Form_pm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统\Form_zcj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统\Form_zcj.Designer.cs">
+      <DependentUpon>Form_zcj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统\frm_Hero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统\frm_Hero.designer.cs">
+      <DependentUpon>frm_Hero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameOver.cs" />
+    <Compile Include="LittleOilFire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LittleOilFire.Designer.cs">
+      <DependentUpon>LittleOilFire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="moneypayback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="moneypayback.Designer.cs">
+      <DependentUpon>moneypayback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Result.cs" />
+    <Compile Include="任务清单\26付主营业务税金及附加\MainWork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\26付主营业务税金及附加\MainWork.Designer.cs">
+      <DependentUpon>MainWork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\25微油点火\Guarrante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\25微油点火\Guarrante.Designer.cs">
+      <DependentUpon>Guarrante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\24其他费用\FrmTbDatagridView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\24其他费用\FrmTbDatagridView.Designer.cs">
+      <DependentUpon>FrmTbDatagridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\23计提折旧\Depreciation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\23计提折旧\Depreciation.Designer.cs">
+      <DependentUpon>Depreciation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\更新应付账款\frmPaccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\更新应付账款\frmPaccount.Designer.cs">
+      <DependentUpon>frmPaccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\更新应收账款\frmRaccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\更新应收账款\frmRaccount.Designer.cs">
+      <DependentUpon>frmRaccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmView.Designer.cs">
+      <DependentUpon>frmView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageType.cs" />
+    <Compile Include="lt-订单贷款\BillAdd.cs" />
+    <Compile Include="BillTemp.cs" />
+    <Compile Include="frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lt-订单贷款\frmBid_Capacity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lt-订单贷款\frmBid_Capacity.Designer.cs">
+      <DependentUpon>frmBid_Capacity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lt-订单贷款\Bid_EleQuantity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lt-订单贷款\Bid_EleQuantity.Designer.cs">
+      <DependentUpon>Bid_EleQuantity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRunList.cs" />
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrgan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrgan.Designer.cs">
+      <DependentUpon>frmOrgan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PictrBxMaxMin.cs" />
+    <Compile Include="Server.cs" />
+    <Compile Include="任务清单\22支付委托运行费\EntrustOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\22支付委托运行费\EntrustOperation.Designer.cs">
+      <DependentUpon>EntrustOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\21支付排污费\PayPolutionFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\21支付排污费\PayPolutionFee.Designer.cs">
+      <DependentUpon>PayPolutionFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\18支付设备修理费\EquipmentRepairFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\18支付设备修理费\EquipmentRepairFee.Designer.cs">
+      <DependentUpon>EquipmentRepairFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\17支付厂用电费\PayFactoryElectricFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\17支付厂用电费\PayFactoryElectricFee.Designer.cs">
+      <DependentUpon>PayFactoryElectricFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\05还清上一年贷款以及办理新贷款\frmLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\05还清上一年贷款以及办理新贷款\frmLoan.Designer.cs">
+      <DependentUpon>frmLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\05还清上一年贷款以及办理新贷款\Form_SLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\05还清上一年贷款以及办理新贷款\Form_SLoan.Designer.cs">
+      <DependentUpon>Form_SLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\04参加上网订单会\Form_BidElectric.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\04参加上网订单会\Form_BidElectric.Designer.cs">
+      <DependentUpon>Form_BidElectric.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\04参加上网订单会\Form_BidEleResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\04参加上网订单会\Form_BidEleResult.Designer.cs">
+      <DependentUpon>Form_BidEleResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\10开始新的生产\FrmStartProduce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\10开始新的生产\FrmStartProduce.Designer.cs">
+      <DependentUpon>FrmStartProduce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\11交货给客户\FrmCommiteProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\11交货给客户\FrmCommiteProduct.Designer.cs">
+      <DependentUpon>FrmCommiteProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\15脱硫硝\RemoveSN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\15脱硫硝\RemoveSN.designer.cs">
+      <DependentUpon>RemoveSN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\20支付财产保险费\PayPropertyInsurancefee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\20支付财产保险费\PayPropertyInsurancefee.Designer.cs">
+      <DependentUpon>PayPropertyInsurancefee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\19支付工人工资及福利\PayWageWelfare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\19支付工人工资及福利\PayWageWelfare.designer.cs">
+      <DependentUpon>PayWageWelfare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统\Form_Fail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统\Form_Fail.Designer.cs">
+      <DependentUpon>Form_Fail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PubVar.cs" />
+    <Compile Include="系统\Form_SalePlant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统\Form_SalePlant.Designer.cs">
+      <DependentUpon>Form_SalePlant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统\Form_ByePlant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统\Form_ByePlant.Designer.cs">
+      <DependentUpon>Form_ByePlant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统\Form_Discount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统\Form_Discount.Designer.cs">
+      <DependentUpon>Form_Discount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统\Form_Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统\Form_Register.Designer.cs">
+      <DependentUpon>Form_Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统\Form_ShowRanking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统\Form_ShowRanking.Designer.cs">
+      <DependentUpon>Form_ShowRanking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\05还清上一年贷款以及办理新贷款\Form_PayOff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\05还清上一年贷款以及办理新贷款\Form_PayOff.Designer.cs">
+      <DependentUpon>Form_PayOff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\03所得税\Form_tex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\03所得税\Form_tex.Designer.cs">
+      <DependentUpon>Form_tex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\06参加采购订货会\Form_BuyConference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\06参加采购订货会\Form_BuyConference.Designer.cs">
+      <DependentUpon>Form_BuyConference.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\06参加采购订货会\Form_BuyResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\06参加采购订货会\Form_BuyResult.Designer.cs">
+      <DependentUpon>Form_BuyResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\05还清上一年贷款以及办理新贷款\Form_LongLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\05还清上一年贷款以及办理新贷款\Form_LongLoan.Designer.cs">
+      <DependentUpon>Form_LongLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\02制定新年度计划\Form_Plan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\02制定新年度计划\Form_Plan.Designer.cs">
+      <DependentUpon>Form_Plan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\05还清上一年贷款以及办理新贷款\Form_ShortLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\05还清上一年贷款以及办理新贷款\Form_ShortLoan.Designer.cs">
+      <DependentUpon>Form_ShortLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="任务清单\09投资新设备\FormBuildNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\09投资新设备\FormBuildNew.designer.cs">
+      <DependentUpon>FormBuildNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\13应收款贴现\Discount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\13应收款贴现\Discount.designer.cs">
+      <DependentUpon>Discount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\14购电费\MoneyNeedPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\14购电费\MoneyNeedPay.designer.cs">
+      <DependentUpon>MoneyNeedPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="任务清单\16资格认证\Certification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="任务清单\16资格认证\Certification.designer.cs">
+      <DependentUpon>Certification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统\Form_ShowResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统\Form_ShowResult.Designer.cs">
+      <DependentUpon>Form_ShowResult.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Exam\AnswerCardForm.resx">
+      <DependentUpon>AnswerCardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam\AnswerQuestionForm.resx">
+      <DependentUpon>AnswerQuestionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam\QuizResultForm.resx">
+      <DependentUpon>QuizResultForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam\SelectQuestionsForm.resx">
+      <DependentUpon>SelectQuestionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\01会议\Form_chushi.resx">
+      <DependentUpon>Form_chushi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统\Form_pbjg.resx">
+      <DependentUpon>Form_pbjg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统\Form_pbjgnext.resx">
+      <DependentUpon>Form_pbjgnext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统\Form_pm.resx">
+      <DependentUpon>Form_pm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统\Form_zcj.resx">
+      <DependentUpon>Form_zcj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统\frm_Hero.resx">
+      <DependentUpon>frm_Hero.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LittleOilFire.resx">
+      <DependentUpon>LittleOilFire.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="moneypayback.resx">
+      <DependentUpon>moneypayback.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\25微油点火\Guarrante.resx">
+      <DependentUpon>Guarrante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\24其他费用\FrmTbDatagridView.resx">
+      <DependentUpon>FrmTbDatagridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\23计提折旧\Depreciation.resx">
+      <DependentUpon>Depreciation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\26付主营业务税金及附加\MainWork.resx">
+      <DependentUpon>MainWork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\更新应付账款\frmPaccount.resx">
+      <DependentUpon>frmPaccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\更新应收账款\frmRaccount.resx">
+      <DependentUpon>frmRaccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmView.resx">
+      <DependentUpon>frmView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lt-订单贷款\frmBid_Capacity.resx">
+      <DependentUpon>frmBid_Capacity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lt-订单贷款\Bid_EleQuantity.resx">
+      <DependentUpon>Bid_EleQuantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrgan.resx">
+      <DependentUpon>frmOrgan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\22支付委托运行费\EntrustOperation.resx">
+      <DependentUpon>EntrustOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\21支付排污费\PayPolutionFee.resx">
+      <DependentUpon>PayPolutionFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\18支付设备修理费\EquipmentRepairFee.resx">
+      <DependentUpon>EquipmentRepairFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\17支付厂用电费\PayFactoryElectricFee.resx">
+      <DependentUpon>PayFactoryElectricFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\05还清上一年贷款以及办理新贷款\frmLoan.resx">
+      <DependentUpon>frmLoan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\05还清上一年贷款以及办理新贷款\Form_SLoan.resx">
+      <DependentUpon>Form_SLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\04参加上网订单会\Form_BidElectric.resx">
+      <DependentUpon>Form_BidElectric.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\04参加上网订单会\Form_BidEleResult.resx">
+      <DependentUpon>Form_BidEleResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\10开始新的生产\FrmStartProduce.resx">
+      <DependentUpon>FrmStartProduce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\11交货给客户\FrmCommiteProduct.resx">
+      <DependentUpon>FrmCommiteProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\15脱硫硝\RemoveSN.resx">
+      <DependentUpon>RemoveSN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\20支付财产保险费\PayPropertyInsurancefee.resx">
+      <DependentUpon>PayPropertyInsurancefee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\19支付工人工资及福利\PayWageWelfare.resx">
+      <DependentUpon>PayWageWelfare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统\Form_Fail.resx">
+      <DependentUpon>Form_Fail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统\Form_SalePlant.resx">
+      <DependentUpon>Form_SalePlant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统\Form_ByePlant.resx">
+      <DependentUpon>Form_ByePlant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统\Form_Discount.resx">
+      <DependentUpon>Form_Discount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统\Form_Register.resx">
+      <DependentUpon>Form_Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统\Form_ShowRanking.resx">
+      <DependentUpon>Form_ShowRanking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\05还清上一年贷款以及办理新贷款\Form_PayOff.resx">
+      <DependentUpon>Form_PayOff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\03所得税\Form_tex.resx">
+      <DependentUpon>Form_tex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\06参加采购订货会\Form_BuyConference.resx">
+      <DependentUpon>Form_BuyConference.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\06参加采购订货会\Form_BuyResult.resx">
+      <DependentUpon>Form_BuyResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\05还清上一年贷款以及办理新贷款\Form_LongLoan.resx">
+      <DependentUpon>Form_LongLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\02制定新年度计划\Form_Plan.resx">
+      <DependentUpon>Form_Plan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\05还清上一年贷款以及办理新贷款\Form_ShortLoan.resx">
+      <DependentUpon>Form_ShortLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="任务清单\09投资新设备\FormBuildNew.resx">
+      <DependentUpon>FormBuildNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\13应收款贴现\Discount.resx">
+      <DependentUpon>Discount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\14购电费\MoneyNeedPay.resx">
+      <DependentUpon>MoneyNeedPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="任务清单\16资格认证\Certification.resx">
+      <DependentUpon>Certification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统\Form_ShowResult.resx">
+      <DependentUpon>Form_ShowResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ERPLibrary\ERPLibrary.csproj">
+      <Project>{09FD3FAF-75C5-4CEE-880F-6F3A89AA0C4E}</Project>
+      <Name>ERPLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="任务清单\12更新应收款\" />
+    <Folder Include="任务清单\27关帐\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

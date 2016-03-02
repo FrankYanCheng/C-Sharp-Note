@@ -1,0 +1,45 @@
+namespace CopyFile
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            copyfile("D:\\123.txt", "C:\\123.txt");
+            Console.WriteLine("复制成功");
+            Console.ReadKey();
+        }
+        /// <summary>
+        /// 对文件流进行操作
+        /// </summary>
+        /// <param name="rename">源文件地址</param>
+        /// <param name="dename">目标文件地址</param>
+        static void copyfile(string rename, string dename)
+        {
+            using (FileStream restream = File.OpenRead(rename))//打开源文件进行读取
+            {
+                using(FileStream destream=File.OpenWrite(dename))//对目标文件进行写入
+                {
+                    copystream(restream,destream);
+
+                }
+            }
+        }
+        /// <summary>
+        /// 文件流的拷贝方法
+        /// </summary>
+        /// <param name="restream">源文件流</param>
+        /// <param name="destream">目标文件流</param>
+        static void copystream(FileStream restream, FileStream destream)
+        {
+            int buffsize = 1024;
+            byte[] byt = new byte[buffsize];//给字节组定义大小
+            int n;
+            while ((n = restream.Read(byt, 0, buffsize)) >0)//如果读到最后会返回0，所以当不是0的时候可以一直读下去，放在缓存区里
+            {
+                destream.Write(byt, 0, n);
+                destream.Position = restream.Position;//确保两个文件位置相同
+            }
+
+        }
+    }
+}

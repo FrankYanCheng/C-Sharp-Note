@@ -1,0 +1,19 @@
+  textBox1.Text = null;
+            ArrayList a = new ArrayList();
+            int text=0;
+            do
+            {
+                Random b = new Random();
+                int w = b.Next(1, 100);
+                if (!a.Contains(w)&&w%2==0)
+                {
+                    a.Add(w);
+                    text++;
+                }
+            }
+            while (text<10);
+            for (int i = 0; i < a.Count; i++)
+            {
+                textBox1.AppendText(a[i]+ " ");
+            }
+            

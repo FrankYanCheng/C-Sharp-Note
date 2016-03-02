@@ -1,0 +1,87 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
+
+
+namespace _07_ArrayList
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] arr = { 1,2,3};
+            ArrayList al = new ArrayList();
+            //添加
+            al.Add(3000);
+            //al.Add("张三");
+            al.Add(4000);
+            al.Add(5000);
+            al.Add(6000);
+            al.Add(7000);
+            al.AddRange(arr);
+            
+            ////集合中元素的个数
+            //Console.WriteLine(al.Count);
+            ////容量  *2
+            //Console.WriteLine(al.Capacity);
+
+            //访问第一个元素
+            //int n = Convert.ToInt32(al[0]);
+            //Console.WriteLine(n);
+
+
+            //遍历
+            //int sum = 0;
+            //for (int i = 0; i < al.Count; i++)
+            //{
+            //    int n = Convert.ToInt32(al[i]);
+            //    sum += n;
+            //}
+            //Console.WriteLine(sum);
+
+
+            int sum = 0;
+            foreach (object item in al)
+            {
+                int n = Convert.ToInt32(item);
+                sum += n;
+            }
+            Console.WriteLine(sum);
+
+
+            //移除
+            //al.Remove(3000);
+
+            //RemoveAt后 索引会自动重新排序
+            //al.RemoveAt(0);
+            //al.RemoveAt(1);
+            //for (int i = 0; i < al.Count; i++)
+            //{
+            //    al.RemoveAt(i);
+            //}
+            //for (int i = al.Count - 1; i>=0; i--)
+            //{
+            //    al.RemoveAt(i);
+            //}
+
+            //al.Clear();
+
+            if (al.Contains(3000))
+            {
+                Console.WriteLine("包含");
+            }
+            else
+            {
+                Console.WriteLine("不包含");
+            }
+
+            for (int i = 0; i < al.Count; i++)
+            {
+                Console.WriteLine(al[i]);
+            }
+            Console.Read();
+        }
+    }
+}

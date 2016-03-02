@@ -1,0 +1,21 @@
+static void Main(string[] args)
+        {
+            Write();
+            k();
+            Console.ReadKey();
+        }
+        static void Write()
+        { Console.WriteLine("这是第一步，成功!"); }
+        static int k()
+        {
+            Console.Write("输入值");
+            int j;
+            j = Console.Read();
+            if (j < 5)
+                return 1;
+            else return 0;
+            
+        }
+1.注意括号（）的使用
+2.返回值必须包括函数内的所有值，不然会死循环
+3.有void的时候不能用return

@@ -1,0 +1,2 @@
+ dlg.Filter = "Text doucments(*.txt)|*.txt|All Files|*.*|picture(*.jpg)|*.jpg)";
+前面显示的是名称便于查找，后面是类型。所有类型直接用*.*

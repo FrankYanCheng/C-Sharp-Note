@@ -1,0 +1,49 @@
+1.声明数组
+A.
+用new,所有默认的值为0，如果只说是k，则会出现错误 
+int[] k = new int[5];
+  Console.WriteLine("{0}",k[1]);
+B。
+
+            int[] k = new int[5]{1,2,4,5,5};
+            Console.WriteLine("{0}",k[1]);
+  new后的值必须对应
+
+
+
+2.多维数组（矩形数组）
+ 1.二维数组
+ double[,] k = { { 1, 2, 3, 4 }, { 2, 3, 4, 5 }, { 3, 4, 5, 6 } };
+            foreach (double a in k)
+            {
+                Console.WriteLine("{0}", a);
+            }
+中间用一个逗号隔开，输出的时候是
+1
+2
+3
+4
+2
+3
+4
+5
+这样的，既是对应（0,1），（0,2）。。。。
+如果是三维的，加两逗号，用嵌套数组
+
+
+
+3.数组的数组（嵌套循环）
+  {int[][] k={new int []{1},
+                       new int []{1,2},
+                       new int[]{1,3}
+                   };
+        foreach (int[] a in k)
+        {
+            foreach (int s in a)
+            {
+                Console.WriteLine(s);
+            }
+        }
+
+        }
+

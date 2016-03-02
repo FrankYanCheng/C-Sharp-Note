@@ -1,0 +1,7 @@
+  string email = Console.ReadLine();
+            int k = email.IndexOf("@");
+            int j=email.IndexOf(".");
+              k=j-k-1;
+          string result=email.Substring(email.IndexOf("@") + 1,k);
+          Console.WriteLine(result);
+          Console.ReadKey();

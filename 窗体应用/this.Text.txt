@@ -1,0 +1,14 @@
+  private void btnEnglish_Click(object sender, EventArgs e)
+        {
+            this.Text = "Do you speak english?";
+        }
+
+        private void btnChinese_Click(object sender, EventArgs e)
+        {
+            this.Text = "Äã½²ÖÐÎÄÂð";
+        }
+
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }

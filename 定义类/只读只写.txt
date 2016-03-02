@@ -1,0 +1,64 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication117
+{
+    class user
+    {
+        private string m_name;
+        private string m_sex;
+        private DateTime m_birthday;
+        public string name
+        {
+            get { return m_name; }
+            set { m_name = value; }
+        }
+        public string sex
+        {
+            get { return m_sex; }
+            set
+            {
+                if (value == "男" || value == "女")
+                    m_sex = value;
+                else
+                    Console.WriteLine("性别非法");
+            }
+        }
+        public int age
+        {
+            get
+            {
+                return DateTime.Now.Year - m_birthday.Year;
+
+            }
+        }
+        public DateTime birthday
+        {
+            get
+            {
+                return m_birthday;
+            }
+            set
+            {
+                if (value < Convert.ToDateTime("1900-1-1") || value.Year >= DateTime.Now.Year)
+                    Console.WriteLine("年龄非法");
+                else m_birthday = value;
+            }
+        }
+
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                user a = new user();
+                a.name = Console.ReadLine();
+                a.sex = Console.ReadLine();
+                a.birthday = Convert.ToDateTime(Console.ReadLine());
+                Console.WriteLine("姓名：" + a.name + "性别：" + a.sex+" 出生年月： "+a.birthday+" 年龄:"+a.age);
+
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+</head>
+<body bgcolor="#b4ce72">
+aa<font color="red">asd<font/>
+<br />
+<font color="black">
+"你好"
+<w>
+"灰常好,&nbsp    &nbsp   &nbsp         继续加油！"
+</w>
+<font/>
+</body>
+</html>
+
+&nbsp加入空格
+<br/>表示换行
+"灰常好,&nbsp  &lt kakaka &gt   &nbsp   &nbsp         继续加油！"
+&lt:<
+&gt:>

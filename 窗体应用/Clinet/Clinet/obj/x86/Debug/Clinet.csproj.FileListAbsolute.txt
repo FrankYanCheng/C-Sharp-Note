@@ -1,0 +1,11 @@
+D:\visual studio 2010\Projects\Clinet\Clinet\bin\Debug\Clinet.exe
+D:\visual studio 2010\Projects\Clinet\Clinet\bin\Debug\Clinet.pdb
+D:\visual studio 2010\Projects\Clinet\Clinet\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\visual studio 2010\Projects\Clinet\Clinet\obj\x86\Debug\Clinet.Form1.resources
+D:\visual studio 2010\Projects\Clinet\Clinet\obj\x86\Debug\Clinet.Properties.Resources.resources
+D:\visual studio 2010\Projects\Clinet\Clinet\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\visual studio 2010\Projects\Clinet\Clinet\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\visual studio 2010\Projects\Clinet\Clinet\obj\x86\Debug\Clinet.exe
+D:\visual studio 2010\Projects\Clinet\Clinet\obj\x86\Debug\Clinet.pdb
+C:\Users\Administrator\Desktop\C#和SQL Sever\Clinet\Clinet\obj\x86\Debug\Clinet.exe
+C:\Users\Administrator\Desktop\C#和SQL Sever\Clinet\Clinet\obj\x86\Debug\Clinet.pdb

@@ -1,0 +1,22 @@
+d:\my documents\visual studio 2010\Projects\登录界面\登录界面\bin\Debug\登录界面.exe
+d:\my documents\visual studio 2010\Projects\登录界面\登录界面\bin\Debug\登录界面.pdb
+d:\my documents\visual studio 2010\Projects\登录界面\登录界面\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\my documents\visual studio 2010\Projects\登录界面\登录界面\obj\x86\Debug\登录界面.Form1.resources
+d:\my documents\visual studio 2010\Projects\登录界面\登录界面\obj\x86\Debug\登录界面.Properties.Resources.resources
+d:\my documents\visual studio 2010\Projects\登录界面\登录界面\obj\x86\Debug\GenerateResource.read.1.tlog
+d:\my documents\visual studio 2010\Projects\登录界面\登录界面\obj\x86\Debug\GenerateResource.write.1.tlog
+d:\my documents\visual studio 2010\Projects\登录界面\登录界面\obj\x86\Debug\登录界面.exe
+d:\my documents\visual studio 2010\Projects\登录界面\登录界面\obj\x86\Debug\登录界面.pdb
+d:\my documents\visual studio 2010\Projects\登录界面\登录界面\obj\x86\Debug\登录界面.Form2.resources
+D:\My Documents\Visual Studio 2010\Projects\登录界面\登录界面\obj\x86\Debug\登录界面.Form3.resources
+C:\Users\Administrator\Desktop\登录界面\登录界面\obj\x86\Debug\登录界面.exe
+C:\Users\Administrator\Desktop\登录界面\登录界面\obj\x86\Debug\登录界面.pdb
+C:\Users\Administrator\Desktop\登录界面\登录界面\bin\Debug\登录界面.exe
+C:\Users\Administrator\Desktop\登录界面\登录界面\bin\Debug\登录界面.pdb
+C:\Users\Administrator\Desktop\登录界面\登录界面\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\登录界面\登录界面\obj\x86\Debug\登录界面.Form1.resources
+C:\Users\Administrator\Desktop\登录界面\登录界面\obj\x86\Debug\登录界面.Form2.resources
+C:\Users\Administrator\Desktop\登录界面\登录界面\obj\x86\Debug\登录界面.Form3.resources
+C:\Users\Administrator\Desktop\登录界面\登录界面\obj\x86\Debug\登录界面.Properties.Resources.resources
+C:\Users\Administrator\Desktop\登录界面\登录界面\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\登录界面\登录界面\obj\x86\Debug\GenerateResource.write.1.tlog

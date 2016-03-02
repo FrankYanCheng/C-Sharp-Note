@@ -1,0 +1,41 @@
+
+输入密码，转化为小写，提取密码信息即可；（要是只想去字符不去空格怎么办）
+遇到空格进行分行
+注意主要是char[]中得【】别换错地方
+对于foreach中是循环得
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication16
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {Console.WriteLine("输入密码:");
+        string fyc = Console.ReadLine();
+            char[] k={'f'};
+            fyc=fyc.ToLower();
+            fyc=fyc.Trim(k);
+            if (fyc == "yes")
+            {
+                Console.WriteLine("恭喜你输入成功，请进入下一步：");
+                Console.WriteLine("输入一串字符：");
+                string fyc1 = Console.ReadLine();
+                char[] k1 = { ' ' };
+                string[] fyc11;
+                fyc11 = fyc1.Split(k1);
+                foreach (string k11 in fyc11)
+                { Console.WriteLine("{0}", k11); }
+                
+            }
+            else
+            {
+                Console.WriteLine("密码错误");
+            }
+                    } 
+               }
+    }
+

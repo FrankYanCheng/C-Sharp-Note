@@ -1,0 +1,37 @@
+1.在选择器前边加上例如p input.sec{...}就是说在<p>里的才有这样的显示
+2.如果用，的话表示都用这种样式
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        .A{font-size:xx-large}
+        .B{ background-color:Blue}
+     p input.sec{ background-color:Red;  border-width:thick}
+        td.sec{ background-color:Orange; border-width:medium}
+        #e
+        { background-color:Blue
+        }
+     h1.sec,h2,input.sec{ background-color:Blue;  border-width:thick}
+    </style>
+</head>
+<body>
+<ul>
+<li style=" cursor:pointer; list-style-type:circle" class="A"><u><font color="blue" >中国发射无人机</font></u></li>
+<li style="list-style-type:circle;cursor:url()">美国五角大楼遭到轰炸</li>
+</ul>
+<input type="text" class="sec"/>
+<table>
+<tr>
+<td class="sec">asxasx</td><td class="A">asdasd</td></tr></table>
+<input type="text"  id="e" class="sec"/>
+<p>
+<input type="text" class="sec"/>
+</p>
+<h1 class="sec">
+你好
+</h1>
+<h2>
+很好很好
+</h2>
+</body>
+</html>

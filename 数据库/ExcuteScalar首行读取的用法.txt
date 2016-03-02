@@ -1,0 +1,30 @@
+一般用于加总，另外ToString()?
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data.SqlClient;
+
+namespace ConsoleApplication162
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string q = "data source=.;initial catalog=123;integrated security=true";
+            SqlConnection con = new SqlConnection(q);
+            con.Open();
+            SqlCommand com = new SqlCommand();
+            com = con.CreateCommand();
+            com.CommandText = "select count(*) from student";
+          int x=Convert.ToInt32(com.ExecuteScalar().ToString());
+          Console.WriteLine(x);
+          com.CommandText = "select * from student";
+          string k = com.ExecuteScalar().ToString();
+          Console.WriteLine(k);
+
+           
+        }
+    }
+}

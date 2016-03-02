@@ -1,0 +1,142 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using DevComponents.DotNetBar;
+using LSGO.PresentationLayer;
+
+namespace ERPChess
+{
+    public partial class Form_ShowResult : Office2007Form
+    {
+        public Form_ShowResult()
+        {
+            InitializeComponent();
+        }
+        ILSGOfrmTipBox mesbox;
+        private void Form_ShowResult_Load(object sender, EventArgs e)
+        {
+            int year = -1;
+            for (int i = 0; i < PubVar.year; i++)
+            {
+                this.cmb_year.Items.Add("第" + i.ToString() + "年");
+            }
+            if (PubVar.mark == 0)
+            {
+                year = PubVar.year;
+                this.cmb_year.Items.Add("第" + year.ToString() + "年");
+                this.cmb_year.Text = "第" + year.ToString() + "年";
+                this.cmb_year.SelectedIndex = cmb_year.Items.Count - 1;
+                PubVar.discount = 0;
+                PubVar.year++;
+            }
+            else if (PubVar.mark == 1)
+            {
+                year = PubVar.year - 1;
+                this.cmb_year.Text = "第" + year.ToString() + "年";
+            }
+            else
+            {
+                return;
+            }
+            ShowResult(year);
+        }
+        private void ShowResult(int year)
+        {
+            this.lbl_Anl_debtLloan.Text = PubVar.closing[year].Anl_debtLloan.ToString();
+            this.lbl_Anl_debtPaccount.Text = PubVar.closing[year].Anl_debtPaccount.ToString();
+            this.lbl_Anl_debtSloan.Text = PubVar.closing[year].Anl_debtSloan.ToString();
+            this.lbl_Anl_debtT.Text = PubVar.closing[year].Anl_debtT.ToString();
+            this.lbl_Anl_debtTex.Text = PubVar.closing[year].Anl_debtTax.ToString();
+
+            this.lbl_Anl_proBuilding.Text = PubVar.closing[year].Anl_proBuilding.ToString();
+            this.lbl_Anl_proCash.Text = PubVar.closing[year].Anl_proCash.ToString();
+            this.lbl_Anl_proTdevicevalue.Text = PubVar.closing[year].Anl_proTdevicevalue.ToString();
+            this.lbl_Anl_proRaccount.Text = PubVar.closing[year].Anl_proRaccount.ToString();
+            this.lbl_Anl_proSave.Text = PubVar.closing[year].Anl_proSave.ToString();
+            this.lbl_Anl_proTLiquid.Text = PubVar.closing[year].Anl_proTLiquid.ToString();
+            this.lbl_Anl_proTotal.Text = PubVar.closing[year].Anl_proTotal.ToString();
+            this.lbl_Anl_proTSolid.Text = PubVar.closing[year].Anl_proTSolid.ToString();
+
+            this.lbl_Anl_rightsDebt.Text = PubVar.closing[year].Anl_rightsDebt.ToString();
+            this.lbl_Anl_rightsT.Text = PubVar.closing[year].Anl_rightsT.ToString();
+            this.lbl_Anl_rNetprofit.Text = PubVar.closing[year].Anl_rNetprofit.ToString();
+            this.lbl_Anl_rprofitSave.Text = PubVar.closing[year].Anl_rprofitSave.ToString();
+            this.lbl_Anl_rstock.Text = PubVar.closing[year].Anl_rstock.ToString();
+
+            this.lbl_Cc_fmt_attach.Text = PubVar.closing[year].Cc_fmt_attach.ToString();
+            this.lbl_Cc_fmt_discount.Text = PubVar.closing[year].Cc_fmt_discount.ToString();
+            this.lbl_Cc_fmt_insurance.Text = PubVar.closing[year].Cc_fmt_insurance.ToString();
+            this.lbl_Cc_fmt_Linterest.Text = PubVar.closing[year].Cc_fmt_Linterest.ToString();
+            this.lbl_Cc_fmt_nitric.Text = PubVar.closing[year].Cc_fmt_nitric.ToString();
+            this.lbl_Cc_fmt_powerRate.Text = PubVar.closing[year].Cc_fmt_powerRate.ToString();
+            this.lbl_Cc_fmt_Sinterest.Text = PubVar.closing[year].Cc_fmt_Sinterest.ToString();
+            this.lbl_Cc_fmt_tax.Text = PubVar.closing[year].Cc_fmt_tax.ToString();
+
+            this.lbl_Cc_mbc_blowdown.Text = PubVar.closing[year].Cc_mbc_blowdown.ToString();
+            this.lbl_Cc_mbc_coal.Text = PubVar.closing[year].Cc_mbc_coal.ToString();
+            this.lbl_Cc_mbc_dep.Text = PubVar.closing[year].Cc_mbc_dep.ToString();
+            this.lbl_Cc_mbc_entrust.Text = PubVar.closing[year].Cc_mbc_entrust.ToString();
+            this.lbl_Cc_mbc_material.Text = PubVar.closing[year].Cc_mbc_material.ToString();
+            this.lbl_Cc_mbc_oil.Text = PubVar.closing[year].Cc_mbc_oil.ToString();
+            this.lbl_Cc_mbc_others.Text = PubVar.closing[year].Cc_mbc_others.ToString();
+            this.lbl_Cc_mbc_repair.Text = PubVar.closing[year].Cc_mbc_repair.ToString();
+            this.lbl_Cc_mbc_total.Text = PubVar.closing[year].Cc_mbc_total.ToString();
+            this.lbl_Cc_mbc_water.Text = PubVar.closing[year].Cc_mbc_water.ToString();
+            this.lbl_Cc_mbc_welfare.Text = PubVar.closing[year].Cc_mbc_welfare.ToString();
+
+            this.lbl_Cc_o_building.Text = PubVar.closing[year].Cc_o_building.ToString();
+            this.lbl_Cc_o_cash.Text = PubVar.closing[year].Cc_o_cash.ToString();
+            this.lbl_Cc_o_Lloan.Text = PubVar.closing[year].Cc_o_Lloan.ToString();
+            this.lbl_Cc_o_Paccount.Text = PubVar.closing[year].Cc_o_Paccount.ToString();
+            this.lbl_Cc_o_Raccount.Text = PubVar.closing[year].Cc_o_Raccount.ToString();
+            this.lbl_Cc_o_saveCoal.Text = PubVar.closing[year].Cc_o_saveCoal.ToString();
+            this.lbl_Cc_o_Sloan.Text = PubVar.closing[year].Cc_o_Sloan.ToString();
+            this.lbl_Cc_o_Tdevicevalue.Text = PubVar.closing[year].Cc_o_Tdevicevalue.ToString();
+
+            this.lbl_Pal_attach.Text = PubVar.closing[year].Pal_attach.ToString();
+            this.lbl_Pal_busProfit.Text = PubVar.closing[year].Pal_busProfit.ToString();
+            this.lbl_Pal_cost.Text = PubVar.closing[year].Pal_cost.ToString();
+            this.lbl_Pal_financial.Text = PubVar.closing[year].Pal_financial.ToString();
+            this.lbl_Cc_mbc_littleOilfire.Text = PubVar.closing[year].Cc_mbc_littleOilfire.ToString();
+            this.lbl_Pal_NetProfit.Text = PubVar.closing[year].Pal_netProfit.ToString();
+            this.lbl_Pal_profit.Text = PubVar.closing[year].Pal_profit.ToString();
+            this.lbl_Pal_sale.Text = PubVar.closing[year].Pal_sale.ToString();
+            this.lbl_Pal_tax.Text = PubVar.closing[year].Pal_tax.ToString();
+            this.lbl_Pal_TBusProfit.Text = PubVar.closing[year].Pal_TBusProfit.ToString();
+        }
+
+        private void btn_ok_Click(object sender, EventArgs e)
+        {
+            if (PubVar.mark == 0)
+            {
+                if (PubVar.closing[PubVar.year - 1].Anl_rightsT < 0 || PubVar.closing[PubVar.year - 1].Anl_proCash < 0)
+                {
+                    Program.Forms.frmMain.step = 0;
+                    Form_Fail frm = new Form_Fail();
+                    frm.ShowDialog();
+                }
+            }
+            this.Close();
+        }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+            double a=Program.factory.RAccount[0].Fund;
+            mesbox = new LSGOfrmInforMessageBox();
+            if (cmb_year.SelectedItem == null)
+            {
+                return;
+            }
+            string txt= cmb_year.SelectedItem.ToString();
+            int year = Convert.ToInt32(txt.Substring(1, 1));
+            ShowResult(year);
+            this.Refresh();
+        }
+
+    }
+}

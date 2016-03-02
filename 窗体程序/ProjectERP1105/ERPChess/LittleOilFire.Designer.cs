@@ -1,0 +1,137 @@
+﻿namespace ERPChess
+{
+    partial class LittleOilFire
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.dataGridViewX1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.device_Position = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.device_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Addfunction = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dataGridViewX1
+            // 
+            this.dataGridViewX1.AllowUserToAddRows = false;
+            this.dataGridViewX1.AllowUserToDeleteRows = false;
+            this.dataGridViewX1.AllowUserToResizeRows = false;
+            this.dataGridViewX1.ColumnHeadersHeight = 40;
+            this.dataGridViewX1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.device_Position,
+            this.device_type,
+            this.Column1,
+            this.Addfunction});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dataGridViewX1.Location = new System.Drawing.Point(-1, 1);
+            this.dataGridViewX1.Name = "dataGridViewX1";
+            this.dataGridViewX1.RowHeadersVisible = false;
+            this.dataGridViewX1.RowTemplate.Height = 30;
+            this.dataGridViewX1.Size = new System.Drawing.Size(463, 345);
+            this.dataGridViewX1.TabIndex = 1;
+            // 
+            // device_Position
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.device_Position.DefaultCellStyle = dataGridViewCellStyle1;
+            this.device_Position.HeaderText = "设备机位";
+            this.device_Position.Name = "device_Position";
+            this.device_Position.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.device_Position.Width = 120;
+            // 
+            // device_type
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.device_type.DefaultCellStyle = dataGridViewCellStyle2;
+            this.device_type.HeaderText = "设备类型";
+            this.device_type.Name = "device_type";
+            this.device_type.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.device_type.Width = 120;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "是否已有微点火设备";
+            this.Column1.Name = "Column1";
+            // 
+            // Addfunction
+            // 
+            this.Addfunction.HeaderText = "微点火设备投资";
+            this.Addfunction.Name = "Addfunction";
+            this.Addfunction.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Addfunction.Width = 120;
+            // 
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX1.Location = new System.Drawing.Point(303, 364);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Size = new System.Drawing.Size(81, 26);
+            this.buttonX1.TabIndex = 2;
+            this.buttonX1.Text = "确定";
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
+            // 
+            // LittleOilFire
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(461, 404);
+            this.Controls.Add(this.buttonX1);
+            this.Controls.Add(this.dataGridViewX1);
+            this.DoubleBuffered = true;
+            this.Name = "LittleOilFire";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "微油点火";
+            this.Load += new System.EventHandler(this.LittleOilFire_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private DevComponents.DotNetBar.Controls.DataGridViewX dataGridViewX1;
+        private DevComponents.DotNetBar.ButtonX buttonX1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn device_Position;
+        private System.Windows.Forms.DataGridViewTextBoxColumn device_type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Addfunction;
+    }
+}

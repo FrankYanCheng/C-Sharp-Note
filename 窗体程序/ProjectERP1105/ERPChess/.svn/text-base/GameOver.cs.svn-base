@@ -1,0 +1,71 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ERPChess
+{
+    public class GameOver
+    {
+        delegate void lbl_enable();
+        private static void stop()
+        {
+            if (Program.Forms.frmMain.listLklb[Program.Forms.frmMain.step - 1].InvokeRequired)
+            {
+                lbl_enable temp = stop;
+                Program.Forms.frmMain.listLklb[Program.Forms.frmMain.step - 1].Invoke(temp);
+            }
+            else
+            {
+                Program.Forms.frmMain.listLklb[Program.Forms.frmMain.step - 1].Enabled = false;
+                Program.Forms.frmMain.listLklb[Program.Forms.frmMain.step - 1].Refresh();
+            }
+        }
+        private delegate void cash_refresh(double fund);
+        public static void newCash(double fund)
+        {
+            if (Program.Forms.frmMain.lbl_Cash.InvokeRequired)
+            {
+                cash_refresh cash = newCash;
+                Program.Forms.frmMain.lbl_Cash.Invoke(cash);
+            }
+            else
+            {
+                Program.Forms.frmMain.lbl_Cash.Text = fund.ToString();
+                Program.Forms.frmMain.lbl_Cash.Refresh();
+            }
+        }
+        public static void gameOver()
+        {
+            stop();
+            Program.Forms.frmMain.step = 0;
+            Form_Fail frm = new Form_Fail();
+            frm.ShowDialog();
+        }
+        public static double total_Points()
+        {
+            double temp = 0;
+            temp += 60 * PubVar.equipment_10kw;
+            temp += 80 * PubVar.equipment_30kw;
+            temp += 90 * PubVar.equipment_60kw;
+            temp += 110 * PubVar.equipment_100kw;
+            if (PubVar.IsHaveISO9000)
+            {
+                temp += 20;
+            }
+            if (PubVar.IsHaveISO14000)
+            {
+                temp += 40;
+            }
+            if (PubVar.IsHaveNitric)
+            {
+                temp += 20;
+            }
+            temp += Math.Round(PubVar.closing[PubVar.year - 1].Anl_proCash / 100);
+            temp += Math.Round(PubVar.closing[PubVar.year - 1].Anl_proSave / 100);
+            temp -= Math.Round((PubVar.closing[PubVar.year - 1].Cc_o_Sloan + PubVar.closing[PubVar.year - 1].Cc_o_Lloan) / 100);
+            temp = PubVar.closing[PubVar.year - 1].Anl_rightsT * (1 + temp / 100);
+            return temp;
+        }
+    }
+}

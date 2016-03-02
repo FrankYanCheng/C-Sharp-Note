@@ -1,0 +1,11 @@
+  
+
+ OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Title = "sample";
+            dlg.ShowReadOnly = true;
+
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                string fileNme = dlg.FileName;
+                textBox1.Text = fileNme;
+            }

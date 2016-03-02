@@ -1,0 +1,2 @@
+设置了链接以后，也可以在cs文件中改变他的超链接位置。         
+   HyperLink1.NavigateUrl = "www.163.com";

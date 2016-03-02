@@ -1,0 +1,332 @@
+﻿namespace ERPChess
+{
+    partial class FrmCommiteProduct
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.dataGridViewX1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Billpercenty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BillMoney = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Committe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            this.btn = new DevComponents.DotNetBar.ButtonX();
+            this.comboBoxEx1 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.lbISO14000 = new DevComponents.DotNetBar.LabelX();
+            this.lbISO9000 = new DevComponents.DotNetBar.LabelX();
+            this.labelX2 = new DevComponents.DotNetBar.LabelX();
+            this.labelX5 = new DevComponents.DotNetBar.LabelX();
+            this.lblInSN = new DevComponents.DotNetBar.LabelX();
+            this.lblNOSN = new DevComponents.DotNetBar.LabelX();
+            this.labelX3 = new DevComponents.DotNetBar.LabelX();
+            this.lblLegjk = new DevComponents.DotNetBar.LabelX();
+            this.lblLeftINSN = new DevComponents.DotNetBar.LabelX();
+            this.lblLeftNOSN = new DevComponents.DotNetBar.LabelX();
+            this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dataGridViewX1
+            // 
+            this.dataGridViewX1.AllowUserToAddRows = false;
+            this.dataGridViewX1.AllowUserToDeleteRows = false;
+            this.dataGridViewX1.AllowUserToResizeColumns = false;
+            this.dataGridViewX1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column2,
+            this.price,
+            this.Billpercenty,
+            this.BillMoney,
+            this.Time,
+            this.Column1,
+            this.Committe});
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dataGridViewX1.Location = new System.Drawing.Point(2, 66);
+            this.dataGridViewX1.Name = "dataGridViewX1";
+            this.dataGridViewX1.RowHeadersVisible = false;
+            this.dataGridViewX1.RowTemplate.Height = 23;
+            this.dataGridViewX1.Size = new System.Drawing.Size(580, 344);
+            this.dataGridViewX1.TabIndex = 0;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "订单序号";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 60;
+            // 
+            // price
+            // 
+            this.price.HeaderText = "订单单价";
+            this.price.Name = "price";
+            this.price.Width = 86;
+            // 
+            // Billpercenty
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Billpercenty.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Billpercenty.HeaderText = "订单电量";
+            this.Billpercenty.Name = "Billpercenty";
+            this.Billpercenty.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Billpercenty.Width = 86;
+            // 
+            // BillMoney
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.BillMoney.DefaultCellStyle = dataGridViewCellStyle2;
+            this.BillMoney.HeaderText = "订单金额";
+            this.BillMoney.Name = "BillMoney";
+            this.BillMoney.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.BillMoney.Width = 86;
+            // 
+            // Time
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Time.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Time.HeaderText = "账期";
+            this.Time.Name = "Time";
+            this.Time.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Time.Width = 86;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "脱硫硝要求";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 86;
+            // 
+            // Committe
+            // 
+            this.Committe.HeaderText = "是否已经提交";
+            this.Committe.Name = "Committe";
+            this.Committe.Width = 86;
+            // 
+            // labelX1
+            // 
+            this.labelX1.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelX1.Location = new System.Drawing.Point(236, 12);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(178, 23);
+            this.labelX1.TabIndex = 1;
+            this.labelX1.Text = "今年总的电量产量";
+            // 
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX1.Location = new System.Drawing.Point(236, 450);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Size = new System.Drawing.Size(75, 23);
+            this.buttonX1.TabIndex = 3;
+            this.buttonX1.Text = "交货";
+            this.buttonX1.Click += new System.EventHandler(this.btnCommittee_Click);
+            // 
+            // btn
+            // 
+            this.btn.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btn.Location = new System.Drawing.Point(429, 450);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(75, 23);
+            this.btn.TabIndex = 4;
+            this.btn.Text = "下一步";
+            this.btn.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // comboBoxEx1
+            // 
+            this.comboBoxEx1.DisplayMember = "Text";
+            this.comboBoxEx1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxEx1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxEx1.FormattingEnabled = true;
+            this.comboBoxEx1.ItemHeight = 15;
+            this.comboBoxEx1.Location = new System.Drawing.Point(73, 450);
+            this.comboBoxEx1.Name = "comboBoxEx1";
+            this.comboBoxEx1.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxEx1.TabIndex = 5;
+            this.comboBoxEx1.SelectedIndexChanged += new System.EventHandler(this.comboBoxEx1_SelectedIndexChanged);
+            // 
+            // lbISO14000
+            // 
+            this.lbISO14000.Location = new System.Drawing.Point(12, 12);
+            this.lbISO14000.Name = "lbISO14000";
+            this.lbISO14000.Size = new System.Drawing.Size(154, 23);
+            this.lbISO14000.TabIndex = 9;
+            this.lbISO14000.Text = "ISO14000资格认证";
+            // 
+            // lbISO9000
+            // 
+            this.lbISO9000.Location = new System.Drawing.Point(12, 41);
+            this.lbISO9000.Name = "lbISO9000";
+            this.lbISO9000.Size = new System.Drawing.Size(154, 23);
+            this.lbISO9000.TabIndex = 10;
+            this.lbISO9000.Text = "ISO9000资格认证";
+            // 
+            // labelX2
+            // 
+            this.labelX2.Location = new System.Drawing.Point(172, 41);
+            this.labelX2.Name = "labelX2";
+            this.labelX2.Size = new System.Drawing.Size(147, 23);
+            this.labelX2.TabIndex = 11;
+            this.labelX2.Text = "没有脱硫硝电量(亿度):";
+            // 
+            // labelX5
+            // 
+            this.labelX5.Location = new System.Drawing.Point(357, 41);
+            this.labelX5.Name = "labelX5";
+            this.labelX5.Size = new System.Drawing.Size(147, 23);
+            this.labelX5.TabIndex = 12;
+            this.labelX5.Text = "已经脱硫硝电量(亿度):";
+            // 
+            // lblInSN
+            // 
+            this.lblInSN.Location = new System.Drawing.Point(308, 41);
+            this.lblInSN.Name = "lblInSN";
+            this.lblInSN.Size = new System.Drawing.Size(75, 23);
+            this.lblInSN.TabIndex = 13;
+            this.lblInSN.Text = "产量";
+            // 
+            // lblNOSN
+            // 
+            this.lblNOSN.Location = new System.Drawing.Point(494, 41);
+            this.lblNOSN.Name = "lblNOSN";
+            this.lblNOSN.Size = new System.Drawing.Size(75, 23);
+            this.lblNOSN.TabIndex = 14;
+            this.lblNOSN.Text = "产量";
+            // 
+            // labelX3
+            // 
+            this.labelX3.Location = new System.Drawing.Point(29, 416);
+            this.labelX3.Name = "labelX3";
+            this.labelX3.Size = new System.Drawing.Size(137, 23);
+            this.labelX3.TabIndex = 15;
+            this.labelX3.Text = "没有脱硫硝电量剩余量";
+            // 
+            // lblLegjk
+            // 
+            this.lblLegjk.Location = new System.Drawing.Point(293, 416);
+            this.lblLegjk.Name = "lblLegjk";
+            this.lblLegjk.Size = new System.Drawing.Size(104, 23);
+            this.lblLegjk.TabIndex = 16;
+            this.lblLegjk.Text = "脱硫效电量剩余量";
+            // 
+            // lblLeftINSN
+            // 
+            this.lblLeftINSN.Location = new System.Drawing.Point(158, 416);
+            this.lblLeftINSN.Name = "lblLeftINSN";
+            this.lblLeftINSN.Size = new System.Drawing.Size(75, 23);
+            this.lblLeftINSN.TabIndex = 17;
+            this.lblLeftINSN.Text = "labelX6";
+            // 
+            // lblLeftNOSN
+            // 
+            this.lblLeftNOSN.Location = new System.Drawing.Point(403, 416);
+            this.lblLeftNOSN.Name = "lblLeftNOSN";
+            this.lblLeftNOSN.Size = new System.Drawing.Size(75, 23);
+            this.lblLeftNOSN.TabIndex = 18;
+            this.lblLeftNOSN.Text = "labelX7";
+            // 
+            // buttonX2
+            // 
+            this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX2.Location = new System.Drawing.Point(0, 0);
+            this.buttonX2.Name = "buttonX2";
+            this.buttonX2.Size = new System.Drawing.Size(0, 0);
+            this.buttonX2.TabIndex = 0;
+            // 
+            // FrmCommiteProduct
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(582, 485);
+            this.Controls.Add(this.buttonX2);
+            this.Controls.Add(this.lblLeftNOSN);
+            this.Controls.Add(this.lblLeftINSN);
+            this.Controls.Add(this.lblLegjk);
+            this.Controls.Add(this.labelX3);
+            this.Controls.Add(this.lblNOSN);
+            this.Controls.Add(this.lblInSN);
+            this.Controls.Add(this.labelX5);
+            this.Controls.Add(this.labelX2);
+            this.Controls.Add(this.lbISO9000);
+            this.Controls.Add(this.lbISO14000);
+            this.Controls.Add(this.comboBoxEx1);
+            this.Controls.Add(this.btn);
+            this.Controls.Add(this.buttonX1);
+            this.Controls.Add(this.labelX1);
+            this.Controls.Add(this.dataGridViewX1);
+            this.HelpButton = true;
+            this.MaximizeBox = false;
+            this.Name = "FrmCommiteProduct";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "交货给客户";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.FrmCommiteProduct_HelpButtonClicked);
+            this.Load += new System.EventHandler(this.FrmCommiteProduct_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private DevComponents.DotNetBar.Controls.DataGridViewX dataGridViewX1;
+        private DevComponents.DotNetBar.LabelX labelX1;
+        private DevComponents.DotNetBar.ButtonX buttonX1;
+        private DevComponents.DotNetBar.ButtonX btn;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxEx1;
+        private DevComponents.DotNetBar.LabelX lbISO14000;
+        private DevComponents.DotNetBar.LabelX lbISO9000;
+        private DevComponents.DotNetBar.LabelX labelX2;
+        private DevComponents.DotNetBar.LabelX labelX5;
+        private DevComponents.DotNetBar.LabelX lblInSN;
+        private DevComponents.DotNetBar.LabelX lblNOSN;
+        private DevComponents.DotNetBar.LabelX lblLeftNOSN;
+        private DevComponents.DotNetBar.LabelX labelX3;
+        private DevComponents.DotNetBar.LabelX lblLegjk;
+        private DevComponents.DotNetBar.LabelX lblLeftINSN;
+        private DevComponents.DotNetBar.ButtonX buttonX2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Billpercenty;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BillMoney;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Time;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Committe;
+    }
+}

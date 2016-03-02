@@ -1,0 +1,2 @@
+ Guid q = Guid.NewGuid();
+            Console.WriteLine(q);

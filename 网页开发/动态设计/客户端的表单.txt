@@ -1,0 +1,23 @@
+网页分为客户端和服务端，客户端的信息需要用表单的形式提交给服务端。
+<form target="_blank" method="post" action="WebForm1.aspx">
+把所需要的信息包含在里边，需要调用时必须给变量的name赋值，id只允许在内部文件使用？
+接着就是对WEB页面进行设计
+
+首先对于“post"方法
+string txtUseName = Request["UseName"].ToString();
+string txtUseName = Request.Form.Get("UseName");
+服务端请求获得表单里的值。两种方法。
+
+"get"方法下（因为输入框文字数有限，且容易暴露了账号和密码，所以该种方法主要是用来在新闻中用，可以直接跳转到指定的页面，即在aspx后面+？+htm文件中的指定name，&用来隔离。
+<form target="_blank" method="get" action="WebForm1.aspx">
+在WebForm1.aspx的cs文件中写如下
+  string txtu = Request.QueryString["usename"].ToString();
+            string txtp = Request.QueryString["password"].ToString();
+            if (txtu == "fyc" & txtp == "123")
+            {
+                Response.Redirect("WebForm2.aspx?usename=" + txtu + "&password=" + txtp);
+            }
+
+   string txtp = Request.QueryString["password"].ToString();
+此段话中是在http后的字符串中寻找然后赋值的。
+同样跳转了页面以后可以在 TextBox1.Text ="用户名是"+ Request.QueryString["usename"];实现usename的查询。

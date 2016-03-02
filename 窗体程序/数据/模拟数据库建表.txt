@@ -1,0 +1,32 @@
+create table TB_Student_Info
+(
+Name Varchar(20),
+StudentID Varchar(20) primary key,
+StudentCode varchar(20),
+Age  Int,
+ClassID Int,
+PwdQuestion1 Varchar(100),
+PwdQuestion2 Varchar(100),
+Answer1 Varchar(50),
+Answer2 Varchar(50),
+TeacherID varchar(20),
+foreign key (TeacherID) references TB_Teacher_Info(TeacherID),
+IsDeleted bit,
+CreateDate datetime,
+Semester Varchar(16),
+Sex varchar(2)
+);
+create table TB_Teacher_Info
+(
+   TName varchar(20),
+   StuentCount int,
+   TeacherID varchar(20) primary key,
+   TeacherCode varchar(20),
+   PwdQuestion1 Varchar(100),
+   PwdQuestion2 Varchar(100),
+   Answer1 Varchar(50),
+   Answer2 Varchar(50),
+   IsDeleted bit,
+   CreateDate datetime,
+   
+);

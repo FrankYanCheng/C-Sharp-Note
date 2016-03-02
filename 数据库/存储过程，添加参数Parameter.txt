@@ -1,0 +1,37 @@
+首先，在数据库的存储过程中加入？？？？？？
+alter procedure [dbo].[student]
+    @sno char(5) output
+    as
+    if @sno!='1' and @sno!='5'
+    begin
+    select @sno ='6'
+    end
+
+c#中
+ string str = "data source=.;intial catalog=123;integrated security=true";
+            using (SqlConnection con = new SqlConnection(str))
+            {
+                using (SqlCommand cmd = con.CreateCommand())
+                {
+                   cmd.CommandType= CommandType.StoreProcedure;
+                   cmd.CommandText = "[student]";
+                   SqlParameter param = new SqlParameter();
+                   param.ParameterName = "@sno";
+                   param.Value = "88";
+                   param.Direction = ParameterDirection.InputOutput;
+                   cmd.Parameters.Add(param);
+                   con.Open();
+                   SqlDataReader sdr = cmd.ExecuteReader();
+                   while (sdr.Read())
+                   {
+                       Console.WriteLine(sdr[0]);
+                   }
+                   sdr.Close();
+                }
+            }
+
+
+
+
+
+

@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ERPChess.Bid_Capacity" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBQAgAAAACAAAAAAACCAAAACAAAAAAgBAAAAAQAAABA=</HashCode>
+      <FileName>Bid_Capacity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Bid_EleQuantity" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>6QAAgqAAACIAAQAAACKSAEACACOAADACTQAAAAABABA=</HashCode>
+      <FileName>Bid_EleQuantity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Class_BidResult" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAQAAAAAAAAAAAAAABAAAQAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Class_BidResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.frmMain" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>b8UJRhFAACgAQQhgCPyHWSYCAAgwJLN5D6yAiFFEALA=</HashCode>
+      <FileName>frmMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Program" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.PubVar" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BEAEQAAQAAAAgIAAFAAAACABAQQAWAAAAgYAAAgAAgA=</HashCode>
+      <FileName>PubVar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Form_HuiYi" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQABACAAAAAAAACCAAACAAAAAAAAAAAQAACABAA=</HashCode>
+      <FileName>任务清单\01会议\Form_HuiYi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Form_Plan" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAACAAAAAAAACAAAACAAAAAAAAAAAQAACAAAA=</HashCode>
+      <FileName>任务清单\02制定新年度计划\Form_Plan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Form_tex" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAA4BCAAASAQAAAiAAA=</HashCode>
+      <FileName>任务清单\03所得税\Form_tex.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Form_Bid" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAACAAAAAAAACAAAACAAAAAAAAAAAQAACAAAA=</HashCode>
+      <FileName>任务清单\04参加上网订单会\Form_Bid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Form_BidResult" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>73A4AQAAACAAAAAAAACAjMPjAAC45+MYACAAgHGOADA=</HashCode>
+      <FileName>任务清单\04参加上网订单会\Form_BidResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Form_Loan" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAACAAABAAAACAIAACAAAAAAAAACAQAACAAAA=</HashCode>
+      <FileName>任务清单\05还清上一年贷款以及办理新贷款\Form_Loan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Form_LongLoan" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>70AACQAAACAAAAAAAICAgAACIEAAgCAgACAAAHCAADI=</HashCode>
+      <FileName>任务清单\05还清上一年贷款以及办理新贷款\Form_LongLoan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Form_PayOff" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAQAAADAIAACBAACAAAACAAA4BwAAACAAAACCAAQ=</HashCode>
+      <FileName>任务清单\05还清上一年贷款以及办理新贷款\Form_PayOff.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Form_ShortLoan" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>7wAIAQAAACAAAAAAAACAgAACAAAAwKAAACAAAFCAADA=</HashCode>
+      <FileName>任务清单\05还清上一年贷款以及办理新贷款\Form_ShortLoan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Form_BuyConference" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAACAAAAAAAACAAAACAAAAAAAAACAQAACAAAA=</HashCode>
+      <FileName>任务清单\06参加采购订货会\Form_BuyConference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Form_BuyResult" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>7yAQAQAAADAIIAKBAACEAAACAAC4ZwAEAAAAAACCIAQ=</HashCode>
+      <FileName>任务清单\06参加采购订货会\Form_BuyResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.FormDiscardOld" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAIBAAECCAEACAAgAAAAQAAAAAAECIAA=</HashCode>
+      <FileName>任务清单\08报废机组\FormDiscardOld.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.FormBuildNew" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/gMAQQIAACAAAhFMAoCGAAoCAAAUAAAAAEABQBECBAA=</HashCode>
+      <FileName>任务清单\09投资新机组\FormBuildNew.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Discount" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAEQBAAAACAAAACAAAAAAAAAAAAggGCAMA=</HashCode>
+      <FileName>任务清单\13应收款贴现\Discount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.MoneyNeedPay" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAACAAABAAAACAIAACAAAAAAAAAAQAAACGAAA=</HashCode>
+      <FileName>任务清单\14应付款\MoneyNeedPay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.RemoveSN" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAYAAgCQAEFAEAgCmoAACAAEAAAAAAAAAAACCBAA=</HashCode>
+      <FileName>任务清单\15资格认证\RemoveSN.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Certification" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAQAgAAACCAAAAABACAAABCAAAIAAAAAAAAAAECAAE=</HashCode>
+      <FileName>任务清单\16资格认证\Certification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Form_ByePlant" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>70AIAAAAACAAABAAAACAgAAjAAAAQOAAACAQAFCABjA=</HashCode>
+      <FileName>系统\Form_ByePlant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Form_Discount" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>7wAAgAAAACAAABAAAACAgAACAAAAACAAAiAQAECAADA=</HashCode>
+      <FileName>系统\Form_Discount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Form_Fail" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAACAAAAAAAACAAAACAAAAACAAAQAAAABAAAA=</HashCode>
+      <FileName>系统\Form_Fail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Form_Register" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>4wAAAAAAACAAAAAEAACAAAACAACAAAAAAQAAAABgAAA=</HashCode>
+      <FileName>系统\Form_Register.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Form_SalePlant" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>70AIAAAAACAAABAAAACAgAAjAAAAQOAAACAQAFCABjA=</HashCode>
+      <FileName>系统\Form_SalePlant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Form_ShowRanking" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAQAQAAADQIIBKBAgCOAAACAAC4RwAAACAQAACCBBQ=</HashCode>
+      <FileName>系统\Form_ShowRanking.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Form_ShowResult" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>//A9AAAAACQAABACAoCHXMP/AAC47+cdACAAgPuOJDA=</HashCode>
+      <FileName>系统\Form_ShowResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Properties.Resources" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPChess.Properties.Settings" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>

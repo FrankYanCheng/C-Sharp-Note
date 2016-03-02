@@ -1,0 +1,97 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ERPLibrary
+{
+    public class NitricEquipment : IEquipment
+    {
+        public NitricEquipment(int type)
+        {
+            this.machineType = type;
+            this.yearConsume = 3;
+            this.valueLeft = 2;
+            this.moneyProgress = new Queue<double>();
+            moneyProgress.Enqueue(200);
+            this.price = 200;
+        }
+        private bool canuse;
+        /// <summary>
+        /// 标志设备今年是否可用
+        /// </summary>
+        public bool Canuse
+        {
+            get { return canuse; }
+            set { canuse = value; }
+        }
+        private double price;
+        public double Price
+        {
+            get
+            {
+                return this.price;
+            }
+        }
+        private double valueLeft;
+
+        public double ValueLeft
+        {
+            get { return valueLeft; }
+            set { valueLeft = value; }
+        }
+        private Queue<double> moneyProgress;
+        public Queue<double> MoneyProgress
+        {
+            get
+            {
+                return this.moneyProgress;
+            }
+        }
+        private int machineType;
+        public int MachineType
+        {
+            get
+            {
+                return this.machineType;
+            }
+        }
+        private int yearConsume;
+        /// <summary>
+        /// 得到设备每年消耗
+        /// </summary>
+        /// <returns></returns>
+        public double GetSNCost()
+        {
+            if (this.canuse)
+            {
+                return yearConsume;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+        /// <summary>
+        /// 脱硫硝设备进行投资
+        /// </summary>
+        /// <param name="cash">目前现金数目</param>
+        /// <param name="totalOrigionValue">固定资产原值</param>
+        public void Investment(ref double cash, ref double Tdevicevalueyuan, ref double Tdevicevalue)
+        {
+            
+                cash -=  this.price;
+                    Tdevicevalueyuan += this.price;
+                    Tdevicevalue += this.price;
+                    
+                }
+            }
+        }
+        
+        /// <summary>
+        /// 判断投资是否已经完成
+        /// </summary>
+        /// <returns></returns>
+        
+    
+

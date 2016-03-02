@@ -1,0 +1,17 @@
+
+            Console.WriteLine("Enter an English sentence:");
+            string myString = Console.ReadLine();
+            char[] separate = { ' ' };
+            string[] a = myString.Split(separate);//把字符串变成数组
+            string[] b = new string[a.Length];
+            int i = 0;
+            string strResult = "";
+            foreach (string str in a)
+            {
+                b[i] = str.PadLeft(str.Length + 1, '\"');
+                b[i] = b[i].PadRight(b[i].Length + 1, '\"');
+                strResult += b[i];
+            }
+            Console.WriteLine("{0}", strResult);
+            Console.ReadKey();
+

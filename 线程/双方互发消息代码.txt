@@ -1,0 +1,154 @@
+服务器
+
+
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Net;
+using System.Threading;
+using System.Net.Sockets;
+
+namespace Sever
+{
+    public partial class Sever : Form
+    {
+        public Sever()
+        {
+            InitializeComponent();
+            TextBox.CheckForIllegalCrossThreadCalls = false;
+        }
+        void Message(string a)
+        {
+            txtView.AppendText(a+"\r\n");
+        }
+        Socket Watch = null;
+        private void btnOpenSever_Click(object sender, EventArgs e)
+        {
+            Watch = new Socket(AddressFamily.InterNetwork,SocketType.Stream,ProtocolType.Tcp);
+            IPAddress address = IPAddress.Parse(txtIP.Text.Trim());
+            IPEndPoint endpoint = new IPEndPoint(address,int.Parse(txtPort.Text));
+            Watch.Bind(endpoint);
+            Watch.Listen(1000);
+            Message("服务端开启");
+            Thread uu = new Thread(Accept);
+            uu.IsBackground = true;
+            uu.Start();
+           
+
+        }
+        Dictionary<string, Socket> ClientIp = new Dictionary<string, Socket>();
+        Dictionary<string, Thread> ClientThread = new Dictionary<string, Thread>();
+        Socket con = null;
+        void Accept()
+        {
+            while (true)
+            {
+                con = Watch.Accept();
+                ClientIp.Add(con.RemoteEndPoint.ToString(),con);
+                Message("客户端连接成功"+con.RemoteEndPoint.ToString());
+                listClient.Items.Add(con.RemoteEndPoint.ToString());
+                Thread rt = new Thread(Receive);
+                rt.IsBackground = true;
+                rt.Start(con);
+                ClientThread.Add(con.RemoteEndPoint.ToString(),rt);      
+            }
+        }
+        void Receive(object con)
+        {        
+            while (true)
+            {
+                Socket socketlient = con as Socket;
+                byte[] remessage = new byte[1024 * 1024 * 2];
+                int k = socketlient.Receive(remessage);
+                string a = System.Text.Encoding.UTF8.GetString(remessage, 0, k);
+                Message("客户端说： " + a); 
+            }
+        }
+
+       
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            byte[] messagebyte=Encoding.UTF8.GetBytes(txtMessage.Text);
+            string a=listClient.Text.ToString();
+            ClientIp[a].Send(messagebyte);
+            Message("服务器说： "+txtMessage.Text);
+            txtMessage.Text = null;
+            
+        }
+
+    }
+}
+
+
+
+
+
+
+
+客户端
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Net;
+using System.Net.Sockets;
+using System.Threading;
+
+namespace Client
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+            TextBox.CheckForIllegalCrossThreadCalls = false;
+        }
+        void Message(string a)
+        {
+            txtView.AppendText(a + "\r\n");
+        }
+        Socket ClientCon = null;
+        private void btnOpenSever_Click(object sender, EventArgs e)
+        {
+            IPAddress Address = IPAddress.Parse(txtIP.Text);
+            IPEndPoint endpoint = new IPEndPoint(Address,int.Parse(txtPort.Text.Trim()));
+            ClientCon = new Socket(AddressFamily.InterNetwork,SocketType.Stream,ProtocolType.Tcp);
+            ClientCon.Connect(endpoint);
+            Message("客户端连接");
+            Thread thread = new Thread(receive);
+            thread.IsBackground = true;
+            thread.Start();
+        }
+        void receive()
+        {
+            while (true)
+            {
+                byte[] remessage=new byte[1024*1024*2];
+                int k=ClientCon.Receive(remessage);
+                string a = System.Text.Encoding.UTF8.GetString(remessage,0,k);
+                Message("服务器说： "+a);
+
+
+            }
+        }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            byte[] messagebyte = Encoding.UTF8.GetBytes(txtMessage.Text);
+            ClientCon.Send(messagebyte);
+            Message("客户端说： " + txtMessage.Text);
+            txtMessage.Text = null;
+        }
+    }
+}

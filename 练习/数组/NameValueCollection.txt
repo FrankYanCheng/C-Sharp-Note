@@ -1,0 +1,11 @@
+using System.Collections.Specialized;
+
+ NameValueCollection C = new NameValueCollection();
+            C.Add("河北", "保定");
+            C.Add("河北", "石家庄");
+            C.Add("河北", "衡水");
+            foreach (string key in C.AllKeys)
+            {
+                Console.WriteLine(key + "-" +C.Get(key));
+            }
+一个键对应多个值，并且输出的时候用逗号分割开来

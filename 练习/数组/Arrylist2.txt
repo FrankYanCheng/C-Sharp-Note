@@ -1,0 +1,100 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
+
+namespace _08_ArrayList1
+{
+    class Student 
+    {
+        public Student(string name, int age)
+        {
+            this.name = name;
+            this.age = age;
+        }
+
+        private string name;
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+        private int age;
+
+        public int Age
+        {
+            get { return age; }
+            set { age = value; }
+        }
+    }
+
+    class Teacher
+    {
+        public Teacher(string name, int age)
+        {
+            this.name = name;
+            this.age = age;
+        }
+
+        private string name;
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+        private int age;
+
+        public int Age
+        {
+            get { return age; }
+            set { age = value; }
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Student xyy = new Student("小月月", 18);
+            Student fj = new Student("凤姐",20);
+            Student fr = new Student("芙蓉姐姐", 21);
+            Student xl = new Student("犀利哥",19);
+
+            ArrayList students = new ArrayList();
+            students.Add(xyy);
+            students.Add(fj);
+            students.Add(fr);
+            students.Add(xl);
+
+
+            //移除不掉，因为Remove后是object 按引用移除
+            Student s = new Student("凤姐", 20);
+            //students.Remove(s);
+
+            Console.WriteLine(students.Contains(s));
+
+            for (int i = 0; i < students.Count; i++)
+            {
+                Student stu = students[i] as Student;
+                if (stu != null)
+                {
+                    Console.WriteLine(stu.Name);
+                }
+            }
+
+
+
+
+            ArrayList al = new ArrayList();
+            al.Add("小月月");
+            al.Add("凤姐");
+
+            string name = "凤姐";
+            Console.WriteLine(al.Contains(name));
+            Console.Read();
+
+        }
+    }
+}

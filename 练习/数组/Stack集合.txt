@@ -1,0 +1,16 @@
+    Stack a = new Stack();
+            a.Push("你好！");
+            a.Push("世界");
+            foreach (string k in a)
+            {
+                Console.WriteLine(k);
+                
+            }
+            a.Pop();
+            foreach (string k in a)
+            {
+                Console.WriteLine(k);
+
+            }
+
+集合存储了数据以后，相当于是进行了压缩。输出的时候是反向输出世界你好。如果用pop方法弹出的话，弹出首个，相当于把底部的盖子打开。后进先出

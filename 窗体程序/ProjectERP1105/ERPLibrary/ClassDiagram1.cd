@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ERPLibrary.Factory">
+    <Position X="0.5" Y="6.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>gAAIBIAAAQaMBAEACAAgAAAAJAIAAAAAEABAABAACAA=</HashCode>
+      <FileName>Factory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ComprehensiveCost" />
+      <Property Name="Bill" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ERPLibrary.Product">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPLibrary.RowMaterial">
+    <Position X="3.5" Y="2" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>RowMaterial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPLibrary.ElectricEquipment">
+    <Position X="3.75" Y="8.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="NitricEquipment" Type="ERPLibrary.NitricEquipment">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.089" Y="0.425" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BIABEEoAAZACgAAgAAAAMIgAARgAAAAIAgAAAAIAAAA=</HashCode>
+      <FileName>IEquipment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="NitricEquipment" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ERPLibrary.NitricEquipment">
+    <Position X="5.25" Y="5.75" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAABAAgAAYAAAAAAAABAAAgAQQgAAAAIAgAAAAIAAAA=</HashCode>
+      <FileName>NitricEquipment.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ERPLibrary.ShortLoan">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAEAgAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>ShortLoan.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ERPLibrary.Loan">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAABAAAARAAAAEAgAAAAIAAABAAAAAABAAAA=</HashCode>
+      <FileName>Loan.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.719" />
+  </Class>
+  <Class Name="ERPLibrary.LongLoan_15">
+    <Position X="8" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAARAAAAEAgAAAAIAAABAAAAAAAAAAA=</HashCode>
+      <FileName>LongLoan_15.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ERPLibrary.ComprehensiveCost">
+    <Position X="4" Y="0.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IABBAAABABAAAAEAAAEBAEAAgAAAAAAAAAACQAIAAgA=</HashCode>
+      <FileName>ComprehensiveCost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ERPLibrary.Bill">
+    <Position X="3.25" Y="3.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAABBAAAEQAAABAQAAAAEACAAAAAgAAAAAABgAAAAYQ=</HashCode>
+      <FileName>Bill.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BillType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ERPLibrary.Cerficate">
+    <Position X="1.25" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAIAAAgCAAAIgAAAAIAAAAA=</HashCode>
+      <FileName>Cerficate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ERPLibrary.IEquipment">
+    <Position X="3" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAYAAAAAAAAAAAAgAAQAAAAAIAgAAAAAAAAA=</HashCode>
+      <FileName>IEquipment.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ERPLibrary.ILoan">
+    <Position X="7" Y="7.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAEAgAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>ILoan.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ERPLibrary.IAccount">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>IAccount.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ERPLibrary.RowType">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABACAAAAIAAAAABAAAA=</HashCode>
+      <FileName>Enum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ERPLibrary.CerficateType">
+    <Position X="1.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cerficate.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ERPLibrary.BillType" Collapsed="true">
+    <Position X="6.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BillType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ERPLibrary.AccountType">
+    <Position X="10" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccountType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>

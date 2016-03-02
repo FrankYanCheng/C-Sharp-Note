@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ERPChess
+{
+    public class BillTemp
+    {
+        /// <summary>
+        /// 玩家上报的价格
+        /// </summary>
+        public double price = 0;
+
+        /// <summary>
+        /// 当前的账单编号
+        /// </summary>
+        public int BillNum;
+
+        /// <summary>
+        /// 玩家姓名
+        /// </summary>
+        public string PlayerName;
+    }
+}

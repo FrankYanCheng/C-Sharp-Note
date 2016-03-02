@@ -1,0 +1,21 @@
+<form>
+
+<input type=button value="确定" style="width: 88px" />
+<input type=image src="/Image/2.png"  />
+<input type=submit name="提交" />
+<input type=file name="选择" />
+<input type=checkbox value="123" checked="checked" />
+<br />
+<input type=radio name="big1" />大1
+<input type=radio name="big1"/>大2
+<input type=radio name="big1"/>大3
+<input type=radio name="big1" />大4
+<br />
+<input type=radio name="big2"/>本科
+<input type=radio name="big2"/>大专
+<input type=radio name="big2"/>中专
+<input type=radio name="big2"/>小专
+</form>
+
+
+输入形式有文件、按钮、文本框等，可以通过value属性来确定名字，另外对于radio属性用name进行区分，在一个name里只能选择一个。按照规定来写，如checked属性和text里的readonly属性。

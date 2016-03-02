@@ -1,0 +1,1569 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LSGO.PresentationLayer</name>
+    </assembly>
+    <members>
+        <member name="T:LSGO.PresentationLayer.WaitWindow">
+            <summary>
+            Displays a window telling the user to wait while a process is executing.
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.WaitWindow.Show(System.EventHandler{LSGO.PresentationLayer.WaitWindowEventArgs})">
+            <summary>
+            Shows a wait window with the text 'Please wait...' while executing the passed method.
+            </summary>
+            <param name="workerMethod">Pointer to the method to execute while displaying the wait window.</param>
+            <returns>The result argument from the worker method.</returns>
+        </member>
+        <member name="M:LSGO.PresentationLayer.WaitWindow.Show(System.EventHandler{LSGO.PresentationLayer.WaitWindowEventArgs},System.String)">
+            <summary>
+            Shows a wait window with the specified text while executing the passed method.
+            </summary>
+            <param name="workerMethod">Pointer to the method to execute while displaying the wait window.</param>
+            <param name="message">The text to display.</param>
+            <returns>The result argument from the worker method.</returns>
+        </member>
+        <member name="M:LSGO.PresentationLayer.WaitWindow.Show(System.EventHandler{LSGO.PresentationLayer.WaitWindowEventArgs},System.String,System.Object[])">
+            <summary>
+            Shows a wait window with the specified text while executing the passed method.
+            </summary>
+            <param name="workerMethod">Pointer to the method to execute while displaying the wait window.</param>
+            <param name="message">The text to display.</param>
+            <param name="args">Arguments to pass to the worker method.</param>
+            <returns>The result argument from the worker method.</returns>
+        </member>
+        <member name="M:LSGO.PresentationLayer.WaitWindow.Cancel">
+            <summary>
+            Cancels the work and exits the wait windows immediately
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.WaitWindow.Message">
+            <summary>
+            Updates the message displayed in the wait window.
+            </summary>
+        </member>
+        <member name="T:LSGO.PresentationLayer.StatInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.StatInfo.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.StatInfo.SumValue">
+            <summary>
+            值的总和
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.StatInfo.BigLayerName">
+            <summary>
+            大类名字
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.StatInfo.SubLayerName">
+            <summary>
+            图层名
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.StatInfo.StatField">
+            <summary>
+            字段名
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.StatInfo.StatFieldList">
+            <summary>
+            字段链表
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.StatInfo.StatValueList">
+            <summary>
+            值列表
+            </summary>
+        </member>
+        <member name="T:LSGO.PresentationLayer.LSGOfrmInforMessageBox">
+            <summary>
+            显示消息提示框
+            </summary>
+        </member>
+        <member name="T:LSGO.PresentationLayer.ILSGOfrmTipBox">
+            <summary>
+            封装提示框的接口
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.ILSGOfrmTipBox.ShowMessage(System.String,System.String)">
+            <summary>
+            显示消息框,注意：确定返回的是DialogResult.OK，取消返回的是DialogResult.Cancel
+            </summary>
+            <param name="text">消息框的内容</param>
+            <param name="Title">消息框的标题</param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.ILSGOfrmTipBox.CopyTextToToolTip(System.Windows.Forms.Control.ControlCollection)">
+            <summary>
+             复制ControlCollection中的所有控件的Text到Tooltip
+            </summary>
+            <param name="control"></param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOfrmInforMessageBox.ShowMessage(System.String,System.String)">
+            <summary>
+            显示消息消息框,注意：确定返回的是DialogResult.OK，取消返回的是DialogResult.Cancel
+            </summary>
+            <param name="text">消息框的内容</param>
+            <param name="Title">消息框的标题</param>
+            <returns></returns>
+        </member>
+        <member name="F:LSGO.PresentationLayer.LSGOfrmBasement.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOfrmBasement.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOfrmBasement.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmReportFilterCols.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.frmReportFilterCols.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmReportFilterCols.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmReportFilterCols.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:LSGO.PresentationLayer.LSGOfrmWarningMessageBox">
+            <summary>
+            显示警告消息框
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOfrmWarningMessageBox.ShowMessage(System.String,System.String)">
+            <summary>
+            显示警告消息框,注意：确定返回的是DialogResult.OK，取消返回的是DialogResult.Cancel
+            </summary>
+            <param name="text">消息框的内容</param>
+            <param name="Title">消息框的标题</param>
+            <returns></returns>
+        </member>
+        <member name="F:LSGO.PresentationLayer.CircularProgressControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.CircularProgressControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.CircularProgressControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.CircularProgressControl.TickColor">
+            <summary>
+            Color of the tick
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.CircularProgressControl.Rotation">
+            <summary>
+            Direction of rotation - CLOCKWISE/ANTICLOCKWISE
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.CircularProgressControl.#ctor">
+            <summary>
+            Ctor
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.CircularProgressControl.OnTimerTick(System.Object,System.EventArgs)">
+            <summary>
+            Handle the Tick event
+            </summary>
+            <param name="sender">Timer</param>
+            <param name="e">EventArgs</param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.CircularProgressControl.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Handles the Paint Event of the control
+            </summary>
+            <param name="e">PaintEventArgs</param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.CircularProgressControl.ConvertDegreesToRadians(System.Int32)">
+            <summary>
+            Converts Degrees to Radians
+            </summary>
+            <param name="degrees">Degrees</param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.PresentationLayer.CircularProgressControl.Start">
+            <summary>
+            Start the Tick Control rotation
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.CircularProgressControl.Stop">
+            <summary>
+            Stop the Tick Control rotation
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.CircularProgressControl.Interval">
+            <summary>
+            Time interval for each tick.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.CircularProgressControl.StartAngle">
+            <summary>
+            Angle at which the tick should start
+            </summary>
+        </member>
+        <member name="T:LSGO.PresentationLayer.LSGOUIGridEntity">
+            <summary>
+            FlexCell属性实体
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOUIGridEntity.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOUIGridEntity.Clone">
+            <summary>
+            MisUIGridEntity的克隆方法.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOUIGridEntity.GetNormalGridEntity">
+            <summary>
+            得到普通类型的MisUIGridEntity.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOUIGridEntity.GetDark_LightBlueGridEntity">
+            <summary>
+            得到深蓝-浅蓝格调的GridEntity.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOUIGridEntity.GetYellow_WhiteGridEntity">
+            <summary>
+            得到黄-白格调的GridEntity.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.BackColor1">
+            <summary>
+            返回或设置表格中奇数行的背景色,默认白色.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.BackColor2">
+            <summary>
+            返回或设置表格中偶数行的背景色,默认白色.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.BackColorBkg">
+            <summary>
+            返回或设置表格中空白区域的背景色,默认应用程序工作区的颜色.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.BackColorFixed">
+            <summary>
+            返回或设置表格中固定行/列的背景色,默认三维元素的表面颜色.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.BackColorFixedSel">
+            <summary>
+            <para>
+            返回或设置表格中选定单元格(Selection)在固定行/列上对应单元格的背景色,将BackColorFixed属性和BackColorFixedSel属性设置为不同的值,可以清晰地反映出Selection的位置,默认三维元素的表面颜色.
+            </para>
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.BackColorScrollBar">
+            <summary>
+            返回或设置滚动条的背景色,默认三维元素的表面颜色.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.BackColorSel">
+            <summary>
+            返回或设置表格中选定单元格(Selection)的背景色.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.BorderColor">
+            <summary>
+            返回或设置控件边框的颜色,默认黑色.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.CellBorderColor">
+            <summary>
+            返回或设置单元格边框的颜色,默认黑色.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.CellBorderColorFixed">
+            <summary>
+            返回或设置固定行和固定列上的单元格边框的颜色,默认黑色.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.ForeColorFixed">
+            <summary>
+            返回或设置固定行/列的前景色(文字的颜色),默认黑色.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.GridColor">
+            <summary>
+            返回或设置网格线的颜色,默认三维元素的表面颜色.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.AllowUserReorderColumn">
+            <summary>
+            返回或者设置一个值,该值决定了是否可以用鼠标来拖动列标题(固定行中的单元格),整列移动单元格,默认false.
+            <para>
+            注意:移动单元格时,需要在列标题上按下鼠标左键,并保持500毫秒内不移动鼠标,当鼠标指针改变时才能开始移动.如果表格中存在合并单元格,即使AllowUserReorderColumn属性设置为True,也不能移动单元格.
+            </para>
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.AllowUserResizing">
+            <summary>
+            返回或者设置一个值,该值决定了是否可以用鼠标来重新调整FlexCell表格的行高和列宽,默认true.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.AllowUserSort">
+            <summary>
+            返回或者设置一个值,该值决定了是否允许用户用鼠标点击固定行来对表格内容排序,默认false.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.DisplayClientBorder">
+            <summary>
+            返回或设置控件在最后一行单元格与控件背景之间,最后一列单元格与控件背景之间,是否显示一条黑色的框线,默认true.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.DisplayErrorMessage">
+            <summary>
+            返回或设置控件是否显示错误消息框,例如复制/粘贴时,如果目标位置存在只读单元格,是否显示操作失败的消息框,默认true.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.DisplayFocusRect">
+            <summary>
+            返回或设置控件在当前活动单元格是否显示一个虚框,默认true.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.DisplayRowNum">
+            <summary>
+            返回或设置控件在固定列上是否显示行号,默认false.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.DisplayRowArrow">
+            <summary>
+            返回或设置控件在固定列上是否显示小箭头，默认为false.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.ExtendLastCol">
+            <summary>
+            返回或设置是否扩展最后一列的列宽,让表格可以充满控件,默认false.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.GridLiness">
+            <summary>
+            返回或设置是否可以显示一个无网格线的表格,如果单元格边框的线型设置为None,则以单元格背景色画出边框,默认false.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.MultiSelect">
+            <summary>
+            返回或设置是否允许用户在表格中选取多个单元格/行/列,默认true.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.ReadOnly">
+            <summary>
+            返回或设置整个表格是否只读,默认false.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.ShowResizeTips">
+            <summary>
+            返回或设置一个值,该值决定了用户用鼠标调整FlexCell表格的行高或列宽时,是否显示行高或列宽的提示窗口,默认true.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.Appearance">
+            <summary>
+            返回或设置控件的绘图风格,默认3D.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.FixedRowColStyle">
+            <summary>
+            返回或设置固定行/列的样式,默认3D.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.ScrollBarStyle">
+            <summary>
+            返回或设置滚动条的样式,默认3D.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_BlackAndWhite">
+            <summary>
+            返回或设置一个值,该值指定是否单色打印,默认false.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_CenterHorizontally">
+            <summary>
+            返回或设置打印内容在页面中是否水平居中,默认false.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_CenterVertically">
+            <summary>
+            返回或设置打印内容在页面中是否垂直居中,默认false.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_PrintFixedColumn">
+            <summary>
+            返回或设置一个值,该值指定了是否打印固定列,默认false.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_PrintFixedRow">
+            <summary>
+            返回或设置一个值,该值指定了是否打印固定行,默认false.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_PrintGridlines">
+            <summary>
+            返回或设置一个值,该值指定了是否打印网格线,默认false.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_HeaderMargin">
+            <summary>
+            返回或设置纸张顶端与页眉顶端的距离,单位是厘米,默认2.0.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_BottomMargin">
+            <summary>
+            返回或设置纸张的下边距,单位是厘米,默认3.0.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_TopMargin">
+            <summary>
+            返回或设置纸张的上边距,单位是厘米,默认3.0.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_RightMargin">
+            <summary>
+            返回或设置纸张的右边距,单位是厘米,默认2.5.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_LeftMargin">
+            <summary>
+            返回或设置纸张的左边距,单位是厘米,默认2.5.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_FooterMargin">
+            <summary>
+            返回或设置纸张底端与页脚底端的距离,单位是厘米,默认2.0
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_Footer">
+            <summary>
+            返回或设置页脚的文字,默认string.Empty.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_FooterAlignment">
+            <summary>
+            返回或设置页脚的对齐方式,默认Center.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_FooterFont_Bold">
+            <summary>
+            返回或设置页脚的字体粗体,默认false.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_FooterFont_Underline">
+            <summary>
+            返回或设置页脚的字体下划线,默认false.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_FooterFont_Strikethrough">
+            <summary>
+            返回或设置页脚的字体中间横线,默认false.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_FooterFont_Size">
+            <summary>
+            返回或设置页脚的字体大小,默认9.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_FooterFont_Name">
+            <summary>
+            返回或设置页脚的字体名称,默认"宋体".
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_FooterFont_Italic">
+            <summary>
+            返回或设置页脚的字体斜体,默认false.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_Header">
+            <summary>
+            返回或设置页眉的文字,默认string.Empty.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_HeaderAlignment">
+            <summary>
+            返回或设置页眉的对齐方式,默认Left.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_HeaderFont_Bold">
+            <summary>
+            返回或设置页眉的文字粗体,默认false.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_HeaderFont_Italic">
+            <summary>
+            返回或设置页眉的文字斜体,默认false.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_HeaderFont_Strikethrough">
+            <summary>
+            返回或设置页眉的文字中间横线,默认false.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_HeaderFont_Underline">
+            <summary>
+            返回或设置页眉的文字下划线,默认false.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_HeaderFont_Name">
+            <summary>
+            返回或设置页眉的文字名字,默认"宋体".
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_HeaderFont_Size">
+            <summary>
+            返回或设置页眉的文字大小,默认9.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_Orientation">
+            <summary>
+            返回或设置一个值,该值指出文档是以纵向还是横向的方式被打印,默认Portrait.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_PaperSize">
+            <summary>
+            返回或设置纸张的大小,默认PaperA4.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.PageSetup_PrintBottomTitleRows">
+            <summary>
+            返回或设置底部标题行的行数,底部标题行在每一个打印页中都重复打印,它位于表格的底部,默认0.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.SelectionMode">
+            <summary>
+            返回或设置表格的选择模式,默认SelectionFree.
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.LSGOUIGridEntity.DefaultRowHeight">
+            <summary>
+            返回或设置Grid的默认行高,单位是像素,行高必须大于0,默认18.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.frmProcessBarCircle.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmProcessBarCircle.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmProcessBarCircle.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.frmWaitWindow.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmWaitWindow.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmWaitWindow.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:LSGO.PresentationLayer.LSGOfrmMessageBox">
+            <summary>
+            通用信息窗体
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOfrmMessageBox.#ctor">
+            <summary>
+            创建通用信息窗体的实例
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOfrmMessageBox.btnOK_Click(System.Object,System.EventArgs)">
+            <summary>
+            点击确定按钮时执行的方法
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOfrmMessageBox.btnCancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            点击取消按钮时执行的方法
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOfrmMessageBox.LSGOfrmMessageBox_Load(System.Object,System.EventArgs)">
+            <summary>
+            窗体加载时执行的方法
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:LSGO.PresentationLayer.LSGOfrmMessageBox.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOfrmMessageBox.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOfrmMessageBox.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmStatGraphic.#ctor(System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.Single})">
+            <summary>
+            针对Mis系统中的数据统计的构造函数
+            </summary>
+            <param name="Title"></param>
+            <param name="Lable"></param>
+            <param name="Value"></param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmStatGraphic.#ctor(System.String,System.Collections.Generic.List{LSGO.PresentationLayer.StatInfo})">
+            <summary>
+            针对在Gis系统中的数据统计的构造函数
+            </summary>
+            <param name="Title"></param>
+            <param name="lstStatInfo"></param>
+        </member>
+        <member name="F:LSGO.PresentationLayer.frmStatGraphic.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmStatGraphic.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmStatGraphic.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:LSGO.PresentationLayer.StatLabelValue">
+            <summary>
+            统计结果
+            </summary>
+        </member>
+        <member name="T:LSGO.PresentationLayer.ControlProperty">
+            <summary>
+            用于控制控件的一些属性
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.ControlProperty.IsNullAble">
+            <summary>
+            是否允许为空
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.ControlProperty.IsReadOnly">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.ControlProperty.IsNumeric">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.ControlProperty.cmbSeletedIndex">
+            <summary>
+            combolbox选中的索引
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.ControlProperty.IsInt">
+            <summary>
+            是否是整型
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.ControlProperty.AllowLength">
+            <summary>
+            数字文本框中允许的最大长度
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.ControlProperty.AllowDotLength">
+            <summary>
+            2012-10-05 刘正添加
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.ControlProperty.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmProcessBarDouble.UpdateValueSub(System.Int32)">
+            <summary>
+            更新子进度条的值
+            </summary>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmProcessBarDouble.UpdateValueSum(System.Int32)">
+            <summary>
+            更新总进度条的值
+            </summary>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmProcessBarDouble.IncreaseValueSub(System.Int32)">
+            <summary>
+            增长子进度条的值
+            </summary>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmProcessBarDouble.IncreaseValueSum(System.Int32)">
+            <summary>
+            增长总进度条的值
+            </summary>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmProcessBarDouble.UpdateTextSub(System.String)">
+            <summary>
+            更新子进度条描述
+            </summary>
+            <param name="des"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmProcessBarDouble.UpdateTextSum(System.String)">
+            <summary>
+            更新总进度条描述
+            </summary>
+            <param name="des"></param>
+            <returns></returns>
+        </member>
+        <member name="F:LSGO.PresentationLayer.frmProcessBarDouble.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmProcessBarDouble.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmProcessBarDouble.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.frmProcessBarDouble.ShowCancelButton">
+            <summary>
+            是否显示取消按钮
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.frmProcessBarDouble.MinimumSum">
+            <summary>
+            总进度条的最小值
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.frmProcessBarDouble.MaximumSum">
+            <summary>
+            总进度条的最大值
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.frmProcessBarDouble.MinimumSub">
+            <summary>
+            子进度条的最小值
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.frmProcessBarDouble.MaximumSub">
+            <summary>
+            子进度条的最大值
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.frmProcessBarDouble.CurrentValueSub">
+            <summary>
+            子进度条的当前值
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.frmProcessBarDouble.CurrentValueSum">
+            <summary>
+            总进度条的当前值
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.frmInputBox.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmInputBox.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmInputBox.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:LSGO.PresentationLayer.frmReportBrow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmReportBrow.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmReportBrow.#ctor(LSGO.PresentationLayer.LSGOUIGridEntity)">
+            <summary>
+            
+            </summary>
+            <param name="MisUIGridEntity"></param>
+        </member>
+        <member name="F:LSGO.PresentationLayer.frmReportBrow.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmReportBrow.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmReportBrow.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:LSGO.PresentationLayer.LSGOUIGrid">
+            <summary>
+            FlexCell表格控件
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.LSGOUIGrid.UIGridEntity">
+            <summary>
+            内置的UIGridEntity实体
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOUIGrid.Init(FlexCell.Grid,LSGO.PresentationLayer.LSGOUIGridEntity)">
+            <summary>
+            初始化FlexCell表格控件
+            </summary>
+            <param name="Grid">FlexCell</param>
+            <param name="GridEntity">Grid属性</param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOUIGrid.InitHeader(FlexCell.Grid,System.Collections.Generic.List{System.String})">
+            <summary>
+            初始化Grid的列名
+            </summary>
+            <param name="Grid"></param>
+            <param name="FieldList"></param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOUIGrid.InitHeader(FlexCell.Grid,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataFieldCollection)">
+            <summary>
+            初始化Grid的列名
+            </summary>
+            <param name="Grid"></param>
+            <param name="FieldCollection"></param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOUIGrid.FillDataToGrid(System.String,System.Data.DataTable,FlexCell.Grid)">
+            <summary>
+            把记录集合填充到表格中.
+            </summary>
+            <param name="errInfo">执行错误反馈的信息</param>
+            <param name="Data">数据</param>
+            <param name="Grid">Grid</param>
+            <remarks>
+            <para>刘正 2012-09-20 添加代码</para>
+            </remarks>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOUIGrid.FillDataToGrid(System.String,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataFieldCollection,LSGO.DataLinkLayer.DBControl.MisDBControl.ILSGODataRowCollection,FlexCell.Grid)">
+            <summary>
+            把记录集合填充到表格中.
+            </summary>
+            <param name="errInfor">执行错误反馈的信息</param>
+            <param name="FieldCollection">字段集合</param>
+            <param name="RowCollection">记录集合</param>
+            <param name="Grid">Grid</param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOUIGrid.InsertDataToGrid(System.Collections.Generic.List{System.String},FlexCell.Grid)">
+            <summary>
+            向Grid中插入一行
+            </summary>
+            <param name="valueList">数据</param>
+            <param name="Grid">Grid对象</param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOUIGrid.ExportToExcel(System.String,System.Boolean,System.Boolean,FlexCell.Grid)">
+            <summary>
+            该方法用于将FlexCell文档输出为Excel Workbook.
+            需要说明的是,由于Excel内部使用ColorIndex来指定单元格的填充色和文字颜色,其颜色数量是有限的,
+            而FlexCell表格允许您使用任何自定义的颜色,这就导致了FlexCell表格中有些自定义颜色值没有对应的Excel ColorIndex.
+            调用本方法时,如果单元格的文字颜色和填充色在Excel中没有对应的ColorIndex,输出Excel Workbook时,就统一将文字颜色设置为黑色,
+            填充色设置为灰色.
+            </summary>
+            <param name="FileName">字符串表达式,用于指定文件名.</param>
+            <param name="ExportFixedRow">一个布尔值,该值决定是否输出固定行.</param>
+            <param name="ExportFixedCol">一个布尔值,该值决定是否输出固定列.</param>
+            <param name="Grid">Grid</param>
+            <returns>输出成功返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOUIGrid.ExportToHTML(System.String,FlexCell.Grid)">
+            <summary>
+            该方法用于将FlexCell文档输出为HTML文档.
+            </summary>
+            <param name="FileName">字符串表达式,用于指定文件名.</param>
+            <param name="Grid">Grid</param>
+            <returns>输出成功返回true,否则返回false.</returns>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOUIGrid.SetGrid(FlexCell.Grid,LSGO.PresentationLayer.LSGOUIGridEntity)">
+            <summary>
+            设置FlexCell属性
+            </summary>
+            <param name="Grid">FlexCell</param>
+            <param name="GridEntity">Grid属性</param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOUIGrid.CopyGrid(FlexCell.Grid,FlexCell.Grid)">
+            <summary>
+            将GridOld拷贝到GridNew中
+            </summary>
+            <param name="GridNew"></param>
+            <param name="GridOld"></param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOUIGrid.FindIndexByName(FlexCell.Grid,System.String)">
+            <summary>
+            根据Flexcell的列名找到列的Index
+            </summary>
+            <param name="grid">Flexcell控件</param>
+            <param name="ColName">列名</param>
+            <returns>若找到，返回Index；否则，返回-1</returns>
+            <remarks>
+            <para>晁学斌 2012-07-11 添加代码</para>
+            </remarks>
+        </member>
+        <member name="F:LSGO.PresentationLayer.frmProcessBar.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmProcessBar.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmProcessBar.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmProcessBar.IncreaseValue(System.Int32)">
+            <summary>
+            进度条前进
+            </summary>
+            <param name="Value">前进值</param>
+            <returns></returns>
+        </member>
+        <member name="T:LSGO.PresentationLayer.WaitWindowEventArgs">
+            <summary>
+            Provides data for the WaitWindow events.
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.WaitWindowEventArgs.#ctor(LSGO.PresentationLayer.WaitWindow,System.Collections.Generic.List{System.Object})">
+            <summary>
+            Initialises a new intance of the WaitWindowEventArgs class.
+            </summary>
+            <param name="GUI">The associated WaitWindow instance.</param>
+            <param name="args">A list of arguments to be passed.</param>
+        </member>
+        <member name="T:LSGO.PresentationLayer.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:LSGO.PresentationLayer.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.MisUITree.ExistNode(System.Windows.Forms.TreeView,System.String)">
+            <summary>
+            判断TreeView中是否存在某个节点
+            </summary>
+            <param name="Tvw">TreeView对象</param>
+            <param name="Key">TreeView中Node的键值</param>
+            <returns>存在返回True,否则返回False</returns>
+        </member>
+        <member name="M:LSGO.PresentationLayer.MisUITree.GetGrandChildText(System.String,System.Windows.Forms.TreeView)">
+            <summary>
+            给定一个树节点的Key得到该节点所有孙子的Text
+            </summary>
+            <param name="stringKey"></param>
+            <param name="treeView"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.PresentationLayer.MisUITree.GetChildText(System.String,System.Windows.Forms.TreeView)">
+            <summary>
+            给定一个树节点的Key得到该节点所有孩子的Text
+            </summary>
+            <param name="stringKey">要搜索的树节点的名称</param>
+            <param name="treeView">要搜索的树</param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.PresentationLayer.MisUITree.SearchNode(System.Windows.Forms.TreeNode,System.String)">
+            <summary>
+            根据treeview节点的值查询节点
+            </summary>
+            <param name="tnParent">TreeView的节点的集合</param>
+            <param name="value">查询的值</param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.PresentationLayer.MisUITree.SearchNode(System.Windows.Forms.TreeNode)">
+            <summary>
+            
+            </summary>
+            <param name="tnParent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.PresentationLayer.MisUITree.BeSelected(System.Windows.Forms.TreeNode,System.String)">
+            <summary>
+            根据name判断该名字的节点是否被选中
+            </summary>
+            <param name="tnParent"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LSGO.PresentationLayer.MisUITree.setNodeChildCheckState(System.Windows.Forms.TreeNode)">
+            <summary>
+            设置当前节点的子节点Check状态
+            </summary>
+            <param name="tn">当前节点</param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.MisUITree.setParentNodeCheckState(System.Windows.Forms.TreeNode)">
+            <summary>
+            设置当前节点的父节点Check状态
+            </summary>
+            <param name="tn">当前节点</param>
+        </member>
+        <member name="T:LSGO.PresentationLayer.LSGOfrmErrorMessageBox">
+            <summary>
+            显示错误提示框
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.LSGOfrmErrorMessageBox.ShowMessage(System.String,System.String)">
+            <summary>
+            显示错误消息框,注意：确定返回的是DialogResult.OK，取消返回的是DialogResult.Cancel
+            </summary>
+            <param name="text">消息框的内容</param>
+            <param name="Title">消息框的标题</param>
+            <returns></returns>
+        </member>
+        <member name="T:LSGO.PresentationLayer.frmHelpAbout">
+            <summary>
+            关于对话框
+            </summary>
+            <remarks>
+            <para>日期        姓名       内容</para>
+            <para>2012-07-04 晁学斌  添加、修改代码</para>
+            </remarks>
+        </member>
+        <member name="F:LSGO.PresentationLayer.frmHelpAbout.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmHelpAbout.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:LSGO.PresentationLayer.frmHelpAbout.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:LSGO.PresentationLayer.AppearanceEnum">
+            <summary>
+            控件外观
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.AppearanceEnum.Flat">
+            <summary>
+            以平面显示,值为0.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.AppearanceEnum.D3">
+            <summary>
+            以3D显示,值为1.
+            </summary>
+        </member>
+        <member name="T:LSGO.PresentationLayer.HeaderFooterAlignmentEnum">
+            <summary>
+            页眉页脚对齐方式
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.HeaderFooterAlignmentEnum.Left">
+            <summary>
+            左对齐,值为0.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.HeaderFooterAlignmentEnum.Center">
+            <summary>
+            居中对齐,值为1.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.HeaderFooterAlignmentEnum.Right">
+            <summary>
+            右对齐,值为2.
+            </summary>
+        </member>
+        <member name="T:LSGO.PresentationLayer.PaperSizeEnum">
+            <summary>
+            纸张大小
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperLetter">
+            <summary>
+            信笺,8 1/2 x 11英寸,值为1.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperLetterSmall">
+            <summary>
+            +A611 小型信笺,8 1/2 x 11英寸,值为2.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperTabloid">
+            <summary>
+            小型报,11 x 17英寸,值为3.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperLedger">
+            <summary>
+            分类帐,17 x 11英寸,值为4.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperLegal">
+            <summary>
+            法律文件,8 1/2 x 14英寸.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperStatement">
+            <summary>
+            声明书,5 1/2 x 8 1/2英寸,值为6.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperExecutive">
+            <summary>
+            行政文件,7 1/2 x 10 1/2英寸,值为7.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperA3">
+            <summary>
+            A3,297 x 420毫米,值为8.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperA4">
+            <summary>
+            A4,210 x 297毫米,值为9.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperA4Small">
+            <summary>
+            A4小号,210 x 297毫米,值为10.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperA5">
+            <summary>
+            A5,148 x 210毫米,值为11.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperB4">
+            <summary>
+            B4,250 x 354毫米,值为12.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperB5">
+            <summary>
+            B5,182 x 257毫米,值为13.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperFolio">
+            <summary>
+            对开本,8 1/2 x 13英寸,值为14.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperQuarto">
+            <summary>
+            四开本,215 x 275毫米,值为15.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.Paper10x14">
+            <summary>
+            10 x 14英寸,值为16.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.Paper11x17">
+            <summary>
+            11 x 17英寸,值为17.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperNote">
+            <summary>
+            便条,8 1/2 x 11英寸,值为18.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperEnv9">
+            <summary>
+            #9信封,3 7/8 x 8 7/8英寸,值为19.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperEnv10">
+            <summary>
+            #10信封,4 1/8 x 9 1/2 英寸,值为20.
+            </summary> 
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperEnv11">
+            <summary>
+            #11信封,4 1/2 x 10 3/8 英寸,值为21.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperEnv12">
+            <summary>
+            #12信封,4 1/2 x 11 英寸,值为22.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperEnv14">
+            <summary>
+            #14信封,5 x 11 1/2 英寸,值为23.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperCSheet">
+            <summary>
+            C尺寸工作单,值为24.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperDSheet">
+            <summary>
+            D尺寸工作单,值为25.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperESheet">
+            <summary>
+            E 尺寸工作单,值为26.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperEnvDL">
+            <summary>
+            DL型信封,110 x 220毫米,值为27.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperEnvC5">
+            <summary>
+            C5型信封,162 x 229毫米,值为28.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperEnvC3">
+            <summary>
+            C3型信封,324 x 458毫米,值为29.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperEnvC4">
+            <summary>
+            C4型信封,229 x 324毫米,值为30.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperEnvC6">
+            <summary>
+            C6型信封,114 x 162毫米,值为31.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperEnvC65">
+            <summary>
+            C65型信封,114 x 229毫米,值为32.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperEnvB4">
+            <summary>
+            B4型信封,250 x 353毫米,值为33.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperEnvB5">
+            <summary>
+            B5型信封,176 x 250毫米,值为34.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperEnvB6">
+            <summary>
+            B6型信封,176 x 125毫米,值为35.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperEnvItaly">
+            <summary>
+            信封,110 x 230毫米,值为36.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperEnvMonarch">
+            <summary>
+            信封大王,3 7/8 x 7 1/2英寸,值为37.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperEnvPersonal">
+            <summary>
+            信封,3 5/8 x 6 1/2英寸,值为38.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperFanfoldUS">
+            <summary>
+            U.S.标准复写簿,14 7/8 x 11英寸,值为39.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperFanfoldStdGerman">
+            <summary>
+            德国标准复写簿,8 1/2 x 12英寸,值为40.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperFanfoldLglGerman">
+            <summary>
+            德国法律复写簿,8 1/2 x 13英寸,值为41.
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.PaperSizeEnum.PaperUser">
+            <summary>
+            用户自定义,值为256.
+            </summary>
+        </member>
+        <member name="T:LSGO.PresentationLayer.OrientationEnum">
+            <summary>
+            纸张方向
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.OrientationEnum.Portrait">
+            <summary>
+            文档打印以纸的窄边作顶部(竖向)
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.OrientationEnum.Landscape">
+            <summary>
+            文档打印以纸的宽边作顶部(横向)
+            </summary>
+        </member>
+        <member name="T:LSGO.PresentationLayer.SelectionModeEnum">
+            <summary>
+            选择模式
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.SelectionModeEnum.SelectionFree">
+            <summary>
+            可以自由选择
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.SelectionModeEnum.SelectionByRow">
+            <summary>
+            按整行方式选择
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.SelectionModeEnum.SelectionByColumn">
+            <summary>
+            按整列方式选择
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.SelectionModeEnum.SelectionNone">
+            <summary>
+            一次只能选取一个单元格
+            </summary>
+        </member>
+        <member name="T:LSGO.PresentationLayer.LegendPositon">
+            <summary>
+            图例位置
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.LegendPositon.Top">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.LegendPositon.Left">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.LegendPositon.Right">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.LegendPositon.Bottom">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.LegendPositon.InsideTopLeft">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.LegendPositon.InsideTopRight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.LegendPositon.InsideBotLeft">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.LegendPositon.InsideBotRight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.LegendPositon.Float">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.LegendPositon.TopCenter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.LegendPositon.BottomCenter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.LegendPositon.TopFlushLeft">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.LegendPositon.BottomFlushLeft">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:LSGO.PresentationLayer.CoordinateType">
+            <summary>
+            坐标类型，默认为Linear
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.CoordinateType.Linear">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.CoordinateType.Log">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.CoordinateType.Date">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.CoordinateType.Text">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.CoordinateType.Ordinal">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.CoordinateType.DateAsOrdinal">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.CoordinateType.LinearAsOrdinal">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:LSGO.PresentationLayer.CoordinateType.Exponent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:LSGO.PresentationLayer.DataSymbolType">
+            <summary>
+            数据点符号类型，默认为Default
+            </summary>
+        </member>
+        <member name="T:LSGO.PresentationLayer.GraphBarBase">
+            <summary>
+            坐标主项
+            </summary>
+        </member>
+        <member name="T:LSGO.PresentationLayer.GraphBarType">
+            <summary>
+            柱状图叠加方式
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,100 @@
+1.方法的应用
+    class user
+    {
+        private string sex;
+        private string name;
+        public void setname(string values)
+        {
+            name = values;
+        }
+        public string getname()
+        {
+            return name;
+        }
+        public void setsex(string values)
+        {
+            if (values == "男" || values == "女")
+            {
+                sex = values;
+            }
+            else
+            {
+                Console.WriteLine("性别只能为男或女");
+            }
+        }
+    
+    }
+        class property
+        {
+            static void Main(string[] args)
+            {
+                user q=new user();
+               string  w=Console.ReadLine();
+               string a = Console.ReadLine();
+                q.setname (w);
+                q.setsex(a);
+                Console.WriteLine("姓名：" + q.getname() + " 性别:" + q.getsex());
+
+            }
+        }
+    
+
+2.属性，不用（），用get获取要将value的值赋予的变量
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication115
+{
+    class user
+    {
+        private string sex;
+        private string name;
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name=value;
+            }
+        }
+        public string Sex
+        {
+            get
+            {
+                return sex;
+            }
+            set 
+            {
+
+                if (value == "男" || value == "女")
+                {
+                    sex = value;
+                }
+                else
+                {
+                    Console.WriteLine("性别只能为男或女");
+                }
+                value=sex;
+            }
+        }
+    }
+        class property
+        {
+            static void Main(string[] args)
+            {
+                user q=new user();
+   
+               q.Name=Console.ReadLine();
+               q.Sex = Console.ReadLine(); 
+                Console.WriteLine("姓名：" + q.Name + " 性别:" + q.Sex);
+
+            }
+        }
+    }
+
+

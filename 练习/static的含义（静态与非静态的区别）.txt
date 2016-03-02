@@ -1,0 +1,76 @@
+ public class MyClass
+    {
+        static string a = "a string";//静态方法display()只能访问静态成员a
+        public static void Main()
+        {
+            Display();
+        }
+        public static void Display()
+        {
+            Console.WriteLine(a);
+        }
+    }
+
+
+
+
+
+
+
+
+
+static变量可以不必实例化直接使用.
+//定义类A
+class A
+{
+ public static string aUser="wangjian";
+}
+//定义类B
+class B
+{
+ string bUser = A.aUser;
+ //类B可以直接使用类A的aUser，而不必先实例化类A.
+}
+static：静态。
+ 
+可以设置：静态类、静态变量、静态方法。
+ 
+没有使用static修饰的成员为实例成员。
+静态成员的使用：通过类名。
+ 
+1。不加static修饰的成员是对象成员，归每个对象所有。
+
+2。加static修饰的成员是类成员，可以由一个类直接调用，为所有对象共有。
+用static关键字标识的程序元素是静态的,不用static标识的程序元素是非静态.
+两者的区别在于:
+静态的东西是在类型加载初始时初始化的,并且与类相关.
+非静态东西一般放在实例的构造函数中初始化,它是与特定类的实例相关的.
+
+
+
+
+
+public:公共。
+ 
+在类名前边用的话，说明这个类是公共类。
+ 
+可以设置：
+public方法， public属性， 和public类
+ 
+表示在其它任何类或方法中都可以访问。
+ 
+要访问其它类中的public的属性、public方法,则必须必对那个类进行实例化。
+ 
+public : 公共成员，完全公开，没有访问限制。
+private : 私有成员, 在类的内部才可以访问。
+protected : 保护成员，该类内部和继承类中可以访问。
+internal: 在同一命名空间内可以访问。
+
+
+
+
+
+
+
+
+ 

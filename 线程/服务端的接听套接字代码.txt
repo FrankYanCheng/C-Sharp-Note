@@ -1,0 +1,105 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Threading;
+using System.Net;
+using System.Net.Sockets;
+
+namespace 服务端监听套接字练习
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+            TextBox.CheckForIllegalCrossThreadCalls = false;
+        }
+        void Message(string m)
+        {
+            textBox3.AppendText(m+"\r\n");
+        }
+        Socket WatchSocket = null;
+        private void button1_Click(object sender, EventArgs e)
+        {
+            WatchSocket = new Socket(AddressFamily.InterNetwork,SocketType.Stream,ProtocolType.Tcp);
+            IPAddress address = IPAddress.Parse(textBox1.Text.Trim());
+            IPEndPoint endpoint = new IPEndPoint(address, Convert.ToInt32(textBox2.Text));
+            WatchSocket.Bind(endpoint);
+            WatchSocket.Listen(1000);
+            ThreadStart a = new ThreadStart(connect);
+            Thread b = new Thread(a);
+            Message("服务端开启");
+            b.IsBackground = true;
+            b.Start();
+
+        }
+        void connect()
+        {
+
+            WatchSocket.Accept();
+            Message("客户端连接成功");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 am = new Form2();
+            am.Show();
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Net;
+using System.Net.Sockets;
+
+namespace 服务端监听套接字练习
+{
+    public partial class Form2 : Form
+    {
+        public Form2()
+        {
+            InitializeComponent();
+        }
+        void message(string a)
+        {
+            textBox3.AppendText(a+"\r\n");
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            IPAddress address = IPAddress.Parse(textBox1.Text.Trim());
+            IPEndPoint endpoint = new IPEndPoint(address,Convert.ToInt32(textBox2.Text));
+            Socket connect = new Socket(AddressFamily.InterNetwork,SocketType.Stream,ProtocolType.Tcp);
+            connect.Connect(endpoint);
+            message("客户端请求连接");
+        }
+    }
+}

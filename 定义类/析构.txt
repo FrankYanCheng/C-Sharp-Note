@@ -1,0 +1,50 @@
+
+垃圾回收器会将回收周期变长，变两次，一般不用
+class b
+    {
+        public b()
+        {
+            Console.WriteLine("b类创建");
+        }
+        ~b()
+        {
+            Console.WriteLine("b类被回收");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           b a= new b();
+        }
+    }
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication109
+{
+    class b
+    {
+        public b()
+        {
+            Console.WriteLine("b类创建");
+        }
+        ~b()
+        {
+            Console.WriteLine("b类被回收");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            new b();
+           b a= new b();
+            new b();
+        }
+    }
+}
+
+运用了终结器，可以执行GC.Collect();???

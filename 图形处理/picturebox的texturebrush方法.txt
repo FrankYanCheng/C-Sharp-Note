@@ -1,0 +1,5 @@
+ Graphics g = this.CreateGraphics();
+            g.Clear(pictureBox1.BackColor);
+            Bitmap b = new Bitmap(this.pictureBox1.Image);
+            TextureBrush r = new TextureBrush(b);
+            g.FillRectangle(r,10,100,200,200);

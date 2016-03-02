@@ -1,0 +1,34 @@
+Main()中的代码调用myobj的Tostring（）的方法，即MyComplexClass的一个实例
+可以有接口的接口
+
+namespace ConsoleApplication61
+{
+    public abstract class MyBase
+    {
+    }
+    internal class MyClass : MyBase
+    {
+    }
+    public interface IMBaseInterface
+    {
+    }
+    internal interface IMBaseInterface2
+    {
+    }
+    internal interface IMyInterface : IMBaseInterface, IMBaseInterface2
+    {
+    }
+    internal sealed class MycomplexClass : MyClass, IMBaseInterface
+    {
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            MycomplexClass myObJ = new MycomplexClass();
+            Console.WriteLine(myObJ.ToString());
+        }
+                
+    }
+}

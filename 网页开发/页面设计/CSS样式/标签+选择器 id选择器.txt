@@ -1,0 +1,31 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        .A{font-size:xx-large}
+        .B{ background-color:Blue}
+        input.sec{ background-color:Red;  border-width:thick}
+        td.sec{ background-color:Orange; border-width:medium}
+        #e
+        { background-color:Blue
+        }
+    </style>
+</head>
+<body>
+<ul>
+<li style=" cursor:pointer; list-style-type:circle" class="A"><u><font color="blue" >中国发射无人机</font></u></li>
+<li style="list-style-type:circle;cursor:url()">美国五角大楼遭到轰炸</li>
+</ul>
+<input type="text" class="sec"/>
+<table>
+<tr>
+<td class="sec">asxasx</td><td class="A">asdasd</td></tr></table>
+<input type="text"  id="e"/>
+
+</body>
+</html>
+
+
+
+
+在head里加标签.选择器就可以表示一类的样式，也可以用#加id{样式}来表示

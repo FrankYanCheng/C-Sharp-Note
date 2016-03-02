@@ -1,0 +1,16 @@
+ Graphics g = this.CreateGraphics();
+            g.Clear(this.BackColor);
+            Pen p1 = new Pen(Color.Red);
+            LinearGradientBrush bb1 = new LinearGradientBrush(new Point(0,10),new Point(10,0),Color.Red,Color.Yellow);
+            g.FillRectangle(bb1,0,0,200,100);
+            bb1.WrapMode = WrapMode.TileFlipX;
+            g.FillRectangle(bb1, 0, 120, 200, 100);
+
+
+
+  Graphics g = this.CreateGraphics();
+            LinearGradientBrush er = new LinearGradientBrush(ClientRectangle,Color.Red,Color.Yellow,LinearGradientMode.Horizontal);
+            g.Clear(this.BackColor);
+            Font myFont = new Font("Times New Roman",24);
+            g.DrawString("在矩形框中显示",myFont,er,new RectangleF(10,10,100,200));
+            g.DrawString("显示渐变的颜色！", myFont, er, 80, 10);

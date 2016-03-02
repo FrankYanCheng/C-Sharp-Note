@@ -1,0 +1,57 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using LSGO.PresentationLayer;
+using DevComponents.DotNetBar;
+
+namespace ERPChess
+{
+    public partial class frmLogin : LSGOfrmBasement
+    {
+        public frmLogin()
+        {
+            InitializeComponent();
+        }
+        bool closeOrstart = false;
+        private void Button_Click(object sender, EventArgs e)
+        {
+            ButtonX btn = (ButtonX)sender;
+            switch (btn.Name)
+            {
+                case "btnLogin":
+                    closeOrstart = true;
+                    if (this.txtPlayerName.Text.Trim() == PubVar.ConstOrder.ToString())
+                    {
+                        ILSGOfrmTipBox mesbox = new LSGOfrmErrorMessageBox();
+                        mesbox.ShowMessage("换个名称吧！", "系统提示");
+                        return;
+                    }
+                    if (this.txtPlayerName.Text.Trim() == "")
+                    {
+                        ILSGOfrmTipBox mesbox = new LSGOfrmErrorMessageBox();
+                        mesbox.ShowMessage("请输入一个名字！", "系统提示");
+                        return;
+                    }
+                    PubVar.PlayerName = this.txtPlayerName.Text.Trim().ToString();
+                    Program.Forms.frmLogin.Close();
+                    break;
+                case "btnCancle":
+                    Environment.Exit(0);
+                    break;
+            }
+        }
+
+        private void frmLogin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (!closeOrstart)
+            {
+                Environment.Exit(0);
+            }
+        }
+    }
+}

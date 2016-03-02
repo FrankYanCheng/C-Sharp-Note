@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <connectionStrings>
+    <add name="q" connectionString="data source=.;initial catalog=123;integrated security=true"/>
+  </connectionStrings>
+    
+</configuration>
+
+ÃÌº””¶”√system.configuration£ª
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data.SqlClient;
+using System.Configuration;
+
+namespace ConsoleApplication156
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string c = ConfigurationManager.ConnectionStrings["q"].ConnectionString;
+            SqlConnection con = null;
+            SqlCommand com = null;
+            SqlDataReader sdr = null;
+            try
+            {
+                con = new SqlConnection(c);
+                com = con.CreateCommand();
+                con.Open();
+                com.CommandText = "select* from student";
+                sdr = com.ExecuteReader();
+                while (sdr.Read())
+                {
+                    Console.WriteLine(sdr[4]);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            sdr.Close();
+            com.Clone();
+            con.Close();
+            
+        }
+    }
+}

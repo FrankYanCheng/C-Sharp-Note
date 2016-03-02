@@ -1,0 +1,166 @@
+用this关键字+[]再进行赋值
+this前面的是返回值
+1.
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication118
+{
+    class user
+    {
+        private string[] name = new string[10];
+        public string this[int x]
+        {
+            get
+            {
+                return name[x];
+            }
+            set
+            {
+                name[x] = value;
+            }
+        }
+        class text
+        {
+            static void Main()
+            {
+
+                user A = new user();
+                A[0] = "x";
+                Console.WriteLine(A[0]);
+            }
+
+        }
+    }
+}
+      
+  2.using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
+
+namespace ConsoleApplication118
+{
+    class user
+    {
+        private Hashtable name = new Hashtable();
+        public string this[int user]
+        {
+            get
+            {
+                return name[user].ToString();
+            }
+            set
+            {
+                name.Add(user, value);
+            }
+        }
+        public int this[string aname]
+        {
+            get
+            {
+                foreach( DictionaryEntry c in name)
+                {
+                    if(c.Value.ToString()==aname)
+                    {
+                        return Convert.ToInt32(c.Key);
+                    }
+                }
+                return -1;
+            }
+            set
+            {
+                name.Add(value, aname);
+            }
+        }
+    }
+        class text
+        {
+            static void Main()
+            {
+
+                user A = new user();
+                A[100] = "x";
+                Console.WriteLine(A["x"]);
+                A["a"] = 200;
+                Console.WriteLine(A[200]);
+            }
+
+        }
+    }
+      
+
+
+
+
+
+
+
+3.
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
+namespace ConsoleApplication119
+{
+   class fyc1
+   {
+       Hashtable y=new Hashtable();
+       public string this[int x]
+       {
+           get
+           {
+               return y[x].ToString();
+           }
+           set
+           {
+               y.Add(x,value);
+           }
+       }
+       public int this[string z]
+       {
+           get
+           {
+               foreach (DictionaryEntry c in y)
+               {
+                   if (c.Value.ToString() == z)
+                   {
+                       return Convert.ToInt32(c.Key);
+                   }
+               }
+               return -1;
+
+           }
+           set
+           {
+               y.Add(value, z);
+           }
+           
+       }
+   }
+    class fyc2
+    {
+        static void Main()
+        {
+            fyc1 TT = new fyc1();
+            TT[1] = "z";
+            TT["s"] = 2;
+            Console.WriteLine(TT[1]+TT["z"]+TT[2]+TT["s"]);
+        }
+    }
+}
+        
+   
+      
+       
+       
+       
+   
+       
+       
+       
+   

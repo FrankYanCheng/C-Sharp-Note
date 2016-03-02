@@ -1,0 +1,120 @@
+¿‡÷–
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication168
+{
+    class category
+    {
+        private string csname;
+        private int csno;
+        public category() { }
+        public string sname { get { return csname; } set { csname = value; } }
+        public int sno { get; set; }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data.SqlClient;
+
+namespace ConsoleApplication168
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string constr = "data source=.;initial catalog=123;integrated security=true";
+            using (SqlConnection con = new SqlConnection(constr))
+            {
+                using (SqlCommand cmd = con.CreateCommand())
+                {
+                    cmd.CommandText = "select sname,sno from student";
+                    con.Open();
+                    SqlDataReader sdr = cmd.ExecuteReader();
+                    List<category> catelist=new List<category>();
+                    int i=sdr.GetOrdinal("sname");
+                    int q = sdr.GetOrdinal("sno");
+                    while (sdr.Read())
+                    {
+                        category cate = new category();
+                        cate.sname = sdr.GetString(i);
+                        cate.sno = sdr.GetInt32(0);
+                        catelist.Add(cate);
+                    }
+                    foreach (category temp in catelist)
+                    {
+                        Console.WriteLine(temp.sno+""+temp.sname);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data.SqlClient;
+namespace ConsoleApplication170
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string kk = "data source=.;initial catalog=123;integrated security=true";
+            SqlConnection con = new SqlConnection(kk);
+            SqlCommand com = con.CreateCommand();
+            com.CommandText = "select * from student";
+            con.Open();
+            SqlDataReader sdr = com.ExecuteReader();
+            List<person> totalperson = new List<person>();
+            int i=sdr.GetOrdinal("sname");
+            while(sdr.Read())
+            {
+
+                person everyone = new person();
+                everyone.sname = sdr.GetString(i);
+                totalperson.Add(everyone);
+            }
+            foreach (person every in totalperson)
+            {
+                Console.WriteLine(every.sname);
+            }
+            sdr.Close();
+            com.Clone();
+            con.Close();
+        }
+    }
+}

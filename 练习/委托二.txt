@@ -1,0 +1,37 @@
+委托  区别（参数委托在主函数中定义还需要加类型）
+delegate int fyc(int fyc1, int fyc2);
+        static void Main(string[] args)
+        {fyc fyc3;
+          int   fyc1=3;
+            int fyc2=6;
+            fyc3=new fyc(k);
+            Console.WriteLine("{0}",fyc3(fyc1,fyc2));//无需重复定义了
+        }
+        static int k(int fyc1,int fyc2)
+        {int j;
+            j=fyc1+fyc2;
+            return j;
+    }
+        static int a(int fyc1,int fyc2)
+        {int s;
+            s=fyc1-fyc2;
+            return s;
+        }
+}
+结构
+
+ static void Main(string[] args)
+        {
+            fyc1 fa;
+            fa.j = Convert.ToInt32(Console.ReadLine());
+            fa.i = Console.ReadLine();
+            fa.fyc2();
+        }
+        struct fyc1
+        {
+            public int j;
+            public string i;
+            public void fyc2()
+            {
+                Console.WriteLine("数值型：{0}，字符型：{1}", j, i);
+            }

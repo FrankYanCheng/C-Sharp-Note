@@ -1,0 +1,47 @@
+ 修改了基类为什么不行输出？属于隐藏了基类
+ virtual-方法可以重写
+ abstract-方法必须重写（只用于抽象类中）
+ override-方法重写了一个基类方法（如果方法被重写，就必须使用该关键字）
+ extern-方法定义放在其他地方？
+输出结果：AD=
+          (s)=
+即先执行派生类的主方法，再执行基类中被改过的方法
+
+
+
+
+
+ public class MyClass
+    {
+        public virtual void DoSomething()
+        {
+            int k = 4;
+
+            Console.WriteLine("{0}", k);
+        }
+    }
+    public class MyDerivedClass : MyClass
+    {
+        static void Main(string[] args)
+        {
+            MyDerivedClass obj = new MyDerivedClass();
+            MyClass aaa;
+            aaa = obj;
+            aaa.DoSomething();
+
+
+        }
+        public override void DoSomething()
+        {
+            int s;
+            int j = 3;
+            s = j;
+            Console.WriteLine("{0}", s);
+        }
+        public MyDerivedClass()
+            
+        {
+            int AD = 41;
+            Console.WriteLine("AD={0}", AD);
+        }
+    }

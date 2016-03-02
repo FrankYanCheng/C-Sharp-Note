@@ -1,0 +1,86 @@
+用和类同名的方法就可以实现计数器
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication118
+{
+    class user
+    {
+        private static int m_c;
+        public user()
+        {
+            m_c++;
+        }
+        public static int c
+        {
+            get {return  m_c; }
+        }
+
+        private string m_name;
+        private string m_sex;
+        private DateTime m_birthday;
+        public string name
+        {
+            get
+            {
+                return m_name;
+            }
+            set
+            {
+                m_name = name;
+            }
+        }
+        public string sex
+        {
+            get
+            {
+                return m_sex;
+
+            }
+            set
+            {
+                if (value == "男" || value == "女")
+                    m_sex = value;
+                else
+                    Console.WriteLine("性别有误！");
+            }
+        }
+        public DateTime birthday
+        {
+            get { return m_birthday; }
+            set
+            {
+                if (value < Convert.ToDateTime("1990-1-1") || value.Year > DateTime.Now.Year - 1)
+                    Console.WriteLine("出生时间有错误！");
+                else m_birthday = value;
+            }
+        }
+        public int age
+        {
+            get
+            {
+                return
+                DateTime.Now.Year - m_birthday.Year;
+            }
+
+        }
+
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                user a=new user();
+                user b=new user();
+                Console.WriteLine(user.c);
+                a.name=Console.ReadLine();
+                a.sex=Console.ReadLine();
+                a.birthday=Convert.ToDateTime(Console.ReadLine());
+                b.name = Console.ReadLine();
+                b.sex = Console.ReadLine();
+                b.birthday = Convert.ToDateTime(Console.ReadLine());               
+            }
+        }
+    }
+}

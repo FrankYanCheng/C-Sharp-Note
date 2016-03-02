@@ -1,0 +1,58 @@
+自定义了数组的长度
+int [] arr=new int[ArrLength];
+1.定义字符串，在不同的类中
+namespace ConsoleApplication84
+{
+    class SetArry
+    {
+        public void PrintArr(int ArrLength)
+        {
+            int [] arr=new int[ArrLength];
+            for (int i=0;i<arr.Length;i++)
+                arr[i]=i;
+            for (int i=0;i<arr.Length;i++)
+                Console.WriteLine("arr[{0}]={1}",i,arr[i]);
+        }
+    class text
+    {
+        static void Main()
+        {
+        SetArry arr=new SetArry();
+        int i=1;
+        while(i>0)
+    {
+        Console.WriteLine("输入数组长度：");
+        i=Convert.ToInt32(Console.ReadLine());
+            arr.PrintArr(i);
+        }
+        }
+    }
+    }
+}
+
+
+
+2.同一个类中
+
+    class Program
+    {
+        static void fyc(int fyc2)
+        {
+            int[]k=new int[fyc2];
+            for (int i=1;i<k.Length;i++)
+                k[i] = (i*(i+1))/2;
+            for (int i = 0; i < k.Length; i++)
+                Console.WriteLine("k[{0}]={1}", i, k[i]);
+
+        }
+        static void Main(string[] args)
+        {
+            int j = 2;
+            while (j >= 0)
+            {
+                Console.WriteLine("输入数组长度");
+                int l = Convert.ToInt32(Console.ReadLine());
+                fyc(l+1);
+            }
+        }
+    }

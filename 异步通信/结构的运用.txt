@@ -1,0 +1,12 @@
+用begin的方法对于同步的问题不好解决，用 public  ManualResetEvent allDone = new ManualResetEvent(false);等待解决。如果上一步未执行完毕会卡死。一般是用begininvoke,然后重新开一个线程来接受和发送，线程里再end一下。
+   states.d = d;
+                states.result = result;
+                Thread t = new Thread(FinishAsyncSendMessage);
+                t.IsBackground = true;
+                t.Start(states);
+
+   void FinishAsyncSendMessage(object obj)
+        {
+            SendMessageStates states = (SendMessageStates)obj;
+            states.d.EndInvoke(states.result);
+        }

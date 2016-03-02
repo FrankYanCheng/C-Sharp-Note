@@ -1,0 +1,14 @@
+C:\Users\Administrator\Desktop\GGChatSever\GGChatSever\bin\Debug\GGChatSever.exe
+C:\Users\Administrator\Desktop\GGChatSever\GGChatSever\bin\Debug\GGChatSever.pdb
+C:\Users\Administrator\Desktop\GGChatSever\GGChatSever\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\GGChatSever\GGChatSever\obj\x86\Debug\GGChatSever.Sever.resources
+C:\Users\Administrator\Desktop\GGChatSever\GGChatSever\obj\x86\Debug\GGChatSever.Properties.Resources.resources
+C:\Users\Administrator\Desktop\GGChatSever\GGChatSever\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\GGChatSever\GGChatSever\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\GGChatSever\GGChatSever\obj\x86\Debug\GGChatSever.exe
+C:\Users\Administrator\Desktop\GGChatSever\GGChatSever\obj\x86\Debug\GGChatSever.pdb
+C:\Users\Administrator\Desktop\GGChatSever\GGChatSever\obj\x86\Debug\GGChatSever.EntryForm.resources
+C:\Users\Administrator\Desktop\GGChatSever\GGChatSever\obj\x86\Debug\GGChatSever.RegisterForm.resources
+C:\Users\Administrator\Desktop\GGChatSever\GGChatSever\obj\x86\Debug\GGChatSever.ForgetForm.resources
+E:\新建文件夹\GGChatSever\GGChatSever\obj\x86\Debug\GGChatSever.exe
+E:\新建文件夹\GGChatSever\GGChatSever\obj\x86\Debug\GGChatSever.pdb

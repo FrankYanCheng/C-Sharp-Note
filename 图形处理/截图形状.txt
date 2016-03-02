@@ -1,0 +1,5 @@
+  Graphics g = this.CreateGraphics();
+            Bitmap image = new Bitmap("SaveFile.bmp");
+            TextureBrush  tBrush= new TextureBrush(image);
+            g.FillEllipse(tBrush,0,0,200,500);
+首先打开文件，用Texture画刷

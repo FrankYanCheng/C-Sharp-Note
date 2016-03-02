@@ -1,0 +1,9 @@
+FileStream fil = new FileStream("D:\\123.txt", FileMode.Open);//打开文件流
+            int buff = 1024;//确定一次读的字节数
+            byte[] by = new byte[buff];//确定字节组的大小，避免硬编码
+            int n;//用于接收判断字节组的数目
+            while ((n = fil.Read(by, 0, buff)) > 0)//读到最后无值了会返回0
+            {
+                Console.WriteLine(Encoding.Default.GetString(by,0,n));//如果不到n，会把上一次在缓存中的数据给重新读一遍
+            }
+            fil.Close();//关闭文件流

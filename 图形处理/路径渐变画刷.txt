@@ -1,0 +1,29 @@
+ Graphics g = this.CreateGraphics();
+            g.Clear(this.BackColor);
+            GraphicsPath path = new GraphicsPath(new Point[]{
+                new Point(140,50),
+              new Point(375,110),
+               new Point(202,75),
+                new Point(290,210),
+                 new Point(150,250),
+                  new Point(120,100),
+            }, new byte[]{(byte)PathPointType.Start,
+                          (byte)PathPointType.Bezier,
+                            (byte)PathPointType.Bezier,
+                              (byte)PathPointType.Bezier,
+                                (byte)PathPointType.Line,
+                                (byte)PathPointType.Line,
+
+            }
+            );
+            PathGradientBrush pgb = new PathGradientBrush(path);
+            pgb.SurroundColors = new Color[]{
+                Color.Green,
+                Color.Yellow,
+                Color.Red,
+                Color.Blue,
+                Color.Orange,
+                Color.OliveDrab,
+            };
+            g.FillPath(pgb,path);
+        }

@@ -1,0 +1,216 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using DevComponents.DotNetBar;
+using LSGO.PresentationLayer;
+using ERPLibrary;
+
+namespace ERPChess
+{
+    public partial class FrmCommiteProduct : LSGOfrmBasement
+    {
+        public FrmCommiteProduct()
+        {
+            ///初始化每年的售电收入为0；
+            PubVar.EleBidincome = 0;
+            InitializeComponent();
+            this.lblInSN.Text = PubVar.proEleNOQue.ToString();
+            this.lblLeftINSN.Text = PubVar.proEleNOQue.ToString();
+            this.lblNOSN.Text = PubVar.proEleNoSN.ToString();
+            this.lblLeftNOSN.Text = PubVar.proEleNoSN.ToString();
+            if (PubVar.IsHaveISO14000)
+            {
+                this.lbISO14000.Text = "已获得ISO14000资格认证";
+            }
+            else
+            {
+                this.lbISO14000.Text = "未获得ISO14000资格认证";
+            }
+            if (PubVar.IsHaveISO9000)
+            {
+                this.lbISO9000.Text = "已获得ISO9000资格认证";
+            }
+            else
+            {
+                this.lbISO9000.Text = "未获得ISO9000资格认证";
+            }
+        }
+        /// <summary>
+        /// 根据不同的年限给相应的记录该年限的字段加上账款
+        /// </summary>
+        /// <param name="yearLimit">年限</param>
+        /// <param name="fund">金额总数</param>
+        private void UpdateAccount(List<double> list, int yearLimit, double fund)
+        {
+            if (yearLimit == 1)
+            {
+                list[0] += fund;
+            }
+            else if (yearLimit == 2)
+            {
+                list[1] += fund;
+            }
+            else if (yearLimit == 3)
+            {
+                list[2] += fund;
+            }
+            else if (yearLimit == 4)
+            {
+                list[3] += fund;
+            }
+            else if (yearLimit == 5)
+            {
+                list[4] += fund;
+            }
+        }
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            double leftE = Double.Parse(lblLeftINSN.Text) + Double.Parse(lblLeftNOSN.Text);
+            ILSGOfrmTipBox messagebox = new LSGOfrmInforMessageBox(MessageBoxButtons.OKCancel);
+            if (leftE > 0)
+            {
+                messagebox.ShowMessage("今年生产有剩余，请重新安排生产任务", "提示");
+                Program.dttemp.BackToPoint();
+                for (int i = 0; i < PubVar.BidEleResult.Count; i++)
+                {
+                    PubVar.BidEleResult[i].IsCommite = false;
+                }
+                Program.Forms.frmMain.step -= 2;
+                this.Dispose();
+                return;
+            }
+            Pubfun.UpdataCoalBill(PubVar.coalUse);
+            double raccount = 0;
+            for (int i = 0; i < PubVar.BidEleResult.Count; i++)
+            {
+                if (PubVar.BidEleResult[i].IsCommite)
+                {
+                    raccount += PubVar.BidEleResult[i].Sum;
+
+                    Account account = new Account();
+                    account.Fund = PubVar.BidEleResult[i].Sum;
+                    account.YearLimit = PubVar.BidEleResult[i].YearLimit;
+                    Program.factory.RAccount.Add(account);
+                    UpdateAccount(PubVar.RaccountList, PubVar.BidEleResult[i].YearLimit, PubVar.BidEleResult[i].Sum);
+                }
+            }
+            PubVar.accountR += raccount;
+            this.Close();
+        }
+
+        private void FrmCommiteProduct_Load(object sender, EventArgs e)
+        {
+            this.dataGridViewX1.RowCount = PubVar.BidEleResult.Count;
+            for (int i = 0; i < PubVar.BidEleResult.Count; i++)
+            {
+                this.dataGridViewX1.Rows[i].Cells[0].Value = (i+1).ToString();
+                this.dataGridViewX1.Rows[i].Cells[4].Value = PubVar.BidEleResult[i].YearLimit;
+                this.dataGridViewX1.Rows[i].Cells[3].Value = PubVar.BidEleResult[i].Sum;
+                this.dataGridViewX1.Rows[i].Cells[2].Value = PubVar.BidEleResult[i].Amount;
+                this.dataGridViewX1.Rows[i].Cells[1].Value = PubVar.BidEleResult[i].Price;
+                if (PubVar.BidEleResult[i].IsNitric)
+                {
+                    this.dataGridViewX1.Rows[i].Cells[5].Value = "需要";
+                }
+                else
+                {
+                    this.dataGridViewX1.Rows[i].Cells[5].Value = "不需要";
+                }
+                this.dataGridViewX1.Rows[i].Cells[6].Value = "未提交";
+                this.comboBoxEx1.Items.Add(new ComboBoxItem(i.ToString(), (i + 1).ToString()));
+            }
+        }
+
+        private void btnCommittee_Click(object sender, EventArgs e)
+        {
+            if (select == -1)
+            {
+                ILSGOfrmTipBox message = new LSGOfrmInforMessageBox();
+                message.ShowMessage("请先选择订单", "错误提示");
+                return;
+            }
+            this.comboBoxEx1.Text = "";
+            if (PubVar.BidEleResult[select].IsCertificate)
+            {
+                if (PubVar.BidEleResult[select].CertificateType == CerficateType.ISO14000)
+                {
+                    if (PubVar.IsHaveISO14000 == false)
+                    {
+                        MessageBox.Show("此订单需要ISO1400资格");
+                        return;
+                    }
+                }
+                if (PubVar.BidEleResult[select].CertificateType == CerficateType.ISO9000)
+                {
+                    if (PubVar.IsHaveISO9000 == false)
+                    {
+                        MessageBox.Show("此订单需要ISO900资格");
+                        return;
+                    }
+                }
+            }
+            //有脱硫脱销要求的订单
+            if (PubVar.BidEleResult[select].IsNitric)
+            {
+                if (PubVar.BidEleResult[select].Amount <= PubVar.proEleNoSN)
+                {
+                    PubVar.proEleNoSN -= PubVar.BidEleResult[select].Amount;
+                }
+                else
+                {
+                    ILSGOfrmTipBox message = new LSGOfrmInforMessageBox();
+                    message.ShowMessage("脱硫硝电量不够这个订单，拒绝交货", "提示");
+                    return;
+                }
+            }
+            //没有脱硫脱销要求的订单
+            else
+            {
+                if (PubVar.BidEleResult[select].Amount <= PubVar.proEleNOQue)
+                {
+                    PubVar.proEleNOQue -= PubVar.BidEleResult[select].Amount;
+                }
+                else
+                {
+                    if (PubVar.BidEleResult[select].Amount <= PubVar.proEleNOQue + PubVar.proEleNoSN)
+                    {
+                        PubVar.proEleNoSN -= (PubVar.BidEleResult[select].Amount - PubVar.proEleNOQue);
+                        PubVar.proEleNOQue = 0;
+                    }
+                    else
+                    {
+                        ILSGOfrmTipBox message = new LSGOfrmInforMessageBox();
+                        message.ShowMessage("所有剩余电量都不够这个订单", "提示");
+                        return;
+                    }
+                }
+            }
+            this.lblLeftNOSN.Text = PubVar.proEleNoSN.ToString();
+            this.lblLeftINSN.Text = PubVar.proEleNOQue.ToString();
+            PubVar.BidEleResult[select].IsCommite = true;
+            PubVar.EleBidincome += PubVar.BidEleResult[select].Sum;
+            this.dataGridViewX1.Rows[select].Cells[6].Value = "提交";
+            this.comboBoxEx1.Items.RemoveAt(sindex);
+            this.Refresh();
+        }
+        private int select=-1;
+        private int sindex;
+        private void comboBoxEx1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            sindex = this.comboBoxEx1.SelectedIndex;
+            select = Int32.Parse(this.comboBoxEx1.Items[sindex].ToString().Trim()) - 1;
+        }
+
+        private void FrmCommiteProduct_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            HelpCommonEleBid help = new HelpCommonEleBid();
+            help.ShowDialog();
+        }
+
+    }
+}

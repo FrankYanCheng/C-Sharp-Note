@@ -1,0 +1,12 @@
+将connectionString放到连接池中，而不是将它新建再注销，节约了时间，只是断开连接。
+如果不用连接池，可以将Pooling=false;
+ string d = ConfigurationManager.ConnectionStrings["w"].ConnectionString;
+            SqlConnection e = new SqlConnection(d);
+            long f = DateTime.Now.Ticks;
+            for (int i = 0; i < 1000;i++ )
+            {
+                e.Open();
+                e.Close();
+            }
+            long ff=DateTime.Now.Ticks;
+            Console.WriteLine(ff - f);

@@ -1,0 +1,22 @@
+1.参数只是一个模板，有s(k)的形式，放在主函数里的时候，也可以是s(a),只要是s相同
+
+
+
+
+
+
+
+
+static void Main(string[] args)
+        {
+            int d;
+            d = 4;
+            Console.WriteLine("d={0}", d);
+            s(d);
+            Console.ReadKey();
+
+        }
+        static void s(int k)
+        {k*=2;
+        Console.WriteLine("asdas={0}", k);
+        }

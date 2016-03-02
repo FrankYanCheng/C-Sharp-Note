@@ -1,0 +1,25 @@
+一：(class)
+默认情况下类的声明，只有工程中的代码才可以应用。
+如果其它工程代码访问就需要public。
+类分为可以继承或不能继承
+用abstract或sealed;
+public sealed class fyc
+{
+}
+二：
+类定义中指定继承
+public class myclass:mybase(myclass从mybase中继承）
+
+派生类的可访问性比基类更低，也就是说内部小于公共类（internal，public)
+三：
+接口(interface)
+以I开头
+和继承差不多，但是继承在前，接口在后。
+可以有多个接口
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+输出委托变量得出的是委托源
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication122
+{
+   
+    delegate string a(string a);
+    class b
+    {
+        static string c(string a)
+        {
+            return("OK");
+        }
+        static string D(string a)
+        {
+            return ("Not OK!");
+        }
+        static void Main()
+        {
+            a ad = new a(c);
+            Console.WriteLine(ad);
+            a ac = new a(D);
+            Console.WriteLine(ac);
+            a aw = ad + ac;
+            Console.WriteLine(aw);
+
+
+        }
+    }      
+}
+
+        

@@ -1,0 +1,5 @@
+ Graphics g = this.CreateGraphics();
+            g.Clear(this.BackColor);
+            HatchBrush bb1 = new HatchBrush(HatchStyle.Cross,Color.Red,Color.Wheat);
+            g.FillRectangle(bb1, 20, 80, 200, 100);
+HatchBrush有两个构造函数，可以选择划线颜色和背景色

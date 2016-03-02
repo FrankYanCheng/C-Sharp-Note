@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data.SqlClient;
+namespace ConsoleApplication164
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string inss = "data source=.;initial catalog=123;integrated security=true";
+            SqlConnection con = new SqlConnection(inss);
+            con.Open();
+            SqlCommand com = con.CreateCommand();
+            string ins = "alter table student alter column code char(5)";
+            com.CommandText = ins;
+          int refs= com.ExecuteNonQuery();
+            Console.Write(refs);
+            com.Clone();
+            con.Close();
+        }
+    }
+}

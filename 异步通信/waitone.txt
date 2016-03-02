@@ -1,0 +1,4 @@
+   while (iar.AsyncWaitHandle.WaitOne(10, false))
+                {
+                    MessageBox.Show("*");
+                }

@@ -1,0 +1,81 @@
+ class publisher//出版社
+    {
+        public delegate void publish();//声明所需的代理
+        public event publish onpublish;//事件的声明
+        public void issue()//触发事件的方法
+        {
+            if (onpublish != null)
+            {
+                Console.WriteLine("发行刊物");
+                onpublish();
+            }
+        }
+    }
+    class user//订阅者
+    {
+        public void receive()//在事件订阅者中定义事件处理程序
+        {
+            Console.WriteLine("订阅者的刊物已经收到");
+        }
+    }
+    class story
+    {
+        static void Main()
+        {
+            publisher pub = new publisher();
+            user zs = new user();
+            pub.onpublish += new publisher.publish(zs.receive);//向事件发现者订阅一个事件
+            pub.issue();
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication128
+{
+    class publiser
+    {
+        public delegate void publish();
+        public event publish onpublish;
+        public void issue()
+        {
+            Console.WriteLine("已发出");
+            onpublish();
+           
+        }
+    }
+    class reader
+    {
+        public void receive()
+        {
+            Console.WriteLine("已收到！");
+        }
+    }
+    class text
+    {
+        static void Main()
+        {
+            reader A = new reader();
+            reader B = new reader();
+            publiser C = new publiser();
+            C.onpublish+=new publiser.publish(A.receive);
+            C.issue();
+        }
+    }
+
+}

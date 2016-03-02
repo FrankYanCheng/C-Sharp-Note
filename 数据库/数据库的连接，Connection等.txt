@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data.SqlClient;
+
+namespace ConsoleApplication150
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string strCon = "Data Source=.;Initial Catalog=123.Integrated Sucurity=true";
+            SqlConnection con = null ;
+            SqlCommand com=null;
+            SqlDataReader sdr=null;
+            try
+            {
+                con = new SqlConnection(strCon);
+                com = con.CreateCommand();
+                com.CommandText = "select sname in STUDENT";
+                con.Open();
+                sdr = com.ExecuteReader();
+                while (sdr.Read())
+                {
+                    Console.WriteLine(sdr[0]);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                sdr.Close();
+                com.Clone();
+                con.Close();
+            }
+        }
+    }
+}

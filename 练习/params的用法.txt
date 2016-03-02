@@ -1,0 +1,28 @@
+ static void Main(string[] args)
+        {
+            int sum = sunvals(1, 5, 2, 9, 8);
+            Console.WriteLine("Summed values={0}", sum);
+        }
+
+        static int sunvals(params int[] vals)
+        {
+            int sum = 0;
+            foreach (int val in vals)
+            {
+                sum += val;
+            }
+            return sum;
+
+1.foreach不是只进行只读操作吗(只是对于不改变这个函数外的值，foreach里边的值可以改变。）
+
+2.params可以接受任意多个int类型的参数
+3.下面的函数是错误的，应该将params参数放在最后  
+
+  static void myFunction(string label,params int[]args,bool showLabel)
+        {if(showLabel)
+            Console.WriteLine(label);
+            foreach(int i in args)
+                Console.WriteLine("{0}",i);
+    }
+
+  

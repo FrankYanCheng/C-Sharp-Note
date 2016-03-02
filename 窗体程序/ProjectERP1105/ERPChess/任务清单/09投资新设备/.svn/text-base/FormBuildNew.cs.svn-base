@@ -1,0 +1,194 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using DevComponents.DotNetBar;
+using ERPLibrary;
+using LSGO.PresentationLayer;
+
+namespace ERPChess
+{
+    public partial class FormBuildNew : LSGOfrmBasement
+    {
+        public FormBuildNew()
+        {
+            InitializeComponent();
+            this.dataGridViewX2.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+        }
+
+        private void FormBuildNew_Load(object sender, EventArgs e)
+        {
+            this.comboBoxEx1.Items.Clear();
+            for (int k = 0; k < 9; k++)
+            {
+                bool bl = false;
+                for (int i = 0; i <Program.factory.IEquipment.Count; i++)
+                {
+                    if (Program.factory.IEquipment[i].Position == k)
+                    {
+                        bl = true;
+                        break;
+                    }
+                }
+                if (bl == false)
+                {
+                    string str =(k+1).ToString();
+                    this.comboBoxEx1.Items.Add(new ComboBoxItem(k.ToString(),str));
+                }
+            }
+            this.dataGridViewX1.Rows.Clear();
+            this.dataGridViewX1.RowCount = 9;
+            this.dataGridViewX1.Rows[0].Cells["DeviceType"].Value = "";
+            this.dataGridViewX1.Rows[1].Cells["DeviceType"].Value = "购价(百万)";
+            this.dataGridViewX1.Rows[2].Cells["DeviceType"].Value = "建造时间(年)";
+            this.dataGridViewX1.Rows[3].Cells["DeviceType"].Value = "投资金额进度(百万)";
+            this.dataGridViewX1.Rows[4].Cells["DeviceType"].Value = "机组平均运行时间(小时)";
+            this.dataGridViewX1.Rows[5].Cells["DeviceType"].Value = "平均运行时间下发电量(亿千瓦时)";
+            this.dataGridViewX1.Rows[6].Cells["DeviceType"].Value = "配套厂房及办公设备(百万)";
+            this.dataGridViewX1.Rows[7].Cells["DeviceType"].Value = "耗煤标准(克/千瓦时)";
+            this.dataGridViewX1.Rows[8].Cells["DeviceType"].Value = "共耗煤(万吨)";
+
+            this.dataGridViewX1.Rows[0].Cells["DeviceType_30"].Value = "30万千瓦";
+            this.dataGridViewX1.Rows[1].Cells["DeviceType_30"].Value = "600";
+            this.dataGridViewX1.Rows[2].Cells["DeviceType_30"].Value = "1.5";
+            this.dataGridViewX1.Rows[3].Cells["DeviceType_30"].Value = "400/200";
+            this.dataGridViewX1.Rows[4].Cells["DeviceType_30"].Value = "3000";
+            this.dataGridViewX1.Rows[5].Cells["DeviceType_30"].Value = "9";
+            this.dataGridViewX1.Rows[6].Cells["DeviceType_30"].Value = "18";
+            this.dataGridViewX1.Rows[7].Cells["DeviceType_30"].Value = "330";
+            this.dataGridViewX1.Rows[8].Cells["DeviceType_30"].Value = "30";
+
+            this.dataGridViewX1.Rows[0].Cells["DeviceType_60"].Value = "60万千瓦";
+            this.dataGridViewX1.Rows[1].Cells["DeviceType_60"].Value = "1200";
+            this.dataGridViewX1.Rows[2].Cells["DeviceType_60"].Value = "1.5";
+            this.dataGridViewX1.Rows[3].Cells["DeviceType_60"].Value = "900/300";
+            this.dataGridViewX1.Rows[4].Cells["DeviceType_60"].Value = "4000";
+            this.dataGridViewX1.Rows[5].Cells["DeviceType_60"].Value = "24";
+            this.dataGridViewX1.Rows[6].Cells["DeviceType_60"].Value = "36";
+            this.dataGridViewX1.Rows[7].Cells["DeviceType_60"].Value = "300";
+            this.dataGridViewX1.Rows[8].Cells["DeviceType_60"].Value = "30";
+
+            this.dataGridViewX1.Rows[0].Cells["DeviceType_100"].Value = "100万千瓦";
+            this.dataGridViewX1.Rows[1].Cells["DeviceType_100"].Value = "2000";
+            this.dataGridViewX1.Rows[2].Cells["DeviceType_100"].Value = "1.5";
+            this.dataGridViewX1.Rows[3].Cells["DeviceType_100"].Value = "1400/600";
+            this.dataGridViewX1.Rows[4].Cells["DeviceType_100"].Value = "6000";
+            this.dataGridViewX1.Rows[5].Cells["DeviceType_100"].Value = "60";
+            this.dataGridViewX1.Rows[6].Cells["DeviceType_100"].Value = "60";
+            this.dataGridViewX1.Rows[7].Cells["DeviceType_100"].Value = "270";
+            this.dataGridViewX1.Rows[8].Cells["DeviceType_100"].Value = "160";
+
+            this.dataGridViewX2.RowCount = 9;
+            for (int i = 0; i < 9; i++)
+            {
+                string str = "第" + (i + 1).ToString() + "机位";
+                this.dataGridViewX2.Rows[i].Cells["DeviceList"].Value = str;
+            }
+            for (int i = 0; i < Program.factory.IEquipment.Count; i++)
+            {
+                this.dataGridViewX2.Rows[Program.factory.IEquipment[i].Position].Cells[1].Value = Program.factory.IEquipment[i].MachineType.ToString();
+                this.dataGridViewX2.Rows[Program.factory.IEquipment[i].Position].Cells[2].Value = "2年".ToString();
+                switch (Program.factory.IEquipment[i].MachineType)
+                {
+                    case 10:
+                        this.dataGridViewX2.Rows[Program.factory.IEquipment[i].Position].Cells[3].Value = "150";
+                        break;
+                    case 30:
+                        this.dataGridViewX2.Rows[Program.factory.IEquipment[i].Position].Cells[3].Value = "600：400/200";
+                        break;
+                    case 60:
+                        this.dataGridViewX2.Rows[Program.factory.IEquipment[i].Position].Cells[3].Value = "1200:900/300";
+                        break;
+                    case 100:
+                        this.dataGridViewX2.Rows[Program.factory.IEquipment[i].Position].Cells[3].Value = "2000:1400/600";
+                        break;
+                    default: throw new Exception("设备值类型错误"); 
+                }
+
+                if (Program.factory.IEquipment[i].MoneyProgress.Count > 0)
+                {
+                    this.dataGridViewX2.Rows[Program.factory.IEquipment[i].Position].Cells[4].Value = Program.factory.IEquipment[i].MoneyProgress.Peek().ToString();
+                }
+                else
+                {
+                    this.dataGridViewX2.Rows[Program.factory.IEquipment[i].Position].Cells[4].Value = "已完成投资";
+                }
+            }
+        }
+        bool Select_Type=false;
+        bool Select_Posotion=false;
+        private void buttonX1_Sure_Click(object sender, EventArgs e)
+        {
+            this.comboBoxEx1.Text = "";
+            if (Select_Type == false)
+            {
+                MessageBox.Show("请选择设备类型");
+                return;
+            }
+            if (Select_Posotion == false)
+            {
+                MessageBox.Show("请选择设备位置");
+                return;
+            }
+            Program.factory.IEquipment.Add(new ElectricEquipment(type, select));
+            FormBuildNew_Load(sender, e);
+            Select_Type = false;
+            Select_Posotion = false;
+
+        }
+        private int select;
+        private void comboBoxEx1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            select= Int32.Parse( this.comboBoxEx1.Items[this.comboBoxEx1.SelectedIndex].ToString())-1;
+            Select_Posotion = true;
+        }
+
+        private void buttonX3_Cancle_Click(object sender, EventArgs e)
+        {
+            for (int k = 0; k < Program.factory.IEquipment.Count; k++)
+            {
+                Program.factory.IEquipment[k].Investment(ref PubVar.Fund, ref PubVar.ValueOnBuilding, ref PubVar.Tdevicevalue);
+            }
+            this.Close();
+        }
+        private int type;
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            type = 30;
+            Select_Type = true;
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            type = 60;
+            Select_Type = true;
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            type = 100;
+            Select_Type = true;
+        }
+
+        private void FormBuildNew_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (PubVar.Fund < 0)
+            {
+                string order = MessageType.totalPoint.ToString() + "//" + PubVar.PlayerName + "//" + GameOver.total_Points().ToString();
+                Program.client.ClientNet.BeginSend(Encoding.Unicode.GetBytes(order));
+                GameOver.gameOver();
+            }
+        }
+
+        private void buttonX1_Click(object sender, EventArgs e)
+        {
+            this.radioButton1.Checked = false;
+            this.radioButton2.Checked = false;
+            this.radioButton3.Checked = false;
+            Select_Posotion = false;
+        }
+    }
+}

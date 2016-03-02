@@ -1,0 +1,4 @@
+123<div>这是div</div>456
+<br />
+123<span>这是span</span>
+div与span主要的区别在于div是将所在行分块，而后者只是将字分块。

@@ -1,0 +1,13 @@
+
+           string a= Console.ReadLine();
+           string[] k = a.Split(' ');
+
+           foreach (string d in k)
+           {
+               char[] x = d.ToCharArray();
+               Array.Reverse(x);
+               Console.Write(x);
+               Console.Write(" ");
+           }
+
+            Console.ReadKey();

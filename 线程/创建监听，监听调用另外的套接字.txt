@@ -1,0 +1,20 @@
+在客户端有一个connect方法
+在服务端有一个accept方法
+
+
+using System.Net;
+using System.Net.Sockets;
+
+   void message(string message)
+        {
+            textBox3.AppendText(message + "\r\n");
+        }
+
+    Socket SocketWatch = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            IPAddress address = IPAddress.Parse(textBox1.Text.Trim());
+            IPEndPoint endpoint = new IPEndPoint(address, Convert.ToInt32(textBox2.Text.Trim()));
+            SocketWatch.Bind(endpoint);
+
+            SocketWatch.Listen(2);
+            Socket connection = SocketWatch.Accept();
+            message("客户端创建成功！");
